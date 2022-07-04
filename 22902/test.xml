@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SiebelGetOperationInfo_Output>
+   <HeaderInfo RqUID="123123"  CorrelationUID="1233"  RqType="SiebelGetOperationInfo_Output"  RqTm="01/01/2013 00:00:00"  SystemFrom="Siebel" SystemTo="Spectrum" ErrorCode="" ErrorText="">
+   </HeaderInfo>
+   <ListOfSession>
+   <Session>
+      <menuItemCode>3301005</menuItemCode>
+      <ActionId>1-1MPVTR4</ActionId>
+      <ServiceRequestId>1-1MPVTSQ</ServiceRequestId>
+      <ClientId>1-5VR-28806</ClientId>
+      <BOCode />
+      <ClientFirstName>Любовь</ClientFirstName>
+      <ClientMidName>Ивановна</ClientMidName>
+      <ClientLastName>Пчелинцева</ClientLastName>
+      <ClientDocCategory>21</ClientDocCategory>
+      <ClientDocSeries>63 05</ClientDocSeries>
+      <ClientDocNumber>745769</ClientDocNumber>
+      <ClientDocIssueTS>10/29/2005 04:00:00</ClientDocIssueTS>
+      <ClientDocIssuedBy>Отделом внутренних дел Татищевского района Саратовской области</ClientDocIssuedBy>
+      <ClientIssueCode>642-042</ClientIssueCode>
+      <ClientResidency>Y</ClientResidency>
+      <ClientCitizenship>РФ</ClientCitizenship>
+      <ClientBirthDate>09/24/1960 00:00:00</ClientBirthDate>
+      <ClientPlaceOfBirth>г. Саратов</ClientPlaceOfBirth>
+      <ClientIDInformation>643400462550</ClientIDInformation>
+      <ClientIntLastName>PCHELINTSEVA</ClientIntLastName>
+      <ClientIntFirstName>LYUBOV</ClientIntFirstName>
+      <ThirdPartyFlag>N</ThirdPartyFlag>
+      <ThirdPartyFirstName />
+      <ThirdPartyMidName />
+      <ThirdPartyLastName />
+      <ThirdPartyDocCategory />
+      <ThirdPartyDocSeries />
+      <ThirdPartyDocNumber />
+      <ThirdPartyDocIssueTS />
+      <ThirdPartyDocIssuedBy />
+      <ThirdPartyBirthDate />
+      <ThirdPartyPlaceOfBirth />
+      <ThirdPartyWarrantFlag>N</ThirdPartyWarrantFlag>
+      <ThirdPartyWarrantNumber />
+      <ThirdPartyWarrantDate />
+      <ThirdPartyWarrantEndDate />
+      <ThirdPartyWarrantIssueCode />
+      <ThirdPartyIntLastName />
+      <ThirdPartyIntFirstName />
+      <SiebelAccountType>Счет</SiebelAccountType>
+      <SiebelAccountNumber>40817810314524000081</SiebelAccountNumber>
+      <SiebelAccountTypeName>Мастер счет</SiebelAccountTypeName>
+      <SiebelCardAccountNumber />
+      <SiebelAccountOrganisation>00006</SiebelAccountOrganisation>
+      <SiebelDivisionCode>1452</SiebelDivisionCode>
+      <SiebelAccountBalance>46000000</SiebelAccountBalance>
+      <SiebelAccountCurrency>RUB</SiebelAccountCurrency>
+      <SiebelAccountSystemId>99995</SiebelAccountSystemId>
+      <SiebelCardExpirationDate />>
+      <ComissionCurrency />
+      <SiebelCardMultiCurrencyFlag />
+      <INN />
+      <ComissionSum />
+      <KPP />
+      <OrganisationName />
+      <OrganisationRegistrationAdress />
+      <OrganisationFactAddress />
+      <ListOfPersonalAddress>
+         <PersonalAddress>
+            <AddressType>Постоянной регистрации</AddressType>
+            <ApartmentNumber>27</ApartmentNumber>
+            <City />
+            <Country>РФ</Country>
+            <County>Татищевский</County>
+            <Province>Саратовская</Province>
+            <State>64</State>
+            <StreetAddress>Садовый</StreetAddress>
+            <ZipCode>412192</ZipCode>
+            <VTB24Building />
+            <VTB24HouseNum>3</VTB24HouseNum>
+            <VTB24Housing />
+            <VTB24SettlementType>с</VTB24SettlementType>
+            <VTB24Settlement>Сторожевка</VTB24Settlement>
+            <VTB24KLADRCode>64035000075001200</VTB24KLADRCode>
+            <FullAddress>412192 Россия обл Саратовская р-н Татищевский с Сторожевка пер Садовый дом 3 кв 27</FullAddress>
+            <ActiveFlag>Y</ActiveFlag>
+         </PersonalAddress>
+         <PersonalAddress>
+            <AddressType>Фактический</AddressType>
+            <ApartmentNumber>27</ApartmentNumber>
+            <City />
+            <Country>РФ</Country>
+            <County>Сторожевка</County>
+            <Province>Саратовская</Province>
+            <State>64</State>
+            <StreetAddress>Садовый</StreetAddress>
+            <ZipCode>412192</ZipCode>
+            <VTB24Building />
+            <VTB24HouseNum>3</VTB24HouseNum>
+            <VTB24Housing />
+            <VTB24SettlementType>с</VTB24SettlementType>
+            <VTB24Settlement>Сторожевка</VTB24Settlement>
+            <VTB24KLADRCode>64035000075001200</VTB24KLADRCode>
+            <FullAddress>412192,р-н Татищевский,с Сторожевка,пер Садовый,3,27</FullAddress>
+            <ActiveFlag>Y</ActiveFlag>
+         </PersonalAddress>
+      </ListOfPersonalAddress>
+      <ListOfClientBlackList />
+      <ListOfThirdPartyBlackList />
+      <ListOfAccount>
+         <Account>
+            <Organization>00018</Organization>
+            <Number>40817810314524000081</Number>
+            <Balance>460000</Balance>
+            <Status>Активный</Status>
+            <Currency>RUR</Currency>
+            <SystemId>99995</SystemId>
+            <AgreementNumber>40817810314524000081</AgreementNumber>
+            <AgreementDate>10/08/2014</AgreementDate>
+            <AgreementProduct />
+            <AccountType>Мастер счет</AccountType>
+         </Account>
+         <Account>
+            <Organization>00018</Organization>
+            <Number>40817840614524000081</Number>
+            <Balance>0</Balance>
+            <Status>Активный</Status>
+            <Currency>USD</Currency>
+            <SystemId>99995</SystemId>
+            <AgreementNumber>40817810314524000081</AgreementNumber>
+            <AgreementDate>10/08/2014</AgreementDate>
+            <AgreementProduct />
+            <AccountType>Мастер счет</AccountType>
+         </Account>
+         <Account>
+            <Organization>00018</Organization>
+            <Number>40817978214524000081</Number>
+            <Balance>0</Balance>
+            <Status>Активный</Status>
+            <Currency>EUR</Currency>
+            <SystemId>99995</SystemId>
+            <AgreementNumber>40817810314524000081</AgreementNumber>
+            <AgreementDate>10/08/2014</AgreementDate>
+            <AgreementProduct />
+            <AccountType>Мастер счет</AccountType>
+         </Account>
+         <Account>
+            <Organization>00018</Organization>
+            <Number>45507810000184237088</Number>
+            <Balance>460000</Balance>
+            <Status>Активный</Status>
+            <Currency>RUR</Currency>
+            <SystemId>99995</SystemId>
+            <AgreementNumber>625/0018-0380305</AgreementNumber>
+            <AgreementDate>10/08/2014</AgreementDate>
+            <AgreementProduct />
+            <AccountType>Ссудный счет</AccountType>
+         </Account>
+         <Account>
+            <Organization>00018</Organization>
+            <Number>40822810719520001443</Number>
+            <Balance>125.82</Balance>
+            <Status>Активный</Status>
+            <Currency>RUR</Currency>
+            <SystemId>00018</SystemId>
+            <AgreementNumber />
+            <AgreementDate>05/21/2014</AgreementDate>
+            <AgreementProduct />
+            <AccountType>Текущий счет</AccountType>
+         </Account>
+         <Account>
+            <Organization>00018</Organization>
+            <Number>40822810719520001488</Number>
+            <Balance>15000</Balance>
+            <Status>Активный</Status>
+            <Currency>RUR</Currency>
+            <SystemId>00018</SystemId>
+            <AgreementNumber />
+            <AgreementDate>05/21/2021</AgreementDate>
+            <AgreementProduct />
+            <AccountType>Накопительный счет Сейф</AccountType>
+         </Account>
+      </ListOfAccount>
+      <ListOfFINSATMCard>
+         <FINSATMCard>
+            <CardNumber>5543930010081660</CardNumber>
+            <Balance>3135.75</Balance>
+            <Currency>RUB</Currency>
+            <SystemId>99995</SystemId>
+            <AccountNumber>40817840001002844186</AccountNumber>
+            <ExpirationDate>12/31/2013</ExpirationDate>
+            <Branch>00000</Branch><CardType>VISAS Classic CHIP NEW_DEB VTB Our VISA</CardType>
+         </FINSATMCard>
+      </ListOfFINSATMCard>
+      <ListOfThirdPartyPersonalAddress />
+   </Session>
+   </ListOfSession>
+</SiebelGetOperationInfo_Output>

@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SiebelGetOperationInfo_Output>
+	<HeaderInfo RqUID="123123"  CorrelationUID="1233"  RqType="SiebelGetOperationInfo_Output"  RqTm="01/01/2013 00:00:00"  SystemFrom="Siebel" SystemTo="Spectrum" ErrorCode="" ErrorText="">
+	</HeaderInfo>
+        <ListOfSession>
+	<Session>
+		<menuItemCode>03351000</menuItemCode>
+		<ActionId>1-10DU1VXL</ActionId>
+		<ServiceRequestId>1-10DWSMKG</ServiceRequestId>
+		<ClientId>1-17CL-765</ClientId>
+		<ClientType>ФЛ</ClientType>
+		<BOCode></BOCode>
+		<ClientFirstName>Адольф</ClientFirstName>
+		<ClientMidName>Жанклодович</ClientMidName>
+		<ClientLastName>Зумовский</ClientLastName>
+		<ClientDocCategory>21</ClientDocCategory>
+		<ClientDocSeries>14 88</ClientDocSeries>
+		<ClientDocNumber>888444</ClientDocNumber>
+		<ClientDocIssueTS>01/24/2004 03:00:00</ClientDocIssueTS>
+		<ClientDocIssuedBy>ОТДЕЛОМ ВНУТРЕННИХ ДЕЛ ОТДЕЛА ВНУТРЕННИХ ДЕЛ</ClientDocIssuedBy>
+		<ClientIssueCode>672-021</ClientIssueCode>
+		<ClientResidency>Y</ClientResidency>
+		<ClientCitizenship>РФ</ClientCitizenship>
+		<ClientBirthDate>11/03/1982 00:00:00</ClientBirthDate>
+		<ClientPlaceOfBirth>ГОР. САФОНОВО СМОЛЕНСКОЙ ОБЛ.</ClientPlaceOfBirth>
+		<ClientIDInformation></ClientIDInformation>
+		<ClientNotificationPhone>926 5031265</ClientNotificationPhone>
+		<OperationCurrency></OperationCurrency>
+		<OperationSum></OperationSum>
+		<ClientIntLastName>SHPAKOVA</ClientIntLastName>
+		<ClientIntFirstName>ALEFTINA</ClientIntFirstName>
+		<ThirdPartyFlag>N</ThirdPartyFlag>
+		<ThirdPartyId></ThirdPartyId>
+		<ThirdPartyFirstName></ThirdPartyFirstName>
+		<ThirdPartyMidName></ThirdPartyMidName>
+		<ThirdPartyLastName></ThirdPartyLastName>
+		<ThirdPartyDocCategory></ThirdPartyDocCategory>
+		<ThirdPartyDocSeries></ThirdPartyDocSeries>
+		<ThirdPartyDocNumber></ThirdPartyDocNumber>
+		<ThirdPartyDocIssueTS></ThirdPartyDocIssueTS>
+		<ThirdPartyDocIssuedBy></ThirdPartyDocIssuedBy>
+		<ThirdPartyBirthDate></ThirdPartyBirthDate>
+		<ThirdPartyPlaceOfBirth></ThirdPartyPlaceOfBirth>
+		<ThirdPartyWarrantFlag>N</ThirdPartyWarrantFlag>
+		<ThirdPartyWarrantNumber></ThirdPartyWarrantNumber>
+		<ThirdPartyWarrantDate></ThirdPartyWarrantDate>
+		<ThirdPartyWarrantEndDate></ThirdPartyWarrantEndDate>
+		<ThirdPartyWarrantIssueCode></ThirdPartyWarrantIssueCode>
+		<ThirdPartyIntLastName></ThirdPartyIntLastName>
+		<ThirdPartyIntFirstName></ThirdPartyIntFirstName>
+		<SiebelAccountType>Счет</SiebelAccountType>
+		<SiebelAccountNumber>40817810501004008984</SiebelAccountNumber>
+		<SiebelAccountTypeName>Мастер счет</SiebelAccountTypeName>
+		<SiebelCardAccountNumber></SiebelCardAccountNumber>
+		<SiebelAccountOrganisation>00000</SiebelAccountOrganisation>
+		<SiebelDivisionCode>0100</SiebelDivisionCode>
+		<SiebelAccountBalance>12107.32</SiebelAccountBalance>
+		<SiebelAccountCurrency>RUR</SiebelAccountCurrency>
+		<SiebelAccountSystemId>99995</SiebelAccountSystemId>
+		<SiebelCardExpirationDate></SiebelCardExpirationDate>
+		<ComissionCurrency></ComissionCurrency>
+		<SiebelCardMultiCurrencyFlag></SiebelCardMultiCurrencyFlag>
+		<INN></INN>
+		<ComissionSum></ComissionSum>
+		<KPP></KPP>
+		<OrganisationEmail></OrganisationEmail>
+		<OrganisationPhone></OrganisationPhone>
+		<OGRN></OGRN>
+		<OrganisationName></OrganisationName>
+		<OrganisationRegistrationAdress></OrganisationRegistrationAdress>
+		<OrganisationFactAddress></OrganisationFactAddress>
+		<PackageType>Платиновый</PackageType>
+		<FlagVIPClient>N</FlagVIPClient>
+		<ListOfPersonalAddress>
+			<PersonalAddress>
+				<AddressType>Постоянной регистрации</AddressType>
+				<ApartmentNumber>291</ApartmentNumber>
+				<City>Химки</City>
+				<Country>РФ</Country>
+				<County></County>
+				<Province>Московская</Province>
+				<State>50</State>
+				<StreetAddress>Горшина</StreetAddress>
+				<ZipCode>141407</ZipCode>
+				<VTB24Building></VTB24Building>
+				<VTB24HouseNum>2</VTB24HouseNum>
+				<VTB24Housing></VTB24Housing>
+				<VTB24SettlementType></VTB24SettlementType>
+				<VTB24Settlement></VTB24Settlement>
+				<VTB24KLADRCode>5000003000000880002</VTB24KLADRCode>
+				<FullAddress>141407 Россия обл Московская г Химки ул Горшина дом 2 кв 291</FullAddress>
+				<ActiveFlag>Y</ActiveFlag>
+			</PersonalAddress>
+			<PersonalAddress>
+				<AddressType>Фактический</AddressType>
+				<ApartmentNumber>291</ApartmentNumber>
+				<City>Химки</City>
+				<Country>РФ</Country>
+				<County></County>
+				<Province>Московская</Province>
+				<State>50</State>
+				<StreetAddress>Горшина</StreetAddress>
+				<ZipCode>141407</ZipCode>
+				<VTB24Building></VTB24Building>
+				<VTB24HouseNum>2</VTB24HouseNum>
+				<VTB24Housing></VTB24Housing>
+				<VTB24SettlementType></VTB24SettlementType>
+				<VTB24Settlement></VTB24Settlement>
+				<VTB24KLADRCode>5000003000000880002</VTB24KLADRCode>
+				<FullAddress>141407 Россия обл Московская г Химки ул Горшина дом 2 кв 291</FullAddress>
+				<ActiveFlag>Y</ActiveFlag>
+			</PersonalAddress>
+		</ListOfPersonalAddress>
+		<ListOfClientBlackList></ListOfClientBlackList>
+		<ListOfThirdPartyBlackList></ListOfThirdPartyBlackList>
+		<ListOfAccount>
+			<Account>
+				<Organization>00000</Organization>
+				<Number>42305810301000004278</Number>
+				<Balance>0</Balance>
+				<Status>Закрыт</Status>
+				<Currency>RUR</Currency>
+				<SystemId>00000</SystemId>
+				<AgreementNumber></AgreementNumber>
+				<AgreementDate>04/13/2016</AgreementDate>
+				<AgreementProduct></AgreementProduct>
+				<AccountType>Депозитный счет</AccountType>
+			</Account>
+			<Account>
+				<Organization>00000</Organization>
+				<Number>42305810301000201071</Number>
+				<Balance>0</Balance>
+				<Status>Закрыт</Status>
+				<Currency>RUR</Currency>
+				<SystemId>00000</SystemId>
+				<AgreementNumber></AgreementNumber>
+				<AgreementDate>05/31/2016</AgreementDate>
+				<AgreementProduct></AgreementProduct>
+				<AccountType>Депозитный счет</AccountType>
+			</Account>
+			<Account>
+				<Organization>00000</Organization>
+				<Number>42305810201000201249</Number>
+				<Balance>100000</Balance>
+				<Status>Активный</Status>
+				<Currency>RUR</Currency>
+				<SystemId>00000</SystemId>
+				<AgreementNumber></AgreementNumber>
+				<AgreementDate>12/05/2016</AgreementDate>
+				<AgreementProduct></AgreementProduct>
+				<AccountType>Депозитный счет</AccountType>
+			</Account>
+			<Account>
+				<Organization>00000</Organization>
+				<Number>42304810401001013936</Number>
+				<Balance>0</Balance>
+				<Status>Закрыт</Status>
+				<Currency>RUR</Currency>
+				<SystemId>98000</SystemId>
+				<AgreementNumber></AgreementNumber>
+				<AgreementDate>07/02/2015</AgreementDate>
+				<AgreementProduct></AgreementProduct>
+				<AccountType>Депозитный счет</AccountType>
+			</Account>
+			<Account>
+				<Organization>00000</Organization>
+				<Number>42304810201001014177</Number>
+				<Balance>0</Balance>
+				<Status>Закрыт</Status>
+				<Currency>RUR</Currency>
+				<SystemId>98000</SystemId>
+				<AgreementNumber></AgreementNumber>
+				<AgreementDate>10/15/2015</AgreementDate>
+				<AgreementProduct></AgreementProduct>
+				<AccountType>Депозитный счет</AccountType>
+			</Account>
+			<Account>
+				<Organization>00000</Organization>
+				<Number>42303810501001016999</Number>
+				<Balance>0</Balance>
+				<Status>Закрыт</Status>
+				<Currency>RUR</Currency>
+				<SystemId>98000</SystemId>
+				<AgreementNumber></AgreementNumber>
+				<AgreementDate>06/19/2015</AgreementDate>
+				<AgreementProduct></AgreementProduct>
+				<AccountType>Депозитный счет</AccountType>
+			</Account>
+			<Account>
+				<Organization>00000</Organization>
+				<Number>40817978101001015681</Number>
+				<Balance>0</Balance>
+				<Status>Закрыт</Status>
+				<Currency>EUR</Currency>
+				<SystemId>98000</SystemId>
+				<AgreementNumber></AgreementNumber>
+				<AgreementDate>05/12/2014</AgreementDate>
+				<AgreementProduct></AgreementProduct>
+				<AccountType>Текущий счет</AccountType>
+			</Account>
+			<Account>
+				<Organization>00000</Organization>
+				<Number>42304810201001013097</Number>
+				<Balance>0</Balance>
+				<Status>Закрыт</Status>
+				<Currency>RUR</Currency>
+				<SystemId>98000</SystemId>
+				<AgreementNumber></AgreementNumber>
+				<AgreementDate>04/02/2015</AgreementDate>
+				<AgreementProduct></AgreementProduct>
+				<AccountType>Депозитный счет</AccountType>
+			</Account>
+			<Account>
+				<Organization>00000</Organization>
+				<Number>40817810401001018666</Number>
+				<Balance>0</Balance>
+				<Status>Активный</Status>
+				<Currency>RUR</Currency>
+				<SystemId>98000</SystemId>
+				<AgreementNumber></AgreementNumber>
+				<AgreementDate>05/12/2014</AgreementDate>
+				<AgreementProduct></AgreementProduct>
+				<AccountType>Текущий счет</AccountType>
+			</Account>
+			<Account>
+				<Organization>00000</Organization>
+				<Number>40817840501001015911</Number>
+				<Balance>0</Balance>
+				<Status>Закрыт</Status>
+				<Currency>USD</Currency>
+				<SystemId>98000</SystemId>
+				<AgreementNumber></AgreementNumber>
+				<AgreementDate>05/12/2014</AgreementDate>
+				<AgreementProduct></AgreementProduct>
+				<AccountType>Текущий счет</AccountType>
+			</Account>
+			<Account>
+				<Organization>00000</Organization>
+				<Number>40817810501004008984</Number>
+				<Balance>12107.32</Balance>
+				<Status>Активный</Status>
+				<Currency>RUR</Currency>
+				<SystemId>99995</SystemId>
+				<AgreementNumber>40817810501004008984</AgreementNumber>
+				<AgreementDate>11/29/2015</AgreementDate>
+				<AgreementProduct></AgreementProduct>
+				<AccountType>Мастер счет</AccountType>
+			</Account>
+			<Account>
+				<Organization>00000</Organization>
+				<Number>40817810901000028144</Number>
+				<Balance>23200</Balance>
+				<Status>Активный</Status>
+				<Currency>RUR</Currency>
+				<SystemId>00000</SystemId>
+				<AgreementNumber></AgreementNumber>
+				<AgreementDate>05/06/2014</AgreementDate>
+				<AgreementProduct></AgreementProduct>
+				<AccountType>Текущий счет</AccountType>
+			</Account>
+			<Account>
+				<Organization>00000</Organization>
+				<Number>40817840301004007139</Number>
+				<Balance>0</Balance>
+				<Status>Активный</Status>
+				<Currency>USD</Currency>
+				<SystemId>99995</SystemId>
+				<AgreementNumber></AgreementNumber>
+				<AgreementDate>11/29/2015</AgreementDate>
+				<AgreementProduct></AgreementProduct>
+				<AccountType>Мастер счет</AccountType>
+			</Account>
+			<Account>
+				<Organization>00000</Organization>
+				<Number>40817978601004007138</Number>
+				<Balance>0</Balance>
+				<Status>Активный</Status>
+				<Currency>EUR</Currency>
+				<SystemId>99995</SystemId>
+				<AgreementNumber></AgreementNumber>
+				<AgreementDate>11/29/2015</AgreementDate>
+				<AgreementProduct></AgreementProduct>
+				<AccountType>Мастер счет</AccountType>
+			</Account>
+			<Account>
+				<Organization>00000</Organization>
+				<Number>45507810900000036824</Number>
+				<Balance>4522626.37</Balance>
+				<Status>Активный</Status>
+				<Currency>RUR</Currency>
+				<SystemId>00000</SystemId>
+				<AgreementNumber></AgreementNumber>
+				<AgreementDate>05/21/2014</AgreementDate>
+				<AgreementProduct></AgreementProduct>
+				<AccountType>Ссудный счет</AccountType>
+			</Account>
+			<Account>
+				<Organization>00000</Organization>
+				<Number>42305810701001011844</Number>
+				<Balance>0</Balance>
+				<Status>Закрыт</Status>
+				<Currency>RUR</Currency>
+				<SystemId>98000</SystemId>
+				<AgreementNumber></AgreementNumber>
+				<AgreementDate>03/20/2015</AgreementDate>
+				<AgreementProduct></AgreementProduct>
+				<AccountType>Депозитный счет</AccountType>
+			</Account>
+			<Account>
+				<Organization>00000</Organization>
+				<Number>42304810901001013960</Number>
+				<Balance>0</Balance>
+				<Status>Закрыт</Status>
+				<Currency>RUR</Currency>
+				<SystemId>98000</SystemId>
+				<AgreementNumber></AgreementNumber>
+				<AgreementDate>07/14/2015</AgreementDate>
+				<AgreementProduct></AgreementProduct>
+				<AccountType>Депозитный счет</AccountType>
+			</Account>
+			<Account>
+				<Organization>00000</Organization>
+				<Number>42303810501001017493</Number>
+				<Balance>0</Balance>
+				<Status>Закрыт</Status>
+				<Currency>RUR</Currency>
+				<SystemId>98000</SystemId>
+				<AgreementNumber></AgreementNumber>
+				<AgreementDate>09/17/2015</AgreementDate>
+				<AgreementProduct></AgreementProduct>
+				<AccountType>Депозитный счет</AccountType>
+			</Account>
+			<Account>
+				<Organization>00000</Organization>
+				<Number>42304810501001014178</Number>
+				<Balance>0</Balance>
+				<Status>Закрыт</Status>
+				<Currency>RUR</Currency>
+				<SystemId>98000</SystemId>
+				<AgreementNumber></AgreementNumber>
+				<AgreementDate>10/15/2015</AgreementDate>
+				<AgreementProduct></AgreementProduct>
+				<AccountType>Депозитный счет</AccountType>
+			</Account>
+			<Account>
+				<Organization>00000</Organization>
+				<Number>42303810701001017866</Number>
+				<Balance>0</Balance>
+				<Status>Закрыт</Status>
+				<Currency>RUR</Currency>
+				<SystemId>98000</SystemId>
+				<AgreementNumber></AgreementNumber>
+				<AgreementDate>12/16/2015</AgreementDate>
+				<AgreementProduct></AgreementProduct>
+				<AccountType>Депозитный счет</AccountType>
+			</Account>
+			<Account>
+				<Organization>00000</Organization>
+				<Number>42304810701000005166</Number>
+				<Balance>350000</Balance>
+				<Status>Активный</Status>
+				<Currency>RUR</Currency>
+				<SystemId>00000</SystemId>
+				<AgreementNumber></AgreementNumber>
+				<AgreementDate>12/07/2016</AgreementDate>
+				<AgreementProduct></AgreementProduct>
+				<AccountType>Депозитный счет</AccountType>
+			</Account>
+		</ListOfAccount>
+		<ListOfFINSATMCard></ListOfFINSATMCard>
+		<ListOfThirdPartyPersonalAddress></ListOfThirdPartyPersonalAddress>
+		<ListOfContactPerson></ListOfContactPerson>
+	</Session>
+</ListOfSession>
+</SiebelGetOperationInfo_Output>

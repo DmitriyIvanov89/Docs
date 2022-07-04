@@ -1,0 +1,25 @@
+﻿{
+    "id": "4324234",
+    "version": 1,
+    "abs": "Ogress",
+    "source": "Ogress",
+    "sourceDealId": "12548",
+    "currencyPair": "USDRUB",
+    "baseAmount": {
+        "amount": 10000.00,
+        "currency": "USD"
+    },
+    "referenceAmount": {
+        "amount": 600000.00,
+        "currency": "RUB"
+    },
+    "price": 60.0000,
+    "isBaseBuy": true,
+    "createdAt": "2021-12-15T14:57:23.234Z",
+    "tradeDate": "2021-12-15",
+    "valueDate": "2021-12-15",
+    "branch": {
+        "id": "12345",
+        "name": "12345"
+    }
+}

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Request ToBranch="00006" Type="SCCreateDocs">
+    <Bis-Data>
+        <BranchId Value="00006"/>
+        <Who Value="S1110"/>
+        <XmlBroker Value=""/>
+        <Z-Code Value=""/>
+        <Z-Id Value="SP.1000179617-37133"/>
+        <Z-Type Value="SCCreateDocs"/>
+        <LogicalStage Value="CreateDocs"/>
+        <transID Value="00006-SP.1000179617-37133"/>
+    </Bis-Data>
+    <App-Data>
+        <ScExport-req>
+            <ScDoc-req>
+                <ScRequestID>SP.1000179617-37133</ScRequestID>
+                <LogicalStage>CreateDocs</LogicalStage>
+                <TransID>00006-SP.1000179617-37133</TransID>
+                <Debet>47423810100000000002</Debet>
+                <Credit>47423810530260000001</Credit>
+                <CurrDb></CurrDb>
+                <CurrCr></CurrCr>
+                <AmountDb>9000</AmountDb>
+                <AmountCr>9000</AmountCr>
+                <Number>69115</Number>
+                <DocType>17</DocType>
+                <OpDate>2021-10-06</OpDate>
+                <DocDate>2021-10-06</DocDate>
+                <PlanDate>2021-10-06</PlanDate>
+                <Description>Переучет на 47423(2) комиссии за пользование сверх срока</Description>
+                <DocStatus>√</DocStatus>
+                <RmkCode></RmkCode>
+                <BisUser>S1110</BisUser>
+                <BisValue>1,1</BisValue>
+                <Course>1</Course>
+                <Subdivision>1110</Subdivision>
+            </ScDoc-req>
+            <ExtInfo-req>
+                <BankType>МФО-9</BankType>
+                <BankID></BankID>
+                <order-pay>5</order-pay>
+                <isclient>3</isclient>
+            </ExtInfo-req>
+            <Signs-req>
+                <code>inn-send</code>
+                <code-value>7702070139</code-value>
+                <surrogate></surrogate>
+                <file-name>op</file-name>
+            </Signs-req>
+            <Signs-req>
+                <code>name-send</code>
+                <code-value>ФИЛИАЛ № 7806 БАНКА ВТБ (ПАО)//Банк ВТБ (ПАО), ФИЛИАЛ № 7806 БАНКА ВТБ (ПАО)//69115//</code-value>
+                <surrogate></surrogate>
+                <file-name>op</file-name>
+            </Signs-req>
+        </ScExport-req>
+    </App-Data>
+</Request>

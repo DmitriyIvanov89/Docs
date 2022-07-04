@@ -1,0 +1,87 @@
+﻿<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:jour="http://journal.ws.spectrum" xmlns:xsd="http://model.ws.spectrum/xsd">
+   <soap:Header/>
+   <soap:Body>
+      <jour:create>
+         <jour:request>
+            <xsd:operationEntity>
+                <xsd:client>
+                  <xsd:clientTypeEnum>0</xsd:clientTypeEnum>
+                  <xsd:clientExtId>5555-90-siebel</xsd:clientExtId>
+                  <xsd:clientIdSys>SBL_FR</xsd:clientIdSys>
+                  <!--чтоб запрос в docsVision уходил-->
+                  <xsd:icIssueAutority>ПВО ОВД Таганского района города Москвы кп 772-118</xsd:icIssueAutority>
+                  <xsd:icIssueDate>2005-09-06</xsd:icIssueDate>
+                  <xsd:icNum>787878</xsd:icNum>
+                  <xsd:icSeries>6969</xsd:icSeries>
+                  <xsd:identityCardTypeId>21</xsd:identityCardTypeId>
+                  <xsd:personFirstName>АНДРЕЙ</xsd:personFirstName>
+                  <xsd:personPatronymic>ЮРЬЕВИЧ</xsd:personPatronymic>
+                  <xsd:personSurname>ЗУМОВСКИЙ</xsd:personSurname>
+                  <xsd:personCitizenCountryCode>643</xsd:personCitizenCountryCode>
+                  <!--<xsd:personStatelessFlag></xsd:personStatelessFlag>-->
+                  <xsd:ThirdPartyFlag>Y</xsd:ThirdPartyFlag>
+         <xsd:ThirdPartyFirstName>Алиса</xsd:ThirdPartyFirstName>
+         <xsd:ThirdPartyMidName>Алексеевна</xsd:ThirdPartyMidName>
+         <xsd:ThirdPartyLastName>Злотникова</xsd:ThirdPartyLastName>
+         <xsd:ThirdPartyDocCategory>21</xsd:ThirdPartyDocCategory>
+         <xsd:ThirdPartyDocSeries>9913</xsd:ThirdPartyDocSeries>
+         <xsd:ThirdPartyDocNumber>290177</xsd:ThirdPartyDocNumber>
+         <xsd:ThirdPartyDocIssueTS>08/03/2013 00:00:00</xsd:ThirdPartyDocIssueTS>
+         <xsd:ThirdPartyDocIssuedBy>МРОФМС</xsd:ThirdPartyDocIssuedBy>
+         <xsd:ThirdPartyBirthDate>07/27/1993 00:00:00</xsd:ThirdPartyBirthDate>
+         <xsd:ThirdPartyPlaceOfBirth></xsd:ThirdPartyPlaceOfBirth>
+         <xsd:ThirdPartyWarrantFlag>Y</xsd:ThirdPartyWarrantFlag>
+         <xsd:ThirdPartyWarrantNumber>123456</xsd:ThirdPartyWarrantNumber>
+         <xsd:ThirdPartyWarrantDate>08/03/2013 00:00:00</xsd:ThirdPartyWarrantDate>
+         <xsd:ThirdPartyWarrantEndDate>08/03/2019 00:00:00</xsd:ThirdPartyWarrantEndDate>
+         <xsd:ThirdPartyWarrantIssueCode></xsd:ThirdPartyWarrantIssueCode>
+         <xsd:ThirdPartyIntLastName></xsd:ThirdPartyIntLastName>
+         <xsd:ThirdPartyIntFirstName></xsd:ThirdPartyIntFirstName>
+               </xsd:client>
+               <xsd:deptCode>1126</xsd:deptCode>
+               <xsd:operJournalStatusEnum>3</xsd:operJournalStatusEnum>
+               <xsd:extFee>
+                 <xsd:currency>RUB</xsd:currency>
+                  <xsd:summa>112</xsd:summa>
+               </xsd:extFee>
+               <xsd:documents>
+                  <xsd:analyticAttributes>
+                     <xsd:code>CBO_CODE</xsd:code>
+                     <xsd:value>711110-00</xsd:value>
+                  </xsd:analyticAttributes>
+                  <xsd:cashSymbols>
+                     <xsd:cashSymbolCode>51</xsd:cashSymbolCode>
+                     <xsd:summa>
+                        <xsd:currency>RUB</xsd:currency>
+                        <xsd:summa>32250</xsd:summa>
+                     </xsd:summa>
+                  </xsd:cashSymbols>
+                  <xsd:creditSumma>
+                     <xsd:currency>RUB</xsd:currency>
+                     <xsd:summa>32250</xsd:summa>
+                  </xsd:creditSumma>
+                  <xsd:debitAccountEntity>
+                     <xsd:accountIdSys>99995</xsd:accountIdSys>
+                     <xsd:accountNum>40817840700020071068</xsd:accountNum>
+                     <xsd:deptCode>1056</xsd:deptCode>
+                  </xsd:debitAccountEntity>
+                  <xsd:debitSumma>
+                     <xsd:currency>USD</xsd:currency>
+                     <xsd:summa>500</xsd:summa>
+                  </xsd:debitSumma>
+                  <xsd:description>Выдача наличных денежных средств на основании договора банковского счета.
+                  Владелец счета: З******* А***** З*******</xsd:description>
+                  <xsd:docNumber>111222399</xsd:docNumber>
+               </xsd:documents>
+               <xsd:login>O1126</xsd:login>
+               <xsd:idSys>99995</xsd:idSys>
+               <xsd:operJournalExtId>SP.CONP.123123070</xsd:operJournalExtId>
+               <xsd:operationCode>1061</xsd:operationCode>
+            </xsd:operationEntity>
+            <xsd:requestInfo>
+               <xsd:messageId>1234670</xsd:messageId>
+            </xsd:requestInfo>
+         </jour:request>
+      </jour:create>
+   </soap:Body>
+</soap:Envelope>

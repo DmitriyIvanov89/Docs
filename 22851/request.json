@@ -1,0 +1,27 @@
+{
+"requestId": "169520c6-8775-40fe-bc45-52d81f0afefd",
+"clientDvId": "e2dc650a-1b52-44e3-b8cd-2aeac7483831",
+"dossierVersion": "LAST",
+"dossierType": "ЗКМБ",
+"docTypeId": "2",
+"documentNumber": "doc-2021-07-10"
+}
+
+// Пример работающего запроса
+{
+
+  "requestId": "fc14ca3b-b406-4dd0-a075-1b19393248e9",
+
+  "clientDvId": "e2dc650a-1b52-44e3-b8cd-2aeac7483831",
+
+  "dossierVersion": "LAST",
+
+  "dossierType": "ДЕП",
+
+   "docTypeId": "2",
+
+   "contractNum": "1",
+
+  "contractDate": "2020-01-11"
+
+}

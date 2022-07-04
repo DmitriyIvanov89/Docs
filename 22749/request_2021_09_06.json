@@ -1,0 +1,21 @@
+{
+	"calculationParameters": {
+		"boxOptions": {
+			"boxType": "BIG_BOX",
+			"vipOptions": {
+				"branchId": "string",
+				"maxHeightVipBox": 6.9
+			}
+		},
+		"endDateReservation": "2021-10-31",
+		"periodReservation": 27,
+		"prime": false,
+		"privilege": false,
+		"region": "string",
+		"startDateReservation": "2021-09-01",
+		"transactionType": "IPOTEKA_ALTERNATIVE"
+	},
+	"extRequestId": "string",
+	"sourceCode": "string",
+	"sourceKey": "string"
+}

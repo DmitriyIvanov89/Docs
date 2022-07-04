@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SiebelGetOperationInfo_Output>
+	<HeaderInfo RqUID="123123" CorrelationUID="1233" RqType="SiebelGetOperationInfo_Output" RqTm="01/01/2013 00:00:00" SystemFrom="Siebel" SystemTo="Spectrum" ErrorCode="" ErrorText=""></HeaderInfo>
+	<ListOfSession>
+		<Session>
+		        <CROFlag>N</CROFlag>
+			<menuItemCode>3152010</menuItemCode>
+			<ActionId>1-2U2WG5V3</ActionId>
+			<ServiceRequestId>1-2U2WGE03</ServiceRequestId>
+			<ClientType>ФЛ</ClientType>
+			<ClientId>1-290HIB83</ClientId>
+			<BOCode></BOCode>
+			<ClientFirstName>Сергей2</ClientFirstName>
+			<ClientMidName>Владиславович3</ClientMidName>
+			<ClientLastName>Сертификатный</ClientLastName>
+			<ClientDocCategory>21</ClientDocCategory>
+			<ClientDocSeries>45 08</ClientDocSeries>
+			<ClientDocNumber>771553</ClientDocNumber>
+			<ClientDocIssueTS>02/09/2012 03:00:00</ClientDocIssueTS>
+			<ClientDocIssuedBy>апвы</ClientDocIssuedBy>
+			<ClientIssueCode>770-070</ClientIssueCode>
+			<ClientResidency>Y</ClientResidency>
+			<ClientCitizenship>РФ</ClientCitizenship>
+			<ClientBirthDate>02/16/1989 00:00:00</ClientBirthDate>
+			<ClientPlaceOfBirth>выфвфы</ClientPlaceOfBirth>
+			<ClientNotificationPhone>9165140421</ClientNotificationPhone>
+			<ClientIDInformation>713511239079</ClientIDInformation>
+			<ClientIntLastName>SERTIFIKATNY</ClientIntLastName>
+			<ClientIntFirstName>SERGEIY</ClientIntFirstName>
+			<ThirdPartyId></ThirdPartyId>
+			<ThirdPartyFlag>N</ThirdPartyFlag>
+			<ThirdPartyFirstName>Алиса3</ThirdPartyFirstName>
+			<ThirdPartyMidName>Алексеевна</ThirdPartyMidName>
+			<ThirdPartyLastName>Злотникова</ThirdPartyLastName>
+			<ThirdPartyDocCategory>21</ThirdPartyDocCategory>
+			<ThirdPartyDocSeries>9933</ThirdPartyDocSeries>
+			<ThirdPartyDocNumber>290177</ThirdPartyDocNumber>
+			<ThirdPartyDocIssueTS>08/03/2013 00:00:00</ThirdPartyDocIssueTS>
+			<ThirdPartyDocIssuedBy>МРОФМС</ThirdPartyDocIssuedBy>
+			<ThirdPartyBirthDate>07/27/1993 00:00:00</ThirdPartyBirthDate>
+			<ThirdPartyPlaceOfBirth></ThirdPartyPlaceOfBirth>
+			<ThirdPartyWarrantFlag>N</ThirdPartyWarrantFlag>
+			<ThirdPartyWarrantNumber>123456</ThirdPartyWarrantNumber>
+			<ThirdPartyWarrantDate>08/03/2013 00:00:00</ThirdPartyWarrantDate>
+			<ThirdPartyWarrantEndDate>08/03/2019 00:00:00</ThirdPartyWarrantEndDate>
+			<ThirdPartyWarrantIssueCode></ThirdPartyWarrantIssueCode>
+			<ThirdPartyIntLastName></ThirdPartyIntLastName>
+			<ThirdPartyIntFirstName></ThirdPartyIntFirstName>
+			<SiebelAccountType>Карта</SiebelAccountType>
+			<SiebelAccountNumber>4563646565111112</SiebelAccountNumber>
+			<SiebelCardAccountNumber></SiebelCardAccountNumber>
+			<SiebelAccountTypeName></SiebelAccountTypeName>
+			<SiebelAccountOrganisation>00006</SiebelAccountOrganisation>
+			<SiebelDivisionCode>0403</SiebelDivisionCode>
+			<SiebelAccountBalance>1111.11</SiebelAccountBalance>
+			<SiebelAccountCurrency>USD</SiebelAccountCurrency>
+			<SiebelAccountSystemId>OW4</SiebelAccountSystemId>
+			<ComissionCurrency></ComissionCurrency>
+			<SiebelCardMultiCurrencyFlag></SiebelCardMultiCurrencyFlag>
+			<INN></INN>
+			<ComissionSum></ComissionSum>
+			<OrganisationEmail></OrganisationEmail>
+			<OrganisationPhone></OrganisationPhone>
+			<OGRN></OGRN>
+			<KPP></KPP>
+			<OrganisationName></OrganisationName>
+			<OrganisationRegistrationAdress></OrganisationRegistrationAdress>
+			<OrganisationFactAddress></OrganisationFactAddress>
+			<PackageType>Привилегия</PackageType>
+			<FlagVIPClient>Y</FlagVIPClient>
+			<AdmissionID>1398444230,1</AdmissionID>
+			<DebetAccountNumber>47422840800512000099</DebetAccountNumber>
+			<DebetAccountOrganisation>00006</DebetAccountOrganisation>
+			<DebetAccountSystemId>00006</DebetAccountSystemId>
+			<OperationSum>100.11</OperationSum>
+			<OperationCurrency>USD</OperationCurrency>
+			<ClaimNumber>323232</ClaimNumber>
+			<PayoutType>ClosedCard</PayoutType>
+			<ListOfPersonalAddress>
+				<PersonalAddress>
+					<AddressType>Постоянной регистрации</AddressType>
+					<ApartmentNumber>20</ApartmentNumber>
+					<City>Москва</City>
+					<Country>РФ</Country>
+					<County></County>
+					<Province>Москва</Province>
+					<State>77</State>
+					<StreetAddress>Куликовская</StreetAddress>
+					<ZipCode>117628</ZipCode>
+					<VTB24Building></VTB24Building>
+					<VTB24HouseNum>3</VTB24HouseNum>
+					<VTB24Housing></VTB24Housing>
+					<VTB24SettlementType></VTB24SettlementType>
+					<VTB24Settlement></VTB24Settlement>
+					<VTB24KLADRCode>7700000000016450012</VTB24KLADRCode>
+					<FullAddress>117628 Россия г Москва ул Куликовская дом 3 кв 20</FullAddress>
+					<ActiveFlag>Y</ActiveFlag>
+				</PersonalAddress>
+				<PersonalAddress>
+					<AddressType>Фактический</AddressType>
+					<ApartmentNumber>20</ApartmentNumber>
+					<City>Москва</City>
+					<Country>РФ</Country>
+					<County></County>
+					<Province>Москва</Province>
+					<State>77</State>
+					<StreetAddress>Куликовская</StreetAddress>
+					<ZipCode>117628</ZipCode>
+					<VTB24Building></VTB24Building>
+					<VTB24HouseNum>3</VTB24HouseNum>
+					<VTB24Housing></VTB24Housing>
+					<VTB24SettlementType></VTB24SettlementType>
+					<VTB24Settlement></VTB24Settlement>
+					<VTB24KLADRCode>7700000000016450012</VTB24KLADRCode>
+					<FullAddress>117628 Россия г Москва ул Куликовская дом 3 кв 20</FullAddress>
+					<ActiveFlag>Y</ActiveFlag>
+				</PersonalAddress>
+			</ListOfPersonalAddress>
+			<ListOfClientBlackList></ListOfClientBlackList>
+			<ListOfThirdPartyBlackList></ListOfThirdPartyBlackList>
+			<ListOfAccount>
+			          <Account>
+					<Organization>00000</Organization>
+					<Number>47422840800512000099</Number>
+					<Balance>10000</Balance>
+					<Status>Активный</Status>
+					<Currency>USD</Currency>
+					<SystemId>00000</SystemId>
+					<AgreementNumber></AgreementNumber>
+					<AgreementDate>05/05/2016</AgreementDate>
+					<AgreementProduct></AgreementProduct>
+					<AccountType>Текущий счет</AccountType>
+				</Account>
+				<Account>
+					<Organization>00000</Organization>
+					<Number>45507810500003700832</Number>
+					<Balance>1000</Balance>
+					<Status>Активный</Status>
+					<Currency>RUR</Currency>
+					<SystemId>00000</SystemId>
+					<AgreementNumber></AgreementNumber>
+					<AgreementDate>05/05/2016</AgreementDate>
+					<AgreementProduct></AgreementProduct>
+					<AccountType>Ссудный счет</AccountType>
+				</Account>
+				<Account>
+					<Organization>00000</Organization>
+					<Number>45507810500003690832</Number>
+					<Balance>1000</Balance>
+					<Status>Активный</Status>
+					<Currency>RUR</Currency>
+					<SystemId>00000</SystemId>
+					<AgreementNumber></AgreementNumber>
+					<AgreementDate>04/21/2016</AgreementDate>
+					<AgreementProduct></AgreementProduct>
+					<AccountType>Ссудный счет</AccountType>
+				</Account>
+				<Account>
+					<Organization>00000</Organization>
+					<Number>40817810323004000429</Number>
+					<Balance>52000</Balance>
+					<Status>Активный</Status>
+					<Currency>RUR</Currency>
+					<SystemId>99995</SystemId>
+					<AgreementNumber>40817810323004000429</AgreementNumber>
+					<AgreementDate>02/18/2016</AgreementDate>
+					<AgreementProduct></AgreementProduct>
+					<AccountType>Мастер счет</AccountType>
+				</Account>
+				<Account>
+					<Organization>00000</Organization>
+					<Number>40817840523004000367</Number>
+					<Balance>420.53</Balance>
+					<Status>Активный</Status>
+					<Currency>USD</Currency>
+					<SystemId>99995</SystemId>
+					<AgreementNumber></AgreementNumber>
+					<AgreementDate>02/18/2016</AgreementDate>
+					<AgreementProduct></AgreementProduct>
+					<AccountType>Мастер счет</AccountType>
+				</Account>
+				<Account>
+					<Organization>00000</Organization>
+					<Number>40817978123004000367</Number>
+					<Balance>1000</Balance>
+					<Status>Активный</Status>
+					<Currency>EUR</Currency>
+					<SystemId>99995</SystemId>
+					<AgreementNumber></AgreementNumber>
+					<AgreementDate>02/18/2016</AgreementDate>
+					<AgreementProduct></AgreementProduct>
+					<AccountType>Мастер счет</AccountType>
+				</Account>
+				<Account>
+					<Organization>00000</Organization>
+					<Number>45506810600003300832</Number>
+					<Balance>109890</Balance>
+					<Status>Активный</Status>
+					<Currency>RUR</Currency>
+					<SystemId>99995</SystemId>
+					<AgreementNumber>625/0000-0247751</AgreementNumber>
+					<AgreementDate>02/18/2016</AgreementDate>
+					<AgreementProduct></AgreementProduct>
+					<AccountType>Ссудный счет</AccountType>
+				</Account>
+			</ListOfAccount>
+			<ListOfFINSATMCard></ListOfFINSATMCard>
+			<ListOfThirdPartyPersonalAddress></ListOfThirdPartyPersonalAddress>
+			<ListOfContactPerson></ListOfContactPerson>
+			<ListOfAdditionalClient></ListOfAdditionalClient>
+		</Session>
+	</ListOfSession>
+</SiebelGetOperationInfo_Output>

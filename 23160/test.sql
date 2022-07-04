@@ -1,0 +1,4 @@
+
+
+Insert /*+ ignore_row_on_dupkey_index(SYSTEM_FUNCTION,PK_SYSTEM_FUNCTION) */ into SYSTEM_FUNCTION (SYSTEM_FUNCTION_ID,RETURN_FUNCTION_ID,PARENT_FUNCTION_ID,SF_NAME,SF_VIEW_ADDRESS,SF_PARAMETERS,SF_IMAGE_NAME,SF_ACCESS_VIEWS,SF_HOT_KEY,SF_USER_HELP,SF_POP_UP_WIN_EXECUTION_ENUM,SF_HELP_ADDR,SYSTEM_FUNCTION_CODE,APP_CODE,SF_HIDDEN_FLAG,IN_DEPT_GROUP_CODE,OUT_DEPT_GROUP_CODE)
+values ('2809500',null,'2800000','Ограничения на валютные наличные операции. Карты','/adf.task-flow?adf.tfId=FeatureByParams' || CHR(38) || 'adf.tfDoc=/external/feature/FeatureByParams.xml','featureGroupCode=LIMITATION_2;title=Ограничения на валютные наличные операции. Карты;namesOfButtons=Отключена,Включена',null,null,null,null,'0',null,null,'2','0',null,null);

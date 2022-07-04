@@ -1,0 +1,37 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ans="http://answer.ulbs.vtb24.spectrum">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ans:checkForDebitAnswer>
+         <checkForDebitAnswerRequest>
+            <accountEntity>
+               <accountIdSys>${accountIdSys}</accountIdSys>
+               <accountNum>${accountNum}</accountNum>
+            </accountEntity>
+            <answerRequestInfo>
+                <correlationId>${correlationId}</correlationId>
+            </answerRequestInfo>
+            <feeSumma>
+               <currency>${feeCur}</currency>
+               <summa>${fee}</summa>
+            </feeSumma>
+            <operationActionResultEntity>
+               <errorDetails>${errorDetails}</errorDetails>
+               <operJournalId>${operJournalId}</operJournalId>
+               <errorStack>
+                  <canonFlag>false</canonFlag>
+                  <errorCode>${errorCode}</errorCode>
+                  <errorIdSys>98000</errorIdSys>
+                  <errorLevel>
+                    <canonFlag>true</canonFlag>
+                    <errorCode>C0000-0000</errorCode>
+                    <errorIdSys></errorIdSys>
+                    <errorLevel/>
+                    <errorMessage>???????? ??????</errorMessage>
+                  </errorLevel>
+                  <errorMessage>${errorMessage}</errorMessage>
+               </errorStack>
+            </operationActionResultEntity>
+         </checkForDebitAnswerRequest>
+      </ans:checkForDebitAnswer>
+   </soapenv:Body>
+</soapenv:Envelope>

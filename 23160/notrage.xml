@@ -1,0 +1,38 @@
+<!-- request-->
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<CIT_REQUEST>
+    <SYSTEM>
+        <BP_ID Value="VTB_ASV_CASH_FL"/>
+        <CIT_Version Value="1.0"/>
+        <FORMAT Value="XML"/>
+        <MSG_ID Value="261035"/>
+        <SYNC Value="N"/>
+        <SYS_ID Value="SPTR"/>
+        <TAR_ID Value="CFT2RS"/>
+        <Version Value="002"/>
+    </SYSTEM>
+    <DATA>
+...
+    </DATA>
+</CIT_REQUEST>
+
+<!-- response-->
+<?xml version="1.0" encoding="UTF-8"?>
+<CIT_REQUEST>
+    <SYSTEM>
+        <BP_ID Value="VTB_ASV_CASH_FL" />
+        <CIT_Version Value="1.0" />
+        <ERR Value="" />
+        <FORMAT Value="XML" />
+        <INTERFACE_RET Value="0" />
+        <MAIN_ID Value="261035" />
+        <MSG_ID Value="6b96cfaa-bb78-41d4-83ab-0002cb8d860f" />
+        <SYNC Value="N" />
+        <SYS_ID Value="SPTR" />
+        <TAR_ID Value="CFT2RS" />
+        <Version Value="002" />
+    </SYSTEM>
+    <DATA>
+...
+    </DATA>
+</CIT_REQUEST>

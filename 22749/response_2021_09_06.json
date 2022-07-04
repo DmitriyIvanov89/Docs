@@ -1,0 +1,28 @@
+{
+	"beginTime": "2021-08-12T13:48:08.749+07:00",
+	"calculationParameters": {
+		"boxOptions": {
+			"boxType": "BIG_BOX",
+			"vipOptions": {
+				"branchId": "string",
+				"maxHeightVipBox": 6.9
+			}
+		},
+		"endDateReservation": "2021-10-31",
+		"periodReservation": 27,
+		"prime": false,
+		"privilege": false,
+		"region": "string",
+		"startDateReservation": "2021-09-01",
+		"transactionType": "IPOTEKA_ALTERNATIVE"
+	},
+	"commission": {
+		"storeCommission": 123.56,
+		"totalCommission": 723.21,
+		"transactionCommission": 456.79
+	},
+	"endTime": "2021-08-12",
+	"extRequestId": "string",
+	"outComeCode": 1,
+	"requestId": "string"
+}

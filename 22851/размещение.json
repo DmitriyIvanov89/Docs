@@ -1,0 +1,1153 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "DOSE 1.0.0 Досье ЮЛ/ФЛ checkin-universal-sign",
+    "description": "DOSE 1.0.0 Досье ЮЛ/ФЛ checkin-universal-sign",
+    "contact": {
+      "name": "Артиков Руслан Рузимович (Тимлид DOSE Досье ЮЛ/ФЛ)",
+      "url": "https://wiki.corp.dev.vtb/pages/viewpage.action?pageId=60561556",
+      "email": "artikov@vtb.ru"
+    },
+    "version": "1.0.0"
+  },
+  "servers": [
+   {
+      "url": "https://tyk-gw-lb.region.vtb.ru/api/cross/dose/checkin-universal-sign/v1",
+      "description": "PRODUCTION шлюз API Tyk"
+    },
+    {
+      "url": "https://k4-tyki-app401lv.vtb24.ru/api/cross/dose/checkin-universal-sign/v1",
+      "description": "K4 шлюз API Tyk"
+    },
+    {
+      "url": "https://k3-tyki-app401lv.vtb24.ru/api/cross/dose/checkin-universal-sign/v1",
+      "description": "K3 шлюз API Tyk"
+    },
+	{
+		"url": "https://d1-tyki-app201ln.corp.dev.vtb/api/cross/dose/checkin-universal-sign/v1",
+		"description": "DSO шлюз API Tyk"
+	},
+	{
+     "url": "https://checkin-universal-sign-ds1-genr01-dose-dso-dose.apps.ds1-genr01.corp.dev.vtb/api/dose/checkin-universal-sign/v1",
+     "description": "Тестовый сервер (DSO)"
+    }
+  ],
+  "security": [
+    {
+      "EpaAuth": []
+    }
+  ],
+  "paths": {
+    "/api/docmeta": {
+      "post": {
+        "tags": [
+          "docmeta-controller"
+        ],
+        "summary": "размещение документа",
+        "description": "размещение документа",
+        "operationId": "save",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DocmetaDto"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "success operation",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseDto"
+                }
+              }
+            },
+            "headers": {
+              "X-RateLimit-Limit": {
+                "description": "Лимит вызовов. Временное Окно лимита уточнить у поставщика API.",
+                "schema": {
+                  "type": "integer",
+                  "format": "int64"
+                }
+              },
+              "X-RateLimit-Remaining": {
+                "description": "Оставшееся количество вызовов в временном окне. Временное Окно лимита уточнить у поставщика API.",
+                "schema": {
+                  "type": "integer",
+                  "format": "int64"
+                }
+              },
+              "X-RateLimit-Reset": {
+                "description": "Время обнуления лимита вызовов в формате Unix Timestamp в миллисекундах.",
+                "schema": {
+                  "type": "integer",
+                  "format": "int64"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TykErrorResponse"
+                }
+              }
+            },
+            "headers": {
+              "X-Generator": {
+                "description": "Заголовок указывающий на сторону, сгенерировавшую ответ.",
+                "schema": {
+                  "type": "string",
+                  "maxLength": 1000
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TykErrorResponse"
+                }
+              }
+            },
+            "headers": {
+              "X-Generator": {
+                "description": "Заголовок указывающий на сторону, сгенерировавшую ответ.",
+                "schema": {
+                  "type": "string",
+                  "maxLength": 1000
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TykErrorResponse"
+                }
+              }
+            },
+            "headers": {
+              "X-Generator": {
+                "description": "Заголовок указывающий на сторону, сгенерировавшую ответ.",
+                "schema": {
+                  "type": "string",
+                  "maxLength": 1000
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TykErrorResponse"
+                }
+              }
+            },
+            "headers": {
+              "X-Generator": {
+                "description": "Заголовок указывающий на сторону, сгенерировавшую ответ.",
+                "schema": {
+                  "type": "string",
+                  "maxLength": 1000
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Unprocessable Entity",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TykErrorResponse"
+                }
+              }
+            },
+            "headers": {
+              "X-Generator": {
+                "description": "Заголовок указывающий на сторону, сгенерировавшую ответ.",
+                "schema": {
+                  "type": "string",
+                  "maxLength": 1000
+                }
+              }
+            }
+          },
+          "429": {
+            "description": "Too Many Requests",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TykErrorResponse"
+                }
+              }
+            },
+            "headers": {
+              "X-Generator": {
+                "description": "Заголовок указывающий на сторону, сгенерировавшую ответ.",
+                "schema": {
+                  "type": "string",
+                  "maxLength": 1000
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "error operation",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "oneOf": [
+                    {
+                      "$ref": "#/components/schemas/TykErrorResponse"
+                    }
+                  ]
+                }
+              }
+            },
+            "headers": {
+              "X-RateLimit-Limit": {
+                "description": "Лимит вызовов. Временное Окно лимита уточнить у поставщика API.",
+                "schema": {
+                  "type": "integer",
+                  "format": "int64"
+                }
+              },
+              "X-RateLimit-Remaining": {
+                "description": "Оставшееся количество вызовов в временном окне. Временное Окно лимита уточнить у поставщика API.",
+                "schema": {
+                  "type": "integer",
+                  "format": "int64"
+                }
+              },
+              "X-RateLimit-Reset": {
+                "description": "Время обнуления лимита вызовов в формате Unix Timestamp в миллисекундах.",
+                "schema": {
+                  "type": "integer",
+                  "format": "int64"
+                }
+              },
+              "X-Generator": {
+                "description": "Заголовок указывающий на сторону, сгенерировавшую ответ.",
+                "schema": {
+                  "type": "string",
+                  "maxLength": 1000
+                }
+              }
+            }
+          },
+          "502": {
+            "description": "Bad Gateway",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TykErrorResponse"
+                }
+              }
+            },
+            "headers": {
+              "X-Generator": {
+                "description": "Заголовок указывающий на сторону, сгенерировавшую ответ.",
+                "schema": {
+                  "type": "string",
+                  "maxLength": 1000
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "Service Unavailable",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TykErrorResponse"
+                }
+              }
+            },
+            "headers": {
+              "X-Generator": {
+                "description": "Заголовок указывающий на сторону, сгенерировавшую ответ.",
+                "schema": {
+                  "type": "string",
+                  "maxLength": 1000
+                }
+              }
+            }
+          },
+          "504": {
+            "description": "Gateway Timeout",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TykErrorResponse"
+                }
+              }
+            },
+            "headers": {
+              "X-Generator": {
+                "description": "Заголовок указывающий на сторону, сгенерировавшую ответ.",
+                "schema": {
+                  "type": "string",
+                  "maxLength": 1000
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "TykErrorResponse": {
+        "type": "object",
+        "properties": {
+          "error": {
+            "maxLength": 1000,
+            "type": "string",
+            "title": "Описание ошибки"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ApiError": {
+        "type": "object",
+        "properties": {
+          "status": {
+            "type": "string",
+            "description": "статус",
+            "enum": [
+              "100 CONTINUE",
+              "101 SWITCHING_PROTOCOLS",
+              "102 PROCESSING",
+              "103 CHECKPOINT",
+              "200 OK",
+              "201 CREATED",
+              "202 ACCEPTED",
+              "203 NON_AUTHORITATIVE_INFORMATION",
+              "204 NO_CONTENT",
+              "205 RESET_CONTENT",
+              "206 PARTIAL_CONTENT",
+              "207 MULTI_STATUS",
+              "208 ALREADY_REPORTED",
+              "226 IM_USED",
+              "300 MULTIPLE_CHOICES",
+              "301 MOVED_PERMANENTLY",
+              "302 FOUND",
+              "302 MOVED_TEMPORARILY",
+              "303 SEE_OTHER",
+              "304 NOT_MODIFIED",
+              "305 USE_PROXY",
+              "307 TEMPORARY_REDIRECT",
+              "308 PERMANENT_REDIRECT",
+              "400 BAD_REQUEST",
+              "401 UNAUTHORIZED",
+              "402 PAYMENT_REQUIRED",
+              "403 FORBIDDEN",
+              "404 NOT_FOUND",
+              "405 METHOD_NOT_ALLOWED",
+              "406 NOT_ACCEPTABLE",
+              "407 PROXY_AUTHENTICATION_REQUIRED",
+              "408 REQUEST_TIMEOUT",
+              "409 CONFLICT",
+              "410 GONE",
+              "411 LENGTH_REQUIRED",
+              "412 PRECONDITION_FAILED",
+              "413 PAYLOAD_TOO_LARGE",
+              "413 REQUEST_ENTITY_TOO_LARGE",
+              "414 URI_TOO_LONG",
+              "414 REQUEST_URI_TOO_LONG",
+              "415 UNSUPPORTED_MEDIA_TYPE",
+              "416 REQUESTED_RANGE_NOT_SATISFIABLE",
+              "417 EXPECTATION_FAILED",
+              "418 I_AM_A_TEAPOT",
+              "419 INSUFFICIENT_SPACE_ON_RESOURCE",
+              "420 METHOD_FAILURE",
+              "421 DESTINATION_LOCKED",
+              "422 UNPROCESSABLE_ENTITY",
+              "423 LOCKED",
+              "424 FAILED_DEPENDENCY",
+              "425 TOO_EARLY",
+              "426 UPGRADE_REQUIRED",
+              "428 PRECONDITION_REQUIRED",
+              "429 TOO_MANY_REQUESTS",
+              "431 REQUEST_HEADER_FIELDS_TOO_LARGE",
+              "451 UNAVAILABLE_FOR_LEGAL_REASONS",
+              "500 INTERNAL_SERVER_ERROR",
+              "501 NOT_IMPLEMENTED",
+              "502 BAD_GATEWAY",
+              "503 SERVICE_UNAVAILABLE",
+              "504 GATEWAY_TIMEOUT",
+              "505 HTTP_VERSION_NOT_SUPPORTED",
+              "506 VARIANT_ALSO_NEGOTIATES",
+              "507 INSUFFICIENT_STORAGE",
+              "508 LOOP_DETECTED",
+              "509 BANDWIDTH_LIMIT_EXCEEDED",
+              "510 NOT_EXTENDED",
+              "511 NETWORK_AUTHENTICATION_REQUIRED"
+            ]
+          },
+          "message": {
+            "maxLength": 255,
+            "type": "string",
+            "description": "общее сообщение"
+          },
+          "errors": {
+            "maxItems": 2147483647,
+            "type": "array",
+            "description": "описание ошибки",
+            "items": {
+              "maxLength": 255,
+              "type": "string",
+              "description": "текст ошибки"
+            }
+          }
+        },
+        "additionalProperties": false,
+        "description": "описание ошибки"
+      },
+      "ResponseDto": {
+        "type": "object",
+        "properties": {
+          "did": {
+            "maximum": 9223372036854776000,
+            "minimum": -9223372036854776000,
+            "type": "integer",
+            "description": "Идентификационный версии документа",
+            "format": "int64"
+          },
+          "revclassesId": {
+            "maximum": 9223372036854776000,
+            "minimum": -9223372036854776000,
+            "type": "integer",
+            "description": "revclassesId",
+            "format": "int64"
+          },
+          "revisionsId": {
+            "maximum": 9223372036854776000,
+            "minimum": -9223372036854776000,
+            "type": "integer",
+            "description": "revisionsId",
+            "format": "int64"
+          },
+          "ddocname": {
+            "maxLength": 100,
+            "type": "string",
+            "description": "Идентификатор документа",
+            "example": "EDKAPP05LVREGI125397418"
+          }
+        },
+        "additionalProperties": false,
+        "description": "реквизиты документа для поиска"
+      },
+      "BranchDto": {
+        "required": [
+          "xvtbCompanyBranchOfficeName",
+          "xvtbCustomerBranchOfficeId"
+        ],
+        "type": "object",
+        "properties": {
+          "xvtbCustomerBranchOfficeId": {
+            "maxLength": 100,
+            "type": "string",
+            "description": "id филилала внутри ЭДК"
+          },
+          "xvtbCompanyBranchOfficeName": {
+            "maxLength": 2000,
+            "type": "string",
+            "description": "Наименование филиала клиента"
+          }
+        },
+        "additionalProperties": false,
+        "description": "реквизиты филиала"
+      },
+	    "ContentContainer": {
+        "type": "object",
+        "properties": {
+          "fileContent": {
+            "maxLength": 2147483646,
+            "type": "string",
+            "description": "контент файла"
+          },
+          "ecmUuid": {
+            "maxLength": 255,
+            "type": "string",
+            "description": "идентификатор схк"
+          }
+        },
+        "additionalProperties": false,
+        "description": "реквизиты контента"
+      },
+      "CustomerShortDto": {
+        "type": "object",
+        "properties": {
+          "inn": {
+            "maxLength": 30,
+            "type": "string",
+            "description": "инн"
+          },
+          "ogrn": {
+            "maxLength": 30,
+            "type": "string",
+            "description": "огрн"
+          },
+          "kio": {
+            "maxLength": 30,
+            "type": "string",
+            "description": "кио"
+          },
+          "passport": {
+            "maxLength": 30,
+            "type": "string",
+            "description": "паспорт"
+          },
+          "name": {
+            "maxLength": 1000,
+            "type": "string",
+            "description": "наименование"
+          },
+          "date": {
+            "maxLength": 255,
+            "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$",
+            "type": "string",
+            "description": "дата обновления",
+            "format": "date"
+          }
+        },
+        "additionalProperties": false,
+        "description": "реквизиты клиента"
+      },
+      "DocFile": {
+        "required": [
+          "file",
+          "fileName"
+        ],
+        "type": "object",
+        "properties": {
+          "fileName": {
+            "maxLength": 255,
+            "type": "string",
+            "description": "имя файла"
+          },
+          "file": {
+            "$ref": "#/components/schemas/ContentContainer"
+          },
+          "signatures": {
+            "type": "array",
+            "description": "подписи",
+            "items": {
+              "$ref": "#/components/schemas/ContentContainer"
+            }
+          }
+        },
+        "additionalProperties": false,
+        "description": "реквизиты файла"
+      },
+      "DocmetaDto": {
+        "required": [
+          "primaryFile",
+          "xvtbDoctypeId"
+        ],
+        "type": "object",
+        "properties": {
+          "xvtbDoctypeId": {
+            "maximum": 9223372036854776000,
+            "minimum": -9223372036854776000,
+            "type": "integer",
+            "description": "справочник VTB_DOCTYPE3",
+            "format": "int64",
+            "example": 66
+          },
+          "xvtbStatusId": {
+            "maximum": 9223372036854776000,
+            "minimum": -9223372036854776000,
+            "type": "integer",
+            "description": "справочник VTB_STATUS",
+            "format": "int64",
+            "example": 7
+          },
+          "xvtbPriorityId": {
+            "maximum": 9223372036854776000,
+            "minimum": -9223372036854776000,
+            "type": "integer",
+            "description": "справочник VTB_PRIORITY",
+            "format": "int64",
+            "example": -1
+          },
+          "xvtbDocprocstatusId": {
+            "maximum": 9223372036854776000,
+            "minimum": -9223372036854776000,
+            "type": "integer",
+            "description": "справочник VTB_DOCPROCSTATUS",
+            "format": "int64",
+            "example": -1
+          },
+          "xvtbPackagestatusId": {
+            "maximum": 9223372036854776000,
+            "minimum": -9223372036854776000,
+            "type": "integer",
+            "description": "справочник VTB_PACKAGESTATUS",
+            "format": "int64",
+            "example": -1
+          },
+          "xvtbStateId": {
+            "maximum": 9223372036854776000,
+            "minimum": -9223372036854776000,
+            "type": "integer",
+            "description": "справочник VTB_STATE",
+            "format": "int64",
+            "example": -1
+          },
+          "xvtbUserdepartmentId": {
+			  
+            "maximum": 9223372036854776000,
+            "minimum": -9223372036854776000,
+            "type": "integer",
+            "description": "справочник VTB_DEPARTMENTS",
+            "format": "int64",
+            "example": -1
+          },
+          "tfuref": {
+            "maximum": 9223372036854776000,
+            "minimum": -9223372036854776000,
+            "type": "integer",
+            "description": "справочник VTB_DEPARTMENTS",
+            "format": "int64",
+            "example": -1
+          },
+          "xvtbContractstatusId": {
+            "maximum": 9223372036854776000,
+            "minimum": -9223372036854776000,
+            "type": "integer",
+            "description": "справочник VTB_CONTRACTSTATUS",
+            "format": "int64",
+            "example": -1
+          },
+          "xvtbOpcodeId": {
+            "maximum": 9223372036854776000,
+            "minimum": -9223372036854776000,
+            "type": "integer",
+            "description": "справочник VTB_OPERCODE",
+            "format": "int64",
+            "example": -1
+          },
+          "xvtbCustomerBranchId": {
+            "maximum": 9223372036854776000,
+            "minimum": -9223372036854776000,
+            "type": "integer",
+            "description": "справочник VtbCustomerBranch",
+            "format": "int64",
+            "example": -1
+          },
+          "xvtbFilehash": {
+            "maxLength": 400,
+            "type": "string",
+            "description": "хеш файла"
+          },
+          "didParent": {
+            "maximum": 9223372036854776000,
+            "minimum": -9223372036854776000,
+            "type": "integer",
+            "description": "id документа родителя",
+            "format": "int64"
+          },
+          "xvtbSignatureaccountnumber": {
+            "maxLength": 2000,
+            "type": "string",
+            "description": "Номера счетов"
+          },
+          "xvtbSignaturecardid": {
+            "maxLength": 30,
+            "type": "string",
+            "description": "ddocname документа сигнатуры"
+          },
+          "xvtbSignaturefio": {
+            "maxLength": 200,
+            "type": "string",
+            "description": "ФИО уполномоченного лица"
+          },
+          "xvtbSignaturePeriod": {
+            "type": "string",
+            "description": "срок действия подписи",
+            "format": "date-time"
+          },
+          "xvtbSignaturetype": {
+            "maxLength": 30,
+            "type": "string",
+            "description": "тип подписи словарь OptionsList",
+            "example": "Право первой подписи"
+          },
+          "xvtbUpdateonnextrevision": {
+            "maximum": 9223372036854776000,
+            "minimum": -9223372036854776000,
+            "type": "integer",
+            "description": "обновление при следующей ревизии",
+            "format": "int64"
+          },
+          "xvtbWasapprovedbyoperator": {
+            "maximum": 1,
+            "minimum": 0,
+            "type": "integer",
+            "description": "Документ был обновлен оператором верификации",
+            "format": "int64"
+          },
+          "xvtbOkid": {
+            "maxLength": 400,
+            "type": "string",
+            "description": "xvtbOkid"
+          },
+          "xvtbAccountnumber": {
+            "maxLength": 2000,
+            "type": "string",
+            "description": "Номер счета"
+          },
+          "xvtbAccountnumberex": {
+            "maxLength": 30,
+            "type": "string",
+            "description": "Старый номер счёта"
+          },
+          "xvtbAppointedreviewer": {
+            "maxLength": 30,
+            "type": "string",
+            "description": "Редактор"
+          },
+          "xvtbArchorigaddress": {
+            "maxLength": 30,
+            "type": "string",
+            "description": "Адрес оригинала в архиве"
+          },
+          "xvtbAttorneyfio": {
+            "maxLength": 200,
+            "type": "string",
+            "description": "ФИО доверенного лица"
+          },
+          "xvtbBatchtypevk": {
+            "maxLength": 30,
+            "type": "string",
+            "description": "Тип пакета"
+          },
+          "xvtbClientfilialkpp": {
+            "maximum": 9223372036854776000,
+            "minimum": -9223372036854776000,
+            "type": "integer",
+            "description": "Идентификационный номер филиала клиента (КПП)2",
+            "format": "int64"
+          },
+          "xvtbComment": {
+            "maxLength": 2000,
+            "type": "string",
+            "description": "Комментарий"
+          },
+          "xvtbContractdate": {
+           
+            "type": "string",
+            "description": "Дата договора",
+            "format": "date-time"
+          },
+          "xvtbContractenddate": {
+           
+            "type": "string",
+            "description": "Дата окончания действия договора",
+            "format": "date-time"
+          },
+          "xvtbContractinternalnumber": {
+            "maxLength": 200,
+            "type": "string",
+            "description": "Внутренний номер досье"
+          },
+          "xvtbContractnumber": {
+            "maxLength": 200,
+            "type": "string",
+            "description": "Номер договора"
+          },
+          "xvtbContractnumbervk": {
+            "maxLength": 200,
+            "type": "string",
+            "description": "Номер Контракта"
+          },
+          "xvtbCreationdate": {
+           
+            "type": "string",
+            "description": "Дата создания",
+            "format": "date-time"
+          },
+          "xvtbCreditagreementnum": {
+            "maxLength": 30,
+            "type": "string",
+            "description": "Номер договора"
+          },
+          "xvtbCreditappnum": {
+            "maxLength": 200,
+            "type": "string",
+            "description": "Номер заявки"
+          },
+          "xvtbCreditlimitnum": {
+            "maxLength": 30,
+            "type": "string",
+            "description": "Номер кредитного лимита"
+          },
+          "xvtbCustomerid": {
+            "maxLength": 30,
+            "type": "string",
+            "description": "Идентификационный номер клиента"
+          },
+          "xvtbCustomerstatus": {
+            "maxLength": 30,
+            "type": "string",
+            "description": "Статус клиента - словарь OptionsList",
+            "example": "Новый"
+          },
+          "xvtbDealpassportnumber": {
+            "maxLength": 200,
+            "type": "string",
+            "description": "Номер УНК"
+          },
+          "xvtbDepartments": {
+            "maxLength": 200,
+            "type": "string",
+            "description": "Справочник отделений"
+          },
+          "xvtbDocamount": {
+            "maxLength": 30,
+            "type": "string",
+            "description": "Сумма документа"
+          },
+          "xvtbDoccurrencycode": {
+            "maxLength": 30,
+            "type": "string",
+            "description": "Код валюты документа"
+          },
+          "xvtbDocnumber": {
+            "maxLength": 200,
+            "type": "string",
+            "description": "Номер документа"
+          },
+          "xvtbDocsourcesystem": {
+            "maxLength": 200,
+            "type": "string",
+            "description": "Система-источник"
+          },
+          "xvtbDocsourcesystemid": {
+            "maxLength": 200,
+            "type": "string",
+            "description": "Идентификатор системы-источника"
+          },
+          "xvtbDocumentdate": {
+           
+            "type": "string",
+            "description": "Дата документа",
+            "format": "date-time"
+          },
+          "xvtbDuration": {
+           
+            "type": "string",
+            "description": "Срок действия",
+            "format": "date-time"
+          },
+          "xvtbFcbatchid": {
+            "maxLength": 400,
+            "type": "string",
+            "description": "xvtbFcbatchid"
+          },
+          "xvtbFcdocid": {
+            "maxLength": 50,
+            "type": "string",
+            "description": "Идентификатор документа во FlexiCapture"
+          },
+          "xvtbFcnumofdocsinbatch": {
+            "maxLength": 30,
+            "type": "string",
+            "description": "количество документов в пакете"
+          },
+          "xvtbFio": {
+            "maxLength": 200,
+            "type": "string",
+            "description": "фио"
+          },
+          "xvtbFolioversion": {
+            "maximum": 9223372036854776000,
+            "minimum": -9223372036854776000,
+            "type": "integer",
+            "description": "версия фолио (1-й этап или 2-й этап",
+            "format": "int64"
+          },
+          "xvtbFolioversioninternal": {
+            "maximum": 9223372036854776000,
+            "minimum": -9223372036854776000,
+            "type": "integer",
+            "description": "внутренняя версия фолио",
+            "format": "int64"
+          },
+          "xvtbGozbatchid": {
+            "maxLength": 400,
+            "type": "string",
+            "description": "Идентификатор комплекта документов"
+          },
+          "xvtbGozpaydate": {
+           
+            "type": "string",
+            "description": "Дата платежного документа",
+            "format": "date-time"
+          },
+          "xvtbGozpaynumber": {
+            "maxLength": 200,
+            "type": "string",
+            "description": "Номер платежного документа"
+          },
+          "xvtbInventoryhand": {
+            "maxLength": 200,
+            "type": "string",
+            "description": "Уполномоченное лицо ИП"
+          },
+          "xvtbInventorynumber": {
+            "maximum": 9223372036854776000,
+            "minimum": -9223372036854776000,
+            "type": "integer",
+            "description": "Номер пакета - stodregister",
+            "format": "int64"
+          },
+          "xvtbIscontractnew": {
+            "maxLength": 30,
+            "type": "string",
+            "description": "Новый Контракт -  словарь OptionsList",
+            "example": "Да"
+          },
+          "xvtbIscustdossier": {
+            "maxLength": 30,
+            "type": "string",
+            "description": "Является клиентским досье"
+          },
+          "xvtbIsinprocess1": {
+            "maximum": 9223372036854776000,
+            "minimum": -9223372036854776000,
+            "type": "integer",
+            "description": "Документ обработан",
+            "format": "int64"
+          },
+          "xvtbIsinworkflow": {
+            "maximum": 9223372036854776000,
+            "minimum": -9223372036854776000,
+            "type": "integer",
+            "description": "Документ находится в WorkFlow",
+            "format": "int64"
+          },
+          "xvtbNumofpages": {
+            "maxLength": 30,
+            "type": "string",
+            "description": "Количество страниц"
+          },
+          "xvtbOriglocarchname": {
+            "maxLength": 200,
+            "type": "string",
+            "description": "Подразделение для передачи Пакета на хранение"
+          },
+          "xokId": {
+            "maxLength": 2000,
+            "type": "string",
+            "description": "id задания в оперконвейере"
+          },
+          "xvtbCustomerVerId": {
+            "maximum": 9223372036854776000,
+            "minimum": -9223372036854776000,
+            "type": "integer",
+            "description": "customer version id",
+            "format": "int64"
+          },
+          "xvtbDocumentprocessorId": {
+            "maxLength": 60,
+            "type": "string",
+            "description": "ID сотрудника, обработавшего документ - справочник Users"
+          },
+          "xvtbDocumentcontributorId": {
+            "maxLength": 60,
+            "type": "string",
+            "description": "ID сотрудника, разместившего документ в ЭДК - справочник Users"
+          },
+          "xvtbResperfId": {
+            "maxLength": 60,
+            "type": "string",
+            "description": "Ответственный исполнитель - справочник Users"
+          },
+          "xvtbReportdate": {
+           
+            "type": "string",
+            "description": "Отчетная дата",
+            "format": "date-time"
+          },
+          "xvtbRespemplfio": {
+            "maxLength": 200,
+            "type": "string",
+            "description": "Ответственный сотрудник"
+          },
+          "xvtbReviewerex": {
+            "maxLength": 400,
+            "type": "string",
+            "description": "кому"
+          },
+          "xvtbReviewerpd": {
+            "maxLength": 30,
+            "type": "string",
+            "description": "кому"
+          },
+          "xvtbReviewerpc": {
+            "maxLength": 30,
+            "type": "string",
+            "description": "кому"
+          },
+          "xvtbScanstationid": {
+            "maxLength": 30,
+            "type": "string",
+            "description": "кому"
+          },
+          "xvtbScanstationoperator": {
+            "maxLength": 200,
+            "type": "string",
+            "description": "справочник Users"
+          },
+          "xvtbGetindate": {
+           
+            "type": "string",
+            "description": "Дата поступления документа в Банк",
+            "format": "date-time"
+          },
+          "revclasses": {
+            "$ref": "#/components/schemas/RevclassesDto"
+          },
+          "revisions": {
+            "$ref": "#/components/schemas/RevisionsDto"
+          },
+          "primaryFile": {
+            "$ref": "#/components/schemas/DocFile"
+          },
+          "alternateFile": {
+            "$ref": "#/components/schemas/DocFile"
+          },
+          "documentLink": {
+            "type": "array",
+            "description": "связанные документы",
+            "items": {
+              "$ref": "#/components/schemas/DocumentLinkDto"
+            }
+          },
+          "customer": {
+            "$ref": "#/components/schemas/CustomerShortDto"
+          },
+          "branch": {
+            "$ref": "#/components/schemas/BranchDto"
+          }
+        },
+        "additionalProperties": false,
+        "description": "Реквизиты размещения документа"
+      },
+      "DocumentLinkDto": {
+        "required": [
+          "linkId",
+          "processId",
+          "systemId",
+          "typeId"
+        ],
+        "type": "object",
+        "properties": {
+          "processId": {
+            "maximum": 9223372036854776000,
+            "minimum": -9223372036854776000,
+            "type": "integer",
+            "description": "справочник VTB_DOCUMENT_PROCESS",
+            "format": "int64"
+          },
+          "systemId": {
+            "maximum": 9223372036854776000,
+            "minimum": -9223372036854776000,
+            "type": "integer",
+            "description": "справочник VTB_EXTERNAL_SYSTEM",
+            "format": "int64"
+          },
+          "linkId": {
+            "maxLength": 400,
+            "type": "string",
+            "description": "linkId"
+          },
+          "typeId": {
+            "maximum": 9223372036854776000,
+            "minimum": -9223372036854776000,
+            "type": "integer",
+            "description": "справочник VTB_DOCUMENT_LINK_TYPE",
+            "format": "int64"
+          }
+        },
+        "additionalProperties": false,
+        "description": "описание связи документа и процессов"
+      },
+      "RevclassesDto": {
+        "type": "object",
+        "properties": {
+          "ddocname": {
+            "maxLength": 100,
+            "type": "string",
+            "description": "Идентификатор документа",
+            "example": "EDKAPP05LVREGI125397418"
+          }
+        },
+        "additionalProperties": false,
+        "description": "класс документа"
+      },
+      "RevisionsDto": {
+        "required": [
+          "ddoctype"
+        ],
+        "type": "object",
+        "properties": {
+          "ddoctype": {
+            "maxLength": 30,
+            "type": "string",
+            "description": "справочник VTB_DOCTYPE, тип документа",
+            "example": "Document"
+          },
+          "ddocauthor": {
+            "maxLength": 200,
+            "type": "string",
+            "description": "автор документа",
+            "example": "contributor"
+          },
+          "dsecuritygroup": {
+            "maxLength": 30,
+            "type": "string",
+            "description": "группа безопасности, справочник SecurityGroups",
+            "example": "BeforePosting"
+          },
+          "dindate": {
+            "type": "string",
+            "description": "дата создания",
+            "format": "date-time"
+          },
+          "ddoctitle": {
+            "maxLength": 1000,
+            "type": "string",
+            "description": "наименование документа"
+          }
+        },
+        "additionalProperties": false,
+        "description": "ревизия документа"
+      }
+    },
+    "securitySchemes": {
+      "EpaAuth": {
+        "type": "http",
+        "scheme": "bearer",
+        "bearerFormat": "JWT"
+      }
+    }
+  }
+}

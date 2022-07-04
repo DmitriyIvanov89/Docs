@@ -1,0 +1,20 @@
+<res:create xmlns:res="http://www.vtb24.ru/ApplicationObjectLibrary/SPTR/Requesters/CashOperationSPTRReqA/V1/ResponseSyncCashOperation" xmlns:xsd="http://integration.vtb24.spectrum/xsd">
+      <res:request>
+         <!--Optional:-->
+         <xsd:operationActionResultEntity>
+            <!--Optional:-->
+            <xsd:errorCode>0</xsd:errorCode>
+            <!--Optional:-->
+            <xsd:errorDetails>?</xsd:errorDetails>
+            <!--Optional:-->
+            <xsd:errorMessage>?</xsd:errorMessage>
+            <!--Optional:-->
+            <xsd:operJournalId>?</xsd:operJournalId>
+         </xsd:operationActionResultEntity>
+         <!--Optional:-->
+         <xsd:responseInfo>
+            <!--Optional:-->
+            <xsd:correlationId>?</xsd:correlationId>
+         </xsd:responseInfo>
+      </res:request>
+	  </res:create>

@@ -1,0 +1,111 @@
+<create xmlns="http://model.ws.spectrum/xsd">
+
+   <request>
+
+      <operationEntity>
+ 
+         <client>
+
+            <clientTypeEnum>0</clientTypeEnum>
+
+            <clientExtId>3243432</clientExtId>
+
+            <clientIdSys>MDM_CH</clientIdSys>
+
+            <icIssueAutority>??? ??? ?????????? ?????? ?????? ?????? ?? 772-118</icIssueAutority>
+
+            <icIssueDate>2015-09-06</icIssueDate>
+
+            <icNum>777666</icNum>
+
+            <icSeries>5555</icSeries>
+
+            <identityCardTypeId>21</identityCardTypeId>
+
+            <personFirstName>?????</personFirstName>
+
+            <personPatronymic>???????</personPatronymic>
+
+            <personSurname>?????????</personSurname>
+
+         </client>
+
+         <deptCode>5700</deptCode>
+
+         <documents>
+
+            <creditAccountEntity>
+
+               <accountIdSys>MBANK</accountIdSys>
+
+               <accountNum>40817810035100000001</accountNum>
+
+               <deptCode>1056</deptCode>
+
+            </creditAccountEntity>
+
+            <creditSumma>
+
+               <currency>RUB</currency>
+
+               <summa>10012</summa>
+
+            </creditSumma>
+
+            <debitSumma>
+
+               <currency>RUB</currency>
+
+               <summa>10012</summa>
+
+            </debitSumma>
+
+            <description>???????? ?? ???? ???????</description>
+
+            <docNumber>341748</docNumber>
+
+         </documents>
+
+         <idSys>MBANK</idSys>
+
+         <login>T5700</login>
+
+         <controlEmpUserLogin>C5700</controlEmpUserLogin>
+
+         <operJournalExtId>#{RANDOM_ID}</operJournalExtId>
+
+         <operationCode>2054.MBN</operationCode>
+
+         <proxyClient>
+
+            <clientTypeEnum>0</clientTypeEnum>
+
+            <icIssueAutority>?????????? ?? ?????? ????????? ????? ????? ?????? ?? ???. ?????? ? ??? 770-041</icIssueAutority>
+
+            <icIssueDate>2008-12-22</icIssueDate>
+
+            <icNum>877566</icNum>
+
+            <icSeries>5555</icSeries>
+
+            <identityCardTypeId>21</identityCardTypeId>
+
+            <personFirstName>??????</personFirstName>
+
+            <personPatronymic>???????</personPatronymic>
+
+            <personSurname>?????????</personSurname>
+
+         </proxyClient>
+
+      </operationEntity>
+
+      <requestInfo>
+
+         <messageId>#{RANDOM_ID}</messageId>
+
+      </requestInfo>
+
+   </request>
+
+</create>

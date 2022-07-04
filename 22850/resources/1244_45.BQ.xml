@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<SiebelGetOperationInfo_Output>
+	<HeaderInfo RqUID="123123"  CorrelationUID="1233"  RqType="SiebelGetOperationInfo_Output"  RqTm="01/01/2013 00:00:00"  SystemFrom="Siebel" SystemTo="Spectrum" ErrorCode="" ErrorText="">
+	</HeaderInfo>
+	<ListOfSession>
+		<Session>
+		<menuItemCode>27250</menuItemCode>
+		<ActionId>1-1G6MRL</ActionId>
+		<ServiceRequestId>1-1G6T17</ServiceRequestId>
+		<ClientId>1-OGPD6</ClientId>
+		<BOCode/>
+		<ClientFirstName>Елизавета</ClientFirstName>
+		<ClientMidName>Валерьевна</ClientMidName>
+		<ClientLastName>Пианкова</ClientLastName>
+		<ClientDocCategory>21</ClientDocCategory>
+		<ClientDocSeries>45 09</ClientDocSeries>
+		<ClientDocNumber>251653</ClientDocNumber>
+		<ClientDocIssueTS>08/09/2007 04:00:00</ClientDocIssueTS>
+		<ClientDocIssuedBy>отделением по району Войковским</ClientDocIssuedBy>
+		<ClientIssueCode>123</ClientIssueCode>
+		<ClientResidency>Y</ClientResidency>
+		<ClientCitizenship>РФ</ClientCitizenship>
+		<ClientBirthDate>01/20/1990 00:00:00</ClientBirthDate>
+		<ClientPlaceOfBirth>Москва</ClientPlaceOfBirth>
+		<ClientIDInformation/>
+		<ClientIntLastName>PIANKOVA</ClientIntLastName>
+		<ClientIntFirstName>ELIZAVETA</ClientIntFirstName>
+		<ThirdPartyFlag>N</ThirdPartyFlag>
+		<ThirdPartyFirstName/>
+		<ThirdPartyMidName/>
+		<ThirdPartyLastName/>
+		<ThirdPartyDocCategory/>
+		<ThirdPartyDocSeries/>
+		<ThirdPartyDocNumber/>
+		<ThirdPartyDocIssueTS/>
+		<ThirdPartyDocIssuedBy/>
+		<ThirdPartyBirthDate/>
+		<ThirdPartyPlaceOfBirth/>
+		 <ThirdPartyWarrantFlag>N</ThirdPartyWarrantFlag>
+               <ThirdPartyWarrantNumber>332211</ThirdPartyWarrantNumber>
+               <ThirdPartyWarrantDate>01/20/2012</ThirdPartyWarrantDate>
+               <ThirdPartyWarrantEndDate>01/20/2015</ThirdPartyWarrantEndDate>
+               <ThirdPartyWarrantIssueCode>555</ThirdPartyWarrantIssueCode>
+		<ThirdPartyIntLastName/>
+		<ThirdPartyIntFirstName/>
+		<SiebelAccountType>Счет</SiebelAccountType>
+		<SiebelAccountNumber>40817840300050000002</SiebelAccountNumber>
+		<SiebelAccountTypeName>Депозитный счет</SiebelAccountTypeName>
+		<SiebelCardAccountNumber/>
+		<SiebelAccountOrganisation>00006</SiebelAccountOrganisation>
+		<SiebelDivisionCode>0100</SiebelDivisionCode>
+		<SiebelAccountBalance>2526240.88</SiebelAccountBalance>
+		<SiebelAccountCurrency>USD</SiebelAccountCurrency>
+		<SiebelAccountSystemId>00006</SiebelAccountSystemId>
+                <ComissionCurrency/>
+		<SiebelCardExpirationDate/>
+		<SiebelCardMultiCurrencyFlag/>
+        <OperationSum>1001</OperationSum>
+        <OperationCurrency>USD</OperationCurrency>
+        <ComissionSum/>
+		<INN/>
+		<KPP/>
+		<OrganisationName/>
+		<OrganisationRegistrationAdress/>
+		<OrganisationFactAddress/>
+		<ListOfPersonalAddress>
+			<PersonalAddress>
+				<AddressType>Постоянной регистрации</AddressType>
+				<ApartmentNumber>192</ApartmentNumber>
+				<City>Москва</City>
+				<Country>РФ</Country>
+				<County/>
+				<Province>Москва</Province>
+				<State>77</State>
+				<StreetAddress>Ленинградское</StreetAddress>
+				<ZipCode>125171</ZipCode>
+				<VTB24Building/>
+				<VTB24HouseNum>9</VTB24HouseNum>
+				<VTB24Housing/>
+				<VTB24SettlementType/>
+				<VTB24Settlement/>
+				<VTB24KLADRCode>7700000000016860002</VTB24KLADRCode>
+				<FullAddress>125171 Россия г Москва ш Ленинградское дом 9 кв 192</FullAddress>
+				<ActiveFlag>Y</ActiveFlag>
+			</PersonalAddress>
+			<PersonalAddress>
+				<AddressType>Фактический</AddressType>
+				<ApartmentNumber>192</ApartmentNumber>
+				<City>Москва</City>
+				<Country>РФ</Country>
+				<County/>
+				<Province>Москва</Province>
+				<State>77</State>
+				<StreetAddress>Ленинградское</StreetAddress>
+				<ZipCode>125171</ZipCode>
+				<VTB24Building/>
+				<VTB24HouseNum>9</VTB24HouseNum>
+				<VTB24Housing/>
+				<VTB24SettlementType/>
+				<VTB24Settlement/>
+				<VTB24KLADRCode>7700000000016860002</VTB24KLADRCode>
+				<FullAddress>125171 Россия г Москва ш Ленинградское дом 9 кв 192</FullAddress>
+				<ActiveFlag>Y</ActiveFlag>
+			</PersonalAddress>
+		</ListOfPersonalAddress>
+		<ListOfClientBlackList/>
+		<ListOfThirdPartyBlackList/>
+		<ListOfAccount>
+			<Account>
+				<Organization>00000</Organization>
+				<Number>40817826700004000010</Number>
+				<Balance>149987.26</Balance>
+				<Status>Активный</Status>
+				<Currency>GBP</Currency>
+				<SystemId>99995</SystemId>
+				<AgreementNumber>40817826700004000010</AgreementNumber>
+				<AgreementDate>04/14/2014</AgreementDate>
+				<AgreementProduct/>
+				<AccountType>Мастер счет</AccountType>
+			</Account>
+		</ListOfAccount>
+		<ListOfFINSATMCard>
+			<FINSATMCard>
+				<CardNumber>5543863300169087</CardNumber>
+				<Balance>725.2</Balance>
+				<Currency>EUR</Currency>
+				<SystemId>OW4</SystemId>
+				<AccountNumber>40817978300512737099</AccountNumber>
+				<ExpirationDate>02/28/2014</ExpirationDate>
+				<Branch>00051</Branch>
+				<MultiCurrencyFlag>N</MultiCurrencyFlag>
+				<CardType>Кредитная</CardType>
+				<CardStatus>Cark OK</CardStatus>
+				<CardHolder>IVANOV IVAN</CardHolder>
+			</FINSATMCard>
+		</ListOfFINSATMCard>
+		<ListOfThirdPartyPersonalAddress/>
+                <ListOfInsPayments>		
+		<InsPayments>
+		<TransitAccountNumber>40702810000000000000</TransitAccountNumber>
+                <BIK>044030790</BIK>
+                <RegistryLineNumber>1234567</RegistryLineNumber>
+                <RegistryLineId>1243</RegistryLineId>
+                <StatementNumber>3344</StatementNumber>
+		</InsPayments>
+		</ListOfInsPayments>
+
+	</Session>
+	</ListOfSession>
+</SiebelGetOperationInfo_Output>

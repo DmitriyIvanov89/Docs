@@ -1,0 +1,36 @@
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:jour="http://journal.ws.spectrum" xmlns:xsd="http://model.ws.spectrum/xsd">
+   <soap:Header/>
+   <soap:Body>
+      <jour:setOperStatus>
+         <!--Optional:-->
+         <jour:request>
+            <!--Optional:-->
+            <xsd:errorStack>
+               <!--Optional:-->
+               <xsd:canonFlag>false</xsd:canonFlag>
+               <!--Optional:-->
+               <xsd:errorCode>0</xsd:errorCode>
+               <!--Optional:-->
+               <xsd:errorIdSys>FTS</xsd:errorIdSys>
+               <!--Optional:-->
+               <xsd:errorLevel/>
+               <!--Optional:-->
+               <xsd:errorMessage>0</xsd:errorMessage>
+            </xsd:errorStack>
+            <!--Optional:-->
+            <xsd:idSysCode>SCS_SPECTRUM</xsd:idSysCode>
+            <!--Optional:-->
+            <xsd:ojStatusEnum>1</xsd:ojStatusEnum>
+            <!--Optional:-->
+            <xsd:operExtStatusCode>300</xsd:operExtStatusCode>
+            <!--Optional:-->
+            <xsd:operJournalId>1000177900</xsd:operJournalId>
+            <!--Optional:-->
+            <xsd:requestInfo>
+               <!--Optional:-->
+               <xsd:messageId>?</xsd:messageId>
+            </xsd:requestInfo>
+         </jour:request>
+      </jour:setOperStatus>
+   </soap:Body>
+</soap:Envelope>

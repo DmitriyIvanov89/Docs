@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SiebelGetOperationInfo_Output>
+	<HeaderInfo RqUID="123123" CorrelationUID="1233" RqType="SiebelGetOperationInfo_Output" RqTm="01/01/2013 00:00:00" SystemFrom="Siebel" SystemTo="Spectrum" ErrorCode="" ErrorText=""></HeaderInfo>
+	<ListOfSession>
+		<Session>
+			<CROFlag>N</CROFlag>
+			<SupervisorNumber />
+			<ListOfInsPayments />
+			<menuItemCode>3301040</menuItemCode>
+			<ActionId>1-161TDX0V</ActionId>
+			<ServiceRequestId>1-161WWN35</ServiceRequestId>
+			<ClientId>1-68J-96289</ClientId>
+			<ClientType>ФЛ</ClientType>
+			<BOCode></BOCode>
+			<ClientFirstName>Александр8</ClientFirstName>
+			<ClientMidName>Григорьевич</ClientMidName>
+			<ClientLastName>Самсонова4</ClientLastName>
+			<ClientDocCategory>21</ClientDocCategory>
+			<ClientDocSeries>59 74</ClientDocSeries>
+			<ClientDocNumber>333067</ClientDocNumber>
+			<ClientDocIssueTS>08/08/2017 03:00:00</ClientDocIssueTS>
+			<ClientDocIssuedBy>Управлением Внутренних Дел  Великого Новгорода</ClientDocIssuedBy>
+			<ClientIssueCode>532-001</ClientIssueCode>
+			<ClientResidency>Y</ClientResidency>
+			<ClientCitizenship>РФ</ClientCitizenship>
+			<ClientBirthDate>06/28/1956 00:00:00</ClientBirthDate>
+			<ClientPlaceOfBirth>дер. Волынь Новгородского р-на Новгородской обл.</ClientPlaceOfBirth>
+			<ClientIDInformation></ClientIDInformation>
+			<ClientNotificationPhone>911 6011741</ClientNotificationPhone>
+			<OperationCurrency></OperationCurrency>
+			<OperationSum>100000</OperationSum>
+			<ClientIntLastName>SAMSONOV</ClientIntLastName>
+			<ClientIntFirstName>ALEKSANDR</ClientIntFirstName>
+			<ThirdPartyFlag>N</ThirdPartyFlag>
+			<ThirdPartyId></ThirdPartyId>
+			<ThirdPartyFirstName></ThirdPartyFirstName>
+			<ThirdPartyMidName></ThirdPartyMidName>
+			<ThirdPartyLastName></ThirdPartyLastName>
+			<ThirdPartyDocCategory></ThirdPartyDocCategory>
+			<ThirdPartyDocSeries></ThirdPartyDocSeries>
+			<ThirdPartyDocNumber></ThirdPartyDocNumber>
+			<ThirdPartyDocIssueTS></ThirdPartyDocIssueTS>
+			<ThirdPartyDocIssuedBy></ThirdPartyDocIssuedBy>
+			<ThirdPartyBirthDate></ThirdPartyBirthDate>
+			<ThirdPartyPlaceOfBirth></ThirdPartyPlaceOfBirth>
+			<ThirdPartyWarrantFlag>N</ThirdPartyWarrantFlag>
+			<ThirdPartyWarrantNumber></ThirdPartyWarrantNumber>
+			<ThirdPartyWarrantDate></ThirdPartyWarrantDate>
+			<ThirdPartyWarrantEndDate></ThirdPartyWarrantEndDate>
+			<ThirdPartyWarrantIssueCode></ThirdPartyWarrantIssueCode>
+			<ThirdPartyIntLastName></ThirdPartyIntLastName>
+			<ThirdPartyIntFirstName></ThirdPartyIntFirstName>
+			<SiebelAccountType>Счет</SiebelAccountType>
+			<SiebelAccountNumber>40817810800004000256</SiebelAccountNumber>
+			<SiebelAccountTypeName>Накопительный счет Сейф</SiebelAccountTypeName>
+			<SiebelCardAccountNumber></SiebelCardAccountNumber>
+			<SiebelAccountOrganisation>00006</SiebelAccountOrganisation>
+			<SiebelDivisionCode>2836</SiebelDivisionCode>
+			<SiebelAccountBalance>166045.98</SiebelAccountBalance>
+			<SiebelAccountCurrency>RUR</SiebelAccountCurrency>
+			<SiebelAccountSystemId>99995</SiebelAccountSystemId>
+			<SiebelCardExpirationDate></SiebelCardExpirationDate>
+			<ComissionCurrency></ComissionCurrency>
+			<SiebelCardMultiCurrencyFlag></SiebelCardMultiCurrencyFlag>
+			<INN></INN>
+			<ComissionSum></ComissionSum>
+			<KPP></KPP>
+			<OrganisationEmail></OrganisationEmail>
+			<OrganisationPhone></OrganisationPhone>
+			<OGRN></OGRN>
+			<OrganisationName></OrganisationName>
+			<OrganisationRegistrationAdress></OrganisationRegistrationAdress>
+			<OrganisationFactAddress></OrganisationFactAddress>
+			<PackageType>Привилегия</PackageType>
+			<FlagVIPClient>N</FlagVIPClient>
+			<ListOfPersonalAddress>
+				<PersonalAddress>
+					<AddressType>Фактический</AddressType>
+					<ApartmentNumber>1</ApartmentNumber>
+					<City>Великий Новгород</City>
+					<Country>РФ</Country>
+					<County></County>
+					<Province>Новгородская</Province>
+					<State>53</State>
+					<StreetAddress>Рогатица</StreetAddress>
+					<ZipCode>173000</ZipCode>
+					<VTB24Building></VTB24Building>
+					<VTB24HouseNum>30/54</VTB24HouseNum>
+					<VTB24Housing></VTB24Housing>
+					<VTB24SettlementType></VTB24SettlementType>
+					<VTB24Settlement></VTB24Settlement>
+					<VTB24KLADRCode>5300000100002020007</VTB24KLADRCode>
+					<FullAddress>173000 Россия обл Новгородская г Великий Новгород ул Рогатица дом 30/54 кв 1</FullAddress>
+					<ActiveFlag>Y</ActiveFlag>
+				</PersonalAddress>
+				<PersonalAddress>
+					<AddressType>Постоянной регистрации</AddressType>
+					<ApartmentNumber>1</ApartmentNumber>
+					<City>Великий Новгород</City>
+					<Country>РФ</Country>
+					<County></County>
+					<Province>Новгородская</Province>
+					<State>53</State>
+					<StreetAddress>Рогатица</StreetAddress>
+					<ZipCode>173000</ZipCode>
+					<VTB24Building></VTB24Building>
+					<VTB24HouseNum>30/54</VTB24HouseNum>
+					<VTB24Housing></VTB24Housing>
+					<VTB24SettlementType></VTB24SettlementType>
+					<VTB24Settlement></VTB24Settlement>
+					<VTB24KLADRCode>5300000100002020007</VTB24KLADRCode>
+					<FullAddress>173000 Россия обл Новгородская г Великий Новгород ул Рогатица дом 30/54 кв 1</FullAddress>
+					<ActiveFlag>Y</ActiveFlag>
+				</PersonalAddress>
+			</ListOfPersonalAddress>
+			<ListOfClientBlackList></ListOfClientBlackList>
+			<ListOfThirdPartyBlackList></ListOfThirdPartyBlackList>
+			<ListOfAccount>
+				<Account>
+					<Organization>00000</Organization>
+					<Number>40817810800004000256</Number>
+					<Balance>3390.72</Balance>
+					<Status>Активный</Status>
+					<Currency>RUR</Currency>
+					<SystemId>99995</SystemId>
+					<AgreementNumber>40817810800004000256</AgreementNumber>
+					<AgreementDate>09/26/2013</AgreementDate>
+					<AgreementProduct/>
+					<AccountType>Мастер счет</AccountType>
+				</Account>
+				<Account>
+					<Organization>00006</Organization>
+					<Number>42304810209260900381</Number>
+					<Balance>0</Balance>
+					<Status>Закрыт</Status>
+					<Currency>RUR</Currency>
+					<SystemId>00006</SystemId>
+					<AgreementNumber></AgreementNumber>
+					<AgreementDate>03/06/2012</AgreementDate>
+					<AgreementProduct></AgreementProduct>
+					<AccountType>Депозитный счет</AccountType>
+				</Account>
+				<Account>
+					<Organization>00006</Organization>
+					<Number>42305810009260900072</Number>
+					<Balance>0</Balance>
+					<Status>Закрыт</Status>
+					<Currency>RUR</Currency>
+					<SystemId>00006</SystemId>
+					<AgreementNumber></AgreementNumber>
+					<AgreementDate>09/10/2012</AgreementDate>
+					<AgreementProduct></AgreementProduct>
+					<AccountType>Депозитный счет</AccountType>
+				</Account>
+				<Account>
+					<Organization>00006</Organization>
+					<Number>42305810428360000068</Number>
+					<Balance>0</Balance>
+					<Status>Закрыт</Status>
+					<Currency>RUR</Currency>
+					<SystemId>00006</SystemId>
+					<AgreementNumber></AgreementNumber>
+					<AgreementDate>09/01/2015</AgreementDate>
+					<AgreementProduct></AgreementProduct>
+					<AccountType>Депозитный счет</AccountType>
+				</Account>
+				<Account>
+					<Organization>00006</Organization>
+					<Number>42305810609260000259</Number>
+					<Balance>0</Balance>
+					<Status>Закрыт</Status>
+					<Currency>RUR</Currency>
+					<SystemId>00006</SystemId>
+					<AgreementNumber></AgreementNumber>
+					<AgreementDate>12/11/2014</AgreementDate>
+					<AgreementProduct></AgreementProduct>
+					<AccountType>Депозитный счет</AccountType>
+				</Account>
+				<Account>
+					<Organization>00006</Organization>
+					<Number>42306810009260900220</Number>
+					<Balance>0</Balance>
+					<Status>Закрыт</Status>
+					<Currency>RUR</Currency>
+					<SystemId>00006</SystemId>
+					<AgreementNumber></AgreementNumber>
+					<AgreementDate>10/03/2013</AgreementDate>
+					<AgreementProduct></AgreementProduct>
+					<AccountType>Депозитный счет</AccountType>
+				</Account>
+				<Account>
+					<Organization>00006</Organization>
+					<Number>42306810328360000015</Number>
+					<Balance>0</Balance>
+					<Status>Закрыт</Status>
+					<Currency>RUR</Currency>
+					<SystemId>00006</SystemId>
+					<AgreementNumber></AgreementNumber>
+					<AgreementDate>07/10/2015</AgreementDate>
+					<AgreementProduct></AgreementProduct>
+					<AccountType>Депозитный счет</AccountType>
+				</Account>
+				<Account>
+					<Organization>00006</Organization>
+					<Number>42306810528360200042</Number>
+					<Balance>16700000</Balance>
+					<Status>Активный</Status>
+					<Currency>RUR</Currency>
+					<SystemId>00006</SystemId>
+					<AgreementNumber></AgreementNumber>
+					<AgreementDate>06/30/2016</AgreementDate>
+					<AgreementProduct></AgreementProduct>
+					<AccountType>Депозитный счет</AccountType>
+				</Account>
+				<Account>
+					<Organization>00006</Organization>
+					<Number>42306810628360000058</Number>
+					<Balance>8600000</Balance>
+					<Status>Активный</Status>
+					<Currency>RUR</Currency>
+					<SystemId>00006</SystemId>
+					<AgreementNumber></AgreementNumber>
+					<AgreementDate>04/05/2016</AgreementDate>
+					<AgreementProduct></AgreementProduct>
+					<AccountType>Депозитный счет</AccountType>
+				</Account>
+				<Account>
+					<Organization>00006</Organization>
+					<Number>42306810928360000088</Number>
+					<Balance>7000000</Balance>
+					<Status>Активный</Status>
+					<Currency>RUR</Currency>
+					<SystemId>00006</SystemId>
+					<AgreementNumber></AgreementNumber>
+					<AgreementDate>06/30/2016</AgreementDate>
+					<AgreementProduct></AgreementProduct>
+					<AccountType>Депозитный счет</AccountType>
+				</Account>
+				<Account>
+					<Organization>00006</Organization>
+					<Number>42306978028360200002</Number>
+					<Balance>0</Balance>
+					<Status>Активный</Status>
+					<Currency>EUR</Currency>
+					<SystemId>00006</SystemId>
+					<AgreementNumber></AgreementNumber>
+					<AgreementDate>03/18/2015</AgreementDate>
+					<AgreementProduct></AgreementProduct>
+					<AccountType>Депозитный счет</AccountType>
+				</Account>
+				<Account>
+					<Organization>00000</Organization>
+					<Number>40817810809261001170</Number>
+					<Balance>0</Balance>
+					<Status>Закрыт</Status>
+					<Currency>RUR</Currency>
+					<SystemId>98000</SystemId>
+					<AgreementNumber></AgreementNumber>
+					<AgreementDate>12/11/2012</AgreementDate>
+					<AgreementProduct></AgreementProduct>
+					<AccountType>Текущий счет</AccountType>
+				</Account>
+				<Account>
+					<Organization>00000</Organization>
+					<Number>40817840709261001033</Number>
+					<Balance>0</Balance>
+					<Status>Закрыт</Status>
+					<Currency>USD</Currency>
+					<SystemId>98000</SystemId>
+					<AgreementNumber></AgreementNumber>
+					<AgreementDate>12/11/2012</AgreementDate>
+					<AgreementProduct></AgreementProduct>
+					<AccountType>Текущий счет</AccountType>
+				</Account>
+				<Account>
+					<Organization>00000</Organization>
+					<Number>40817978309261001033</Number>
+					<Balance>0</Balance>
+					<Status>Закрыт</Status>
+					<Currency>EUR</Currency>
+					<SystemId>98000</SystemId>
+					<AgreementNumber></AgreementNumber>
+					<AgreementDate>12/11/2012</AgreementDate>
+					<AgreementProduct></AgreementProduct>
+					<AccountType>Текущий счет</AccountType>
+				</Account>
+				<Account>
+					<Organization>00000</Organization>
+					<Number>42307978709261000003</Number>
+					<Balance>0</Balance>
+					<Status>Закрыт</Status>
+					<Currency>EUR</Currency>
+					<SystemId>98000</SystemId>
+					<AgreementNumber></AgreementNumber>
+					<AgreementDate>12/11/2012</AgreementDate>
+					<AgreementProduct></AgreementProduct>
+					<AccountType>Депозитный счет</AccountType>
+				</Account>
+				<Account>
+					<Organization>00000</Organization>
+					<Number>42307978509261000012</Number>
+					<Balance>0</Balance>
+					<Status>Закрыт</Status>
+					<Currency>EUR</Currency>
+					<SystemId>98000</SystemId>
+					<AgreementNumber></AgreementNumber>
+					<AgreementDate>12/16/2015</AgreementDate>
+					<AgreementProduct></AgreementProduct>
+					<AccountType>Депозитный счет</AccountType>
+				</Account>
+				<Account>
+					<Organization>00000</Organization>
+					<Number>30601810500000130811</Number>
+					<Balance>6366.7</Balance>
+					<Status>Активный</Status>
+					<Currency>RUR</Currency>
+					<SystemId>00000</SystemId>
+					<AgreementNumber></AgreementNumber>
+					<AgreementDate>12/29/2016</AgreementDate>
+					<AgreementProduct></AgreementProduct>
+					<AccountType></AccountType>
+				</Account>
+				<Account>
+					<Organization>00006</Organization>
+					<Number>40817810109260004986</Number>
+					<Balance>0</Balance>
+					<Status>Активный</Status>
+					<Currency>RUR</Currency>
+					<SystemId>00006</SystemId>
+					<AgreementNumber></AgreementNumber>
+					<AgreementDate>10/03/2013</AgreementDate>
+					<AgreementProduct></AgreementProduct>
+					<AccountType>Текущий счет</AccountType>
+				</Account>
+				<Account>
+					<Organization>00006</Organization>
+					<Number>40817810209260008604</Number>
+					<Balance>0</Balance>
+					<Status>Активный</Status>
+					<Currency>RUR</Currency>
+					<SystemId>00006</SystemId>
+					<AgreementNumber></AgreementNumber>
+					<AgreementDate>12/11/2014</AgreementDate>
+					<AgreementProduct></AgreementProduct>
+					<AccountType>Текущий счет</AccountType>
+				</Account>
+				<Account>
+					<Organization>00006</Organization>
+					<Number>40817810228360000172</Number>
+					<Balance>0</Balance>
+					<Status>Активный</Status>
+					<Currency>RUR</Currency>
+					<SystemId>00006</SystemId>
+					<AgreementNumber></AgreementNumber>
+					<AgreementDate>04/10/2015</AgreementDate>
+					<AgreementProduct></AgreementProduct>
+					<AccountType>Текущий счет</AccountType>
+				</Account>
+				<Account>
+					<Organization>00006</Organization>
+					<Number>40817810509260003914</Number>
+					<Balance>0</Balance>
+					<Status>Активный</Status>
+					<Currency>RUR</Currency>
+					<SystemId>00006</SystemId>
+					<AgreementNumber></AgreementNumber>
+					<AgreementDate>09/10/2012</AgreementDate>
+					<AgreementProduct></AgreementProduct>
+					<AccountType>Текущий счет</AccountType>
+				</Account>
+				<Account>
+					<Organization>00006</Organization>
+					<Number>40817810628364000972</Number>
+					<Balance>51962258.28</Balance>
+					<Status>Активный</Status>
+					<Currency>RUR</Currency>
+					<SystemId>99995</SystemId>
+					<AgreementNumber>40817810628364000972</AgreementNumber>
+					<AgreementDate>07/10/2015</AgreementDate>
+					<AgreementProduct></AgreementProduct>
+					<AccountType>Мастер счет</AccountType>
+				</Account>
+				<Account>
+					<Organization>00006</Organization>
+					<Number>40817840528364000712</Number>
+					<Balance>0</Balance>
+					<Status>Активный</Status>
+					<Currency>USD</Currency>
+					<SystemId>99995</SystemId>
+					<AgreementNumber></AgreementNumber>
+					<AgreementDate>07/10/2015</AgreementDate>
+					<AgreementProduct></AgreementProduct>
+					<AccountType>Мастер счет</AccountType>
+				</Account>
+				<Account>
+					<Organization>00006</Organization>
+					<Number>40817978128364000712</Number>
+					<Balance>166045.98</Balance>
+					<Status>Активный</Status>
+					<Currency>EUR</Currency>
+					<SystemId>99995</SystemId>
+					<AgreementNumber></AgreementNumber>
+					<AgreementDate>07/10/2015</AgreementDate>
+					<AgreementProduct></AgreementProduct>
+					<AccountType>Мастер счет</AccountType>
+				</Account>
+				<Account>
+					<Organization>00006</Organization>
+					<Number>40817978328360000011</Number>
+					<Balance>0</Balance>
+					<Status>Активный</Status>
+					<Currency>EUR</Currency>
+					<SystemId>00006</SystemId>
+					<AgreementNumber></AgreementNumber>
+					<AgreementDate>04/10/2015</AgreementDate>
+					<AgreementProduct></AgreementProduct>
+					<AccountType>Текущий счет</AccountType>
+				</Account>
+				<Account>
+					<Organization>00006</Organization>
+					<Number>40817978628360000009</Number>
+					<Balance>0</Balance>
+					<Status>Активный</Status>
+					<Currency>EUR</Currency>
+					<SystemId>00006</SystemId>
+					<AgreementNumber></AgreementNumber>
+					<AgreementDate>03/18/2015</AgreementDate>
+					<AgreementProduct></AgreementProduct>
+					<AccountType>Текущий счет</AccountType>
+				</Account>
+				<Account>
+					<Organization>00006</Organization>
+					<Number>40817978909260000145</Number>
+					<Balance>0</Balance>
+					<Status>Активный</Status>
+					<Currency>EUR</Currency>
+					<SystemId>00006</SystemId>
+					<AgreementNumber></AgreementNumber>
+					<AgreementDate>05/12/2014</AgreementDate>
+					<AgreementProduct></AgreementProduct>
+					<AccountType>Текущий счет</AccountType>
+				</Account>
+				<Account>
+					<Organization>00006</Organization>
+					<Number>42301810509260000324</Number>
+					<Balance>0</Balance>
+					<Status>Закрыт</Status>
+					<Currency>RUR</Currency>
+					<SystemId>00006</SystemId>
+					<AgreementNumber></AgreementNumber>
+					<AgreementDate>11/05/2014</AgreementDate>
+					<AgreementProduct></AgreementProduct>
+					<AccountType>Депозитный счет</AccountType>
+				</Account>
+			</ListOfAccount>
+			<ListOfFINSATMCard>
+				<FINSATMCard>
+					<CardNumber>712403925180049885</CardNumber>
+					<Balance>51962258.28</Balance>
+					<Currency>RUR</Currency>
+					<SystemId>99995</SystemId>
+					<AccountNumber>40817810628364000972</AccountNumber>
+					<ExpirationDate>10/31/2017</ExpirationDate>
+					<Branch>2836</Branch>
+					<MultiCurrencyFlag></MultiCurrencyFlag>
+					<CardType>Priority Pass Visa Signature</CardType>
+					<CardStatus>Card OK</CardStatus>
+					<CardHolder>Самсонов Александр Григорьевич</CardHolder>
+				</FINSATMCard>
+				<FINSATMCard>
+					<CardNumber>4714870005965939</CardNumber>
+					<Balance>51962258.28</Balance>
+					<Currency>RUR</Currency>
+					<SystemId>99995</SystemId>
+					<AccountNumber>40817810628364000972</AccountNumber>
+					<ExpirationDate>07/31/2017</ExpirationDate>
+					<Branch>2836</Branch>
+					<MultiCurrencyFlag></MultiCurrencyFlag>
+					<CardType>Visa Classic Unemb Instant Iss</CardType>
+					<CardStatus>Card OK</CardStatus>
+					<CardHolder>Самсонов Александр Григорьевич</CardHolder>
+				</FINSATMCard>
+				<FINSATMCard>
+					<CardNumber>4093980003313775</CardNumber>
+					<Balance>51962258.28</Balance>
+					<Currency>RUR</Currency>
+					<SystemId>99995</SystemId>
+					<AccountNumber>40817810628364000972</AccountNumber>
+					<ExpirationDate>04/30/2019</ExpirationDate>
+					<Branch>2836</Branch>
+					<MultiCurrencyFlag></MultiCurrencyFlag>
+					<CardType>Visa Signature</CardType>
+					<CardStatus>Card OK</CardStatus>
+					<CardHolder>Самсонов Александр Григорьевич</CardHolder>
+				</FINSATMCard>
+				<FINSATMCard>
+					<CardNumber>5543933454777785</CardNumber>
+					<Balance>57425.45</Balance>
+					<Currency>EUR</Currency>
+					<SystemId>OW4</SystemId>
+					<AccountNumber>40817978800582068663</AccountNumber>
+					<ExpirationDate>12/31/2018</ExpirationDate>
+					<Branch>00006</Branch>
+					<MultiCurrencyFlag>N</MultiCurrencyFlag>
+					<CardType>EC/MC Gold DEB VTB OLD (Our EC/MC Card)</CardType>
+					<CardStatus>Card OK</CardStatus>
+					<CardHolder>Самсонов Александр Григорьевич</CardHolder>
+				</FINSATMCard>
+				<FINSATMCard>
+					<CardNumber>4986290304298612</CardNumber>
+					<Balance>0</Balance>
+					<Currency>RUR</Currency>
+					<SystemId>OW4</SystemId>
+					<AccountNumber>40817810501162741990</AccountNumber>
+					<ExpirationDate>12/31/2065</ExpirationDate>
+					<Branch>00006</Branch>
+					<MultiCurrencyFlag>N</MultiCurrencyFlag>
+					<CardType>Pseudo E-c@rd Collection VTB (Balance Ca</CardType>
+					<CardStatus>Card OK</CardStatus>
+					<CardHolder>Самсонов Александр Григорьевич</CardHolder>
+				</FINSATMCard>
+				<FINSATMCard>
+					<CardNumber>5312336545337669</CardNumber>
+					<Balance>0.8</Balance>
+					<Currency>RUR</Currency>
+					<SystemId>OW4</SystemId>
+					<AccountNumber>40817810100722185821</AccountNumber>
+					<ExpirationDate>10/31/2019</ExpirationDate>
+					<Branch>00006</Branch>
+					<MultiCurrencyFlag>N</MultiCurrencyFlag>
+					<CardType>MC Black Edition CHIP VTB (Our EC/MC Car</CardType>
+					<CardStatus>Card OK</CardStatus>
+					<CardHolder>Самсонов Александр Григорьевич</CardHolder>
+				</FINSATMCard>
+				<FINSATMCard>
+					<CardNumber>5193040010031914</CardNumber>
+					<Balance>0.8</Balance>
+					<Currency>RUR</Currency>
+					<SystemId>OW4</SystemId>
+					<AccountNumber>40817810100722185821</AccountNumber>
+					<ExpirationDate>10/31/2016</ExpirationDate>
+					<Branch>00006</Branch>
+					<MultiCurrencyFlag>N</MultiCurrencyFlag>
+					<CardType>MC Platinum VTB Prod_03 OLD (Our EC/MC C</CardType>
+					<CardStatus>Card OK</CardStatus>
+					<CardHolder>Самсонов Александр Григорьевич</CardHolder>
+				</FINSATMCard>
+				<FINSATMCard>
+					<CardNumber>700013770344970593</CardNumber>
+					<Balance>0</Balance>
+					<Currency>RUR</Currency>
+					<SystemId>OW4</SystemId>
+					<AccountNumber>-Priorit1 Pass033676</AccountNumber>
+					<ExpirationDate>10/31/2016</ExpirationDate>
+					<Branch>00006</Branch>
+					<MultiCurrencyFlag>N</MultiCurrencyFlag>
+					<CardType>MC Priority Pass Platinum VTB (Balance C</CardType>
+					<CardStatus>Card OK</CardStatus>
+					<CardHolder>Самсонов Александр Григорьевич</CardHolder>
+				</FINSATMCard>
+			</ListOfFINSATMCard>
+			<ListOfThirdPartyPersonalAddress></ListOfThirdPartyPersonalAddress>
+			<ListOfContactPerson></ListOfContactPerson>
+			<ListOfAdditionalClient></ListOfAdditionalClient>
+		</Session>
+	</ListOfSession>
+</SiebelGetOperationInfo_Output>

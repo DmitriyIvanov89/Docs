@@ -1,0 +1,10 @@
+{
+  "fee_code": "string",
+  "fee": {
+    "amount": "string",
+    "currency": "string"
+  },
+  "fee_description": "string",
+  "fee_ref": "string",
+  "comment": "string"
+}

@@ -1,0 +1,73 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ans="http://answer.ulbs.vtb24.spectrum">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ans:checkForCreditAnswer>
+         <checkForCreditAnswerRequest>
+            <accountEntity>
+               <accountIdSys>${accountIdSys}</accountIdSys>
+                <accountNum>${accountNum}</accountNum>
+ <!--
+              <deptCode>${deptCode}</deptCode>
+ -->
+           </accountEntity>
+           <answerRequestInfo>
+                <correlationId>${correlationId}</correlationId>
+            </answerRequestInfo>
+            <feeSumma>
+               <currency>${feeCur}</currency>
+               <summa>${fee}</summa>
+            </feeSumma>
+           <!-- -->
+${= isCppTransaction ? "" : "<!--"}
+            <cppTransactionId>
+            	<idSys>CPP</idSys>
+            	<operJournalExtId>${= String.format( "%06d", new Random().nextInt(999999))}</operJournalExtId>
+            </cppTransactionId>
+            <feeSumma>
+            	<currency>RUR</currency>
+            	<summa>1</summa>
+            </feeSumma>
+${= isCppTransaction ? "" : "-->"}
+          <operationActionResultEntity>
+               <errorDetails>${errorDetails}</errorDetails>
+               <operJournalId>${operJournalId}</operJournalId>
+               <errorStack>
+                  <!--Optional:-->
+                  <canonFlag>false</canonFlag>
+                  <!--Optional:-->
+                  <errorCode>${errorCode}</errorCode>
+                  <!--Optional:-->
+                  <errorIdSys>98000</errorIdSys>
+                  <!--Optional:-->
+                  <errorLevel>
+                    <!--Optional:-->
+                    <canonFlag>true</canonFlag>
+                    <!--Optional:-->
+                    <errorCode>C0000-0000</errorCode>
+                    <!--Optional:-->
+                    <errorIdSys></errorIdSys>
+                    <!--Optional:-->
+                    <errorLevel/>
+                    <!--Optional:-->
+                    <errorMessage>???????? ??????</errorMessage>
+                  </errorLevel>
+                  <!--Optional:-->
+                  <errorMessage>${errorMessage}</errorMessage>
+               </errorStack>
+            </operationActionResultEntity>
+ <!--
+            <publicServiceEntity>
+               <paymentInstrumentCode>${paymentInstrumentCode}</paymentInstrumentCode>
+              <properties>
+                  <code>${code}</code>
+                  <value>${value}</value>
+               </properties>
+              <publicServiceProvCode>${publicServiceProvCode}</publicServiceProvCode>
+               <publicServiceRepmtCode>${publicServiceRepmtCode}</publicServiceRepmtCode>
+               <terminalId>${terminalId}</terminalId>
+            </publicServiceEntity>
+-->
+           </checkForCreditAnswerRequest>
+      </ans:checkForCreditAnswer>
+   </soapenv:Body>
+</soapenv:Envelope>

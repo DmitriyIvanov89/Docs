@@ -1,0 +1,55 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ans="http://answer.ulbs.vtb24.spectrum">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ans:payAnswer>
+         <payAnswerRequest>
+            <operationActionResultEntity>
+               <errorDetails>${errorDetails}</errorDetails>
+               <operJournalId>${operJournalId}</operJournalId>
+               <errorStack>
+                  <!--Optional:-->
+                  <canonFlag>false</canonFlag>
+                  <!--Optional:-->
+                  <!--<errorCode>${errorCode}</errorCode>-->
+                  <errorCode>${errorCode}</errorCode>
+                  <!--Optional:-->
+                  <errorIdSys>ULBS</errorIdSys>
+                  <!--Optional:-->
+                  <errorLevel>
+                    <!--Optional:-->
+                    <canonFlag>true</canonFlag>
+                    <!--Optional:-->
+                    <errorCode>C0000-0000</errorCode>
+                    <!--Optional:-->
+                    <errorIdSys></errorIdSys>
+                    <!--Optional:-->
+                    <errorLevel/>
+                    <!--Optional:-->
+                    <errorMessage>???????? ??????</errorMessage>
+                  </errorLevel>
+                  <!--Optional:-->
+                  <errorMessage>${errorMessage}</errorMessage>
+               </errorStack>
+            </operationActionResultEntity>
+            <answerRequestInfo>
+                <correlationId>${correlationId}</correlationId>
+            </answerRequestInfo>
+            <payTransactionId>
+              <!-- <idSys>${idSys}</idSys> -->
+               <operJournalExtId>${operJournalId}</operJournalExtId>
+            </payTransactionId>
+            
+            <publicServiceEntity>
+               <paymentInstrumentCode>?</paymentInstrumentCode>
+               <properties>
+                  <code>?</code>
+                  <value>?</value>
+               </properties>
+               <publicServiceProvCode>?</publicServiceProvCode>
+               <publicServiceRepmtCode>?</publicServiceRepmtCode>
+               <terminalId>?</terminalId>
+            </publicServiceEntity>
+         </payAnswerRequest>
+      </ans:payAnswer>
+   </soapenv:Body>
+</soapenv:Envelope>

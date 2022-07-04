@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<T_CABS_CREATE_DOC_REQ xmlns="http://www.NewAthena.ru/NA5/IntegrationAdapter">
+    <SSUBSYSTEM>SPECTRUM</SSUBSYSTEM>
+    <NDEPARTMENT>709000</NDEPARTMENT>
+    <RATRANSPROPS>
+        <T_PROPERTY>
+            <SNAME>SOURCE_SYSTEM</SNAME>
+            <SVALUE>SPECTRUM</SVALUE>
+        </T_PROPERTY>
+        <T_PROPERTY>
+            <SNAME>TARGET_SYSTEM</SNAME>
+            <SVALUE>CFT2</SVALUE>
+        </T_PROPERTY>
+    </RATRANSPROPS>
+    <SMESSAGEID>251449</SMESSAGEID>
+    <SGUID>SP.1000180119-37575</SGUID>
+    <SDOCUMENTTYPE>1244.CFT</SDOCUMENTTYPE>
+    <SDEPARTMENT>1126</SDEPARTMENT>
+    <RECPAYMENT>
+        <SLABEL>69245</SLABEL>
+        <SCURRENCYFROM>840</SCURRENCYFROM>
+        <SCURRENCYTO>810</SCURRENCYTO>
+        <SACCOUNTFROM>40817840300050000002</SACCOUNTFROM>
+        <SACCOUNTTO>20202810011260000001</SACCOUNTTO>
+        <NSUMFROM>1001</NSUMFROM>
+        <NSUMTO>70570.5</NSUMTO>
+        <DTVALIDTODATE>2021-09-28</DTVALIDTODATE>
+        <SDESCRIPTION>Выдача наличных средств при закрытии вклада На основании: договор №40817840300050000002</SDESCRIPTION>
+        <RECPAYER>
+            <RECCUSTOMER>
+                <SACCOUNT>40817840300050000002</SACCOUNT>
+                <RECBANK>
+                    <SCODE>040702788</SCODE>
+                    <SNAME>ФИЛИАЛ БАНКА ВТБ (ПАО) В Г. СТАВРОПОЛЕ</SNAME>
+                </RECBANK>
+            </RECCUSTOMER>
+        </RECPAYER>
+        <RECBENEFICIARY>
+            <SACCOUNT>20202810011260000001</SACCOUNT>
+            <RECBANK>
+                <SCODE>040702788</SCODE>
+                <SNAME>ФИЛИАЛ БАНКА ВТБ (ПАО) В Г. СТАВРОПОЛЕ</SNAME>
+            </RECBANK>
+        </RECBENEFICIARY>
+    </RECPAYMENT>
+    <RECCASH>
+        <RASYMBOLS>
+            <T_SYMBOL>
+                <SSYMBOLCODE>55</SSYMBOLCODE>
+                <NSYMBOLAMOUNT>70570.5</NSYMBOLAMOUNT>
+            </T_SYMBOL>
+        </RASYMBOLS>
+        <SCLIENT>БОРИСОВ АНДРЕЙ ЮРЬЕВИЧ</SCLIENT>
+        <NISRESIDENT>1</NISRESIDENT>
+        <SCLIENT_REGIONCODE>643</SCLIENT_REGIONCODE>
+        <SCLIENTADDRESS>394036,Воронеж,Авиационная,2,15</SCLIENTADDRESS>
+        <SJURIDICALDOCCODE>21</SJURIDICALDOCCODE>
+        <SJURDOCSERIES>5555</SJURDOCSERIES>
+        <SJURDOCNUMBER>877566</SJURDOCNUMBER>
+        <DTGIVEDATE>2001-05-04</DTGIVEDATE>
+        <SGIVEBY>001</SGIVEBY>
+        <DTBIRTHDATE>1989-07-06</DTBIRTHDATE>
+        <SBIRTHPLACE>ВОРОНЕЖ</SBIRTHPLACE>
+    </RECCASH>
+</T_CABS_CREATE_DOC_REQ>

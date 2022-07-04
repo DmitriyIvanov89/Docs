@@ -1,0 +1,102 @@
+{
+  "action_header": {
+    "reason": "string",
+    "idempotency_key": "string",
+    "user_name": "string",
+    "office": "string",
+    "channel": "string",
+    "ip_address": "string",
+    "mac_address": "string",
+    "dbo_id": "string",
+    "signature_type": "string",
+    "signature": "string",
+    "hashsum": "string"
+  },
+  "transfer_ref": "string",
+  "action": {
+    "payer": {
+      "tax_number": "string",
+      "kpp": "string",
+      "correspondent_bank": {
+        "bank_name": "string",
+        "account_number": "string",
+        "bic": "string"
+      },
+      "transit_account_number": "string",
+      "transit_member_id": "string",
+      "account": {
+        "id": "string",
+        "pan": "string",
+        "contract_number": "string",
+        "account_number": "string",
+        "bic": "string",
+        "iban": "string"
+      },
+      "name": "string",
+      "address": {
+        "country": "str",
+        "state": "string",
+        "city": "string",
+        "address_lines": [
+          "string"
+        ],
+        "zip_code": "string"
+      },
+      "treasury_reference": "string",
+      "payment_system_code": "string"
+    },
+    "beneficiary": {
+      "tax_number": "string",
+      "kpp": "string",
+      "correspondent_bank": {
+        "bank_name": "string",
+        "account_number": "string",
+        "bic": "string"
+      },
+      "transit_account_number": "string",
+      "transit_member_id": "string",
+      "account": {
+        "id": "string",
+        "pan": "string",
+        "contract_number": "string",
+        "account_number": "string",
+        "bic": "string",
+        "iban": "string"
+      },
+      "name": "string",
+      "address": {
+        "country": "str",
+        "state": "string",
+        "city": "string",
+        "address_lines": [
+          "string"
+        ],
+        "zip_code": "string"
+      },
+      "treasury_reference": "string",
+      "payment_system_code": "string"
+    },
+    "transaction_amount": {
+      "amount": "string",
+      "currency": "string"
+    },
+    "transaction_type": "string",
+    "amount_type": "FixedNetAmount",
+    "comment": "string",
+    "transaction_attributes": [
+      "string"
+    ],
+    "effective_date": "2019-08-24",
+    "rate_type": "string",
+    "exchange_rate": 0,
+    "cash_transaction_code": "string",
+    "payment_slip_number": "string",
+    "personnel_number": "string",
+    "beneficiary_amount": "string",
+    "payer_fee": "string",
+    "beneficiary_fee": "string",
+    "reference_amount": "string",
+    "reference_currency": "string",
+    "beneficiary_name_check": true
+  }
+}

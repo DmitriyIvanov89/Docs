@@ -1,0 +1,325 @@
+<para>Таблица настройки Проверок по счетам/картам.</para>
+
+      <informaltable>
+        <tgroup cols="9">
+          <colspec colname="col1" colnum="1" colwidth="1*"/>
+
+          <colspec colname="col2" colnum="2" colwidth="2*"/>
+
+          <colspec colname="col3" colnum="3" colwidth="1.5*"/>
+
+          <colspec colname="col4" colnum="4" colwidth="1.5*"/>
+
+          <colspec colname="col5" colnum="5" colwidth="2*"/>
+
+          <colspec colname="col6" colnum="6" colwidth="2*"/>
+
+          <colspec colname="col7" colnum="7" colwidth="1*"/>
+
+          <colspec colname="col8" colnum="8" colwidth="1*"/>
+
+          <colspec colname="col9" colnum="9" colwidth="1*"/>
+
+          <tbody>
+            <row>
+              <entry><emphasis role="bold">ID записи</emphasis></entry>
+
+              <entry><emphasis role="bold">ID системной
+              функции</emphasis></entry>
+
+              <entry><emphasis role="bold">Код типа системы ведения
+              счета/карты по Дт</emphasis></entry>
+
+              <entry><emphasis role="bold">Код типа системы ведения
+              счета/карты по Кт</emphasis></entry>
+
+              <entry><emphasis role="bold">Тип счета Дт</emphasis></entry>
+
+              <entry><emphasis role="bold">Тип счета Кт</emphasis></entry>
+
+              <entry><emphasis role="bold">Признак конверсии (0-нет, 1-
+              есть)</emphasis></entry>
+
+              <entry><emphasis role="bold">Порядок проверки</emphasis></entry>
+
+              <entry><emphasis role="bold">Код сообщения об
+              ошибке</emphasis></entry>
+            </row>
+              <row>
+              <entry><emphasis role="bold">293</emphasis></entry>
+              <entry><emphasis role="bold">7102020</emphasis></entry>
+              <entry>%</entry>
+              <entry>%</entry>
+              <entry>%</entry>
+              <entry>Накопительный счет Сейф</entry>
+              <entry>%</entry>
+              <entry>131</entry>
+              <entry>11</entry>
+            </row>
+            <row>
+              <entry><emphasis role="bold">294</emphasis></entry>
+              <entry><emphasis role="bold">7102010</emphasis></entry>
+              <entry>%</entry>
+              <entry>%</entry>
+              <entry>%</entry>
+              <entry>Накопительный счет Сейф</entry>
+              <entry>%</entry>
+              <entry>131</entry>
+              <entry>11</entry>
+            </row>
+            <row>
+              <entry><emphasis role="bold">295</emphasis></entry>
+              <entry><emphasis role="bold">3102020</emphasis></entry>
+              <entry>%</entry>
+              <entry>%</entry>
+              <entry>%</entry>
+              <entry>Накопительный счет Сейф</entry>
+              <entry>%</entry>
+              <entry>131</entry>
+              <entry>11</entry>
+            </row>
+            <row>
+              <entry><emphasis role="bold">296</emphasis></entry>
+              <entry><emphasis role="bold">3102010</emphasis></entry>
+              <entry>%</entry>
+              <entry>%</entry>
+              <entry>%</entry>
+              <entry>Накопительный счет Сейф</entry>
+              <entry>%</entry>
+              <entry>131</entry>
+              <entry>11</entry>
+            </row>
+            <row>
+              <entry><emphasis role="bold">297</emphasis></entry>
+              <entry><emphasis role="bold">3151010</emphasis></entry>
+              <entry>%</entry>
+              <entry>%</entry>
+              <entry>%</entry>
+              <entry>Накопительный счет Сейф</entry>
+              <entry>%</entry>
+              <entry>132</entry>
+              <entry>15</entry>
+            </row>
+            <row>
+              <entry><emphasis role="bold">298</emphasis></entry>
+              <entry><emphasis role="bold">3301050</emphasis></entry>
+              <entry>%</entry>
+              <entry>%</entry>
+              <entry>%</entry>
+              <entry>Накопительный счет Сейф</entry>
+              <entry>%</entry>
+              <entry>133</entry>
+              <entry>3</entry>
+            </row>
+            <row>
+              <entry><emphasis role="bold">299</emphasis></entry>
+              <entry><emphasis role="bold">3301015</emphasis></entry>
+              <entry>%</entry>
+              <entry>%</entry>
+              <entry>%</entry>
+              <entry>Накопительный счет Сейф</entry>
+              <entry>%</entry>
+              <entry>134</entry>
+              <entry>3</entry>
+            </row>
+            <row>
+              <entry><emphasis role="bold">300</emphasis></entry>
+              <entry><emphasis role="bold">3301005</emphasis></entry>
+              <entry>%</entry>
+              <entry>%</entry>
+              <entry>Накопительный счет</entry>
+              <entry>Накопительный счет Сейф</entry>
+              <entry>%</entry>
+              <entry>136</entry>
+              <entry>3</entry>
+            </row>
+            <row>
+              <entry><emphasis role="bold">301</emphasis></entry>
+              <entry><emphasis role="bold">3301005</emphasis></entry>
+              <entry>%</entry>
+              <entry>%</entry>
+              <entry>Накопительный счет Сейф</entry>
+              <entry>Накопительный счет Сейф</entry>
+              <entry>%</entry>
+              <entry>137</entry>
+              <entry>3</entry>
+            </row>
+            <row>
+              <entry><emphasis role="bold">302</emphasis></entry>
+              <entry><emphasis role="bold">3301005</emphasis></entry>
+              <entry>%</entry>
+              <entry>%</entry>
+              <entry>Эскроу</entry>
+              <entry>Накопительный счет Сейф</entry>
+              <entry>%</entry>
+              <entry>138</entry>
+              <entry>3</entry>
+            </row>
+            <row>
+              <entry><emphasis role="bold">303</emphasis></entry>
+              <entry><emphasis role="bold">3301005</emphasis></entry>
+              <entry>BQ</entry>
+              <entry>%</entry>
+              <entry>Мастер счет</entry>
+              <entry>Накопительный счет Сейф</entry>
+              <entry>%</entry>
+              <entry>139</entry>
+              <entry>3</entry>
+            </row>
+            <row>
+              <entry><emphasis role="bold">304</emphasis></entry>
+              <entry><emphasis role="bold">3301005</emphasis></entry>
+              <entry>98000</entry>
+              <entry>%</entry>
+              <entry>Мастер счет</entry>
+              <entry>Накопительный счет Сейф</entry>
+              <entry>%</entry>
+              <entry>140</entry>
+              <entry>3</entry>
+            </row>
+            <row>
+              <entry><emphasis role="bold">305</emphasis></entry>
+              <entry><emphasis role="bold">3301005</emphasis></entry>
+              <entry>MBANK</entry>
+              <entry>%</entry>
+              <entry>Мастер счет</entry>
+              <entry>Накопительный счет Сейф</entry>
+              <entry>%</entry>
+              <entry>141</entry>
+              <entry>3</entry>
+            </row>
+            <row>
+              <entry><emphasis role="bold">306</emphasis></entry>
+              <entry><emphasis role="bold">3301005</emphasis></entry>
+              <entry>CFT2RS</entry>
+              <entry>%</entry>
+              <entry>Мастер счет</entry>
+              <entry>Накопительный счет Сейф</entry>
+              <entry>%</entry>
+              <entry>142</entry>
+              <entry>3</entry>
+            </row>
+            <row>
+              <entry><emphasis role="bold">307</emphasis></entry>
+              <entry><emphasis role="bold">3301005</emphasis></entry>
+              <entry>BQ</entry>
+              <entry>%</entry>
+              <entry>Текущий счет</entry>
+              <entry>Накопительный счет Сейф</entry>
+              <entry>%</entry>
+              <entry>143</entry>
+              <entry>3</entry>
+            </row>
+            <row>
+              <entry><emphasis role="bold">308</emphasis></entry>
+              <entry><emphasis role="bold">3301005</emphasis></entry>
+              <entry>98000</entry>
+              <entry>%</entry>
+              <entry>Текущий счет</entry>
+              <entry>Накопительный счет Сейф</entry>
+              <entry>%</entry>
+              <entry>144</entry>
+              <entry>3</entry>
+            </row>
+            <row>
+              <entry><emphasis role="bold">309</emphasis></entry>
+              <entry><emphasis role="bold">3301005</emphasis></entry>
+              <entry>MBANK</entry>
+              <entry>%</entry>
+              <entry>Текущий счет</entry>
+              <entry>Накопительный счет Сейф</entry>
+              <entry>%</entry>
+              <entry>145</entry>
+              <entry>3</entry>
+            </row>
+            <row>
+              <entry><emphasis role="bold">310</emphasis></entry>
+              <entry><emphasis role="bold">3301005</emphasis></entry>
+              <entry>CFT2RS</entry>
+              <entry>%</entry>
+              <entry>Текущий счет</entry>
+              <entry>Накопительный счет Сейф</entry>
+              <entry>%</entry>
+              <entry>146</entry>
+              <entry>3</entry>
+            </row>
+            <row>
+              <entry><emphasis role="bold">311</emphasis></entry>
+              <entry><emphasis role="bold">3301005</emphasis></entry>
+              <entry>BQ</entry>
+              <entry>%</entry>
+              <entry>Текущий счет по договору кредитной карты</entry>
+              <entry>Накопительный счет Сейф</entry>
+              <entry>%</entry>
+              <entry>147</entry>
+              <entry>3</entry>
+            </row>
+            <row>
+              <entry><emphasis role="bold">312</emphasis></entry>
+              <entry><emphasis role="bold">3301005</emphasis></entry>
+              <entry>98000</entry>
+              <entry>%</entry>
+              <entry>Текущий счет по договору кредитной карты</entry>
+              <entry>Накопительный счет Сейф</entry>
+              <entry>%</entry>
+              <entry>148</entry>
+              <entry>3</entry>
+            </row>
+            <row>
+              <entry><emphasis role="bold">313</emphasis></entry>
+              <entry><emphasis role="bold">3301005</emphasis></entry>
+              <entry>MBANK</entry>
+              <entry>%</entry>
+              <entry>Текущий счет по договору кредитной карты</entry>
+              <entry>Накопительный счет Сейф</entry>
+              <entry>%</entry>
+              <entry>149</entry>
+              <entry>3</entry>
+            </row>
+            <row>
+              <entry><emphasis role="bold">314</emphasis></entry>
+              <entry><emphasis role="bold">3301005</emphasis></entry>
+              <entry>CFT2RS</entry>
+              <entry>%</entry>
+              <entry>Текущий счет по договору кредитной карты</entry>
+              <entry>Накопительный счет Сейф</entry>
+              <entry>%</entry>
+              <entry>150</entry>
+              <entry>3</entry>
+            </row>
+            <row>
+              <entry><emphasis role="bold">315</emphasis></entry>
+              <entry><emphasis role="bold">3301005</emphasis></entry>
+              <entry>99995</entry>
+              <entry>%</entry>
+              <entry>Мастер счет</entry>
+              <entry>Накопительный счет Сейф</entry>
+              <entry>1</entry>
+              <entry>151</entry>
+              <entry>3</entry>
+            </row>
+            <row>
+              <entry><emphasis role="bold">316</emphasis></entry>
+              <entry><emphasis role="bold">3301005</emphasis></entry>
+              <entry>99995</entry>
+              <entry>%</entry>
+              <entry>Текущий счет</entry>
+              <entry>Накопительный счет Сейф</entry>
+              <entry>1</entry>
+              <entry>152</entry>
+              <entry>3</entry>
+            </row>
+            <row>
+              <entry><emphasis role="bold">317</emphasis></entry>
+              <entry><emphasis role="bold">3301005</emphasis></entry>
+              <entry>99995</entry>
+              <entry>%</entry>
+              <entry>Текущий счет по договору кредитной карты</entry>
+              <entry>Накопительный счет Сейф</entry>
+              <entry>1</entry>
+              <entry>153</entry>
+              <entry>3</entry>
+            </row>
+          </tbody>
+        </tgroup>
+</informaltable>

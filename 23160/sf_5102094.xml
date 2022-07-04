@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.0/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.0/rng/docbook.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"
+    version="5.0">
+    <title>Переключение аннулирования операций по вкладам и АСВ через ЦФТ Savings</title>
+    <refentry xml:id="sf_5102094">
+        <refnamediv>
+            <refname>Переключение аннулирования операций по вкладам и АСВ через ЦФТ Savings</refname>
+            <refpurpose>Форма предназначена для активации уведомления ЦФТ Savings при аннулировании операций выплаты со вкладов и АСВ</refpurpose>
+        </refnamediv>
+        <refsect1>
+            <title>Расположение</title>
+            <para>Путь: <emphasis role="bold"><menuchoice>
+                <guiicon>Транзакционный сервис</guiicon>
+                <guisubmenu>Администрирование</guisubmenu>
+                <guisubmenu>Переключение аннулирования операций по вкладам и АСВ через ЦФТ Savings</guisubmenu>
+            </menuchoice>
+            </emphasis></para>
+            <para>Идентификатор: 5102094</para>
+        </refsect1>
+        <refsect1>
+            <title>Форма</title>
+            <figure>
+                <title>Переключение аннулирования операций по вкладам и АСВ через ЦФТ Savings</title>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="sf_5102094.png" scalefit="1" width="100%"/>
+                    </imageobject>
+                </mediaobject>
+            </figure>
+        </refsect1>
+        <refsect1>
+            <title>Назначение</title>
+            <para>На форме расположен переключатель:</para>
+            <orderedlist>
+                <listitem>
+                    <para>Уведомление ЦФТ Savings при аннулировании операций по вкладам и АСВ.</para>
+                </listitem>
+            </orderedlist>
+            <para>Данный переключатель позволяет оперативно включать/отключать уведомления ЦФТ Savings при аннулировании
+            операций выдачи наличных денег со вклада или выплаты АСВ. Результатом нажатия кнопки является автоматическая замена настроек, а 
+            так же изменение названия кнопки переключения "Включить" -> "Отключить"</para>
+        </refsect1>
+    </refentry>
+</section>

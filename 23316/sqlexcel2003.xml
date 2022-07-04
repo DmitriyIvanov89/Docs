@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns:c="urn:schemas-microsoft-com:office:component:spreadsheet"            xmlns:html="http://www.w3.org/TR/REC-html40" xmlns:o="urn:schemas-microsoft-com:office:office"            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:schemas-microsoft-com:office:spreadsheet"            xmlns:x2="http://schemas.microsoft.com/office/excel/2003/xml" xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"            xmlns:x="urn:schemas-microsoft-com:office:excel">
+  <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+    <Colors>
+      <Color>
+        <Index>3</Index>
+        <RGB>#c0c0c0</RGB>
+      </Color>
+      <Color>
+        <Index>4</Index>
+        <RGB>#ff0000</RGB>
+      </Color>
+    </Colors>
+  </OfficeDocumentSettings>
+  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+    <WindowHeight>9000</WindowHeight>
+    <WindowWidth>13860</WindowWidth>
+    <WindowTopX>240</WindowTopX>
+    <WindowTopY>75</WindowTopY>
+    <ProtectStructure>False</ProtectStructure>
+    <ProtectWindows>False</ProtectWindows>
+  </ExcelWorkbook>
+  <Styles>
+    <Style ss:ID="Default" ss:Name="Default"/>
+    <Style ss:ID="Result" ss:Name="Result">
+      <Font ss:Bold="1" ss:Italic="1" ss:Underline="Single"/>
+    </Style>
+    <Style ss:ID="Result2" ss:Name="Result2">
+      <Font ss:Bold="1" ss:Italic="1" ss:Underline="Single"/>
+      <NumberFormat ss:Format="Currency"/>
+    </Style>
+    <Style ss:ID="Heading" ss:Name="Heading">
+      <Font ss:Bold="1" ss:Italic="1" ss:Size="16"/>
+    </Style>
+    <Style ss:ID="Heading1" ss:Name="Heading1">
+      <Font ss:Bold="1" ss:Italic="1" ss:Size="16"/>
+    </Style>
+    <Style ss:ID="co1"/>
+    <Style ss:ID="co2"/>
+    <Style ss:ID="ta1"/>
+    <Style ss:ID="ce1">
+      <NumberFormat ss:Format="Short Date"/>
+    </Style>
+    <Style ss:ID="ce2">
+      <NumberFormat ss:Format="General Date"/>
+    </Style>
+    <Style ss:ID="ce3">
+      <NumberFormat ss:Format="General Date"/>
+    </Style>
+    <Style ss:ID="ce4">
+      <NumberFormat ss:Format="Long Time"/>
+    </Style>  </Styles>  <ss:Worksheet ss:Name="Sheet 1 Name">
+    <Table ss:StyleID="ta1">
+
+ <Row ss:Height="12.384"><Cell>
+<Data ss:Type="String">PROHIBITED_CORRESPOND_ID</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">SYSTEM_FUNCTION_ID</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">DR_ID_SYS_TYPE_CODE</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">CR_ID_SYS_TYPE_CODE</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">PC_EXT_TYPE_ACC_DR</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">PC_EXT_TYPE_ACC_CR</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">PC_CONVERSION_FLAG</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">PC_CHECK_AREA_ENUM</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">PC_CHECK_SN</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">PC_COND_EXPR</Data>
+</Cell>
+<Cell>
+<Data ss:Type="String">PROHIBITED_CORRESPOND_ERR_CODE</Data>
+</Cell>
+      </Row>	 <Row>
+<Cell><Data ss:Type="Number">806</Data></Cell><Cell><Data ss:Type="Number">3102040</Data></Cell><Cell><Data ss:Type="String"></Data></Cell><Cell><Data ss:Type="String"></Data></Cell><Cell><Data ss:Type="String">%</Data></Cell><Cell><Data ss:Type="String">%</Data></Cell><Cell><Data ss:Type="Number"></Data></Cell><Cell><Data ss:Type="Number"></Data></Cell><Cell><Data ss:Type="Number">16</Data></Cell><Cell><Data ss:Type="String">:DT_CURRENCY_NUM_CODE is not null and :DT_CURRENCY_NUM_CODE not in ('810', '840')</Data></Cell><Cell><Data ss:Type="Number">19</Data></Cell>	</Row>
+	 <Row>
+<Cell><Data ss:Type="Number">808</Data></Cell><Cell><Data ss:Type="Number">3201000</Data></Cell><Cell><Data ss:Type="String"></Data></Cell><Cell><Data ss:Type="String"></Data></Cell><Cell><Data ss:Type="String">%</Data></Cell><Cell><Data ss:Type="String">%</Data></Cell><Cell><Data ss:Type="Number"></Data></Cell><Cell><Data ss:Type="Number"></Data></Cell><Cell><Data ss:Type="Number">2</Data></Cell><Cell><Data ss:Type="String">:DT_CURRENCY_NUM_CODE is not null and :DT_CURRENCY_NUM_CODE not in ('810', '840')</Data></Cell><Cell><Data ss:Type="Number">19</Data></Cell>	</Row>
+	 <Row>
+<Cell><Data ss:Type="Number">810</Data></Cell><Cell><Data ss:Type="Number">3202000</Data></Cell><Cell><Data ss:Type="String"></Data></Cell><Cell><Data ss:Type="String"></Data></Cell><Cell><Data ss:Type="String">%</Data></Cell><Cell><Data ss:Type="String">%</Data></Cell><Cell><Data ss:Type="Number"></Data></Cell><Cell><Data ss:Type="Number"></Data></Cell><Cell><Data ss:Type="Number">2</Data></Cell><Cell><Data ss:Type="String">:DT_CURRENCY_NUM_CODE is not null and :DT_CURRENCY_NUM_CODE not in ('810', '840')</Data></Cell><Cell><Data ss:Type="Number">19</Data></Cell>	</Row>
+	 <Row>
+<Cell><Data ss:Type="Number">812</Data></Cell><Cell><Data ss:Type="Number">3102060</Data></Cell><Cell><Data ss:Type="String"></Data></Cell><Cell><Data ss:Type="String"></Data></Cell><Cell><Data ss:Type="String">%</Data></Cell><Cell><Data ss:Type="String">%</Data></Cell><Cell><Data ss:Type="Number"></Data></Cell><Cell><Data ss:Type="Number"></Data></Cell><Cell><Data ss:Type="Number">2</Data></Cell><Cell><Data ss:Type="String">:DT_CURRENCY_NUM_CODE is not null and :DT_CURRENCY_NUM_CODE not in ('810', '840')</Data></Cell><Cell><Data ss:Type="Number">19</Data></Cell>	</Row>
+	 <Row>
+<Cell><Data ss:Type="Number">814</Data></Cell><Cell><Data ss:Type="Number">3152010</Data></Cell><Cell><Data ss:Type="String"></Data></Cell><Cell><Data ss:Type="String"></Data></Cell><Cell><Data ss:Type="String">%</Data></Cell><Cell><Data ss:Type="String">%</Data></Cell><Cell><Data ss:Type="Number"></Data></Cell><Cell><Data ss:Type="Number"></Data></Cell><Cell><Data ss:Type="Number">2</Data></Cell><Cell><Data ss:Type="String">:DT_CURRENCY_NUM_CODE is not null and :DT_CURRENCY_NUM_CODE not in ('810','840')</Data></Cell><Cell><Data ss:Type="Number">19</Data></Cell>	</Row>
+	 <Row>
+<Cell><Data ss:Type="Number">815</Data></Cell><Cell><Data ss:Type="Number">7102020</Data></Cell><Cell><Data ss:Type="String"></Data></Cell><Cell><Data ss:Type="String"></Data></Cell><Cell><Data ss:Type="String">%</Data></Cell><Cell><Data ss:Type="String">%</Data></Cell><Cell><Data ss:Type="Number"></Data></Cell><Cell><Data ss:Type="Number"></Data></Cell><Cell><Data ss:Type="Number">132</Data></Cell><Cell><Data ss:Type="String">:DT_CURRENCY_NUM_CODE is not null and :CT_CURRENCY_NUM_CODE is not null and ((:CT_CURRENCY_NUM_CODE in ('810') and :DT_CURRENCY_NUM_CODE not in ('810')) or (:CT_CURRENCY_NUM_CODE not in ('810') and :CT_CURRENCY_NUM_CODE != :DT_CURRENCY_NUM_CODE))</Data></Cell><Cell><Data ss:Type="Number">18</Data></Cell>	</Row>
+	 <Row>
+<Cell><Data ss:Type="Number">816</Data></Cell><Cell><Data ss:Type="Number">7102010</Data></Cell><Cell><Data ss:Type="String"></Data></Cell><Cell><Data ss:Type="String"></Data></Cell><Cell><Data ss:Type="String">%</Data></Cell><Cell><Data ss:Type="String">%</Data></Cell><Cell><Data ss:Type="Number"></Data></Cell><Cell><Data ss:Type="Number"></Data></Cell><Cell><Data ss:Type="Number">132</Data></Cell><Cell><Data ss:Type="String">:DT_CURRENCY_NUM_CODE is not null and :CT_CURRENCY_NUM_CODE is not null and ((:CT_CURRENCY_NUM_CODE in ('810') and :DT_CURRENCY_NUM_CODE not in ('810')) or (:CT_CURRENCY_NUM_CODE not in ('810') and :CT_CURRENCY_NUM_CODE != :DT_CURRENCY_NUM_CODE))</Data></Cell><Cell><Data ss:Type="Number">18</Data></Cell>	</Row>
+	 <Row>
+<Cell><Data ss:Type="Number">818</Data></Cell><Cell><Data ss:Type="Number">7152010</Data></Cell><Cell><Data ss:Type="String"></Data></Cell><Cell><Data ss:Type="String"></Data></Cell><Cell><Data ss:Type="String">%</Data></Cell><Cell><Data ss:Type="String">%</Data></Cell><Cell><Data ss:Type="Number"></Data></Cell><Cell><Data ss:Type="Number"></Data></Cell><Cell><Data ss:Type="Number">2</Data></Cell><Cell><Data ss:Type="String">:DT_CURRENCY_NUM_CODE is not null and :DT_CURRENCY_NUM_CODE not in ('810','840')</Data></Cell><Cell><Data ss:Type="Number">19</Data></Cell>	</Row>
+	 <Row>
+<Cell><Data ss:Type="Number">820</Data></Cell><Cell><Data ss:Type="Number">7102030</Data></Cell><Cell><Data ss:Type="String"></Data></Cell><Cell><Data ss:Type="String"></Data></Cell><Cell><Data ss:Type="String">%</Data></Cell><Cell><Data ss:Type="String">%</Data></Cell><Cell><Data ss:Type="Number"></Data></Cell><Cell><Data ss:Type="Number"></Data></Cell><Cell><Data ss:Type="Number">134</Data></Cell><Cell><Data ss:Type="String">:DT_CURRENCY_NUM_CODE is not null and :DT_CURRENCY_NUM_CODE not in ('810', '840')</Data></Cell><Cell><Data ss:Type="Number">19</Data></Cell>	</Row>
+	 <Row>
+<Cell><Data ss:Type="Number">822</Data></Cell><Cell><Data ss:Type="Number">7102040</Data></Cell><Cell><Data ss:Type="String"></Data></Cell><Cell><Data ss:Type="String"></Data></Cell><Cell><Data ss:Type="String">%</Data></Cell><Cell><Data ss:Type="String">%</Data></Cell><Cell><Data ss:Type="Number"></Data></Cell><Cell><Data ss:Type="Number"></Data></Cell><Cell><Data ss:Type="Number">133</Data></Cell><Cell><Data ss:Type="String">:DT_CURRENCY_NUM_CODE is not null and :DT_CURRENCY_NUM_CODE not in ('810', '840')</Data></Cell><Cell><Data ss:Type="Number">19</Data></Cell>	</Row>
+    </Table>
+    <x:WorksheetOptions/>
+  </ss:Worksheet></Workbook>

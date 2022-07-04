@@ -1,0 +1,568 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<SiebelGetOperationInfo_Output>
+	<HeaderInfo RqUID="123123"  CorrelationUID="1233"  RqType="SiebelGetOperationInfo_Output"  RqTm="01/01/2013 00:00:00"  SystemFrom="Siebel" SystemTo="Spectrum" ErrorCode="" ErrorText="">
+	</HeaderInfo>
+	<ListOfSession>
+		<Session>
+               <menuItemCode>3102010</menuItemCode>
+               <ActionId>1-XLXKM</ActionId>
+               <ServiceRequestId>1-XLXPB</ServiceRequestId>
+               <ClientId>1-5VI-7100</ClientId>
+               <BOCode/>
+               <ClientFirstName>Арнольд</ClientFirstName>
+               <ClientMidName>Жанклодович</ClientMidName>
+               <ClientLastName>Зумовский</ClientLastName>
+               <ClientDocCategory>21</ClientDocCategory>
+               <ClientDocSeries>25 04</ClientDocSeries>
+               <ClientDocNumber>188562</ClientDocNumber>
+               <ClientDocIssueTS>10/26/2004 04:00:00</ClientDocIssueTS>
+               <ClientDocIssuedBy>Ленинским РУВД г. Иркутска  к/п 382-004</ClientDocIssuedBy>
+               <ClientIssueCode>382-004</ClientIssueCode>
+               <ClientResidency>Y</ClientResidency>
+               <ClientCitizenship>РФ</ClientCitizenship>
+               <ClientBirthDate>06/29/1984 00:00:00</ClientBirthDate>
+               <ClientPlaceOfBirth>г. Иркутск</ClientPlaceOfBirth>
+               <ClientIDInformation>745105884167</ClientIDInformation>
+               <ClientIntLastName>SOKOLNIKOVA</ClientIntLastName>
+               <ClientIntFirstName>YULIYA</ClientIntFirstName>
+               <ThirdPartyId/>
+		<ThirdPartyFlag>N</ThirdPartyFlag>
+		<ThirdPartyFirstName/>
+		<ThirdPartyMidName/>
+		<ThirdPartyLastName/>
+		<ThirdPartyDocCategory/>
+		<ThirdPartyDocSeries/>
+		<ThirdPartyDocNumber/>
+		<ThirdPartyDocIssueTS/>
+		<ThirdPartyDocIssuedBy/>
+		<ThirdPartyBirthDate/>
+		<ThirdPartyPlaceOfBirth/>
+		<ThirdPartyWarrantFlag>N</ThirdPartyWarrantFlag>
+		<ThirdPartyWarrantNumber/>
+		<ThirdPartyWarrantDate/>
+		<ThirdPartyWarrantEndDate/>
+		<ThirdPartyWarrantIssueCode/>
+		<ThirdPartyIntLastName/>
+		<ThirdPartyIntFirstName/>
+		<SiebelAccountType>Счет</SiebelAccountType>
+		<SiebelAccountNumber>40817810733006616444</SiebelAccountNumber>
+		<SiebelAccountTypeName>Мастер счет</SiebelAccountTypeName>
+		<SiebelCardAccountNumber/>
+		<SiebelAccountOrganisation>00000</SiebelAccountOrganisation>
+		<SiebelDivisionCode>0100</SiebelDivisionCode>
+		<SiebelAccountBalance>360579.49</SiebelAccountBalance>
+		<SiebelAccountCurrency>RUB</SiebelAccountCurrency>
+		<SiebelAccountSystemId>99995</SiebelAccountSystemId>
+		<SiebelCardExpirationDate/>
+		<ComissionCurrency/>
+		<SiebelCardMultiCurrencyFlag/>
+		<INN/>
+		<SupportingDocument/>
+		<ComissionSum/>
+		<OrganisationPhone/>
+		<OrganisationEmail/>
+		<ClaimNumber>CR-</ClaimNumber>
+		<OGRN/>
+		<KPP/>
+		<OrganisationName/>
+		<OrganisationRegistrationAdress/>
+		<OrganisationFactAddress/>
+		<PackageType>Базовый</PackageType>
+		<FlagVIPClient>N</FlagVIPClient>
+		<AdmissionID/>
+		<DebetAccountNumber>47422</DebetAccountNumber>
+		<DebetAccountOrganisation/>
+		<DebetAccountSystemId/>
+		<HoldNumber/>
+		<ContractNumber/>
+		<ContractDate/>
+		<SNPAccountSystemId>MBANK</SNPAccountSystemId>
+		<SNPAccountOrganisation/>
+		<PaymentID/>
+		<SNPAccountNumber/>
+		<PaymentPupose>Перевод денежных средств для приобретения ценных бумаг Основной рынок (Московская биржа) Субсчет № 414802 (НДС не облагается).</PaymentPupose>
+		<PaymentSenderName/>
+		<PaymentSenderAccountNumber/>
+		<PayoutType/>
+               <ListOfPersonalAddress>
+                  <PersonalAddress>
+                     <AddressType>Постоянной регистрации</AddressType>
+                     <ApartmentNumber>13</ApartmentNumber>
+                     <City>Иркутск</City>
+                     <Country>РФ</Country>
+                     <County/>
+                     <Province>Иркутская</Province>
+                     <State>38</State>
+                     <StreetAddress>Миронова</StreetAddress>
+                     <ZipCode>664039</ZipCode>
+                     <VTB24Building/>
+                     <VTB24HouseNum>3</VTB24HouseNum>
+                     <VTB24Housing/>
+                     <VTB24SettlementType/>
+                     <VTB24Settlement/>
+                     <VTB24KLADRCode>3800000300003570003</VTB24KLADRCode>
+                     <FullAddress>664039 Россия обл Иркутская г Иркутск ул Миронова дом 3 кв 13</FullAddress>
+                     <ActiveFlag>Y</ActiveFlag>
+                  </PersonalAddress>
+                  <PersonalAddress>
+                     <AddressType>Фактический</AddressType>
+                     <ApartmentNumber>кв.13</ApartmentNumber>
+                     <City>г.Иркутск</City>
+                     <Country>Не указан</Country>
+                     <County/>
+                     <Province/>
+                     <State/>
+                     <StreetAddress>ул.Миронова</StreetAddress>
+                     <ZipCode>664000</ZipCode>
+                     <VTB24Building/>
+                     <VTB24HouseNum>д.3</VTB24HouseNum>
+                     <VTB24Housing/>
+                     <VTB24SettlementType/>
+                     <VTB24Settlement/>
+                     <VTB24KLADRCode/>
+                     <FullAddress>664000,,г.Иркутск,,ул.Миронова,д.3,,кв.13</FullAddress>
+                     <ActiveFlag>Y</ActiveFlag>
+                  </PersonalAddress>
+               </ListOfPersonalAddress>
+               <ListOfClientBlackList/>
+               <ListOfThirdPartyBlackList/>
+               <ListOfAccount>
+                  <Account>
+                     <Organization>00000</Organization>
+                     <Number>40817840301004000042</Number>
+                     <Balance>0</Balance>
+                     <Status>Активный</Status>
+                     <Currency>USD</Currency>
+                     <SystemId>99995</SystemId>
+                     <AgreementNumber>40817810001004000042</AgreementNumber>
+                     <AgreementDate>11/28/2013</AgreementDate>
+                     <AgreementProduct/>
+                     <AccountType>Мастер счет</AccountType>
+                  </Account>
+                  <Account>
+                     <Organization>00000</Organization>
+                     <Number>40817810001004000042</Number>
+                     <Balance>38578.08</Balance>
+                     <Status>Активный</Status>
+                     <Currency>RUR</Currency>
+                     <SystemId>99995</SystemId>
+                     <AgreementNumber>40817810001004000042</AgreementNumber>
+                     <AgreementDate>11/28/2013</AgreementDate>
+                     <AgreementProduct/>
+                     <AccountType>Мастер счет</AccountType>
+                  </Account>
+                  <Account>
+                     <Organization>00000</Organization>
+                     <Number>40817978901004000042</Number>
+                     <Balance>-5</Balance>
+                     <Status>Активный</Status>
+                     <Currency>EUR</Currency>
+                     <SystemId>99995</SystemId>
+                     <AgreementNumber>40817810001004000042</AgreementNumber>
+                     <AgreementDate>11/28/2013</AgreementDate>
+                     <AgreementProduct/>
+                     <AccountType>Мастер счет</AccountType>
+                  </Account>
+                  <Account>
+                     <Organization>00000</Organization>
+                     <Number>40817810525000008456</Number>
+                     <Balance>0</Balance>
+                     <Status>Активный</Status>
+                     <Currency>RUR</Currency>
+                     <SystemId>00000</SystemId>
+                     <AgreementNumber/>
+                     <AgreementDate>04/27/2010</AgreementDate>
+                     <AgreementProduct/>
+                     <AccountType>Текущий счет</AccountType>
+                  </Account>
+                  <Account>
+                     <Organization>00000</Organization>
+                     <Number>40817810900000160579</Number>
+                     <Balance>0</Balance>
+                     <Status>Закрыт</Status>
+                     <Currency>RUR</Currency>
+                     <SystemId>00000</SystemId>
+                     <AgreementNumber/>
+                     <AgreementDate>10/31/2008</AgreementDate>
+                     <AgreementProduct/>
+                     <AccountType>Текущий счет</AccountType>
+                  </Account>
+                  <Account>
+                     <Organization>00000</Organization>
+                     <Number>40817840907000000851</Number>
+                     <Balance>0</Balance>
+                     <Status>Активный</Status>
+                     <Currency>USD</Currency>
+                     <SystemId>00000</SystemId>
+                     <AgreementNumber/>
+                     <AgreementDate>10/15/2008</AgreementDate>
+                     <AgreementProduct/>
+                     <AccountType>Текущий счет</AccountType>
+                  </Account>
+                  <Account>
+                     <Organization>00000</Organization>
+                     <Number>40817978007000000490</Number>
+                     <Balance>0</Balance>
+                     <Status>Активный</Status>
+                     <Currency>EUR</Currency>
+                     <SystemId>00000</SystemId>
+                     <AgreementNumber/>
+                     <AgreementDate>10/15/2008</AgreementDate>
+                     <AgreementProduct/>
+                     <AccountType>Текущий счет</AccountType>
+                  </Account>
+                  <Account>
+                     <Organization>00000</Organization>
+                     <Number>42306810725000205995</Number>
+                     <Balance>0</Balance>
+                     <Status>Закрыт</Status>
+                     <Currency>RUR</Currency>
+                     <SystemId>00000</SystemId>
+                     <AgreementNumber/>
+                     <AgreementDate>06/16/2010</AgreementDate>
+                     <AgreementProduct/>
+                     <AccountType>Депозитный счет</AccountType>
+                  </Account>
+                  <Account>
+                     <Organization>00000</Organization>
+                     <Number>45507810100000000579</Number>
+                     <Balance>955650.05</Balance>
+                     <Status>Активный</Status>
+                     <Currency>RUR</Currency>
+                     <SystemId>00000</SystemId>
+                     <AgreementNumber/>
+                     <AgreementDate>08/03/2010</AgreementDate>
+                     <AgreementProduct/>
+                     <AccountType>Ссудный счет</AccountType>
+                  </Account>
+                  <Account>
+                     <Organization>00000</Organization>
+                     <Number>45507810900003430579</Number>
+                     <Balance>0</Balance>
+                     <Status>Закрыт</Status>
+                     <Currency>RUR</Currency>
+                     <SystemId>99995</SystemId>
+                     <AgreementNumber>625/0000-0180696</AgreementNumber>
+                     <AgreementDate>01/17/2014</AgreementDate>
+                     <AgreementProduct/>
+                     <AccountType>Ссудный счет</AccountType>
+                  </Account>
+               </ListOfAccount>
+               <ListOfFINSATMCard>
+                  <FINSATMCard>
+                     <CardNumber>4714870000563903</CardNumber>
+                     <Balance>-5</Balance>
+                     <Currency>EUR</Currency>
+                     <SystemId>99995</SystemId>
+                     <AccountNumber>40817978901004000042</AccountNumber>
+                     <ExpirationDate>12/31/2015</ExpirationDate>
+                     <Branch>0100</Branch>
+                     <MultiCurrencyFlag/>
+                     <CardType>Visa Classic Unemb Instant Iss</CardType>
+                     <CardStatus>Plastic Locked</CardStatus>
+                     <CardHolder>Сокольникова Юлия Игоревна</CardHolder>
+                  </FINSATMCard>
+                  <FINSATMCard>
+                     <CardNumber>4714870000563556</CardNumber>
+                     <Balance>0</Balance>
+                     <Currency>USD</Currency>
+                     <SystemId>99995</SystemId>
+                     <AccountNumber>40817840301004000042</AccountNumber>
+                     <ExpirationDate>12/31/2015</ExpirationDate>
+                     <Branch>0100</Branch>
+                     <MultiCurrencyFlag/>
+                     <CardType>Visa Classic Unemb Instant Iss</CardType>
+                     <CardStatus>Plastic Locked</CardStatus>
+                     <CardHolder>Сокольникова Юлия Игоревна</CardHolder>
+                  </FINSATMCard>
+                  <FINSATMCard>
+                     <CardNumber>4714870000580253</CardNumber>
+                     <Balance>-5</Balance>
+                     <Currency>EUR</Currency>
+                     <SystemId>99995</SystemId>
+                     <AccountNumber>40817978901004000042</AccountNumber>
+                     <ExpirationDate>12/31/2015</ExpirationDate>
+                     <Branch>0100</Branch>
+                     <MultiCurrencyFlag/>
+                     <CardType>Visa Classic Unemb Instant Iss</CardType>
+                     <CardStatus>Plastic Locked</CardStatus>
+                     <CardHolder>Сокольникова Юлия Игоревна</CardHolder>
+                  </FINSATMCard>
+                  <FINSATMCard>
+                     <CardNumber>4714870000035951</CardNumber>
+                     <Balance>-5</Balance>
+                     <Currency>EUR</Currency>
+                     <SystemId>99995</SystemId>
+                     <AccountNumber>40817978901004000042</AccountNumber>
+                     <ExpirationDate>05/31/2017</ExpirationDate>
+                     <Branch>0100</Branch>
+                     <MultiCurrencyFlag/>
+                     <CardType>Visa Classic Unembossed</CardType>
+                     <CardStatus>Plastic Inactive</CardStatus>
+                     <CardHolder>Сокольникова Юлия Игоревна</CardHolder>
+                  </FINSATMCard>
+                  <FINSATMCard>
+                     <CardNumber>4714870000023130</CardNumber>
+                     <Balance>0</Balance>
+                     <Currency>USD</Currency>
+                     <SystemId>99995</SystemId>
+                     <AccountNumber>40817840301004000042</AccountNumber>
+                     <ExpirationDate>05/31/2017</ExpirationDate>
+                     <Branch>0100</Branch>
+                     <MultiCurrencyFlag/>
+                     <CardType>Visa Classic Unembossed</CardType>
+                     <CardStatus>Plastic Inactive</CardStatus>
+                     <CardHolder>Сокольникова Юлия Игоревна</CardHolder>
+                  </FINSATMCard>
+                  <FINSATMCard>
+                     <CardNumber>4714870000530357</CardNumber>
+                     <Balance>0</Balance>
+                     <Currency>USD</Currency>
+                     <SystemId>99995</SystemId>
+                     <AccountNumber>40817840301004000042</AccountNumber>
+                     <ExpirationDate>05/31/2016</ExpirationDate>
+                     <Branch>0100</Branch>
+                     <MultiCurrencyFlag/>
+                     <CardType>Visa Classic Unemb Instant Iss</CardType>
+                     <CardStatus>Plastic Locked</CardStatus>
+                     <CardHolder>Сокольникова Юлия Игоревна</CardHolder>
+                  </FINSATMCard>
+                  <FINSATMCard>
+                     <CardNumber>4714870000057344</CardNumber>
+                     <Balance>0</Balance>
+                     <Currency>USD</Currency>
+                     <SystemId>99995</SystemId>
+                     <AccountNumber>40817840301004000042</AccountNumber>
+                     <ExpirationDate>05/31/2017</ExpirationDate>
+                     <Branch>0100</Branch>
+                     <MultiCurrencyFlag/>
+                     <CardType>Visa Classic Unembossed</CardType>
+                     <CardStatus>Plastic Inactive</CardStatus>
+                     <CardHolder>Ломов Олег Сергеевич</CardHolder>
+                  </FINSATMCard>
+                  <FINSATMCard>
+                     <CardNumber>4714870000520754</CardNumber>
+                     <Balance>38578.08</Balance>
+                     <Currency>RUR</Currency>
+                     <SystemId>99995</SystemId>
+                     <AccountNumber>40817810001004000042</AccountNumber>
+                     <ExpirationDate>05/31/2016</ExpirationDate>
+                     <Branch>0100</Branch>
+                     <MultiCurrencyFlag/>
+                     <CardType>Visa Classic Unemb Instant Iss</CardType>
+                     <CardStatus>Plastic Locked</CardStatus>
+                     <CardHolder>Сокольникова Юлия Игоревна</CardHolder>
+                  </FINSATMCard>
+                  <FINSATMCard>
+                     <CardNumber>5278830000291850</CardNumber>
+                     <Balance>-5</Balance>
+                     <Currency>EUR</Currency>
+                     <SystemId>99995</SystemId>
+                     <AccountNumber>40817978901004000042</AccountNumber>
+                     <ExpirationDate>05/31/2017</ExpirationDate>
+                     <Branch>0100</Branch>
+                     <MultiCurrencyFlag/>
+                     <CardType>MasterCard Unembossed</CardType>
+                     <CardStatus>Plastic Inactive</CardStatus>
+                     <CardHolder>Сокольникова Юлия Игоревна</CardHolder>
+                  </FINSATMCard>
+                  <FINSATMCard>
+                     <CardNumber>4714870000080619</CardNumber>
+                     <Balance>-5</Balance>
+                     <Currency>EUR</Currency>
+                     <SystemId>99995</SystemId>
+                     <AccountNumber>40817978901004000042</AccountNumber>
+                     <ExpirationDate>05/31/2017</ExpirationDate>
+                     <Branch>0100</Branch>
+                     <MultiCurrencyFlag/>
+                     <CardType>Visa Classic Unembossed</CardType>
+                     <CardStatus>Card OK</CardStatus>
+                     <CardHolder>Сокольникова Юлия Игоревна</CardHolder>
+                  </FINSATMCard>
+                  <FINSATMCard>
+                     <CardNumber>4714870000597745</CardNumber>
+                     <Balance>0</Balance>
+                     <Currency>USD</Currency>
+                     <SystemId>99995</SystemId>
+                     <AccountNumber>40817840301004000042</AccountNumber>
+                     <ExpirationDate>04/30/2016</ExpirationDate>
+                     <Branch>0100</Branch>
+                     <MultiCurrencyFlag/>
+                     <CardType>Visa Classic Unemb Instant Iss</CardType>
+                     <CardStatus>Pending Closing</CardStatus>
+                     <CardHolder>Сокольникова Юлия Игоревна</CardHolder>
+                  </FINSATMCard>
+                  <FINSATMCard>
+                     <CardNumber>4714870000088950</CardNumber>
+                     <Balance>38578.08</Balance>
+                     <Currency>RUR</Currency>
+                     <SystemId>99995</SystemId>
+                     <AccountNumber>40817810001004000042</AccountNumber>
+                     <ExpirationDate>12/31/2016</ExpirationDate>
+                     <Branch>0100</Branch>
+                     <MultiCurrencyFlag/>
+                     <CardType>Visa Classic Unembossed</CardType>
+                     <CardStatus>Card Closed</CardStatus>
+                     <CardHolder>Коняка Юрий Иванович</CardHolder>
+                  </FINSATMCard>
+                  <FINSATMCard>
+                     <CardNumber>4483433307484049</CardNumber>
+                     <Balance>23366.27</Balance>
+                     <Currency>RUR</Currency>
+                     <SystemId>OW4</SystemId>
+                     <AccountNumber>40817810600482116826</AccountNumber>
+                     <ExpirationDate>03/31/2014</ExpirationDate>
+                     <Branch>00000</Branch>
+                     <MultiCurrencyFlag>N</MultiCurrencyFlag>
+                     <CardType>VISA Clas CHIP CRED VTB Exp_36 (Our VISA</CardType>
+                     <CardStatus>Card OK</CardStatus>
+                     <CardHolder>Зяблов Юрий Николаевич</CardHolder>
+                  </FINSATMCard>
+                  <FINSATMCard>
+                     <CardNumber>5543860010275550</CardNumber>
+                     <Balance>0</Balance>
+                     <Currency>RUR</Currency>
+                     <SystemId>OW4</SystemId>
+                     <AccountNumber>40817810923002939536</AccountNumber>
+                     <ExpirationDate>02/28/2014</ExpirationDate>
+                     <Branch>00000</Branch>
+                     <MultiCurrencyFlag>N</MultiCurrencyFlag>
+                     <CardType>EC/MC Stnd CRED VTB (Our EC/MC Card)</CardType>
+                     <CardStatus>zDECLINE 57</CardStatus>
+                     <CardHolder>КУН СЕРГЕЙ СЕРГЕЕВИЧ</CardHolder>
+                  </FINSATMCard>
+                  <FINSATMCard>
+                     <CardNumber>4272290369976964</CardNumber>
+                     <Balance>22378.45</Balance>
+                     <Currency>RUR</Currency>
+                     <SystemId>OW4</SystemId>
+                     <AccountNumber>40817810481002433888</AccountNumber>
+                     <ExpirationDate>06/30/2016</ExpirationDate>
+                     <Branch>00000</Branch>
+                     <MultiCurrencyFlag>N</MultiCurrencyFlag>
+                     <CardType>VISA Classic Unem VTB Prod_03 Sal Exp_36</CardType>
+                     <CardStatus>Card OK</CardStatus>
+                     <CardHolder>Сокольникова Юлия Игоревна</CardHolder>
+                  </FINSATMCard>
+                  <FINSATMCard>
+                     <CardNumber>4483460530811607</CardNumber>
+                     <Balance>22378.45</Balance>
+                     <Currency>RUR</Currency>
+                     <SystemId>OW4</SystemId>
+                     <AccountNumber>40817810481002433888</AccountNumber>
+                     <ExpirationDate>06/30/2010</ExpirationDate>
+                     <Branch>00000</Branch>
+                     <MultiCurrencyFlag>N</MultiCurrencyFlag>
+                     <CardType>Electron VTB (Our Electron Card)</CardType>
+                     <CardStatus>Card OK</CardStatus>
+                     <CardHolder>Сокольникова Юлия Игоревна</CardHolder>
+                  </FINSATMCard>
+                  <FINSATMCard>
+                     <CardNumber>4272290204592448</CardNumber>
+                     <Balance>22378.45</Balance>
+                     <Currency>RUR</Currency>
+                     <SystemId>OW4</SystemId>
+                     <AccountNumber>40817810481002433888</AccountNumber>
+                     <ExpirationDate>06/30/2013</ExpirationDate>
+                     <Branch>00000</Branch>
+                     <MultiCurrencyFlag>N</MultiCurrencyFlag>
+                     <CardType>VISA Classic Unem VTB Prod_03 Sal Exp_36</CardType>
+                     <CardStatus>Do not honor 05</CardStatus>
+                     <CardHolder>Сокольникова Юлия Игоревна</CardHolder>
+                  </FINSATMCard>
+                  <FINSATMCard>
+                     <CardNumber>4483460551194941</CardNumber>
+                     <Balance>22378.45</Balance>
+                     <Currency>RUR</Currency>
+                     <SystemId>OW4</SystemId>
+                     <AccountNumber>40817810481002433888</AccountNumber>
+                     <ExpirationDate>03/31/2010</ExpirationDate>
+                     <Branch>00000</Branch>
+                     <MultiCurrencyFlag>N</MultiCurrencyFlag>
+                     <CardType>Electron VTB (Our Electron Card)</CardType>
+                     <CardStatus>Do not honor 05</CardStatus>
+                     <CardHolder>Сокольникова Юлия Игоревна</CardHolder>
+                  </FINSATMCard>
+                  <FINSATMCard>
+                     <CardNumber>4483460503191938</CardNumber>
+                     <Balance>0</Balance>
+                     <Currency>RUR</Currency>
+                     <SystemId>OW4</SystemId>
+                     <AccountNumber>40817810700112607125</AccountNumber>
+                     <ExpirationDate>05/31/2012</ExpirationDate>
+                     <Branch>00040</Branch>
+                     <MultiCurrencyFlag>N</MultiCurrencyFlag>
+                     <CardType>Instant Issue VTB (Our Electron Card)</CardType>
+                     <CardStatus>zDECLINE 57</CardStatus>
+                     <CardHolder>Сокольникова Юлия Игоревна</CardHolder>
+                  </FINSATMCard>
+                  <FINSATMCard>
+                     <CardNumber>6764210511424622</CardNumber>
+                     <Balance>0</Balance>
+                     <Currency>RUR</Currency>
+                     <SystemId>OW4</SystemId>
+                     <AccountNumber>40817810800112180416</AccountNumber>
+                     <ExpirationDate>05/31/2007</ExpirationDate>
+                     <Branch>00040</Branch>
+                     <MultiCurrencyFlag>N</MultiCurrencyFlag>
+                     <CardType>Maestro VTB (Our Maestro Card)</CardType>
+                     <CardStatus>zDECLINE 57</CardStatus>
+                     <CardHolder>Сокольникова Юлия Игоревна</CardHolder>
+                  </FINSATMCard>
+                  <FINSATMCard>
+                     <CardNumber>4483433327508462</CardNumber>
+                     <Balance>0</Balance>
+                     <Currency>RUR</Currency>
+                     <SystemId>OW4</SystemId>
+                     <AccountNumber>40817810800112180416</AccountNumber>
+                     <ExpirationDate>06/30/2012</ExpirationDate>
+                     <Branch>00040</Branch>
+                     <MultiCurrencyFlag>N</MultiCurrencyFlag>
+                     <CardType>VISA Clas CHIP DEB VTB (Our VISA Card)</CardType>
+                     <CardStatus>Card not Recieved 62</CardStatus>
+                     <CardHolder>Сокольникова Юлия Игоревна</CardHolder>
+                  </FINSATMCard>
+                  <FINSATMCard>
+                     <CardNumber>4483433342253417</CardNumber>
+                     <Balance>0</Balance>
+                     <Currency>RUR</Currency>
+                     <SystemId>OW4</SystemId>
+                     <AccountNumber>40817810800112180416</AccountNumber>
+                     <ExpirationDate>02/28/2010</ExpirationDate>
+                     <Branch>00040</Branch>
+                     <MultiCurrencyFlag>N</MultiCurrencyFlag>
+                     <CardType>VISA Clas CHIP DEB VTB (Our VISA Card)</CardType>
+                     <CardStatus>PickUp S 43</CardStatus>
+                     <CardHolder>Сокольникова Юлия Игоревна</CardHolder>
+                  </FINSATMCard>
+                  <FINSATMCard>
+                     <CardNumber>4483433337925813</CardNumber>
+                     <Balance>0</Balance>
+                     <Currency>RUR</Currency>
+                     <SystemId>OW4</SystemId>
+                     <AccountNumber>40817810800112180416</AccountNumber>
+                     <ExpirationDate>04/30/2009</ExpirationDate>
+                     <Branch>00040</Branch>
+                     <MultiCurrencyFlag>N</MultiCurrencyFlag>
+                     <CardType>VISA Clas CHIP DEB VTB (Our VISA Card)</CardType>
+                     <CardStatus>PickUp S 43</CardStatus>
+                     <CardHolder>Сокольникова Юлия Игоревна</CardHolder>
+                  </FINSATMCard>
+                  <FINSATMCard>
+                     <CardNumber>4714870000532940</CardNumber>
+                     <Balance>38578.08</Balance>
+                     <Currency>RUR</Currency>
+                     <SystemId>99995</SystemId>
+                     <AccountNumber>40817810001004000042</AccountNumber>
+                     <ExpirationDate>11/30/2015</ExpirationDate>
+                     <Branch>0100</Branch>
+                     <MultiCurrencyFlag/>
+                     <CardType>Visa Classic Unemb Instant Iss</CardType>
+                     <CardStatus>Card OK</CardStatus>
+                     <CardHolder>Сокольникова Юлия Игоревна</CardHolder>
+                  </FINSATMCard>
+               </ListOfFINSATMCard>
+               <ListOfThirdPartyPersonalAddress/>
+            </Session>
+	</ListOfSession>
+</SiebelGetOperationInfo_Output>

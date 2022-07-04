@@ -1,0 +1,177 @@
+BEGIN
+
+feature_pkg.disable_feature('RESTRICTION_OF_CENTRAL_BANK_3102030');
+feature_pkg.disable_feature('RESTRICTION_OF_CENTRAL_BANK_3102040');
+feature_pkg.disable_feature('RESTRICTION_OF_CENTRAL_BANK_7102030');
+feature_pkg.disable_feature('RESTRICTION_OF_CENTRAL_BANK_7102040');
+feature_pkg.disable_feature('RESTRICTION_OF_CENTRAL_BANK_3201000');
+feature_pkg.disable_feature('RESTRICTION_OF_CENTRAL_BANK_3202000');
+feature_pkg.disable_feature('RESTRICTION_OF_CENTRAL_BANK_3102060');
+feature_pkg.disable_feature('RESTRICTION_OF_CENTRAL_BANK_3152010');
+feature_pkg.disable_feature('RESTRICTION_OF_CENTRAL_BANK_7152010');
+        
+commit;
+
+update prohibited_correspond_err
+set pce_error_msg = 'Снятие наличных денег со счета разрешено только в Рублях или Долларах США'
+where prohibited_correspond_err_code in ('19');
+
+commit;
+
+update feature
+set 
+feature_name = 'Выдача наличных средств с МС/ТС клиента без комиссии. Ограничения: Руб-Руб; Доллары - Доллары',
+feature_enable_script = 
+'BEGIN
+Insert into PROHIBITED_CORRESPOND (PROHIBITED_CORRESPOND_ID,SYSTEM_FUNCTION_ID,DR_ID_SYS_TYPE_CODE,CR_ID_SYS_TYPE_CODE,PC_EXT_TYPE_ACC_DR,PC_EXT_TYPE_ACC_CR,PC_CONVERSION_FLAG,PC_CHECK_AREA_ENUM,PC_CHECK_SN,PC_COND_EXPR,PROHIBITED_CORRESPOND_ERR_CODE) 
+values (S_PROHIBITED_CORRESPOND.nextVal,''3102030'',null,null,''%'',''%'',''1'',null,(select max(PC_CHECK_SN) from PROHIBITED_CORRESPOND where SYSTEM_FUNCTION_ID = ''3102030'') + 1,null,''18'');
+Insert into PROHIBITED_CORRESPOND (PROHIBITED_CORRESPOND_ID,SYSTEM_FUNCTION_ID,DR_ID_SYS_TYPE_CODE,CR_ID_SYS_TYPE_CODE,PC_EXT_TYPE_ACC_DR,PC_EXT_TYPE_ACC_CR,PC_CONVERSION_FLAG,PC_CHECK_AREA_ENUM,PC_CHECK_SN,PC_COND_EXPR,PROHIBITED_CORRESPOND_ERR_CODE) 
+values (S_PROHIBITED_CORRESPOND.nextVal,''3102030'',null,null,''%'',''%'',null,null,(select max(PC_CHECK_SN) from PROHIBITED_CORRESPOND where SYSTEM_FUNCTION_ID = ''3102030'') + 1,'':DT_CURRENCY_NUM_CODE is not null and :DT_CURRENCY_NUM_CODE not in (''''810'''', ''''840'''')'',''19'');
+END;'
+where feature_code = 'RESTRICTION_OF_CENTRAL_BANK_3102030';
+
+update feature
+set 
+feature_name = 'Выдача наличных средств с МС/ТС клиента с комиссией. Ограничения: Руб-Руб; Доллары - Доллары',
+feature_enable_script = 
+'BEGIN
+Insert into PROHIBITED_CORRESPOND (PROHIBITED_CORRESPOND_ID,SYSTEM_FUNCTION_ID,DR_ID_SYS_TYPE_CODE,CR_ID_SYS_TYPE_CODE,PC_EXT_TYPE_ACC_DR,PC_EXT_TYPE_ACC_CR,PC_CONVERSION_FLAG,PC_CHECK_AREA_ENUM,PC_CHECK_SN,PC_COND_EXPR,PROHIBITED_CORRESPOND_ERR_CODE) 
+values (S_PROHIBITED_CORRESPOND.nextVal,''3102040'',null,null,''%'',''%'',''1'',null,(select max(PC_CHECK_SN) from PROHIBITED_CORRESPOND where SYSTEM_FUNCTION_ID = ''3102040'') + 1,null,''18'');
+Insert into PROHIBITED_CORRESPOND (PROHIBITED_CORRESPOND_ID,SYSTEM_FUNCTION_ID,DR_ID_SYS_TYPE_CODE,CR_ID_SYS_TYPE_CODE,PC_EXT_TYPE_ACC_DR,PC_EXT_TYPE_ACC_CR,PC_CONVERSION_FLAG,PC_CHECK_AREA_ENUM,PC_CHECK_SN,PC_COND_EXPR,PROHIBITED_CORRESPOND_ERR_CODE) 
+values (S_PROHIBITED_CORRESPOND.nextVal,''3102040'',null,null,''%'',''%'',null,null,(select max(PC_CHECK_SN) from PROHIBITED_CORRESPOND where SYSTEM_FUNCTION_ID = ''3102040'') + 1,'':DT_CURRENCY_NUM_CODE is not null and :DT_CURRENCY_NUM_CODE not in (''''810'''', ''''840'''')'',''19''); 
+END;'
+where feature_code = 'RESTRICTION_OF_CENTRAL_BANK_3102040';
+
+update feature
+set 
+feature_name = 'Выдача наличных средств по закрытой карте.Ограничения:Руб-Руб;Доллары-Доллары',
+feature_enable_script = 
+'BEGIN
+Insert into PROHIBITED_CORRESPOND (PROHIBITED_CORRESPOND_ID,SYSTEM_FUNCTION_ID,DR_ID_SYS_TYPE_CODE,CR_ID_SYS_TYPE_CODE,PC_EXT_TYPE_ACC_DR,PC_EXT_TYPE_ACC_CR,PC_CONVERSION_FLAG,PC_CHECK_AREA_ENUM,PC_CHECK_SN,PC_COND_EXPR,PROHIBITED_CORRESPOND_ERR_CODE)
+values (S_PROHIBITED_CORRESPOND.nextVal,''3152010'',null,null,''%'',''%'',''1'',null,nvl((select max(PC_CHECK_SN) from PROHIBITED_CORRESPOND where SYSTEM_FUNCTION_ID = ''3152010''), 0) + 1,null,''18'');
+Insert into PROHIBITED_CORRESPOND (PROHIBITED_CORRESPOND_ID,SYSTEM_FUNCTION_ID,DR_ID_SYS_TYPE_CODE,CR_ID_SYS_TYPE_CODE,PC_EXT_TYPE_ACC_DR,PC_EXT_TYPE_ACC_CR,PC_CONVERSION_FLAG,PC_CHECK_AREA_ENUM,PC_CHECK_SN,PC_COND_EXPR,PROHIBITED_CORRESPOND_ERR_CODE)
+values (S_PROHIBITED_CORRESPOND.nextVal,''3152010'',null,null,''%'',''%'',null,null,nvl((select max(PC_CHECK_SN) from PROHIBITED_CORRESPOND where SYSTEM_FUNCTION_ID = ''3152010''), 0) + 1,'':DT_CURRENCY_NUM_CODE is not null and :DT_CURRENCY_NUM_CODE not in (''''810'''',''''840'''')'',''19'');
+END;'
+where feature_code = 'RESTRICTION_OF_CENTRAL_BANK_3152010';
+
+update feature
+set 
+feature_name = 'Выплаты наличными со счета претензий. Ограничения: Руб-Руб; Доллары - Доллары',
+feature_enable_script = 
+'BEGIN
+Insert into PROHIBITED_CORRESPOND (PROHIBITED_CORRESPOND_ID,SYSTEM_FUNCTION_ID,DR_ID_SYS_TYPE_CODE,CR_ID_SYS_TYPE_CODE,PC_EXT_TYPE_ACC_DR,PC_EXT_TYPE_ACC_CR,PC_CONVERSION_FLAG,PC_CHECK_AREA_ENUM,PC_CHECK_SN,PC_COND_EXPR,PROHIBITED_CORRESPOND_ERR_CODE) 
+values (S_PROHIBITED_CORRESPOND.nextVal,''3102060'',null,null,''%'',''%'',''1'',null,nvl((select max(PC_CHECK_SN) from PROHIBITED_CORRESPOND where SYSTEM_FUNCTION_ID = ''3102060''), 0) + 1,null,''18'');
+Insert into PROHIBITED_CORRESPOND (PROHIBITED_CORRESPOND_ID,SYSTEM_FUNCTION_ID,DR_ID_SYS_TYPE_CODE,CR_ID_SYS_TYPE_CODE,PC_EXT_TYPE_ACC_DR,PC_EXT_TYPE_ACC_CR,PC_CONVERSION_FLAG,PC_CHECK_AREA_ENUM,PC_CHECK_SN,PC_COND_EXPR,PROHIBITED_CORRESPOND_ERR_CODE) 
+values (S_PROHIBITED_CORRESPOND.nextVal,''3102060'',null,null,''%'',''%'',null,null,nvl((select max(PC_CHECK_SN) from PROHIBITED_CORRESPOND where SYSTEM_FUNCTION_ID = ''3102060''), 0) + 1,'':DT_CURRENCY_NUM_CODE is not null and :DT_CURRENCY_NUM_CODE not in (''''810'''', ''''840'''')'',''19'');
+END;'
+where feature_code = 'RESTRICTION_OF_CENTRAL_BANK_3102060';
+
+update feature
+set 
+feature_name = '(API)Выдача наличных средств с МС/ТС клиента с комис.Ограничения:Руб-Руб;Доллары-Доллары',
+feature_enable_script = 
+'BEGIN
+Insert into PROHIBITED_CORRESPOND (PROHIBITED_CORRESPOND_ID,SYSTEM_FUNCTION_ID,DR_ID_SYS_TYPE_CODE,CR_ID_SYS_TYPE_CODE,PC_EXT_TYPE_ACC_DR,PC_EXT_TYPE_ACC_CR,PC_CONVERSION_FLAG,PC_CHECK_AREA_ENUM,PC_CHECK_SN,PC_COND_EXPR,PROHIBITED_CORRESPOND_ERR_CODE) 
+values (S_PROHIBITED_CORRESPOND.nextVal,''7102040'',null,null,''%'',''%'',''1'',null,(select max(PC_CHECK_SN) from PROHIBITED_CORRESPOND where SYSTEM_FUNCTION_ID = ''7102040'') + 1,null,''18'');
+Insert into PROHIBITED_CORRESPOND (PROHIBITED_CORRESPOND_ID,SYSTEM_FUNCTION_ID,DR_ID_SYS_TYPE_CODE,CR_ID_SYS_TYPE_CODE,PC_EXT_TYPE_ACC_DR,PC_EXT_TYPE_ACC_CR,PC_CONVERSION_FLAG,PC_CHECK_AREA_ENUM,PC_CHECK_SN,PC_COND_EXPR,PROHIBITED_CORRESPOND_ERR_CODE) 
+values (S_PROHIBITED_CORRESPOND.nextVal,''7102040'',null,null,''%'',''%'',null,null,(select max(PC_CHECK_SN) from PROHIBITED_CORRESPOND where SYSTEM_FUNCTION_ID = ''7102040'') + 1,'':DT_CURRENCY_NUM_CODE is not null and :DT_CURRENCY_NUM_CODE not in (''''810'''', ''''840'''')'',''19''); 
+END;'
+where feature_code = 'RESTRICTION_OF_CENTRAL_BANK_7102040';
+
+update feature
+set 
+feature_name = '(API)Выдача наличных средств с МС/ТС клиента без комc.Ограничения:Руб-Руб;Доллары-Доллары',
+feature_enable_script = 
+'BEGIN
+Insert into PROHIBITED_CORRESPOND (PROHIBITED_CORRESPOND_ID,SYSTEM_FUNCTION_ID,DR_ID_SYS_TYPE_CODE,CR_ID_SYS_TYPE_CODE,PC_EXT_TYPE_ACC_DR,PC_EXT_TYPE_ACC_CR,PC_CONVERSION_FLAG,PC_CHECK_AREA_ENUM,PC_CHECK_SN,PC_COND_EXPR,PROHIBITED_CORRESPOND_ERR_CODE) 
+values (S_PROHIBITED_CORRESPOND.nextVal,''7102030'',null,null,''%'',''%'',''1'',null,(select max(PC_CHECK_SN) from PROHIBITED_CORRESPOND where SYSTEM_FUNCTION_ID = ''7102030'') + 1,null,''18'');
+Insert into PROHIBITED_CORRESPOND (PROHIBITED_CORRESPOND_ID,SYSTEM_FUNCTION_ID,DR_ID_SYS_TYPE_CODE,CR_ID_SYS_TYPE_CODE,PC_EXT_TYPE_ACC_DR,PC_EXT_TYPE_ACC_CR,PC_CONVERSION_FLAG,PC_CHECK_AREA_ENUM,PC_CHECK_SN,PC_COND_EXPR,PROHIBITED_CORRESPOND_ERR_CODE) 
+values (S_PROHIBITED_CORRESPOND.nextVal,''7102030'',null,null,''%'',''%'',null,null,(select max(PC_CHECK_SN) from PROHIBITED_CORRESPOND where SYSTEM_FUNCTION_ID = ''7102030'') + 1,'':DT_CURRENCY_NUM_CODE is not null and :DT_CURRENCY_NUM_CODE not in (''''810'''', ''''840'''')'',''19'');
+END;'
+where feature_code = 'RESTRICTION_OF_CENTRAL_BANK_7102030';
+
+update feature
+set 
+feature_name = '(API)Выдача наличных средств по закрытой карте.Ограничения:Руб-Руб;Доллары-Доллары',
+feature_enable_script = 
+'BEGIN
+Insert into PROHIBITED_CORRESPOND (PROHIBITED_CORRESPOND_ID,SYSTEM_FUNCTION_ID,DR_ID_SYS_TYPE_CODE,CR_ID_SYS_TYPE_CODE,PC_EXT_TYPE_ACC_DR,PC_EXT_TYPE_ACC_CR,PC_CONVERSION_FLAG,PC_CHECK_AREA_ENUM,PC_CHECK_SN,PC_COND_EXPR,PROHIBITED_CORRESPOND_ERR_CODE)
+values (S_PROHIBITED_CORRESPOND.nextVal,''7152010'',null,null,''%'',''%'',''1'',null,nvl((select max(PC_CHECK_SN) from PROHIBITED_CORRESPOND where SYSTEM_FUNCTION_ID = ''7152010''), 0) + 1,null,''18'');
+Insert into PROHIBITED_CORRESPOND (PROHIBITED_CORRESPOND_ID,SYSTEM_FUNCTION_ID,DR_ID_SYS_TYPE_CODE,CR_ID_SYS_TYPE_CODE,PC_EXT_TYPE_ACC_DR,PC_EXT_TYPE_ACC_CR,PC_CONVERSION_FLAG,PC_CHECK_AREA_ENUM,PC_CHECK_SN,PC_COND_EXPR,PROHIBITED_CORRESPOND_ERR_CODE)
+values (S_PROHIBITED_CORRESPOND.nextVal,''7152010'',null,null,''%'',''%'',null,null,nvl((select max(PC_CHECK_SN) from PROHIBITED_CORRESPOND where SYSTEM_FUNCTION_ID = ''7152010''), 0) + 1,'':DT_CURRENCY_NUM_CODE is not null and :DT_CURRENCY_NUM_CODE not in (''''810'''',''''840'''')'',''19'');
+END;'
+where feature_code = 'RESTRICTION_OF_CENTRAL_BANK_7152010';
+
+update feature
+set 
+feature_name = 'Выдача наличных средств со вклада (без закрытия). Ограничения: Руб-Руб; Доллары - Доллары',
+feature_enable_script = 
+'BEGIN 
+Insert into PROHIBITED_CORRESPOND (PROHIBITED_CORRESPOND_ID,SYSTEM_FUNCTION_ID,DR_ID_SYS_TYPE_CODE,CR_ID_SYS_TYPE_CODE,PC_EXT_TYPE_ACC_DR,PC_EXT_TYPE_ACC_CR,PC_CONVERSION_FLAG,PC_CHECK_AREA_ENUM,PC_CHECK_SN,PC_COND_EXPR,PROHIBITED_CORRESPOND_ERR_CODE) 
+values (S_PROHIBITED_CORRESPOND.nextVal,''3201000'',null,null,''%'',''%'',''1'',null,nvl((select max(PC_CHECK_SN) from PROHIBITED_CORRESPOND where SYSTEM_FUNCTION_ID = ''3201000''), 0) + 1,null,''18'');
+Insert into PROHIBITED_CORRESPOND (PROHIBITED_CORRESPOND_ID,SYSTEM_FUNCTION_ID,DR_ID_SYS_TYPE_CODE,CR_ID_SYS_TYPE_CODE,PC_EXT_TYPE_ACC_DR,PC_EXT_TYPE_ACC_CR,PC_CONVERSION_FLAG,PC_CHECK_AREA_ENUM,PC_CHECK_SN,PC_COND_EXPR,PROHIBITED_CORRESPOND_ERR_CODE) 
+values (S_PROHIBITED_CORRESPOND.nextVal,''3201000'',null,null,''%'',''%'',null,null,nvl((select max(PC_CHECK_SN) from PROHIBITED_CORRESPOND where SYSTEM_FUNCTION_ID = ''3201000''), 0) + 1,'':DT_CURRENCY_NUM_CODE is not null and :DT_CURRENCY_NUM_CODE not in (''''810'''', ''''840'''')'',''19''); 
+END;'
+where feature_code = 'RESTRICTION_OF_CENTRAL_BANK_3201000';
+
+update feature
+set 
+feature_name = 'Выдача наличных средств со вклада (с закрытием). Ограничения: Руб-Руб; Доллары - Доллары',
+feature_enable_script = 
+'BEGIN 
+Insert into PROHIBITED_CORRESPOND (PROHIBITED_CORRESPOND_ID,SYSTEM_FUNCTION_ID,DR_ID_SYS_TYPE_CODE,CR_ID_SYS_TYPE_CODE,PC_EXT_TYPE_ACC_DR,PC_EXT_TYPE_ACC_CR,PC_CONVERSION_FLAG,PC_CHECK_AREA_ENUM,PC_CHECK_SN,PC_COND_EXPR,PROHIBITED_CORRESPOND_ERR_CODE) 
+values (S_PROHIBITED_CORRESPOND.nextVal,''3202000'',null,null,''%'',''%'',''1'',null,nvl((select max(PC_CHECK_SN) from PROHIBITED_CORRESPOND where SYSTEM_FUNCTION_ID = ''3202000''), 0) + 1,null,''18'');
+Insert into PROHIBITED_CORRESPOND (PROHIBITED_CORRESPOND_ID,SYSTEM_FUNCTION_ID,DR_ID_SYS_TYPE_CODE,CR_ID_SYS_TYPE_CODE,PC_EXT_TYPE_ACC_DR,PC_EXT_TYPE_ACC_CR,PC_CONVERSION_FLAG,PC_CHECK_AREA_ENUM,PC_CHECK_SN,PC_COND_EXPR,PROHIBITED_CORRESPOND_ERR_CODE) 
+values (S_PROHIBITED_CORRESPOND.nextVal,''3202000'',null,null,''%'',''%'',null,null,nvl((select max(PC_CHECK_SN) from PROHIBITED_CORRESPOND where SYSTEM_FUNCTION_ID = ''3202000''), 0) + 1,'':DT_CURRENCY_NUM_CODE is not null and :DT_CURRENCY_NUM_CODE not in (''''810'''', ''''840'''')'',''19''); 
+END;'
+where feature_code = 'RESTRICTION_OF_CENTRAL_BANK_3202000';
+
+commit;
+
+update system_function
+set sf_parameters = 'featureGroupCode=LIMITATION;title=Ограничения на валютные наличные операции;namesOfButtons=Отключена,Включена'
+where system_function_id = '2809300';
+
+commit;
+
+update feature
+set feature_group_code = 'LIMITATION'
+where feature_code = 'DISABLE_CHECK_EXPIRY_DATE_OF_CARD';
+
+update feature
+set feature_group_code = 'LIMITATION'
+where feature_code = 'RESTRICTION_ON_TAKE_OUT_FROM_CARD_ONLY_RUB';
+
+update feature
+set feature_group_code = 'LIMITATION'
+where feature_code = 'RESTRICTION_ON_PUT_ON_CARD_NO_CONVERSION_PROFILE';
+
+commit;
+
+delete from feature_group
+where feature_group_code = 'LIMITATION_2';
+
+commit;
+
+SYSTEM_FUNCTION_PKG.DEL_FROM_ROLE(2809500,12002);
+
+commit;
+
+delete from system_function
+where system_function_id = '2809500';
+
+commit;
+
+feature_pkg.ENABLE_FEATURE('RESTRICTION_OF_CENTRAL_BANK_3102030');
+feature_pkg.ENABLE_FEATURE('RESTRICTION_OF_CENTRAL_BANK_3102040');
+feature_pkg.ENABLE_FEATURE('RESTRICTION_OF_CENTRAL_BANK_7102030');
+feature_pkg.ENABLE_FEATURE('RESTRICTION_OF_CENTRAL_BANK_7102040');
+feature_pkg.ENABLE_FEATURE('RESTRICTION_OF_CENTRAL_BANK_3201000');
+feature_pkg.ENABLE_FEATURE('RESTRICTION_OF_CENTRAL_BANK_3202000');
+feature_pkg.ENABLE_FEATURE('RESTRICTION_OF_CENTRAL_BANK_3102060');
+feature_pkg.ENABLE_FEATURE('RESTRICTION_OF_CENTRAL_BANK_3152010');
+feature_pkg.ENABLE_FEATURE('RESTRICTION_OF_CENTRAL_BANK_7152010');
+        
+commit;
+    
+END;

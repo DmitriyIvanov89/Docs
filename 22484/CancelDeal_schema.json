@@ -1,0 +1,95 @@
+
+{
+  "$schema": "https://json-schema.org/draft-07/schema",
+  "title": "Cancel deal",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 64,
+      "description": "Уникальный идентификатор сообщения"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "yyyy-MM-ddTHH:mm:ss.fffZ",
+      "description": "Метка времени отправки сообщения"
+    },
+    "source": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 32,
+      "description": "Наименование системы источника"
+    },
+    "sourceDealId": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 64,
+      "description": "Идентификатор сделки в системе источнике"
+    },
+    "properties": {
+      "type": "array",
+      "description": "Список дополнительных свойств сделки, которые могут быть использованы для отображения пользователю",
+      "items": {
+        "$ref": "#/$defs/property"
+      }
+    },
+    "identifiers ": {
+      "type": "array",
+      "description": "Список дополнительных идентификаторов сделки в других системах",
+      "items": {
+        "$ref": "#/$defs/identifier"
+      }
+    }
+  },
+  "required": [
+    "id",
+    "timestamp",
+    "source",
+    "sourceDealId"
+  ],
+  "$defs": {
+    "property": {
+      "title": "Property",
+      "type": "object",
+      "description": "Дополнительное свойство",
+      "properties": {
+        "name": {
+          "type": "string",
+          "maxLength": 64,
+          "description": "Наименование свойства"
+        },
+        "value": {
+          "type": "string",
+          "maxLength": 1024,
+          "description": "Значение свойства"
+        }
+      },
+      "required": [
+        "name",
+        "value"
+      ]
+    },
+    "identifier": {
+      "title": "Identifier",
+      "type": "object",
+      "description": "Дополнительный идентификатор",
+      "properties": {
+        "scope": {
+          "type": "string",
+          "maxLength": 64,
+          "description": "Скоуп идентификатора (наименование внешней системы, ИНН и т.д.)"
+        },
+        "value": {
+          "type": "string",
+          "maxLength": 64,
+          "description": "Значение идентификатора"
+        }
+      },
+      "required": [
+        "scope",
+        "value"
+      ]
+    }
+  }
+}

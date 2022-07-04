@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Request ToBranch="00006" Type="SCCreateDocs">
+    <Bis-Data>
+        <BranchId Value="00006"/>
+        <Who Value="O1126"/>
+        <XmlBroker Value=""/>
+        <Z-Code Value=""/>
+        <Z-Id Value="SP.1000179996-37414"/>
+        <Z-Type Value="SCCreateDocs"/>
+        <LogicalStage Value="611100-01"/>
+        <transID Value="00006-SP.1000179996-37414"/>
+    </Bis-Data>
+    <App-Data>
+        <ScExport-req>
+            <ScDoc-req>
+                <ScRequestID>SP.1000179996-37414</ScRequestID>
+                <LogicalStage>611100-01</LogicalStage>
+                <TransID>00006-SP.1000179996-37414</TransID>
+                <Debet>40817840300050000002</Debet>
+                <Credit>20202840311260000001</Credit>
+                <CurrDb>840</CurrDb>
+                <CurrCr>840</CurrCr>
+                <AmountDb>500</AmountDb>
+                <AmountCr>500</AmountCr>
+                <Number>69225</Number>
+                <DocType>03рк</DocType>
+                <OpDate>2021-09-28</OpDate>
+                <DocDate>2021-09-28</DocDate>
+                <PlanDate>2021-09-28</PlanDate>
+                <Description>Выдача наличных средств со вклада На основании: договор №40817840300050000002</Description>
+                <DocStatus>√</DocStatus>
+                <RmkCode></RmkCode>
+                <BisUser>O1126</BisUser>
+                <BisValue>2,1</BisValue>
+                <Course>1</Course>
+                <Subdivision>1126</Subdivision>
+                <Kbo>611100-01</Kbo>
+            </ScDoc-req>
+            <ExtInfo-req>
+                <BankType>МФО-9</BankType>
+                <BankID>044030707</BankID>
+                <ben-acct>20202840311260000001</ben-acct>
+                <name-ben>ПИАНКОВА ЕЛИЗАВЕТА ВАЛЕРЬЕВНА</name-ben>
+                <inn>7702070139</inn>
+                <order-pay>5</order-pay>
+                <isclient>3</isclient>
+            </ExtInfo-req>
+            <Signs-req>
+                <code>inn-send</code>
+                <surrogate></surrogate>
+                <file-name>op</file-name>
+            </Signs-req>
+            <Signs-req>
+                <code>name-send</code>
+                <code-value>ФИЛИАЛ № 7806 БАНКА ВТБ (ПАО)//ПИАНКОВА ЕЛИЗАВЕТА ВАЛЕРЬЕВНА//69225//125171 Россия г Москва ш Ленинградское дом 9 кв 192//</code-value>
+                <surrogate></surrogate>
+                <file-name>op</file-name>
+            </Signs-req>
+            <Signs-req>
+                <code>tr-channel-op</code>
+                <code-value>Siebel</code-value>
+                <surrogate></surrogate>
+                <file-name>op</file-name>
+            </Signs-req>
+        </ScExport-req>
+    </App-Data>
+</Request>

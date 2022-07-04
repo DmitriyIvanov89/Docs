@@ -1,0 +1,29 @@
+{   
+    "extRequestId":"extRequestId",
+    "requestId": "434",
+    "beginTime": "2021-08-12T13:48:08.749+07:00",
+    "endTime": "2021-08-12T13:48:08.749+07:00",
+    "freeSafeDepositBox": {
+	       	"region":{
+		      	"regionMass": {
+	       		    "regionID":{
+	       		        "branchID":"5700",
+	       		        "typeBox":""
+	       		    }
+	       		},
+        		"regionPrime": {
+	       		    "regionID":{
+	       		        "branchID":"1126",
+	       		        "typeBox":""
+	       		    }
+	       		   },
+	       		"regionVip":{
+        			    "regionID":{
+        			        "branchID":"1056",
+	       		              "typeBox":""
+        			    }
+	       		}
+		      }
+		}
+		/* dfsdfjsej*/
+}

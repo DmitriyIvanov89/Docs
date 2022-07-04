@@ -1,0 +1,43 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ans="http://answer.ulbs.vtb24.spectrum">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ans:holdAnswer>
+         <holdAnswerRequest>
+            <holdTransactionId>
+               <idSys>99995</idSys>
+               <operJournalExtId>${operJournalId}</operJournalExtId>
+            </holdTransactionId>
+            <answerRequestInfo>
+                <correlationId>${correlationId}</correlationId>
+            </answerRequestInfo>
+            <operationActionResultEntity>
+               <errorDetails>${errorDetails}</errorDetails>
+               <operJournalId>${operJournalId}</operJournalId>
+               <errorStack>
+                  <!--Optional:-->
+                  <canonFlag>false</canonFlag>
+                  <!--Optional:-->
+                  <errorCode>${errorCode}</errorCode>
+                  <!--Optional:-->
+                  <errorIdSys>98000</errorIdSys>
+                  <!--Optional:-->
+                  <errorLevel>
+                    <!--Optional:-->
+                    <canonFlag>true</canonFlag>
+                    <!--Optional:-->
+                    <errorCode>C0000-0000</errorCode>
+                    <!--Optional:-->
+                    <errorIdSys></errorIdSys>
+                    <!--Optional:-->
+                    <errorLevel/>
+                    <!--Optional:-->
+                    <errorMessage>???????? ??????</errorMessage>
+                  </errorLevel>
+                  <!--Optional:-->
+                  <errorMessage>${errorMessage}</errorMessage>
+               </errorStack>
+            </operationActionResultEntity>
+         </holdAnswerRequest>
+      </ans:holdAnswer>
+   </soapenv:Body>
+</soapenv:Envelope>

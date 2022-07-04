@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<T_CABS_CREATE_DOC_REQ xmlns="http://www.NewAthena.ru/NA5/IntegrationAdapter">
+    <SSUBSYSTEM>SPECTRUM</SSUBSYSTEM>
+    <NDEPARTMENT>709000</NDEPARTMENT>
+    <RATRANSPROPS>
+        <T_PROPERTY>
+            <SNAME>SOURCE_SYSTEM</SNAME>
+            <SVALUE>SPECTRUM</SVALUE>
+        </T_PROPERTY>
+        <T_PROPERTY>
+            <SNAME>TARGET_SYSTEM</SNAME>
+            <SVALUE>CFT2</SVALUE>
+        </T_PROPERTY>
+    </RATRANSPROPS>
+    <SMESSAGEID>249704</SMESSAGEID>
+    <SGUID>MB.44448888</SGUID>
+    <SDOCUMENTTYPE>3411.MB</SDOCUMENTTYPE>
+    <SDEPARTMENT>1126</SDEPARTMENT>
+    <RECPAYMENT>
+        <SLABEL>6938952</SLABEL>
+        <SCURRENCYFROM>840</SCURRENCYFROM>
+        <SCURRENCYTO>840</SCURRENCYTO>
+        <SACCOUNTFROM>60323840630100000000</SACCOUNTFROM>
+        <SACCOUNTTO>20202840911260000002</SACCOUNTTO>
+        <NSUMFROM>100</NSUMFROM>
+        <NSUMTO>100</NSUMTO>
+        <DTVALIDTODATE>2021-08-25</DTVALIDTODATE>
+        <SDESCRIPTION>Недостача ДО "На Советской" в г. Чехове Филиала № 7701 Банка ВТБ (ПАО) в сумке 500/1495 сформированной 29.08.2018
+На основании: Опись к сумке № 500/1495 от 29.08.2018 962</SDESCRIPTION>
+        <RECPAYER>
+            <RECCUSTOMER>
+                <SACCOUNT>60323840630100000000</SACCOUNT>
+                <RECBANK>
+                    <SCODE>040702788</SCODE>
+                    <SNAME>ФИЛИАЛ БАНКА ВТБ (ПАО) В Г. СТАВРОПОЛЕ</SNAME>
+                </RECBANK>
+            </RECCUSTOMER>
+        </RECPAYER>
+        <RECBENEFICIARY>
+            <SACCOUNT>20202840911260000002</SACCOUNT>
+            <RECBANK>
+                <SCODE>040702788</SCODE>
+                <SNAME>ФИЛИАЛ БАНКА ВТБ (ПАО) В Г. СТАВРОПОЛЕ</SNAME>
+            </RECBANK>
+        </RECBENEFICIARY>
+    </RECPAYMENT>
+</T_CABS_CREATE_DOC_REQ>

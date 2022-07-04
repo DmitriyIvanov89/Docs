@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<T_CABS_CREATE_DOC_REQ xmlns="http://www.NewAthena.ru/NA5/IntegrationAdapter">
+    <SSUBSYSTEM>SPECTRUM</SSUBSYSTEM>
+    <NDEPARTMENT>709000</NDEPARTMENT>
+    <RATRANSPROPS>
+        <T_PROPERTY>
+            <SNAME>SOURCE_SYSTEM</SNAME>
+            <SVALUE>SPECTRUM</SVALUE>
+        </T_PROPERTY>
+        <T_PROPERTY>
+            <SNAME>TARGET_SYSTEM</SNAME>
+            <SVALUE>CFT2</SVALUE>
+        </T_PROPERTY>
+    </RATRANSPROPS>
+    <SMESSAGEID>250695</SMESSAGEID>
+    <SGUID>SP.1000179599-37035</SGUID>
+    <SDOCUMENTTYPE>1011</SDOCUMENTTYPE>
+    <SDEPARTMENT>1126</SDEPARTMENT>
+    <RECPAYMENT>
+        <SLABEL>69041</SLABEL>
+        <SCURRENCYFROM>840</SCURRENCYFROM>
+        <SCURRENCYTO>810</SCURRENCYTO>
+        <SACCOUNTFROM>20202840311260000001</SACCOUNTFROM>
+        <SACCOUNTTO>40817810101004055492</SACCOUNTTO>
+        <NSUMFROM>1.42</NSUMFROM>
+        <NSUMTO>100.11</NSUMTO>
+        <DTVALIDTODATE>2021-09-28</DTVALIDTODATE>
+        <SDESCRIPTION>Внесение на счет клиента - валюта</SDESCRIPTION>
+        <RECPAYER>
+            <RECCUSTOMER>
+                <SACCOUNT>20202840311260000001</SACCOUNT>
+                <RECBANK>
+                    <SCODE>040702788</SCODE>
+                    <SNAME>ФИЛИАЛ БАНКА ВТБ (ПАО) В Г. СТАВРОПОЛЕ</SNAME>
+                </RECBANK>
+            </RECCUSTOMER>
+        </RECPAYER>
+        <RECBENEFICIARY>
+            <SACCOUNT>40817810101004055492</SACCOUNT>
+            <RECBANK>
+                <SCODE>044525745</SCODE>
+                <SNAME>ФИЛИАЛ № 7701 БАНКА ВТБ (ПАО)</SNAME>
+            </RECBANK>
+        </RECBENEFICIARY>
+    </RECPAYMENT>
+    <RECCASH>
+        <SCLIENT>СОКОЛЬНИКОВА ЮЛИЯ ИГОРЕВНА</SCLIENT>
+        <NISRESIDENT>1</NISRESIDENT>
+        <SCLIENT_REGIONCODE>643</SCLIENT_REGIONCODE>
+        <SCLIENTADDRESS>664039 Россия обл Иркутская г Иркутск ул Миронова дом 3 кв 13</SCLIENTADDRESS>
+        <SJURIDICALDOCCODE>21</SJURIDICALDOCCODE>
+        <SJURDOCSERIES>2504</SJURDOCSERIES>
+        <SJURDOCNUMBER>188562</SJURDOCNUMBER>
+        <DTGIVEDATE>2004-10-26</DTGIVEDATE>
+        <SGIVEBY>Ленинским РУВД г. Иркутска  к/п 382-004</SGIVEBY>
+        <DTBIRTHDATE>1984-06-29</DTBIRTHDATE>
+        <SBIRTHPLACE>Г. ИРКУТСК</SBIRTHPLACE>
+    </RECCASH>
+</T_CABS_CREATE_DOC_REQ>

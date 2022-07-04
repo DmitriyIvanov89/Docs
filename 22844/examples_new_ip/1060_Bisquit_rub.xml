@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Request ToBranch="00006" Type="SCCreateDocs">
+    <Bis-Data>
+        <BranchId Value="00006"/>
+        <Who Value="O1126"/>
+        <XmlBroker Value=""/>
+        <Z-Code Value=""/>
+        <Z-Id Value="SP.CONP.1455566801"/>
+        <Z-Type Value="SCCreateDocs"/>
+        <LogicalStage Value="CreateMA"/>
+        <transID Value="00006-SP.CONP.1455566801"/>
+    </Bis-Data>
+    <App-Data>
+        <ScExport-req>
+            <ScDoc-req>
+                <ScRequestID>SP.CONP.1455566801</ScRequestID>
+                <LogicalStage>CreateMA</LogicalStage>
+                <TransID>00006-SP.CONP.1455566801</TransID>
+                <Debet>20202810011260000001</Debet>
+                <Credit>47423810800000000001</Credit>
+                <CurrDb></CurrDb>
+                <CurrCr></CurrCr>
+                <AmountDb>1000.2</AmountDb>
+                <AmountCr>1000.2</AmountCr>
+                <Symbol>16</Symbol>
+                <Number>1488</Number>
+                <DocType>03пк</DocType>
+                <OpDate>2021-09-28</OpDate>
+                <DocDate>2021-09-28</DocDate>
+                <PlanDate>2021-09-28</PlanDate>
+                <Description>Внесение наличных на банковский счет На основании: договор No 40817810101004055492</Description>
+                <DocStatus>√</DocStatus>
+                <RmkCode></RmkCode>
+                <BisUser>O1126</BisUser>
+                <BisValue>1,1</BisValue>
+                <Course>1</Course>
+                <Subdivision>1126</Subdivision>
+                <Kbo>711210-00</Kbo>
+            </ScDoc-req>
+            <ExtInfo-req>
+                <BankType>МФО-9</BankType>
+                <BankID></BankID>
+                <order-pay>5</order-pay>
+                <isclient>3</isclient>
+            </ExtInfo-req>
+            <Signs-req>
+                <code>inn-send</code>
+                <code-value>7702070139</code-value>
+                <surrogate></surrogate>
+                <file-name>op</file-name>
+            </Signs-req>
+            <Signs-req>
+                <code>name-send</code>
+                <code-value>ФИЛИАЛ № 7806 БАНКА ВТБ (ПАО)//БОРИСОВ АНДРЕЙ ЮРЬЕВИЧ//1488//</code-value>
+                <surrogate></surrogate>
+                <file-name>op</file-name>
+            </Signs-req>
+        </ScExport-req>
+    </App-Data>
+</Request>

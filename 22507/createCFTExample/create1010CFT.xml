@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<T_CABS_CREATE_DOC_REQ xmlns="http://www.NewAthena.ru/NA5/IntegrationAdapter">
+    <SSUBSYSTEM>SPECTRUM</SSUBSYSTEM>
+    <NDEPARTMENT>709000</NDEPARTMENT>
+    <RATRANSPROPS>
+        <T_PROPERTY>
+            <SNAME>SOURCE_SYSTEM</SNAME>
+            <SVALUE>SPECTRUM</SVALUE>
+        </T_PROPERTY>
+        <T_PROPERTY>
+            <SNAME>TARGET_SYSTEM</SNAME>
+            <SVALUE>CFT2</SVALUE>
+        </T_PROPERTY>
+    </RATRANSPROPS>
+    <SMESSAGEID>250689</SMESSAGEID>
+    <SGUID>SP.1000179597-37033</SGUID>
+    <SDOCUMENTTYPE>1010</SDOCUMENTTYPE>
+    <SDEPARTMENT>1126</SDEPARTMENT>
+    <RECPAYMENT>
+        <SLABEL>69039</SLABEL>
+        <SCURRENCYFROM>810</SCURRENCYFROM>
+        <SCURRENCYTO>810</SCURRENCYTO>
+        <SACCOUNTFROM>20202810011260000001</SACCOUNTFROM>
+        <SACCOUNTTO>40817810101004055492</SACCOUNTTO>
+        <NSUMFROM>1000</NSUMFROM>
+        <NSUMTO>1000</NSUMTO>
+        <DTVALIDTODATE>2021-09-28</DTVALIDTODATE>
+        <SDESCRIPTION>Взнос наличных средств на банковский счет
+На основании: договор № 40817810101004055492
+Паспорт гражданина РФ серия 2504 №188562 выдан Ленинским РУВД г. Иркутска  к/п 382-004 26.10.2004 382-004</SDESCRIPTION>
+        <RECPAYER>
+            <RECCUSTOMER>
+                <SACCOUNT>20202810011260000001</SACCOUNT>
+                <RECBANK>
+                    <SCODE>040702788</SCODE>
+                    <SNAME>ФИЛИАЛ БАНКА ВТБ (ПАО) В Г. СТАВРОПОЛЕ</SNAME>
+                </RECBANK>
+            </RECCUSTOMER>
+        </RECPAYER>
+        <RECBENEFICIARY>
+            <SACCOUNT>40817810101004055492</SACCOUNT>
+            <RECBANK>
+                <SCODE>044525745</SCODE>
+                <SNAME>ФИЛИАЛ № 7701 БАНКА ВТБ (ПАО)</SNAME>
+            </RECBANK>
+        </RECBENEFICIARY>
+    </RECPAYMENT>
+    <RECCASH>
+        <RASYMBOLS>
+            <T_SYMBOL>
+                <SSYMBOLCODE>16</SSYMBOLCODE>
+                <NSYMBOLAMOUNT>1000</NSYMBOLAMOUNT>
+            </T_SYMBOL>
+        </RASYMBOLS>
+        <SCLIENT>СОКОЛЬНИКОВА ЮЛИЯ ИГОРЕВНА</SCLIENT>
+        <NISRESIDENT>1</NISRESIDENT>
+        <SCLIENT_REGIONCODE>643</SCLIENT_REGIONCODE>
+        <SCLIENTADDRESS>664039 Россия обл Иркутская г Иркутск ул Миронова дом 3 кв 13</SCLIENTADDRESS>
+        <SJURIDICALDOCCODE>21</SJURIDICALDOCCODE>
+        <SJURDOCSERIES>2504</SJURDOCSERIES>
+        <SJURDOCNUMBER>188562</SJURDOCNUMBER>
+        <DTGIVEDATE>2004-10-26</DTGIVEDATE>
+        <SGIVEBY>Ленинским РУВД г. Иркутска  к/п 382-004</SGIVEBY>
+        <DTBIRTHDATE>1984-06-29</DTBIRTHDATE>
+        <SBIRTHPLACE>Г. ИРКУТСК</SBIRTHPLACE>
+    </RECCASH>
+</T_CABS_CREATE_DOC_REQ>

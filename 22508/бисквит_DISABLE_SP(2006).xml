@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Request ToBranch="00006" Type="SCCreateDocs">
+    <Bis-Data>
+        <BranchId Value="00006"/>
+        <Who Value="S1126"/>
+        <XmlBroker Value=""/>
+        <Z-Code Value=""/>
+        <Z-Id Value="uLia1c1RQhuP2reKJvDBRw"/>
+        <Z-Type Value="SCCreateDocs"/>
+        <LogicalStage Value="CreateDocs"/>
+        <transID Value="00006-uLia1c1RQhuP2reKJvDBRw"/>
+    </Bis-Data>
+    <App-Data>
+        <ScExport-req>
+            <ScDoc-req>
+                <ScRequestID>uLia1c1RQhuP2reKJvDBRw</ScRequestID>
+                <LogicalStage>CreateDocs</LogicalStage>
+                <TransID>00006-uLia1c1RQhuP2reKJvDBRw</TransID>
+                <Debet>20202840311260000001</Debet>
+                <Credit>20209840657000000001</Credit>
+                <CurrDb>840</CurrDb>
+                <CurrCr>840</CurrCr>
+                <AmountDb>100</AmountDb>
+                <AmountCr>100</AmountCr>
+                <Number>1489566</Number>
+                <DocType>03ко</DocType>
+                <OpDate>2021-08-23</OpDate>
+                <DocDate>2021-08-23</DocDate>
+                <PlanDate>2021-08-23</PlanDate>
+                <Description>Возврат из операционный кассы ДО "Жуковка" Филиала № 7701 Банка ВТБ (ПАО) На основании: Опись к сумке № 501/2391 от 04.09.2018 954</Description>
+                <DocStatus>√</DocStatus>
+                <RmkCode></RmkCode>
+                <BisUser>S1126</BisUser>
+                <BisValue>2,1</BisValue>
+                <Course>1</Course>
+                <Subdivision>1126</Subdivision>
+            </ScDoc-req>
+            <ExtInfo-req>
+                <BankType>МФО-9</BankType>
+                <BankID>044030707</BankID>
+                <ben-acct>20209840657000000001</ben-acct>
+                <name-ben>НЕ УКАЗАН</name-ben>
+                <order-pay>5</order-pay>
+                <isclient>3</isclient>
+            </ExtInfo-req>
+            <Signs-req>
+                <code>inn-send</code>
+                <code-value>7702070139</code-value>
+                <surrogate></surrogate>
+                <file-name>op</file-name>
+            </Signs-req>
+            <Signs-req>
+                <code>name-send</code>
+                <code-value>ФИЛИАЛ № 7806 БАНКА ВТБ (ПАО)//ПРОСТО КАССИР МЕГА-ХИМКМ//1489566//</code-value>
+                <surrogate></surrogate>
+                <file-name>op</file-name>
+            </Signs-req>
+        </ScExport-req>
+    </App-Data>
+</Request>

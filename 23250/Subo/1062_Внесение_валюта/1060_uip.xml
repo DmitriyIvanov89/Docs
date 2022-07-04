@@ -1,0 +1,64 @@
+<create xmlns="http://model.ws.spectrum/xsd">
+   <request>
+      <operationEntity>
+         <client>
+            <clientTypeEnum>0</clientTypeEnum>
+            <clientExtId>5555-90-siebel</clientExtId>
+            <clientIdSys>SBL_FR</clientIdSys>
+            <!--чтоб запрос в docsVision уходил-->
+            <icIssueAutority>ПВО ОВД Таганского района города Москвы кп 772-118</icIssueAutority>
+            <icIssueDate>2005-09-06</icIssueDate>
+            <icNum>787878</icNum>
+            <icSeries>6969</icSeries>
+            <identityCardTypeId>21</identityCardTypeId>
+            <personFirstName>АНДРЕЙ</personFirstName>
+            <personPatronymic>ЮРЬЕВИЧ</personPatronymic>
+            <personSurname>ЗУМОВСКИЙ</personSurname>
+            <personCitizenCountryCode>643</personCitizenCountryCode>
+            <!--<personStatelessFlag></personStatelessFlag>-->
+         </client>
+         <deptCode>1126</deptCode>
+         <extFee>
+            <!--<currency>RUB</currency>
+                  <summa>77</summa>-->
+         </extFee>
+         <documents>
+            <analyticAttributes>
+               <code>CBO_CODE</code>
+               <value>711210-00</value>
+            </analyticAttributes>
+            <cashSymbols>
+               <cashSymbolCode>16</cashSymbolCode>
+               <summa>
+                  <currency>USD</currency>
+                  <summa>100</summa>
+               </summa>
+            </cashSymbols>
+            <creditSumma>
+               <currency>RUB</currency>
+               <summa>1488</summa>
+            </creditSumma>
+            <creditAccountEntity>
+               <accountIdSys>99995</accountIdSys>
+               <accountNum>40817810101004055492</accountNum>
+               <deptCode>1126</deptCode>
+            </creditAccountEntity>
+            <debitSumma>
+               <currency>USD</currency>
+               <summa>21.11</summa>
+            </debitSumma>
+            <description>Внесение наличных на банковский счет
+                   На основании: договор No 40817810101004055492</description>
+            <docNumber>1499</docNumber>
+         </documents>
+         <login>O1126</login>
+         <idSys>99995</idSys>
+         <operJournalExtId>SP.CONP.0000992</operJournalExtId>
+         <operationCode>1060</operationCode>
+         <!--<operationRegDate>2022-02-22T10:00:00</operationRegDate>-->
+      </operationEntity>
+      <requestInfo>
+         <messageId>0000992</messageId>
+      </requestInfo>
+   </request>
+</create>

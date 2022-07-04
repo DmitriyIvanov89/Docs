@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<T_CABS_CREATE_DOC_REQ xmlns="http://www.NewAthena.ru/NA5/IntegrationAdapter">
+    <SSUBSYSTEM>SPECTRUM</SSUBSYSTEM>
+    <NDEPARTMENT>709000</NDEPARTMENT>
+    <RATRANSPROPS>
+        <T_PROPERTY>
+            <SNAME>SOURCE_SYSTEM</SNAME>
+            <SVALUE>SPECTRUM</SVALUE>
+        </T_PROPERTY>
+        <T_PROPERTY>
+            <SNAME>TARGET_SYSTEM</SNAME>
+            <SVALUE>CFT2</SVALUE>
+        </T_PROPERTY>
+    </RATRANSPROPS>
+    <SMESSAGEID>251599</SMESSAGEID>
+    <SGUID>SP.CONP.1455566802</SGUID>
+    <SDOCUMENTTYPE>1060</SDOCUMENTTYPE>
+    <SDEPARTMENT>1126</SDEPARTMENT>
+    <RECPAYMENT>
+        <SLABEL>1488</SLABEL>
+        <SCURRENCYFROM>810</SCURRENCYFROM>
+        <SCURRENCYTO>810</SCURRENCYTO>
+        <SACCOUNTFROM>20202810011260000001</SACCOUNTFROM>
+        <SACCOUNTTO>40817810101004055492</SACCOUNTTO>
+        <NSUMFROM>1000.2</NSUMFROM>
+        <NSUMTO>1000.2</NSUMTO>
+        <DTVALIDTODATE>2021-09-28</DTVALIDTODATE>
+        <SDESCRIPTION>Внесение наличных на банковский счет
+                   На основании: договор No 40817810101004055492</SDESCRIPTION>
+        <RECPAYER>
+            <RECCUSTOMER>
+                <SACCOUNT>20202810011260000001</SACCOUNT>
+                <RECBANK>
+                    <SCODE>040702788</SCODE>
+                    <SNAME>ФИЛИАЛ БАНКА ВТБ (ПАО) В Г. СТАВРОПОЛЕ</SNAME>
+                </RECBANK>
+            </RECCUSTOMER>
+        </RECPAYER>
+        <RECBENEFICIARY>
+            <SACCOUNT>40817810101004055492</SACCOUNT>
+            <RECBANK>
+                <SCODE>040702788</SCODE>
+                <SNAME>ФИЛИАЛ БАНКА ВТБ (ПАО) В Г. СТАВРОПОЛЕ</SNAME>
+            </RECBANK>
+        </RECBENEFICIARY>
+    </RECPAYMENT>
+    <RECCASH>
+        <RASYMBOLS>
+            <T_SYMBOL>
+                <SSYMBOLCODE>16</SSYMBOLCODE>
+                <NSYMBOLAMOUNT>1000.2</NSYMBOLAMOUNT>
+            </T_SYMBOL>
+        </RASYMBOLS>
+        <SCLIENT>БОРИСОВ АНДРЕЙ ЮРЬЕВИЧ</SCLIENT>
+        <NISRESIDENT>1</NISRESIDENT>
+        <SCLIENT_REGIONCODE>643</SCLIENT_REGIONCODE>
+        <SJURIDICALDOCCODE>21</SJURIDICALDOCCODE>
+        <SJURDOCSERIES>6969</SJURDOCSERIES>
+        <SJURDOCNUMBER>787878</SJURDOCNUMBER>
+        <DTGIVEDATE>2005-09-06</DTGIVEDATE>
+        <SGIVEBY>ПВО ОВД Таганского района города Москвы кп 772-118</SGIVEBY>
+    </RECCASH>
+</T_CABS_CREATE_DOC_REQ>

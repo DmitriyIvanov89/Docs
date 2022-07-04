@@ -1,0 +1,88 @@
+{
+  "fees": [
+    {
+      "fee_code": "string",
+      "fee": {
+        "amount": "string",
+        "currency": "string"
+      },
+      "fee_description": "string"
+    }
+  ],
+  "payer": {
+    "tax_number": "string",
+    "kpp": "string",
+    "correspondent_bank": {
+      "bank_name": "string",
+      "account_number": "string",
+      "bic": "string"
+    },
+    "transit_account_number": "string",
+    "transit_member_id": "string",
+    "account": {
+      "id": "string",
+      "pan": "string",
+      "contract_number": "string",
+      "account_number": "string",
+      "bic": "string",
+      "iban": "string"
+    },
+    "name": "string",
+    "address": {
+      "country": "str",
+      "state": "string",
+      "city": "string",
+      "address_lines": [
+        "string"
+      ],
+      "zip_code": "string"
+    },
+    "treasury_reference": "string",
+    "payment_system_code": "string"
+  },
+  "beneficiary": {
+    "tax_number": "string",
+    "kpp": "string",
+    "correspondent_bank": {
+      "bank_name": "string",
+      "account_number": "string",
+      "bic": "string"
+    },
+    "transit_account_number": "string",
+    "transit_member_id": "string",
+    "account": {
+      "id": "string",
+      "pan": "string",
+      "contract_number": "string",
+      "account_number": "string",
+      "bic": "string",
+      "iban": "string"
+    },
+    "name": "string",
+    "address": {
+      "country": "str",
+      "state": "string",
+      "city": "string",
+      "address_lines": [
+        "string"
+      ],
+      "zip_code": "string"
+    },
+    "treasury_reference": "string",
+    "payment_system_code": "string"
+  },
+  "transaction_amount": {
+    "amount": "string",
+    "currency": "string"
+  },
+  "transfer_ref": "string",
+  "transaction_code": "string",
+  "comment": "string",
+  "total_fee": {
+    "amount": "string",
+    "currency": "string"
+  },
+  "rate_type": "string",
+  "exchange_rate": 0,
+  "beneficiary_amount": "string"
+}

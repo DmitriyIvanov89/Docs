@@ -1,0 +1,277 @@
+﻿{
+    "$schema": "https://json-schema.org/draft-07/schema",
+    "title": "Deal",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 64,
+            "description": "Уникальный идентификатор сообщения"
+        },
+        "version": {
+            "type": "number",
+            "exclusiveMinimum": 0,
+            "description": "Версия выгружаемой сделки"
+        },
+        "abs": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 32,
+            "description": "Код АБС, в которой сделка будет учитываться на балансе"
+        },
+        "absDealId": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 64,
+            "description": "Уникальный идентификатор сделки в АБС"
+        },
+        "source": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 32,
+            "description": "Наименование системы источника"
+        },
+        "sourceDealId": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 64,
+            "description": "Идентификатор сделки в системе источнике"
+        },
+        "currencyPair": {
+            "type": "string",
+            "description": "Валютная пара",
+            "pattern": "[A-Z]{6}"
+        },
+        "baseAmount": {
+            "$ref": "#/$defs/money",
+            "description": "Сумма в базовой валюте. Базовой валютой является первая валюта в валютной паре. Например, для USDRUB базовой валютой является USD"
+        },
+        "referenceAmount": {
+            "$ref": "#/$defs/money",
+            "description": "Сумма в референсной валюте. Референсной валютой является вторая валюта в валютной паре. Например, для USDRUB референсной валютой является RUB"
+        },
+        "price": {
+            "type": "number",
+            "exclusiveMinimum": 0,
+            "description": "Курс сделки"
+        },
+        "isBaseBuy": {
+            "type": "boolean",
+            "description": "Направление сделки относительно базовой валюты"
+        },
+        "isBaseDominant": {
+            "type": "boolean",
+            "description": "Определяет какая из двух сумм является вычислимой через курс. Значение true значит, что вычислимая валюта - референсная"
+        },
+        "createdAt": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Метка времени создания сделки в системе источнике (ISO 8601)"
+        },
+        "tradeDate": {
+            "type": "string",
+            "format": "date",
+            "description": "Дата сделки"
+        },
+        "valueDate": {
+            "type": "string",
+            "format": "date",
+            "description": "Дата валютирования сделки"
+        },
+        "properties": {
+            "type": "array",
+            "description": "Список дополнительных свойств сделки, которые могут быть использованы для отображения пользователю",
+            "items": {
+                "$ref": "#/$defs/property"
+            }
+        },
+        "priceSource": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 64,
+            "description": "Код системы-источника курса"
+        },
+        "priceId": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 64,
+            "description": "Идентификатор курса"
+        },
+        "identifiers ": {
+            "type": "array",
+            "description": "Список дополнительных идентификаторов сделки в других системах, которые могут быть использованы для отображения пользователю",
+            "items": {
+                "$ref": "#/$defs/identifier"
+            }
+        },
+        "branch": {
+            "$ref": "#/$defs/branch",
+            "description": "Точка продаж к которой учтена операция"
+        },
+        "client": {
+            "$ref": "#/$defs/client",
+            "description": "Клиент, который совершил операцию"
+        },
+        "clientSettlement": {
+            "$ref": "#/$defs/clientSettlement",
+            "description": "Информация о счетах списания и зачисления"
+        }
+    },
+    "required": [
+        "id",
+        "version",
+        "abs",
+        "source",
+        "sourceDealId",
+        "currencyPair",
+        "baseAmount",
+        "referenceAmount",
+        "price",
+        "isBaseBuy",
+        "createdAt",
+        "tradeDate",
+        "valueDate",
+        "branch"
+    ],
+    "$defs": {
+        "money": {
+            "type": "object",
+            "title": "Money",
+            "properties": {
+                "amount": {
+                    "type": "number",
+                    "exclusiveMinimum": 0,
+                    "description": "Сумма"
+                },
+                "currency": {
+                    "type": "string",
+                    "description": "Валюта (ISO 4217)",
+                    "pattern": "[A-Z]{3}"
+                }
+            },
+            "required": [
+                "amount",
+                "currency"
+            ]
+        },
+        "property": {
+            "title": "Property",
+            "type": "object",
+            "description": "Дополнительное свойство",
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "maxLength": 64,
+                    "description": "Наименование свойства"
+                },
+                "value": {
+                    "type": "string",
+                    "maxLength": 1024,
+                    "description": "Значение свойства"
+                }
+            },
+            "required": [
+                "name",
+                "value"
+            ]
+        },
+        "identifier": {
+            "title": "Identifier",
+            "type": "object",
+            "description": "Дополнительный идентификатор",
+            "properties": {
+                "scope": {
+                    "type": "string",
+                    "maxLength": 64,
+                    "description": "Скоуп идентификатора (наименование внешней системы, ИНН и т.д.)"
+                },
+                "value": {
+                    "type": "string",
+                    "maxLength": 64,
+                    "description": "Значение идентификатора"
+                }
+            },
+            "required": [
+                "scope",
+                "value"
+            ]
+        },
+        "branch": {
+            "title": "Branch",
+            "type": "object",
+            "description": "Точка продаж в которой была совершена сделка",
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "maxLength": 64,
+                    "description": "Идентификатор точки продаж в АБС"
+                },
+                "name": {
+                    "type": "string",
+                    "maxLength": 256,
+                    "description": "Наименование точки продаж в АБС"
+                },
+                "identifiers": {
+                    "type": "array",
+                    "description": "Список дополнительных идентификаторов точки продаж в других системах",
+                    "items": {
+                        "$ref": "#/$defs/identifier"
+                    }
+                }
+            },
+            "required": [
+                "id",
+                "name"
+            ]
+        },
+        "clientSettlement": {
+            "title": "ClientSettlement",
+            "description": "Информация о счетах",
+            "type": "object",
+            "properties": {
+                "source": {
+                    "type": "string",
+                    "maxLength": 64,
+                    "description": "Счёт списания"
+                },
+                "target": {
+                    "type": "string",
+                    "maxLength": 64,
+                    "description": "Счёт зачисления"
+                }
+            },
+            "required": [
+                "source",
+                "target"
+            ]
+        },
+        "client": {
+            "title": "Client",
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 64,
+                    "description": "Идентификатор клиента в АБС"
+                },
+                "name": {
+                    "type": "string",
+                    "maxLength": 256,
+                    "description": "Наименование клиента в АБС"
+                },
+                "identifiers": {
+                    "type": "array",
+                    "description": "Список дополнительных идентификаторов клиента в других системах",
+                    "items": {
+                        "$ref": "#/$defs/identifier"
+                    }
+                }
+            },
+            "required": [
+                "id"
+            ]
+        }
+    }
+}

@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SiebelGetOperationInfo_Output>
+	<HeaderInfo RqUID="123123" CorrelationUID="1233" RqType="SiebelGetOperationInfo_Output" RqTm="01/01/2013 00:00:00" SystemFrom="Siebel" SystemTo="Spectrum" ErrorCode="" ErrorText=""></HeaderInfo>
+	<ListOfSession>
+		<Session>
+               <CROFlag/>
+               <SupervisorNumber/>
+               <ListOfInsPayments/>
+               <menuItemCode>3703000</menuItemCode>
+               <ActionId>1-V0FOOYW</ActionId>
+               <ServiceRequestId>1-V0FOP6D</ServiceRequestId>
+               <ClientType>ФЛ</ClientType>
+               <ClientId>1-USUPMCR</ClientId>
+               <BOCode/>
+               <ClientFirstName>Антонина</ClientFirstName>
+               <ClientMidName>Михайловна</ClientMidName>
+               <ClientLastName>Боль</ClientLastName>
+               <ClientDocCategory>21</ClientDocCategory>
+               <ClientDocSeries>0897</ClientDocSeries>
+               <ClientDocNumber>654159</ClientDocNumber>
+               <ClientDocIssueTS>09/15/1999 04:00:00</ClientDocIssueTS>
+               <ClientDocIssuedBy>УВД г. Москва</ClientDocIssuedBy>
+               <ClientIssueCode>008-024</ClientIssueCode>
+               <ClientResidency>Y</ClientResidency>
+               <ClientCitizenship>РФ</ClientCitizenship>
+               <ClientBirthDate>09/15/1978 00:00:00</ClientBirthDate>
+               <ClientPlaceOfBirth>г. Москва</ClientPlaceOfBirth>
+               <OperationCurrency/>
+               <OperationSum/>
+               <ClientNotificationPhone>74957889893</ClientNotificationPhone>
+               <ClientIDInformation>745105884167</ClientIDInformation>
+               <ClientIntLastName>BOL</ClientIntLastName>
+               <ClientIntFirstName>ANTONINA</ClientIntFirstName>
+               <ThirdPartyId/>
+               <ThirdPartyFlag>N</ThirdPartyFlag>
+               <ThirdPartyFirstName/>
+               <ThirdPartyMidName/>
+               <ThirdPartyLastName/>
+               <ThirdPartyDocCategory/>
+               <ThirdPartyDocSeries/>
+               <ThirdPartyDocNumber/>
+               <ThirdPartyDocIssueTS/>
+               <ThirdPartyDocIssuedBy/>
+               <ThirdPartyBirthDate/>
+               <ThirdPartyPlaceOfBirth/>
+               <ThirdPartyWarrantFlag>N</ThirdPartyWarrantFlag>
+               <ThirdPartyWarrantNumber/>
+               <ThirdPartyWarrantDate/>
+               <ThirdPartyWarrantEndDate/>
+               <ThirdPartyWarrantIssueCode/>
+               <ThirdPartyIntLastName/>
+               <ThirdPartyIntFirstName/>
+               <SiebelAccountType>Счет</SiebelAccountType>
+               <SiebelAccountNumber>40817840723004013391</SiebelAccountNumber>
+               <SiebelAccountTypeName>Накопительный счет</SiebelAccountTypeName>
+               <SiebelCardAccountNumber/>
+               <SiebelAccountOrganisation>00000</SiebelAccountOrganisation>
+               <SiebelDivisionCode>2300</SiebelDivisionCode>
+               <SiebelAccountBalance>100.7</SiebelAccountBalance>
+               <SiebelAccountCurrency>USD</SiebelAccountCurrency>
+               <SiebelAccountSystemId>99995</SiebelAccountSystemId>
+               <SiebelCardExpirationDate/>
+               <ComissionCurrency/>
+               <SiebelCardMultiCurrencyFlag/>
+               <INN/>
+               <SupportingDocument/>
+               <ComissionSum/>
+               <OrganisationEmail/>
+               <ClaimNumber>CR-</ClaimNumber>
+               <OGRN/>
+               <OrganisationPhone/>
+               <KPP/>
+               <OrganisationName/>
+               <OrganisationRegistrationAdress/>
+               <OrganisationFactAddress/>
+               <PackageType>Привилегия</PackageType>
+               <FlagVIPClient>N</FlagVIPClient>
+               <AdmissionID/>
+               <DebetAccountNumber>47422</DebetAccountNumber>
+               <DebetAccountOrganisation/>
+               <DebetAccountSystemId/>
+               <HoldNumber/>
+               <ContractNumber/>
+               <ContractDate/>
+               <SNPAccountSystemId>MBANK</SNPAccountSystemId>
+               <SNPAccountOrganisation/>
+               <PaymentID/>
+               <SNPAccountNumber/>
+               <PaymentPupose/>
+               <PaymentSenderName/>
+               <PaymentSenderAccountNumber/>
+               <PayoutType/>
+               <ListOfPersonalAddress>
+                  <PersonalAddress>
+                     <AddressType>Фактический</AddressType>
+                     <ApartmentNumber>45</ApartmentNumber>
+                     <City>Москва</City>
+                     <Country>РФ</Country>
+                     <County/>
+                     <Province>Москва</Province>
+                     <State>77</State>
+                     <StreetAddress>Кожевническая</StreetAddress>
+                     <ZipCode>115114</ZipCode>
+                     <VTB24Building/>
+                     <VTB24HouseNum>10</VTB24HouseNum>
+                     <VTB24Housing/>
+                     <VTB24SettlementType/>
+                     <VTB24Settlement/>
+                     <VTB24KLADRCode/>
+                     <FullAddress>115114 Россия г Москва ул Кожевническая дом 10 кв 45</FullAddress>
+                     <ActiveFlag>Y</ActiveFlag>
+                  </PersonalAddress>
+                  <PersonalAddress>
+                     <AddressType>Постоянной регистрации</AddressType>
+                     <ApartmentNumber>45</ApartmentNumber>
+                     <City>Москва</City>
+                     <Country>РФ</Country>
+                     <County/>
+                     <Province>Москва</Province>
+                     <State>77</State>
+                     <StreetAddress>Кожевническая</StreetAddress>
+                     <ZipCode>115114</ZipCode>
+                     <VTB24Building/>
+                     <VTB24HouseNum>10</VTB24HouseNum>
+                     <VTB24Housing/>
+                     <VTB24SettlementType/>
+                     <VTB24Settlement/>
+                     <VTB24KLADRCode>77000000000148800</VTB24KLADRCode>
+                     <FullAddress>115114 Россия г Москва ул Кожевническая дом 10 кв 45</FullAddress>
+                     <ActiveFlag>Y</ActiveFlag>
+                  </PersonalAddress>
+               </ListOfPersonalAddress>
+               <ListOfClientBlackList/>
+               <ListOfThirdPartyBlackList/>
+               <ListOfAccount>
+                  <Account>
+                     <Organization>00000</Organization>
+                     <Number>40817810310104000468</Number>
+                     <Balance>100</Balance>
+                     <Status>Активный</Status>
+                     <Currency>RUR</Currency>
+                     <SystemId>99995</SystemId>
+                     <AgreementNumber>40817810310104000468</AgreementNumber>
+                     <AgreementDate>04/12/2018</AgreementDate>
+                     <AgreementProduct/>
+                     <AccountType>Накопительный счет</AccountType>
+                  </Account>
+                  <Account>
+                     <Organization>00000</Organization>
+                     <Number>40817810400009540810</Number>
+                     <Balance>0</Balance>
+                     <Status>Блокированый</Status>
+                     <Currency>RUR</Currency>
+                     <SystemId>00000</SystemId>
+                     <AgreementNumber/>
+                     <AgreementDate>07/02/2018</AgreementDate>
+                     <AgreementProduct/>
+                     <AccountType>Текущий счет</AccountType>
+                  </Account>
+                  <Account>
+                     <Organization>00000</Organization>
+                     <Number>40817810410104000481</Number>
+                     <Balance>4735160.56</Balance>
+                     <Status>Активный</Status>
+                     <Currency>RUR</Currency>
+                     <SystemId>99995</SystemId>
+                     <AgreementNumber>40817810410104000481</AgreementNumber>
+                     <AgreementDate>04/17/2018</AgreementDate>
+                     <AgreementProduct/>
+                     <AccountType>Текущий счет</AccountType>
+                  </Account>
+                  <Account>
+                     <Organization>00000</Organization>
+                     <Number>40817810610104000469</Number>
+                     <Balance>0</Balance>
+                     <Status>Активный</Status>
+                     <Currency>RUR</Currency>
+                     <SystemId>99995</SystemId>
+                     <AgreementNumber>40817810610104000469</AgreementNumber>
+                     <AgreementDate>04/12/2018</AgreementDate>
+                     <AgreementProduct/>
+                     <AccountType>Накопительный счет</AccountType>
+                  </Account>
+                  <Account>
+                     <Organization>00000</Organization>
+                     <Number>40817810637004008764</Number>
+                     <Balance>213030</Balance>
+                     <Status>Активный</Status>
+                     <Currency>RUR</Currency>
+                     <SystemId>99995</SystemId>
+                     <AgreementNumber>40817810637004008764</AgreementNumber>
+                     <AgreementDate>01/29/2018</AgreementDate>
+                     <AgreementProduct/>
+                     <AccountType>Текущий счет</AccountType>
+                  </Account>
+                  <Account>
+                     <Organization>00000</Organization>
+                     <Number>40817810710104000466</Number>
+                     <Balance>48006.32</Balance>
+                     <Status>Активный</Status>
+                     <Currency>RUR</Currency>
+                     <SystemId>99995</SystemId>
+                     <AgreementNumber>40817810710104000466</AgreementNumber>
+                     <AgreementDate>04/12/2018</AgreementDate>
+                     <AgreementProduct/>
+                     <AccountType>Накопительный счет</AccountType>
+                  </Account>
+                  <Account>
+                     <Organization>00000</Organization>
+                     <Number>40817810723004013391</Number>
+                     <Balance>100.7</Balance>
+                     <Status>Активный</Status>
+                     <Currency>RUR</Currency>
+                     <SystemId>99995</SystemId>
+                     <AgreementNumber>40817810723004013391</AgreementNumber>
+                     <AgreementDate>04/12/2018</AgreementDate>
+                     <AgreementProduct/>
+                     <AccountType>Накопительный счет</AccountType>
+                  </Account>
+                  <Account>
+                     <Organization>00000</Organization>
+                     <Number>40817810923004012752</Number>
+                     <Balance>2941655000.17</Balance>
+                     <Status>Активный</Status>
+                     <Currency>RUR</Currency>
+                     <SystemId>99995</SystemId>
+                     <AgreementNumber/>
+                     <AgreementDate>09/13/2017</AgreementDate>
+                     <AgreementProduct/>
+                     <AccountType>Мастер счет</AccountType>
+                  </Account>
+                  <Account>
+                     <Organization>00000</Organization>
+                     <Number>40817810937004008765</Number>
+                     <Balance>1972.11</Balance>
+                     <Status>Активный</Status>
+                     <Currency>RUR</Currency>
+                     <SystemId>99995</SystemId>
+                     <AgreementNumber>40817810937004008765</AgreementNumber>
+                     <AgreementDate>01/29/2018</AgreementDate>
+                     <AgreementProduct/>
+                     <AccountType>Накопительный счет</AccountType>
+                  </Account>
+                  <Account>
+                     <Organization>00000</Organization>
+                     <Number>40817840123004011594</Number>
+                     <Balance>18688.01</Balance>
+                     <Status>Активный</Status>
+                     <Currency>USD</Currency>
+                     <SystemId>99995</SystemId>
+                     <AgreementNumber>40817840123004011594</AgreementNumber>
+                     <AgreementDate>02/07/2018</AgreementDate>
+                     <AgreementProduct/>
+                     <AccountType>Текущий счет</AccountType>
+                  </Account>
+                  <Account>
+                     <Organization>00000</Organization>
+                     <Number>40817840300009541840</Number>
+                     <Balance>0</Balance>
+                     <Status>Блокированый</Status>
+                     <Currency>USD</Currency>
+                     <SystemId>00000</SystemId>
+                     <AgreementNumber/>
+                     <AgreementDate>06/02/2018</AgreementDate>
+                     <AgreementProduct/>
+                     <AccountType>Текущий счет</AccountType>
+                  </Account>
+                  <Account>
+                     <Organization>00000</Organization>
+                     <Number>40817840710104000355</Number>
+                     <Balance>0</Balance>
+                     <Status>Активный</Status>
+                     <Currency>USD</Currency>
+                     <SystemId>99995</SystemId>
+                     <AgreementNumber>40817840710104000355</AgreementNumber>
+                     <AgreementDate>04/11/2018</AgreementDate>
+                     <AgreementProduct/>
+                     <AccountType>Накопительный счет</AccountType>
+                  </Account>
+                  <Account>
+                     <Organization>00000</Organization>
+                     <Number>40817840923004011192</Number>
+                     <Balance>1017900.52</Balance>
+                     <Status>Активный</Status>
+                     <Currency>USD</Currency>
+                     <SystemId>99995</SystemId>
+                     <AgreementNumber/>
+                     <AgreementDate>09/13/2017</AgreementDate>
+                     <AgreementProduct/>
+                     <AccountType>Мастер счет</AccountType>
+                  </Account>
+                  <Account>
+                     <Organization>00000</Organization>
+                     <Number>40817978400009874978</Number>
+                     <Balance>0</Balance>
+                     <Status>Блокированый</Status>
+                     <Currency>EUR</Currency>
+                     <SystemId>00000</SystemId>
+                     <AgreementNumber/>
+                     <AgreementDate>07/02/2018</AgreementDate>
+                     <AgreementProduct/>
+                     <AccountType>Текущий счет</AccountType>
+                  </Account>
+                  <Account>
+                     <Organization>00000</Organization>
+                     <Number>40817978723004011196</Number>
+                     <Balance>-508.42</Balance>
+                     <Status>Активный</Status>
+                     <Currency>EUR</Currency>
+                     <SystemId>99995</SystemId>
+                     <AgreementNumber/>
+                     <AgreementDate>09/13/2017</AgreementDate>
+                     <AgreementProduct/>
+                     <AccountType>Мастер счет</AccountType>
+                  </Account>
+                  <Account>
+                     <Organization>00000</Organization>
+                     <Number>42305810523000201037</Number>
+                     <Balance>0</Balance>
+                     <Status>Закрыт</Status>
+                     <Currency>RUR</Currency>
+                     <SystemId>00000</SystemId>
+                     <AgreementNumber/>
+                     <AgreementDate>02/02/2018</AgreementDate>
+                     <AgreementProduct/>
+                     <AccountType>Депозитный счет</AccountType>
+                  </Account>
+                  <Account>
+                     <Organization>00000</Organization>
+                     <Number>42306810137000904583</Number>
+                     <Balance>0</Balance>
+                     <Status>Блокированый</Status>
+                     <Currency>RUR</Currency>
+                     <SystemId>00000</SystemId>
+                     <AgreementNumber/>
+                     <AgreementDate>01/23/2018</AgreementDate>
+                     <AgreementProduct/>
+                     <AccountType>Депозитный счет</AccountType>
+                  </Account>
+                  <Account>
+                     <Organization>00000</Organization>
+                     <Number>42306810237000904580</Number>
+                     <Balance>0</Balance>
+                     <Status>Блокированый</Status>
+                     <Currency>RUR</Currency>
+                     <SystemId>00000</SystemId>
+                     <AgreementNumber/>
+                     <AgreementDate>01/23/2018</AgreementDate>
+                     <AgreementProduct/>
+                     <AccountType>Депозитный счет</AccountType>
+                  </Account>
+                  <Account>
+                     <Organization>00000</Organization>
+                     <Number>42306810337000904590</Number>
+                     <Balance>0</Balance>
+                     <Status>Блокированый</Status>
+                     <Currency>RUR</Currency>
+                     <SystemId>00000</SystemId>
+                     <AgreementNumber/>
+                     <AgreementDate>02/01/2018</AgreementDate>
+                     <AgreementProduct/>
+                     <AccountType>Депозитный счет</AccountType>
+                  </Account>
+                  <Account>
+                     <Organization>00000</Organization>
+                     <Number>42306810437000904584</Number>
+                     <Balance>0</Balance>
+                     <Status>Блокированый</Status>
+                     <Currency>RUR</Currency>
+                     <SystemId>00000</SystemId>
+                     <AgreementNumber/>
+                     <AgreementDate>01/23/2018</AgreementDate>
+                     <AgreementProduct/>
+                     <AccountType>Депозитный счет</AccountType>
+                  </Account>
+                  <Account>
+                     <Organization>00000</Organization>
+                     <Number>42306810537000904578</Number>
+                     <Balance>0</Balance>
+                     <Status>Блокированый</Status>
+                     <Currency>RUR</Currency>
+                     <SystemId>00000</SystemId>
+                     <AgreementNumber/>
+                     <AgreementDate>01/22/2018</AgreementDate>
+                     <AgreementProduct/>
+                     <AccountType>Депозитный счет</AccountType>
+                  </Account>
+                  <Account>
+                     <Organization>00000</Organization>
+                     <Number>42306810537000904581</Number>
+                     <Balance>0</Balance>
+                     <Status>Блокированый</Status>
+                     <Currency>RUR</Currency>
+                     <SystemId>00000</SystemId>
+                     <AgreementNumber/>
+                     <AgreementDate>01/23/2018</AgreementDate>
+                     <AgreementProduct/>
+                     <AccountType>Депозитный счет</AccountType>
+                  </Account>
+                  <Account>
+                     <Organization>00000</Organization>
+                     <Number>42306810737000904585</Number>
+                     <Balance>0</Balance>
+                     <Status>Блокированый</Status>
+                     <Currency>RUR</Currency>
+                     <SystemId>00000</SystemId>
+                     <AgreementNumber/>
+                     <AgreementDate>01/23/2018</AgreementDate>
+                     <AgreementProduct/>
+                     <AccountType>Депозитный счет</AccountType>
+                  </Account>
+                  <Account>
+                     <Organization>00000</Organization>
+                     <Number>42306810801000905737</Number>
+                     <Balance>5000000</Balance>
+                     <Status>Блокированый</Status>
+                     <Currency>RUR</Currency>
+                     <SystemId>00000</SystemId>
+                     <AgreementNumber/>
+                     <AgreementDate>09/25/2018</AgreementDate>
+                     <AgreementProduct/>
+                     <AccountType>Депозитный счет</AccountType>
+                  </Account>
+                  <Account>
+                     <Organization>00000</Organization>
+                     <Number>42306810837000904579</Number>
+                     <Balance>0</Balance>
+                     <Status>Блокированый</Status>
+                     <Currency>RUR</Currency>
+                     <SystemId>00000</SystemId>
+                     <AgreementNumber/>
+                     <AgreementDate>01/22/2018</AgreementDate>
+                     <AgreementProduct/>
+                     <AccountType>Депозитный счет</AccountType>
+                  </Account>
+                  <Account>
+                     <Organization>00000</Organization>
+                     <Number>42306810837000904582</Number>
+                     <Balance>0</Balance>
+                     <Status>Блокированый</Status>
+                     <Currency>RUR</Currency>
+                     <SystemId>00000</SystemId>
+                     <AgreementNumber/>
+                     <AgreementDate>01/23/2018</AgreementDate>
+                     <AgreementProduct/>
+                     <AccountType>Депозитный счет</AccountType>
+                  </Account>
+                  <Account>
+                     <Organization>00000</Organization>
+                     <Number>42306810937000904589</Number>
+                     <Balance>0</Balance>
+                     <Status>Закрыт</Status>
+                     <Currency>RUR</Currency>
+                     <SystemId>00000</SystemId>
+                     <AgreementNumber/>
+                     <AgreementDate>02/01/2018</AgreementDate>
+                     <AgreementProduct/>
+                     <AccountType>Депозитный счет</AccountType>
+                  </Account>
+                  <Account>
+                     <Organization>00000</Organization>
+                     <Number>40817810023004013392</Number>
+                     <Balance>278333.94</Balance>
+                     <Status>Активный</Status>
+                     <Currency>RUR</Currency>
+                     <SystemId>99995</SystemId>
+                     <AgreementNumber>40817810023004013392</AgreementNumber>
+                     <AgreementDate>04/12/2018</AgreementDate>
+                     <AgreementProduct/>
+                     <AccountType>Текущий счет</AccountType>
+                  </Account>
+                  <Account>
+                     <Organization>00000</Organization>
+                     <Number>40817810010104000470</Number>
+                     <Balance>0</Balance>
+                     <Status>Зарезервирован</Status>
+                     <Currency>RUR</Currency>
+                     <SystemId>99995</SystemId>
+                     <AgreementNumber>40817810010104000470</AgreementNumber>
+                     <AgreementDate>04/12/2018</AgreementDate>
+                     <AgreementProduct/>
+                     <AccountType>Текущий счет</AccountType>
+                  </Account>
+               </ListOfAccount>
+               <ListOfFINSATMCard>
+                  <FINSATMCard>
+                     <CardNumber>4272290611595141</CardNumber>
+                     <Balance>29775.64</Balance>
+                     <Currency>RUR</Currency>
+                     <SystemId>OW4</SystemId>
+                     <AccountNumber>40817810201302366149</AccountNumber>
+                     <ExpirationDate>05/31/2019</ExpirationDate>
+                     <Branch>00000</Branch>
+                     <MultiCurrencyFlag>N</MultiCurrencyFlag>
+                     <CardType>Visa Classic</CardType>
+                     <CardStatus>Card OK</CardStatus>
+                     <CardHolder>Боль Антонина Михайловна</CardHolder>
+                  </FINSATMCard>
+                  <FINSATMCard>
+                     <CardNumber>4714870049186500</CardNumber>
+                     <Balance>2941655000.17</Balance>
+                     <Currency>RUR</Currency>
+                     <SystemId>99995</SystemId>
+                     <AccountNumber>40817810923004012752</AccountNumber>
+                     <ExpirationDate>08/31/2020</ExpirationDate>
+                     <Branch>2300</Branch>
+                     <MultiCurrencyFlag/>
+                     <CardType>Visa Classic Unemb Instant Iss</CardType>
+                     <CardStatus>Card OK</CardStatus>
+                     <CardHolder>Боль Антонина Михайловна</CardHolder>
+                  </FINSATMCard>
+                  <FINSATMCard>
+                     <CardNumber>5543863392061432</CardNumber>
+                     <Balance>14823.33</Balance>
+                     <Currency>USD</Currency>
+                     <SystemId>OW4</SystemId>
+                     <AccountNumber>40820840001472111371</AccountNumber>
+                     <ExpirationDate>09/30/2019</ExpirationDate>
+                     <Branch>00000</Branch>
+                     <MultiCurrencyFlag>N</MultiCurrencyFlag>
+                     <CardType>New type</CardType>
+                     <CardStatus>Card OK</CardStatus>
+                     <CardHolder>Боль Антонина Михайловна</CardHolder>
+                  </FINSATMCard>
+               </ListOfFINSATMCard>
+               <ListOfThirdPartyPersonalAddress/>
+               <ListOfContactPerson/>
+               <ListOfAdditionalClient/>
+               <ListOfCommission>
+<!--                   <Commission>
+                     <ReferenceName>Справка о наличии счетов</ReferenceName>
+                     <ReferenceType>Типовая</ReferenceType>
+                     <Kbo>1</Kbo>
+                     <MaskNumber>002710401</MaskNumber>
+                     <AmountComission>20</AmountComission>
+                     <Nds>Y</Nds>
+                     <PaymentPurpose>"Оплата комиссии за выдачу ""Справка о наличии счетов"""</PaymentPurpose>
+                     <CommissionId>"Оплата комиссии за выдачу ""Справка о наличии счетов"""</CommissionId>
+                     <ProductCode/>
+                  </Commission> -->
+                   <Commission>
+                     <ReferenceName>Справка о наличии счетов</ReferenceName>
+                     <ReferenceType>Типовая</ReferenceType>
+                     <Kbo>725001-12</Kbo>
+                     <MaskNumber>002710405</MaskNumber>
+                     <AmountComission>200</AmountComission>
+                     <Nds>N</Nds>
+                     <PaymentPurpose>"Оплата комиссии за выдачу ""справки о наличии счетов"""</PaymentPurpose>
+                     <CommissionId>com.-V0HNN8C.85</CommissionId>
+                     <ProductCode/>
+                  </Commission>
+               </ListOfCommission>
+            </Session>
+	</ListOfSession>
+</SiebelGetOperationInfo_Output>

@@ -1,0 +1,77 @@
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:jour="http://journal.ws.spectrum" xmlns:xsd="http://model.ws.spectrum/xsd">
+   <soap:Header/>
+   <soap:Body>
+      <jour:create>
+         <jour:request>
+            <xsd:operationEntity>
+               <xsd:deptCode>1126</xsd:deptCode>
+               <xsd:operJournalStatusEnum>3</xsd:operJournalStatusEnum>
+               <xsd:documents>
+                  <xsd:markDocCode>03ко</xsd:markDocCode>
+                  <xsd:cashSymbols>
+                     <xsd:cashSymbolCode>37</xsd:cashSymbolCode>
+                     <xsd:side/>
+                     <xsd:summa>
+                        <xsd:currency>USD</xsd:currency>
+                        <xsd:summa>100</xsd:summa>
+                     </xsd:summa>
+                  </xsd:cashSymbols>
+                  <xsd:payer>
+                     <xsd:firstName>КАССИР</xsd:firstName>
+                     <xsd:patronymic>МЕГА-ХИМКМ</xsd:patronymic>
+                     <xsd:surname>ПРОСТО</xsd:surname>
+                  </xsd:payer>
+                  <xsd:creditAccountEntity>
+                     <xsd:accountIdSys>00000</xsd:accountIdSys>
+                     <xsd:accountNum>20209840657000000001</xsd:accountNum>
+                     <xsd:deptCode>1126</xsd:deptCode>
+                  </xsd:creditAccountEntity>
+                  <xsd:creditSumma>
+                     <xsd:currency>USD</xsd:currency>
+                     <xsd:summa>100</xsd:summa>
+                  </xsd:creditSumma>
+                  <xsd:debitAccountEntity>
+                     <xsd:accountIdSys>00000</xsd:accountIdSys>
+                     <xsd:accountNum>20202840311260000001</xsd:accountNum>
+                     <xsd:deptCode>1126</xsd:deptCode>
+                  </xsd:debitAccountEntity>
+                  <xsd:debitSumma>
+                     <xsd:currency>USD</xsd:currency>
+                     <xsd:summa>100</xsd:summa>
+                  </xsd:debitSumma>
+                  <xsd:description>Возврат из операционный кассы ДО "Жуковка" Филиала № 7701 Банка ВТБ (ПАО) 
+На основании: Опись к сумке № 501/2391 от 04.09.2018 954</xsd:description>
+                  <xsd:docNumber>1489566</xsd:docNumber>
+                  <xsd:remainFlows>
+                     <xsd:from>
+                        <xsd:locationEnum>7</xsd:locationEnum>
+                        <xsd:login>O1126</xsd:login>
+                        <xsd:deptCode>1126</xsd:deptCode>
+                     </xsd:from>
+                     <xsd:quantity>0</xsd:quantity>
+                     <xsd:summa>100.1</xsd:summa>
+                     <xsd:to>
+                        <xsd:locationEnum>1</xsd:locationEnum>
+                     </xsd:to>
+                     <xsd:valuableSort>
+                        <xsd:valuableSortId>-143</xsd:valuableSortId>
+                     </xsd:valuableSort>
+                  </xsd:remainFlows>
+                  <xsd:docDate>2021-08-25</xsd:docDate>
+               </xsd:documents>
+               <xsd:operJournalNote>ДО "Жуковка" Филиала № 7701 Банка ВТБ (ПАО)</xsd:operJournalNote>
+               <xsd:idSys>MBANK</xsd:idSys>
+               <xsd:login>O1126</xsd:login>
+               <xsd:operJournalExtId>MB.999988</xsd:operJournalExtId>
+               <xsd:operationCode>2414.MB</xsd:operationCode>
+               <xsd:principal>
+                  <xsd:principal>БОРИСОВ АНДРЕЙ ЮРЬЕВИЧ</xsd:principal>
+               </xsd:principal>
+            </xsd:operationEntity>
+            <xsd:requestInfo>
+               <xsd:messageId/>
+            </xsd:requestInfo>
+         </jour:request>
+      </jour:create>
+   </soap:Body>
+</soap:Envelope>

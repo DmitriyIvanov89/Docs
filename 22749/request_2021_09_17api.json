@@ -1,0 +1,40 @@
+{   
+    "sourceCode": "Spectrum",
+    "sourceKey": "485",
+    "extRequestId":"extRequestId",
+
+"safeDepositBoxSpectrum": {
+		"safeDepositBoxFree": {
+	       	"region":{
+		      	"regionMass": {
+	       		    "regionID":{
+	       		        "branchID":"5700"
+	       		    }
+	       		},
+        		"regionPrime": {
+	       		    "regionID":{
+	       		        "branchID":"1126"
+	       		    }
+	       		   },
+	       		"regionVip":{
+        			    "regionID":{
+        			        "branchID":"1056"
+        			    }
+	       		}
+		      }
+		},
+
+		"packageServices": {
+	           	"massPackageServices":"multCard",
+	           	"primePackageServices":"primePlus"
+		},
+		"vipCustomer": {
+		    "maxHeightVipBox":"maxHeight_77,9"
+		},
+
+		"typeBox": "maxHeightSmallBox",
+		
+		"startDateReservation": "2021-09-01",
+		"endDateReservation": "2021-09-03"
+	}
+}

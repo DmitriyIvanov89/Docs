@@ -1,0 +1,365 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "DOSE 1.0.0 Досье ЮЛ/ФЛ file-content",
+    "description": "DOSE 1.0.0 Досье ЮЛ/ФЛ file-content",
+    "contact": {
+      "name": "Артиков Руслан Рузимович (Тимлид DOSE Досье ЮЛ/ФЛ)",
+      "url": "https://wiki.corp.dev.vtb/pages/viewpage.action?pageId=60561556",
+      "email": "artikov@vtb.ru"
+    },
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "https://tyk-gw-lb.region.vtb.ru/api/cross/dose/file-content/v1",
+      "description": "PRODUCTION шлюз API Tyk"
+    },
+    {
+      "url": "https://k4-tyki-app401lv.vtb24.ru/api/cross/dose/file-content/v1",
+      "description": "K4 шлюз API Tyk"
+    },
+    {
+      "url": "https://k3-tyki-app401lv.vtb24.ru/api/cross/dose/file-content/v1",
+      "description": "K3 шлюз API Tyk"
+    },
+	{
+		"url": "https://d1-tyki-app201ln.corp.dev.vtb/api/cross/dose/file-content/v1",
+		"description": "DSO шлюз API Tyk"
+	},
+	{
+     "url": "https://file-content-ds1-genr01-dose-dso-dose.apps.ds1-genr01.corp.dev.vtb/api/dose/file-content/v1",
+     "description": "Тестовый сервер (DSO)"
+    }
+  ],
+  "security": [
+    {
+      "EpaAuth": []
+    }
+  ],
+  "paths": {
+    "/api/edk/content/{type}/{did}": {
+      "get": {
+        "tags": [
+          "content-controller"
+        ],
+        "summary": "возвращает файл",
+        "description": "файл из checkin",
+        "operationId": "getFileByTypeAndDid",
+        "parameters": [
+          {
+            "name": "type",
+            "in": "path",
+            "description": "Тип файла, alternateFile не используется",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "alternateFile",
+                "primaryFile"
+              ]
+            }
+          },
+          {
+            "name": "did",
+            "in": "path",
+            "description": "идентификатор версии документа",
+            "required": true,
+            "schema": {
+              "maximum": 9223372036854776000,
+              "minimum": -9223372036854776000,
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Operation",
+            "headers": {
+              "X-RateLimit-Limit": {
+                "description": "Лимит вызовов. Временное Окно лимита уточнить у поставщика API.",
+                "schema": {
+                  "type": "integer",
+                  "format": "int64"
+                }
+              },
+              "X-RateLimit-Remaining": {
+                "description": "Оставшееся количество вызовов в временном окне. Временное Окно лимита уточнить у поставщика API.",
+                "schema": {
+                  "type": "integer",
+                  "format": "int64"
+                }
+              },
+              "X-RateLimit-Reset": {
+                "description": "Время обнуления лимита вызовов в формате Unix Timestamp в миллисекундах.",
+                "schema": {
+                  "type": "integer",
+                  "format": "int64"
+                }
+              },
+              "Content-Disposition": {
+                "style": "simple",
+                "schema": {
+                  "maxLength": 255,
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "*/*": {
+                "schema": {
+                  "maxItems": 2147483647,
+                  "type": "array",
+                  "items": {
+                    "maxLength": 127,
+                    "type": "string",
+                    "format": "byte"
+                  }
+                }
+              }
+            }
+          },
+          "204": {
+            "description": "no content",
+            "headers": {
+              "X-RateLimit-Limit": {
+                "description": "Лимит вызовов. Временное Окно лимита уточнить у поставщика API.",
+                "schema": {
+                  "type": "integer",
+                  "format": "int64"
+                }
+              },
+              "X-RateLimit-Remaining": {
+                "description": "Оставшееся количество вызовов в временном окне. Временное Окно лимита уточнить у поставщика API.",
+                "schema": {
+                  "type": "integer",
+                  "format": "int64"
+                }
+              },
+              "X-RateLimit-Reset": {
+                "description": "Время обнуления лимита вызовов в формате Unix Timestamp в миллисекундах.",
+                "schema": {
+                  "type": "integer",
+                  "format": "int64"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TykErrorResponse"
+                }
+              }
+            },
+            "headers": {
+              "X-Generator": {
+                "description": "Заголовок указывающий на сторону, сгенерировавшую ответ.",
+                "schema": {
+                  "type": "string",
+                  "maxLength": 1000
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TykErrorResponse"
+                }
+              }
+            },
+            "headers": {
+              "X-Generator": {
+                "description": "Заголовок указывающий на сторону, сгенерировавшую ответ.",
+                "schema": {
+                  "type": "string",
+                  "maxLength": 1000
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TykErrorResponse"
+                }
+              }
+            },
+            "headers": {
+              "X-Generator": {
+                "description": "Заголовок указывающий на сторону, сгенерировавшую ответ.",
+                "schema": {
+                  "type": "string",
+                  "maxLength": 1000
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TykErrorResponse"
+                }
+              }
+            },
+            "headers": {
+              "X-Generator": {
+                "description": "Заголовок указывающий на сторону, сгенерировавшую ответ.",
+                "schema": {
+                  "type": "string",
+                  "maxLength": 1000
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Unprocessable Entity",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TykErrorResponse"
+                }
+              }
+            },
+            "headers": {
+              "X-Generator": {
+                "description": "Заголовок указывающий на сторону, сгенерировавшую ответ.",
+                "schema": {
+                  "type": "string",
+                  "maxLength": 1000
+                }
+              }
+            }
+          },
+          "429": {
+            "description": "Too Many Requests",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TykErrorResponse"
+                }
+              }
+            },
+            "headers": {
+              "X-Generator": {
+                "description": "Заголовок указывающий на сторону, сгенерировавшую ответ.",
+                "schema": {
+                  "type": "string",
+                  "maxLength": 1000
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TykErrorResponse"
+                }
+              }
+            },
+            "headers": {
+              "X-Generator": {
+                "description": "Заголовок указывающий на сторону, сгенерировавшую ответ.",
+                "schema": {
+                  "type": "string",
+                  "maxLength": 1000
+                }
+              }
+            }
+          },
+          "502": {
+            "description": "Bad Gateway",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TykErrorResponse"
+                }
+              }
+            },
+            "headers": {
+              "X-Generator": {
+                "description": "Заголовок указывающий на сторону, сгенерировавшую ответ.",
+                "schema": {
+                  "type": "string",
+                  "maxLength": 1000
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "Service Unavailable",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TykErrorResponse"
+                }
+              }
+            },
+            "headers": {
+              "X-Generator": {
+                "description": "Заголовок указывающий на сторону, сгенерировавшую ответ.",
+                "schema": {
+                  "type": "string",
+                  "maxLength": 1000
+                }
+              }
+            }
+          },
+          "504": {
+            "description": "Gateway Timeout",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TykErrorResponse"
+                }
+              }
+            },
+            "headers": {
+              "X-Generator": {
+                "description": "Заголовок указывающий на сторону, сгенерировавшую ответ.",
+                "schema": {
+                  "type": "string",
+                  "maxLength": 1000
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "TykErrorResponse": {
+        "type": "object",
+        "properties": {
+          "error": {
+            "maxLength": 1000,
+            "type": "string",
+            "title": "Описание ошибки"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "securitySchemes": {
+      "EpaAuth": {
+        "type": "http",
+        "scheme": "bearer",
+        "bearerFormat": "JWT"
+      }
+    }
+  }
+}

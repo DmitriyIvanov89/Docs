@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Request ToBranch="00006" Type="SCCreateDocs">
+    <Bis-Data>
+        <BranchId Value="00006"/>
+        <Who Value="O1126"/>
+        <XmlBroker Value=""/>
+        <Z-Code Value=""/>
+        <Z-Id Value="SP.1000179587-37101"/>
+        <Z-Type Value="SCCreateDocs"/>
+        <LogicalStage Value="CreateDocs"/>
+        <transID Value="00006-SP.1000179587-37101"/>
+    </Bis-Data>
+    <App-Data>
+        <ScExport-req>
+            <ScDoc-req>
+                <ScRequestID>SP.1000179587-37101</ScRequestID>
+                <LogicalStage>CreateDocs</LogicalStage>
+                <TransID>00006-SP.1000179587-37101</TransID>
+                <Debet>60322810511260000001</Debet>
+                <Credit>60309810411260000001</Credit>
+                <CurrDb></CurrDb>
+                <CurrCr></CurrCr>
+                <AmountDb>25.23</AmountDb>
+                <AmountCr>25.23</AmountCr>
+                <Number>69103</Number>
+                <DocType>17</DocType>
+                <OpDate>2021-10-01</OpDate>
+                <DocDate>2021-10-01</DocDate>
+                <PlanDate>2021-10-01</PlanDate>
+                <Description>Балансировка задолженности по НДС</Description>
+                <DocStatus>√</DocStatus>
+                <RmkCode></RmkCode>
+                <BisUser>O1126</BisUser>
+                <BisValue>1,1</BisValue>
+                <Course>1</Course>
+                <Subdivision>1126</Subdivision>
+            </ScDoc-req>
+            <ExtInfo-req>
+                <BankType>МФО-9</BankType>
+                <BankID>044030707</BankID>
+                <ben-acct>60309810411260000001</ben-acct>
+                <name-ben>Банк ВТБ (ПАО), ФИЛИАЛ № 7806 БАНКА ВТБ (ПАО), ОО "ТК ИМПЕРИАЛ" В Г. ПСКОВЕ ФИЛИАЛА № 7806 Банка ВТБ (ПАО)</name-ben>
+                <inn>7702070139</inn>
+                <order-pay>5</order-pay>
+                <isclient>3</isclient>
+            </ExtInfo-req>
+            <Signs-req>
+                <code>inn-send</code>
+                <code-value>7702070139</code-value>
+                <surrogate></surrogate>
+                <file-name>op</file-name>
+            </Signs-req>
+            <Signs-req>
+                <code>name-send</code>
+                <code-value>ФИЛИАЛ № 7806 БАНКА ВТБ (ПАО)//Банк ВТБ (ПАО), ФИЛИАЛ № 7806 БАНКА ВТБ (ПАО), ОО "ТК ИМПЕРИАЛ" В Г. ПСКОВЕ ФИЛИАЛА № 7806 Банка ВТБ (ПАО)//69103//</code-value>
+                <surrogate></surrogate>
+                <file-name>op</file-name>
+            </Signs-req>
+        </ScExport-req>
+    </App-Data>
+</Request>

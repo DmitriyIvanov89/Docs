@@ -1,0 +1,333 @@
+{
+	"openapi": "3.0.3",
+	"info": {
+		"title": "Индивидуальные банковские сейфы ФЛ",
+		"description": "Сервис для работы с индивидуальными банковскими сейфами (физические лица)",
+		"termsOfService": "https://www.vtb.ru/",
+		"contact": {
+			"name": "VTB",
+			"url": "https://www.vtb.ru/",
+			"email": "kmkulakov@vtb.ru"
+		},
+		"license": {
+			"name": "API License",
+			"url": "https://www.vtb.ru/"
+		},
+		"version": "ibs-orchestrator-0.0.1"
+	},
+	"servers": [
+		{
+			"url": "http://localhost:8080",
+			"description": "Inferred Url"
+		}
+	],
+	"tags": [
+		{
+			"name": "safe-deposit-box-controller",
+			"description": "Safe Deposit Box Controller"
+		}
+	],
+	"paths": {
+		"/api/v1/safe-deposit-box/reserve": {
+			"post": {
+				"tags": [
+					"safe-deposit-box-controller"
+				],
+				"summary": "Расчет комиссии за аренду ИБС",
+				"operationId": "reserveSafeDepositBoxUsingPOST",
+				"requestBody": {
+					"content": {
+						"application/json": {
+							"schema": {
+								"$ref": "#/components/schemas/ReserveSafeDepositBoxRequest"
+							}
+						}
+					}
+				},
+				"responses": {
+					"200": {
+						"description": "OK",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/ReserveSafeDepositBoxResponse"
+								}
+							}
+						}
+					},
+					"400": {
+						"description": "Bad Request",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "array",
+									"items": {
+										"$ref": "#/components/schemas/ApiErrorDto"
+									}
+								}
+							}
+						}
+					},
+					"404": {
+						"description": "Not Found",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/ApiErrorDto"
+								}
+							}
+						}
+					},
+					"500": {
+						"description": "Internal Server Error",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/ApiErrorDto"
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	"components": {
+		"schemas": {
+			"ApiErrorDto": {
+				"title": "ApiErrorDto",
+				"required": [
+					"errorCode",
+					"errorMessage"
+				],
+				"type": "object",
+				"properties": {
+					"attribute": {
+						"type": "string",
+						"description": "Аттрибут",
+						"example": "field"
+					},
+					"errorCode": {
+						"type": "integer",
+						"description": "Код ошибки",
+						"format": "int32",
+						"example": 400
+					},
+					"errorMessage": {
+						"type": "string",
+						"description": "Описание ошибки",
+						"example": "Required header is not present"
+					}
+				},
+				"description": "Ошибка"
+			},
+			"BoxOptions": {
+				"title": "BoxOptions",
+				"type": "object",
+				"properties": {
+					"boxType": {
+						"type": "string",
+						"description": "Тип ИБС",
+						"enum": [
+							"BIG_BOX",
+							"MEDIUM_BOX",
+							"SMALL_BOX"
+						]
+					},
+					"vipOptions": {
+						"description": "Опции для вип клиента",
+						"$ref": "#/components/schemas/VipOptions"
+					}
+				},
+				"description": "Опции ИБС. Если клиент вип - заполняется 'vipOptions', иначе - 'boxType'"
+			},
+			"CalculationParameters": {
+				"title": "CalculationParameters",
+				"required": [
+					"boxOptions",
+					"endDateReservation",
+					"periodReservation",
+					"region",
+					"startDateReservation"
+				],
+				"type": "object",
+				"properties": {
+					"boxOptions": {
+						"description": "Опции ИБС",
+						"$ref": "#/components/schemas/BoxOptions"
+					},
+					"endDateReservation": {
+						"type": "string",
+						"description": "Дата окончания бронирования",
+						"example": "2021-10-31"
+					},
+					"periodReservation": {
+						"type": "integer",
+						"description": "Срок бронирования",
+						"format": "int32",
+						"example": 27
+					},
+					"prime": {
+						"type": "boolean",
+						"description": "Пакет услуг \"ПРАЙМ\" или \"ПРАЙМ NEW\"",
+						"example": false
+					},
+					"privilege": {
+						"type": "boolean",
+						"description": "Пакет услуг \"ПРИВИЛЕГИЯ\" или \"ПРИВИЛЕГИЯ - МУЛЬТИКАРТА\"\"",
+						"example": false
+					},
+					"region": {
+						"type": "string",
+						"description": "Регион"
+					},
+					"startDateReservation": {
+						"type": "string",
+						"description": "Дата начала бронирования",
+						"example": "2021-09-01"
+					},
+					"transactionType": {
+						"type": "string",
+						"description": "Опции бронирования",
+						"enum": [
+							"IPOTEKA_ALTERNATIVE",
+							"IPOTEKA_SALE",
+							"USUAL_TRANSACTION"
+						]
+					}
+				},
+				"description": "Данные для расчета стоимости аренды ИБС"
+			},
+			"Commission": {
+				"title": "Commission",
+				"type": "object",
+				"properties": {
+					"storeCommission": {
+						"minimum": 0.0,
+						"exclusiveMinimum": true,
+						"type": "number",
+						"description": "Комиссия за предоставление в пользование ИБС",
+						"format": "bigdecimal",
+						"example": 123.56
+					},
+					"totalCommission": {
+						"minimum": 0.0,
+						"exclusiveMinimum": true,
+						"type": "number",
+						"description": "Суммарная комиссия",
+						"format": "bigdecimal",
+						"example": 723.21
+					},
+					"transactionCommission": {
+						"minimum": 0.0,
+						"exclusiveMinimum": true,
+						"type": "number",
+						"description": "Комиссия за обеспечение доступа к ИБС",
+						"format": "bigdecimal",
+						"example": 456.79
+					}
+				},
+				"description": "Комиссия"
+			},
+			"ReserveSafeDepositBoxRequest": {
+				"title": "ReserveSafeDepositBoxRequest",
+				"required": [
+					"calculationParameters",
+					"extRequestId",
+					"sourceCode",
+					"sourceKey"
+				],
+				"type": "object",
+				"properties": {
+					"calculationParameters": {
+						"description": "Данные для расчета стоимости аренды ИБС",
+						"$ref": "#/components/schemas/CalculationParameters"
+					},
+					"extRequestId": {
+						"type": "string",
+						"description": "Идентификатор Запроса клиента c сайта ВТБ"
+					},
+					"sourceCode": {
+						"type": "string",
+						"description": "Код внешней системы (сайт ВТБ)"
+					},
+					"sourceKey": {
+						"type": "string",
+						"description": "Идентификационный ключ внешней системы (сайт ВТБ)"
+					}
+				}
+			},
+			"ReserveSafeDepositBoxResponse": {
+				"title": "ReserveSafeDepositBoxResponse",
+				"required": [
+					"beginTime",
+					"calculationParameters",
+					"endTime",
+					"extRequestId",
+					"outComeCode",
+					"requestId"
+				],
+				"type": "object",
+				"properties": {
+					"beginTime": {
+						"type": "string",
+						"description": "Дата и время регистрации запроса на расчет комиссии, с учетом сдвига часового пояса подразделения",
+						"example": "2021-08-12T13:48:08.749+07:00"
+					},
+					"calculationParameters": {
+						"description": "Данные для расчета стоимости аренды ИБС",
+						"$ref": "#/components/schemas/CalculationParameters"
+					},
+					"commission": {
+						"description": "Комиссия",
+						"$ref": "#/components/schemas/Commission"
+					},
+					"endTime": {
+						"type": "string",
+						"description": "Дата расчета комиссии",
+						"example": "2021-08-12"
+					},
+					"extRequestId": {
+						"type": "string",
+						"description": "Идентификатор запроса на сайте ВТБ"
+					},
+					"outComeCode": {
+						"type": "integer",
+						"description": "Результат расчета комиссии",
+						"format": "int32",
+						"example": 1,
+						"enum": [
+							0,
+							1
+						]
+					},
+					"requestId": {
+						"type": "string",
+						"description": "Идентификатор запроса в МКС СУБО"
+					}
+				}
+			},
+			"VipOptions": {
+				"title": "VipOptions",
+				"required": [
+					"branchId",
+					"maxHeightVipBox"
+				],
+				"type": "object",
+				"properties": {
+					"branchId": {
+						"type": "string",
+						"description": "Идентификатор отделения ВТБ"
+					},
+					"maxHeightVipBox": {
+						"type": "number",
+						"description": "Максимальная высота ИБС VIP",
+						"format": "bigdecimal",
+						"example": 6.9
+					}
+				},
+				"description": "Опции для вип клиента"
+			}
+		}
+	}
+}

@@ -1,0 +1,25 @@
+                      <para>Если произведено успешное списание средств со счета, выполняется
+                        выгрузка в главную книгу :</para>
+                      <para><orderedlist>
+                      <listitem>
+                        <para>По операциям .BQ (см.<xref linkend="settings.operation"/>) выгружается
+                              проводка: <emphasis role="bold">Дт 40817 - Кт 20202 </emphasis>, в обе
+                              главные книги (Бисквит, ЦФТ2.0 Main); </para>
+                            <note>
+                              <para>Внимание!!! По организационным ограничениям, выгрузка операций
+                                .BQ в ГК ЦФТ2.0 Main возможна после перевода вкладов на ЦФТ Savings
+                                и маршрутизации филиала на ГК ЦФТ2.0 Main</para>
+                            </note>
+                      </listitem>
+                      <listitem>
+                        <para>По операциям .CFT(см.<xref linkend="settings.operation"/>) выгружается проводка:</para>
+                        <para><orderedlist>
+                        <listitem>
+                          <para>В ГК Бисквит:<emphasis role="bold">Дт 47422 - Кт 20202</emphasis></para>
+                        </listitem>
+                          <listitem>
+                           <para>В ГК ЦФТ2.0 Main:<emphasis role="bold">Дт 40817 - Кт 20202</emphasis></para> 
+                          </listitem>
+                        </orderedlist></para>
+                    </listitem>
+                     </orderedlist></para>

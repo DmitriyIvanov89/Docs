@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CIT_REQUEST>
+    <SYSTEM>
+        <BP_ID Value="CashOpCancel"/>
+        <CIT_Version Value="1.0"/>
+        <ERR Value=""/>
+        <FORMAT Value="XML"/>
+        <INTERFACE_RET Value="0"/>
+        <MAIN_ID Value="123456"/>
+        <MSG_ID Value="987654"/>
+        <SYNC Value="N"/>
+        <SYS_ID Value="IBSO_DISTR"/>
+        <TAR_ID Value="SPTR"/>
+        <Version Value="002"/>
+    </SYSTEM>
+    <DATA>
+		<!--0 - успех, не 0 - ошибка-->
+        <ResultCode Value="1" />
+        <Error>
+            <BEGIN_>
+                <ErrorCode Value="2" />
+                <ErrorMessage Value="Текст ошибки" />
+            </BEGIN_>
+        </Error>
+    </DATA>
+</CIT_REQUEST>

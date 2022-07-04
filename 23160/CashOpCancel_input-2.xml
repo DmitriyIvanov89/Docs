@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CIT_REQUEST>
+    <SYSTEM>
+        <BP_ID Value="CashOpCancel"/>
+        <CIT_Version Value="1.0"/>
+        <FORMAT Value="XML"/>
+        <MSG_ID Value="123456"/>
+        <SYNC Value="N"/>
+        <SYS_ID Value="SPTR"/>
+        <TAR_ID Value="CFT2RS"/>
+        <Version Value="002"/>
+    </SYSTEM>
+    <DATA>
+        <Operation_ID Value="SP.130197604-005319"/>
+    </DATA>
+</CIT_REQUEST>

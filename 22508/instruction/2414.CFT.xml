@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<T_CABS_CREATE_DOC_REQ xmlns="http://www.NewAthena.ru/NA5/IntegrationAdapter">
+    <SSUBSYSTEM>SPECTRUM</SSUBSYSTEM>
+    <NDEPARTMENT>709000</NDEPARTMENT>
+    <RATRANSPROPS>
+        <T_PROPERTY>
+            <SNAME>SOURCE_SYSTEM</SNAME>
+            <SVALUE>SPECTRUM</SVALUE>
+        </T_PROPERTY>
+        <T_PROPERTY>
+            <SNAME>TARGET_SYSTEM</SNAME>
+            <SVALUE>CFT2</SVALUE>
+        </T_PROPERTY>
+    </RATRANSPROPS>
+    <SMESSAGEID>249693</SMESSAGEID>
+    <SGUID>MB.999988</SGUID>
+    <SDOCUMENTTYPE>2414.MB</SDOCUMENTTYPE>
+    <SDEPARTMENT>1126</SDEPARTMENT>
+    <RECPAYMENT>
+        <SLABEL>1489566</SLABEL>
+        <SCURRENCYFROM>840</SCURRENCYFROM>
+        <SCURRENCYTO>840</SCURRENCYTO>
+        <SACCOUNTFROM>20202840311260000001</SACCOUNTFROM>
+        <SACCOUNTTO>20209840657000000001</SACCOUNTTO>
+        <NSUMFROM>100</NSUMFROM>
+        <NSUMTO>100</NSUMTO>
+        <DTVALIDTODATE>2021-08-25</DTVALIDTODATE>
+        <SDESCRIPTION>Возврат из операционный кассы ДО "Жуковка" Филиала № 7701 Банка ВТБ (ПАО) 
+На основании: Опись к сумке № 501/2391 от 04.09.2018 954</SDESCRIPTION>
+        <RECPAYER>
+            <RECCUSTOMER>
+                <SACCOUNT>20202840311260000001</SACCOUNT>
+                <RECBANK>
+                    <SCODE>040702788</SCODE>
+                    <SNAME>ФИЛИАЛ БАНКА ВТБ (ПАО) В Г. СТАВРОПОЛЕ</SNAME>
+                </RECBANK>
+            </RECCUSTOMER>
+        </RECPAYER>
+        <RECBENEFICIARY>
+            <SACCOUNT>20209840657000000001</SACCOUNT>
+            <RECBANK>
+                <SCODE>040702788</SCODE>
+                <SNAME>ФИЛИАЛ БАНКА ВТБ (ПАО) В Г. СТАВРОПОЛЕ</SNAME>
+            </RECBANK>
+        </RECBENEFICIARY>
+    </RECPAYMENT>
+    <RECCASH>
+        <RASYMBOLS>
+            <T_SYMBOL>
+                <SSYMBOLCODE>37</SSYMBOLCODE>
+                <NSYMBOLAMOUNT>100</NSYMBOLAMOUNT>
+            </T_SYMBOL>
+        </RASYMBOLS>
+    </RECCASH>
+</T_CABS_CREATE_DOC_REQ>

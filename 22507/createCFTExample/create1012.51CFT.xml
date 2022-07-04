@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<T_CABS_CREATE_DOC_REQ xmlns="http://www.NewAthena.ru/NA5/IntegrationAdapter">
+    <SSUBSYSTEM>SPECTRUM</SSUBSYSTEM>
+    <NDEPARTMENT>709000</NDEPARTMENT>
+    <RATRANSPROPS>
+        <T_PROPERTY>
+            <SNAME>SOURCE_SYSTEM</SNAME>
+            <SVALUE>SPECTRUM</SVALUE>
+        </T_PROPERTY>
+        <T_PROPERTY>
+            <SNAME>TARGET_SYSTEM</SNAME>
+            <SVALUE>CFT2</SVALUE>
+        </T_PROPERTY>
+    </RATRANSPROPS>
+    <SMESSAGEID>250712</SMESSAGEID>
+    <SGUID>SP.1000179603-37051</SGUID>
+    <SDOCUMENTTYPE>1012.51</SDOCUMENTTYPE>
+    <SDEPARTMENT>1126</SDEPARTMENT>
+    <RECPAYMENT>
+        <SLABEL>69043</SLABEL>
+        <SCURRENCYFROM>810</SCURRENCYFROM>
+        <SCURRENCYTO>810</SCURRENCYTO>
+        <SACCOUNTFROM>40817810733006616444</SACCOUNTFROM>
+        <SACCOUNTTO>20202810011260000001</SACCOUNTTO>
+        <NSUMFROM>1000</NSUMFROM>
+        <NSUMTO>1000</NSUMTO>
+        <DTVALIDTODATE>2021-09-28</DTVALIDTODATE>
+        <SDESCRIPTION>Выдача наличных денежных средств на основании договора банковского счета. Владелец счета: СЕМЕНОВА ЕЛИЗАВЕТА ВАЛЕРЬЕВНА</SDESCRIPTION>
+        <RECPAYER>
+            <RECCUSTOMER>
+                <SACCOUNT>40817810733006616444</SACCOUNT>
+                <RECBANK>
+                    <SCODE>044525745</SCODE>
+                    <SNAME>ФИЛИАЛ № 7701 БАНКА ВТБ (ПАО)</SNAME>
+                </RECBANK>
+            </RECCUSTOMER>
+        </RECPAYER>
+        <RECBENEFICIARY>
+            <SACCOUNT>20202810011260000001</SACCOUNT>
+            <RECBANK>
+                <SCODE>040702788</SCODE>
+                <SNAME>ФИЛИАЛ БАНКА ВТБ (ПАО) В Г. СТАВРОПОЛЕ</SNAME>
+            </RECBANK>
+        </RECBENEFICIARY>
+    </RECPAYMENT>
+    <RECCASH>
+        <RASYMBOLS>
+            <T_SYMBOL>
+                <SSYMBOLCODE>51</SSYMBOLCODE>
+                <NSYMBOLAMOUNT>1000</NSYMBOLAMOUNT>
+            </T_SYMBOL>
+        </RASYMBOLS>
+        <SCLIENT>СЕМЕНОВА ЕЛИЗАВЕТА ВАЛЕРЬЕВНА</SCLIENT>
+        <NISRESIDENT>1</NISRESIDENT>
+        <SCLIENT_REGIONCODE>643</SCLIENT_REGIONCODE>
+        <SCLIENTADDRESS>125171 Россия г Москва ш Ленинградское дом 24\21 кв 192</SCLIENTADDRESS>
+        <SJURIDICALDOCCODE>21</SJURIDICALDOCCODE>
+        <SJURDOCSERIES>4455</SJURDOCSERIES>
+        <SJURDOCNUMBER>251155</SJURDOCNUMBER>
+        <DTGIVEDATE>2005-08-09</DTGIVEDATE>
+        <SGIVEBY>55 отделение по Войковскому району</SGIVEBY>
+        <DTBIRTHDATE>1995-01-20</DTBIRTHDATE>
+        <SBIRTHPLACE>МОСКВА</SBIRTHPLACE>
+    </RECCASH>
+</T_CABS_CREATE_DOC_REQ>

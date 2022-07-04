@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<v1:holdRequestMsg xmlns:v1="http://www.vtb24.ru/IT/ULBS/TRSFinOperationTypes/v1.0">
+  <v1:messageInfo>
+    <v1:messageId>252382</v1:messageId>
+    <v1:messageDate>2021-12-01T13:29:20.000+03:00</v1:messageDate>
+    <v1:sourceSystem>
+      <v1:instanceId>FTS</v1:instanceId>
+    </v1:sourceSystem>
+    <v1:targetSystems>
+      <v1:targetSystem>
+        <v1:instanceId>ULBS</v1:instanceId>
+      </v1:targetSystem>
+    </v1:targetSystems>
+  </v1:messageInfo>
+  <v1:holdRequest>
+    <v1:operationID>SP.1000180737-37924</v1:operationID>
+    <v1:objectExecuteSystemID>99995</v1:objectExecuteSystemID>
+    <v1:bankOperationCode>711110-00</v1:bankOperationCode>
+    <v1:operationDetail>
+      <v1:isCredentialsOperation>false</v1:isCredentialsOperation>
+    </v1:operationDetail>
+    <v1:accInfo>
+      <v1:accOwnerSystemId>99995</v1:accOwnerSystemId>
+      <v1:objectType>0</v1:objectType>
+      <v1:internalPayment>
+        <v1:accountNumber>40817810733006616444</v1:accountNumber>
+        <v1:BIC>044525745</v1:BIC>
+      </v1:internalPayment>
+    </v1:accInfo>
+    <v1:finDetail>
+      <v1:amount>100000</v1:amount>
+      <v1:currency>RUB</v1:currency>
+    </v1:finDetail>
+    <v1:paymentDescription>Выдача наличных денежных средств на основании договора банковского счета. Владелец счета: СЕМЕНОВА ЕЛИЗАВЕТА ВАЛЕРЬЕВНА</v1:paymentDescription>
+    <v1:operationDateTime>2021-12-01T13:23:48.000+03:00</v1:operationDateTime>
+    <v1:operationChannel>
+      <v1:channel>2</v1:channel>
+    </v1:operationChannel>
+    <v1:branchCode>1126</v1:branchCode>
+    <v1:paymentDocumentNumber>69472</v1:paymentDocumentNumber>
+  </v1:holdRequest>
+</v1:holdRequestMsg>

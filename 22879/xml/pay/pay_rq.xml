@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<v1:payRequestMsg xmlns:v1="http://www.vtb24.ru/IT/ULBS/TRSFinOperationTypes/v1.0">
+  <v1:messageInfo>
+    <v1:messageId>253042</v1:messageId>
+    <v1:messageDate>2021-12-14T13:34:11.000+03:00</v1:messageDate>
+    <v1:sourceSystem>
+      <v1:instanceId>FTS</v1:instanceId>
+    </v1:sourceSystem>
+    <v1:targetSystems>
+      <v1:targetSystem>
+        <v1:instanceId>ULBS</v1:instanceId>
+      </v1:targetSystem>
+    </v1:targetSystems>
+  </v1:messageInfo>
+  <v1:payRequest>
+    <v1:operationID>SP.CONP.1455566002</v1:operationID>
+    <v1:objectExecuteSystemID>99995</v1:objectExecuteSystemID>
+    <v1:bankOperationCode>711210-00</v1:bankOperationCode>
+    <v1:operationDetail>
+      <v1:isCredentialsOperation>false</v1:isCredentialsOperation>
+    </v1:operationDetail>
+    <v1:accInfo>
+      <v1:accOwnerSystemId>99995</v1:accOwnerSystemId>
+      <v1:objectType>0</v1:objectType>
+      <v1:internalPayment>
+        <v1:accountNumber>40817810101004055492</v1:accountNumber>
+        <v1:BIC>040813713</v1:BIC>
+      </v1:internalPayment>
+    </v1:accInfo>
+    <v1:finDetail>
+      <v1:amount>100020</v1:amount>
+      <v1:currency>RUB</v1:currency>
+    </v1:finDetail>
+    <v1:feeDetail>
+      <v1:amount>7700</v1:amount>
+      <v1:currency>RUB</v1:currency>
+    </v1:feeDetail>
+    <v1:paymentDescription>Внесение наличных на банковский счет На основании: договор No 40817810101004055492</v1:paymentDescription>
+    <v1:executeDate>2021-12-14T13:34:11.000+03:00</v1:executeDate>
+    <v1:operationChannel>
+      <v1:channel>2</v1:channel>
+    </v1:operationChannel>
+    <v1:branchCode>1126</v1:branchCode>
+    <v1:paymentDocumentNumber>1488</v1:paymentDocumentNumber>
+    <v1:personnelNumber>
+      <v1:contractorPersonnelNumber>1989</v1:contractorPersonnelNumber>
+      <v1:cashierPersonnelNumber>1989</v1:cashierPersonnelNumber>
+    </v1:personnelNumber>
+    <v1:cashSymbols>
+      <v1:cashSymbol>16</v1:cashSymbol>
+    </v1:cashSymbols>
+  </v1:payRequest>
+</v1:payRequestMsg>
+
+#{RANDOM_ID}

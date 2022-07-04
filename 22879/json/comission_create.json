@@ -1,0 +1,32 @@
+{
+  "action_header": {
+    "user_name": "string",
+    "office": "string",
+    "channel": "string",
+    "ip_address": "string",
+    "mac_address": "string",
+    "dbo_id": "string",
+    "signature_type": "string",
+    "signature": "string",
+    "hashsum": "string",
+    "reason": "string",
+    "idempotency_key": "string"
+  },
+  "fee_ref": "string",
+  "action": {
+    "payer_ref": {
+      "contract_number": "string",
+      "account_number": "string",
+      "bic": "string",
+      "iban": "string",
+      "id": "string",
+      "pan": "string"
+    },
+    "fee_code": "string",
+    "fee": {
+      "amount": "string",
+      "currency": "string"
+    },
+    "comment": "string"
+  }
+}

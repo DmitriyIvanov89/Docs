@@ -1,0 +1,227 @@
+import com.eviware.soapui.support.GroovyUtils
+import com.eviware.soapui.support.types.StringToObjectMap
+import com.eviware.soapui.impl.wsdl.teststeps.WsdlTestRequestStep
+
+sleep(100)
+
+def groovyUtils = new GroovyUtils( context )
+def holder = groovyUtils.getXmlHolder( mockRequest.requestContent )
+def map = new StringToObjectMap()
+holder.declareNamespace("v1","http://www.vtb24.ru/IT/ULBS/TRSFinOperationTypes/v1.0")
+def node = { xpath -> !holder[xpath] ? "" : holder[xpath] }
+
+def operation = ( mockRequest.soapAction =~ /^.*#(.+)$/ ) [0][1]
+if (operation ==~ /operationInfo/) {
+	log.info "${operation}: not proceed."
+	return
+/*
+	def result = new com.eviware.soapui.impl.wsdl.mock.WsdlMockResult( mockRequest )
+	mockRequest.httpResponse.status = 200
+	return result
+*/
+}
+log.info "${operation}: start process.. "
+
+def errorCode = "0"
+def errorDetails = ""
+def errorMessage = ""
+def correlationId =  node( "//v1:messageId/text()" )
+def operJournalId =  node( "//v1:operationID/text()" )
+def bankOperationCode =  node( "//v1:bankOperationCode/text()" )
+log.info bankOperationCode
+def fee 
+def feeCur = 'RUB'
+
+map.put("operJournalExtId", operJournalId)
+
+log.info "${operation}: correlationId=${correlationId}, operJournalId=${operJournalId}"
+
+def paymentDescription = node( "//v1:paymentDescription" )
+if (paymentDescription ==~ /.*${operation}:(.*)/) {
+	def par = ( paymentDescription =~ /.*${operation}:([^ ]*)( .*|$)/ )
+	if (par[0][1].isAllWhitespace()) {
+		log.info "${operation}: found '${operation}:' in paymentDescription - stop!"
+		return
+	}
+	def status = ( par[0][1] =~ /(?i)HTTP(\d{3})(.*)/ )
+	if (status.matches()) {
+		log.info "${operation}: return HTTP status=${status[0][1]}"
+		def result = new com.eviware.soapui.impl.wsdl.mock.WsdlMockResult( mockRequest )
+          mockRequest.httpResponse.setContentLength(0)
+		mockRequest.httpResponse.status = status[0][1].toInteger()
+		return result
+	}
+
+	errorCode = par[0][1]
+	log.info "${operation}: errorCode='${errorCode}'"
+	errorMessage = paymentDescription
+	errorDetails = "'errorCode' is generated from 'paymentDescription'"
+	if (errorCode ==~ /RETURN/) {
+		return
+	}
+}
+
+def description = node( "//v1:paymentDescription/text()" ).toString()
+def initErrorFlag = description.contains("initError")
+def initTimeoutFlag = description.contains("initTimeout")
+def execErrorFlag = description.contains("execError")
+def execPrepareErrorFlag = description.contains("execPrepareError")
+def execTimeoutFlag = description.contains("execTimeout")
+def initOperationList = ["checkForDebit", "checkForCredit", "checkForDebitAndCreditInsideSameSystem", "checkRecipient"] as String[]
+def execOperationPrepareList = ["hold","check","holdAndCheckInsideSameSystem"] as String[]
+def execOperationList = ["post","pay","transferInsideSameSystem"] as String[]
+if (execOperationList.contains(operation.toString())){
+	if(execErrorFlag == true){
+		errorCode = description.split('#')[1]
+		log.info "errorCode = " + errorCode
+	}
+	if(execTimeoutFlag == true){
+		sleep(10000000000)
+		}
+}
+
+if (execOperationPrepareList.contains(operation.toString())){
+	if(execPrepareErrorFlag == true){
+		errorCode = description.split('#')[1]
+		log.info "errorCode = " + errorCode
+	}
+	if(execTimeoutFlag == true){
+		sleep(10000000000)
+		}
+}
+
+if (initOperationList.contains(operation.toString())){
+	if(initErrorFlag == true){
+		errorCode = description.split('#')[1]
+		log.info "errorCode = " + errorCode
+	}
+	if(initTimeoutFlag == true){
+		sleep(10000000000)
+		}
+}
+
+
+def idSys = node( "//v1:objectExecuteSystemID" )
+log.info "${operation}: idSys='${idSys}'"
+
+def accountIdSys = ""
+switch (holder["count(//v1:accOwnerSystemId)"]) {
+	case '1':
+		accountIdSys = node( "//v1:accOwnerSystemId" )
+		break
+}
+
+
+if (idSys.isAllWhitespace()) {
+	idSys = accountIdSys
+}
+
+def accountNum = ""
+switch (holder["count(//v1:accountNumber)"]) {
+	case '1':
+		accountNum = node( "//v1:accountNumber" )
+		break
+	case '0':
+		accountNum = "40817810136547895665"
+		break	
+}
+
+def SourceFundsType = node( "//v1:SourceFundsType" )
+if (SourceFundsType ==~ /Telebank/) {
+	accountIdSys = "98000"
+	accountNum = holder["//v1:SourceFundsId"]
+}
+
+if (!accountNum.isAllWhitespace() && accountIdSys.isAllWhitespace()) {
+	accountIdSys = "00000"
+}
+
+// ??????????? ??????? ??? ??: <v1:objectExecuteSystemID>CPP</v1:objectExecuteSystemID>
+map.put("isCppTransaction", idSys ==~ /CPP/)
+
+def amount = ""
+switch (holder["count(//v1:amount)"]) {
+	case '1':
+		amount = node( "//v1:amount" )
+		break
+	case '2':
+		amount = node( "//v1:amount" ) [0]
+		break
+}
+log.info "${operation}: amount=${amount}"
+if (!amount.isAllWhitespace()) {
+	
+	
+	def a = amount.isInteger()
+	log.info "a = " + a
+	if (amount.toLong() < 110)
+	{
+		log.info "${operation}: amount=${amount} < 1000.00 - stop."
+		return
+	}
+
+}
+
+
+def currency = node( "//v1:currency" )
+if (['711210-00','711110-01','711200-02','711100-01'].contains(bankOperationCode)) {
+	if (currency=='RUB' && amount.toLong() < 100000) {
+		fee = 50
+	}
+	else {
+		fee = Math.round(amount.toLong() / 100) / 100
+	}
+	if (amount.toLong() > 100000000) {
+		fee = 100;
+		feeCur = 'USD'
+	}
+}
+
+map.put("fullName", node( "//v1:recipientName" ))
+map.put("currency", node( "//v1:currency" ))
+map.put("summa", "1")
+
+
+//if (idSys ==~ /99995/) {
+//	ojei = ( operJournalId =~ /.*\.([^-]+)(-.*|$)/ )
+//	if (ojei.matches()) {
+//		operJournalId = ojei[0][1]
+//	}
+//}
+
+map.put("errorCode",errorCode)
+map.put("errorDetails",errorDetails)
+map.put("errorMessage",errorMessage)
+map.put("correlationId",correlationId)
+map.put("operJournalId", operJournalId)
+map.put("idSys", idSys)
+map.put("accountIdSys", accountIdSys)
+map.put("accountNum", accountNum)
+log.info "??????3"
+map.put("amount", amount)
+map.put("fee", fee)
+map.put("feeCur", feeCur)
+log.info map
+
+if (amount != '273294') {
+def testCase = context.mockService.project.testSuites["UlbsAnswerService TestSuite"].testCases["${operation}Answer TestCase"]
+sleep(500)
+def runner = testCase.run(map, true)
+} else {
+log.info "273294 mock no answer"
+}
+
+
+
+
+
+/*
+for (int i = 0; i < 10; i++) {
+	def status = runner.status.toString()
+	log.info "${operation}: answer call for operJournalId=${operJournalId} is ${status}"
+	if (status ==~ /FINISHED/) {
+		break
+	}
+	sleep(200)
+}
+*/

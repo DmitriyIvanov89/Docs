@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<T_CABS_CREATE_DOC_REQ xmlns="http://www.NewAthena.ru/NA5/IntegrationAdapter">
+    <SSUBSYSTEM>SPECTRUM</SSUBSYSTEM>
+    <NDEPARTMENT>709000</NDEPARTMENT>
+    <RATRANSPROPS>
+        <T_PROPERTY>
+            <SNAME>SOURCE_SYSTEM</SNAME>
+            <SVALUE>SPECTRUM</SVALUE>
+        </T_PROPERTY>
+        <T_PROPERTY>
+            <SNAME>TARGET_SYSTEM</SNAME>
+            <SVALUE>CFT2</SVALUE>
+        </T_PROPERTY>
+    </RATRANSPROPS>
+    <SMESSAGEID>250235</SMESSAGEID>
+    <SGUID>SP.1000179047-36661</SGUID>
+    <SDOCUMENTTYPE>3093</SDOCUMENTTYPE>
+    <SDEPARTMENT>1126</SDEPARTMENT>
+    <RECPAYMENT>
+        <SLABEL>68880</SLABEL>
+        <SCURRENCYFROM>810</SCURRENCYFROM>
+        <SCURRENCYTO>810</SCURRENCYTO>
+        <SACCOUNTFROM>30233810918060000003</SACCOUNTFROM>
+        <SACCOUNTTO>20202810011260000001</SACCOUNTTO>
+        <NSUMFROM>1000</NSUMFROM>
+        <NSUMTO>1000</NSUMTO>
+        <DTVALIDTODATE>2021-08-23</DTVALIDTODATE>
+        <SDESCRIPTION>Списание НВ за 10/09/21 с пл. карты ВТБ N 4714871111111111 клиент БРОНСКИЙ ФЕДОР ЮРЬЕВИЧ Документ: Паспорт гражданина РФ серия 4755 №118455 выдан 001 05.05.2001</SDESCRIPTION>
+        <RECPAYER>
+            <RECCUSTOMER>
+                <SACCOUNT>30233810918060000003</SACCOUNT>
+                <RECBANK>
+                    <SCODE>040702788</SCODE>
+                    <SNAME>ФИЛИАЛ БАНКА ВТБ (ПАО) В Г. СТАВРОПОЛЕ</SNAME>
+                </RECBANK>
+            </RECCUSTOMER>
+        </RECPAYER>
+        <RECBENEFICIARY>
+            <SACCOUNT>20202810011260000001</SACCOUNT>
+            <RECBANK>
+                <SCODE>040702788</SCODE>
+                <SNAME>ФИЛИАЛ БАНКА ВТБ (ПАО) В Г. СТАВРОПОЛЕ</SNAME>
+            </RECBANK>
+        </RECBENEFICIARY>
+    </RECPAYMENT>
+    <RECCASH>
+        <RASYMBOLS>
+            <T_SYMBOL>
+                <SSYMBOLCODE>51</SSYMBOLCODE>
+                <NSYMBOLAMOUNT>1000</NSYMBOLAMOUNT>
+            </T_SYMBOL>
+        </RASYMBOLS>
+        <SCLIENT>БОРИСОВ АНДРЕЙ ЮРЬЕВИЧ</SCLIENT>
+        <NISRESIDENT>1</NISRESIDENT>
+        <SCLIENT_REGIONCODE>643</SCLIENT_REGIONCODE>
+        <SCLIENTADDRESS>394036,Воронеж,Авиационная,2,15</SCLIENTADDRESS>
+        <SJURIDICALDOCCODE>21</SJURIDICALDOCCODE>
+        <SJURDOCSERIES>5555</SJURDOCSERIES>
+        <SJURDOCNUMBER>877566</SJURDOCNUMBER>
+        <DTGIVEDATE>2001-05-04</DTGIVEDATE>
+        <SGIVEBY>001</SGIVEBY>
+        <DTBIRTHDATE>1989-07-06</DTBIRTHDATE>
+        <SBIRTHPLACE>ВОРОНЕЖ</SBIRTHPLACE>
+    </RECCASH>
+</T_CABS_CREATE_DOC_REQ>
