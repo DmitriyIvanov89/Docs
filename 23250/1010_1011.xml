@@ -26,24 +26,27 @@
                <ClientIntLastName>SOKOLNIKOVA</ClientIntLastName>
                <ClientIntFirstName>YULIYA</ClientIntFirstName>
                <ThirdPartyId/>
-		<ThirdPartyFlag>N</ThirdPartyFlag>
-		<ThirdPartyFirstName/>
-		<ThirdPartyMidName/>
-		<ThirdPartyLastName/>
-		<ThirdPartyDocCategory/>
-		<ThirdPartyDocSeries/>
-		<ThirdPartyDocNumber/>
-		<ThirdPartyDocIssueTS/>
-		<ThirdPartyDocIssuedBy/>
+
+		<ThirdPartyFlag>Y</ThirdPartyFlag>
+		<ThirdPartyFirstName>Oleg</ThirdPartyFirstName>
+		<ThirdPartyMidName></ThirdPartyMidName>
+		<ThirdPartyLastName>Ivanov</ThirdPartyLastName>
+		<ThirdPartyDocCategory>21</ThirdPartyDocCategory>
+		<ThirdPartyDocSeries>1111</ThirdPartyDocSeries>
+		<ThirdPartyDocNumber>111111</ThirdPartyDocNumber>
+		<ThirdPartyDocIssueTS>10/05/2001</ThirdPartyDocIssueTS>
+		<ThirdPartyDocIssuedBy>The city and the street</ThirdPartyDocIssuedBy>
 		<ThirdPartyBirthDate/>
-		<ThirdPartyPlaceOfBirth/>
+		<ThirdPartyPlaceOfBirth>London</ThirdPartyPlaceOfBirth>
+
 		<ThirdPartyWarrantFlag>N</ThirdPartyWarrantFlag>
-		<ThirdPartyWarrantNumber/>
-		<ThirdPartyWarrantDate/>
-		<ThirdPartyWarrantEndDate/>
-		<ThirdPartyWarrantIssueCode/>
-		<ThirdPartyIntLastName/>
-		<ThirdPartyIntFirstName/>
+		<ThirdPartyWarrantNumber>123</ThirdPartyWarrantNumber>
+		<ThirdPartyWarrantDate>01/07/2022</ThirdPartyWarrantDate>
+		<ThirdPartyWarrantEndDate>01/07/2023</ThirdPartyWarrantEndDate>
+		<ThirdPartyWarrantIssueCode>014-020</ThirdPartyWarrantIssueCode>
+		<ThirdPartyIntLastName>Ivanov</ThirdPartyIntLastName>
+		<ThirdPartyIntFirstName>Oleg</ThirdPartyIntFirstName>
+
 		<SiebelAccountType>Счет</SiebelAccountType>
 		<SiebelAccountNumber>40817810733006616444</SiebelAccountNumber>
 		<SiebelAccountTypeName>Мастер счет</SiebelAccountTypeName>

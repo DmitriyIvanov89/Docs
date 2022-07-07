@@ -4,7 +4,7 @@
       <jour:create>
          <jour:request>
             <xsd:operationEntity>
-                <xsd:client>
+               <xsd:client>
                   <xsd:clientTypeEnum>0</xsd:clientTypeEnum>
                   <xsd:clientExtId>5555-90-siebel</xsd:clientExtId>
                   <xsd:clientIdSys>SBL_FR</xsd:clientIdSys>
@@ -18,68 +18,84 @@
                   <xsd:personPatronymic>ЮРЬЕВИЧ</xsd:personPatronymic>
                   <xsd:personSurname>ЗУМОВСКИЙ</xsd:personSurname>
                   <xsd:personCitizenCountryCode>643</xsd:personCitizenCountryCode>
-                  <!--<xsd:personStatelessFlag></xsd:personStatelessFlag>-->
                   <xsd:ThirdPartyFlag>Y</xsd:ThirdPartyFlag>
-         <xsd:ThirdPartyFirstName>Алиса</xsd:ThirdPartyFirstName>
-         <xsd:ThirdPartyMidName>Алексеевна</xsd:ThirdPartyMidName>
-         <xsd:ThirdPartyLastName>Злотникова</xsd:ThirdPartyLastName>
-         <xsd:ThirdPartyDocCategory>21</xsd:ThirdPartyDocCategory>
-         <xsd:ThirdPartyDocSeries>9913</xsd:ThirdPartyDocSeries>
-         <xsd:ThirdPartyDocNumber>290177</xsd:ThirdPartyDocNumber>
-         <xsd:ThirdPartyDocIssueTS>08/03/2013 00:00:00</xsd:ThirdPartyDocIssueTS>
-         <xsd:ThirdPartyDocIssuedBy>МРОФМС</xsd:ThirdPartyDocIssuedBy>
-         <xsd:ThirdPartyBirthDate>07/27/1993 00:00:00</xsd:ThirdPartyBirthDate>
-         <xsd:ThirdPartyPlaceOfBirth></xsd:ThirdPartyPlaceOfBirth>
-         <xsd:ThirdPartyWarrantFlag>Y</xsd:ThirdPartyWarrantFlag>
-         <xsd:ThirdPartyWarrantNumber>123456</xsd:ThirdPartyWarrantNumber>
-         <xsd:ThirdPartyWarrantDate>08/03/2013 00:00:00</xsd:ThirdPartyWarrantDate>
-         <xsd:ThirdPartyWarrantEndDate>08/03/2019 00:00:00</xsd:ThirdPartyWarrantEndDate>
-         <xsd:ThirdPartyWarrantIssueCode></xsd:ThirdPartyWarrantIssueCode>
-         <xsd:ThirdPartyIntLastName></xsd:ThirdPartyIntLastName>
-         <xsd:ThirdPartyIntFirstName></xsd:ThirdPartyIntFirstName>
+                  <xsd:ThirdPartyFirstName>Oleg</xsd:ThirdPartyFirstName>
+                  <xsd:ThirdPartyMidName></xsd:ThirdPartyMidName>
+                  <xsd:ThirdPartyLastName>Ivanov</xsd:ThirdPartyLastName>
+                  <xsd:ThirdPartyDocCategory>21</xsd:ThirdPartyDocCategory>
+                  <xsd:ThirdPartyDocSeries>1111</xsd:ThirdPartyDocSeries>
+                  <xsd:ThirdPartyDocNumber>111111</xsd:ThirdPartyDocNumber>
+                  <xsd:ThirdPartyDocIssueTS>10/05/2001</xsd:ThirdPartyDocIssueTS>
+                  <xsd:ThirdPartyDocIssuedBy>The city and the street</xsd:ThirdPartyDocIssuedBy>
+                  <xsd:ThirdPartyBirthDate/>
+                  <xsd:ThirdPartyPlaceOfBirth>London</xsd:ThirdPartyPlaceOfBirth>
+                  <xsd:ThirdPartyWarrantFlag>Y</xsd:ThirdPartyWarrantFlag>
+                  <xsd:ThirdPartyWarrantNumber>123</xsd:ThirdPartyWarrantNumber>
+                  <xsd:ThirdPartyWarrantDate>01/07/2022</xsd:ThirdPartyWarrantDate>
+                  <xsd:ThirdPartyWarrantEndDate>01/07/2023</xsd:ThirdPartyWarrantEndDate>
+                  <xsd:ThirdPartyWarrantIssueCode>014-020</xsd:ThirdPartyWarrantIssueCode>
+                  <xsd:ThirdPartyIntLastName>Ivanov</xsd:ThirdPartyIntLastName>
+                  <xsd:ThirdPartyIntFirstName>Oleg</xsd:ThirdPartyIntFirstName>
+                  <!--<xsd:personStatelessFlag></xsd:personStatelessFlag>-->
                </xsd:client>
                <xsd:deptCode>1126</xsd:deptCode>
-               <xsd:operJournalStatusEnum>3</xsd:operJournalStatusEnum>
-               <xsd:extFee>
-                 <xsd:currency>RUB</xsd:currency>
-                  <xsd:summa>112</xsd:summa>
-               </xsd:extFee>
+               <!--<xsd:extFee>
+                  <xsd:currency>RUB</xsd:currency>
+                  <xsd:summa>77</xsd:summa>
+               </xsd:extFee>-->
                <xsd:documents>
                   <xsd:analyticAttributes>
                      <xsd:code>CBO_CODE</xsd:code>
-                     <xsd:value>711110-00</xsd:value>
+                     <xsd:value>711210-00</xsd:value>
                   </xsd:analyticAttributes>
-                  <xsd:cashSymbols>
-                     <xsd:cashSymbolCode>51</xsd:cashSymbolCode>
+                  <!--<xsd:cashSymbols>
+                     <xsd:cashSymbolCode>16</xsd:cashSymbolCode>
                      <xsd:summa>
                         <xsd:currency>RUB</xsd:currency>
-                        <xsd:summa>32250</xsd:summa>
+                        <xsd:summa>20020.50</xsd:summa>
                      </xsd:summa>
-                  </xsd:cashSymbols>
+                  </xsd:cashSymbols>-->
                   <xsd:creditSumma>
                      <xsd:currency>RUB</xsd:currency>
-                     <xsd:summa>32250</xsd:summa>
+                     <xsd:summa>20020.50</xsd:summa>
                   </xsd:creditSumma>
-                  <xsd:debitAccountEntity>
+                  <xsd:creditAccountEntity>
                      <xsd:accountIdSys>99995</xsd:accountIdSys>
                      <xsd:accountNum>40817840700020071068</xsd:accountNum>
-                     <xsd:deptCode>1056</xsd:deptCode>
-                  </xsd:debitAccountEntity>
+                     <xsd:deptCode>1126</xsd:deptCode>
+                  </xsd:creditAccountEntity>
                   <xsd:debitSumma>
-                     <xsd:currency>USD</xsd:currency>
-                     <xsd:summa>500</xsd:summa>
+                     <xsd:currency>RUB</xsd:currency>
+                     <xsd:summa>20020.50</xsd:summa>
                   </xsd:debitSumma>
-                  <xsd:description>Выдача наличных денежных средств на основании договора банковского счета.
-                  Владелец счета: З******* А***** З*******</xsd:description>
-                  <xsd:docNumber>111222399</xsd:docNumber>
+                  <xsd:description>Внесение наличных на банковский счет 
+                  На основании: договор No 40817840700020071013</xsd:description>
+                  <xsd:docNumber>12345699</xsd:docNumber>
                </xsd:documents>
                <xsd:login>O1126</xsd:login>
                <xsd:idSys>99995</xsd:idSys>
-               <xsd:operJournalExtId>SP.CONP.123123070</xsd:operJournalExtId>
-               <xsd:operationCode>1061</xsd:operationCode>
+               <xsd:operJournalExtId>SP.CONP.1555566105</xsd:operJournalExtId>
+               <xsd:operationCode>1060</xsd:operationCode>
+               <!--<xsd:operationRegDate>2022-02-22T10:00:00</xsd:operationRegDate>-->
+                   <xsd:principal>
+               <xsd:principal>ЯКУТСКАЯ ЕЛИЗАВЕТА АЛЕКСАНДРОВНА</xsd:principal>
+               <xsd:principalIdentityCard>Паспорт гражданина РФ серия 1111 №111111 выдан апчитчсит 11.11.2010</xsd:principalIdentityCard>
+             </xsd:principal>
+             <xsd:proxyClient>
+               <xsd:clientName>ЛАТЫПОВА ЕЛЕНА НИКОЛАЕВНА</xsd:clientName>
+               <xsd:clientTypeEnum>0</xsd:clientTypeEnum>
+               <xsd:icIssueAutority>ОУФМС РОССИИ ПО Г.МОСКВЕ ПО Р-НУ БОГОРОДСКОЕ Г. КОД</xsd:icIssueAutority>
+               <xsd:icIssueDate>2012-03-19+04:00</xsd:icIssueDate>
+               <xsd:icNum>777651</xsd:icNum>
+               <xsd:icSeries>4511</xsd:icSeries>
+               <xsd:identityCardTypeId>21</xsd:identityCardTypeId>
+               <xsd:personFirstName>ЕЛЕНА</xsd:personFirstName>
+               <xsd:personPatronymic>НИКОЛАЕВНА</xsd:personPatronymic>
+               <xsd:personSurname>ЛАТЫПОВА</xsd:personSurname>
+             </xsd:proxyClient>
             </xsd:operationEntity>
             <xsd:requestInfo>
-               <xsd:messageId>1234670</xsd:messageId>
+               <xsd:messageId>158810105</xsd:messageId>
             </xsd:requestInfo>
          </jour:request>
       </jour:create>

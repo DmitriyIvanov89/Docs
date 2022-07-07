@@ -1,0 +1,89 @@
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:jour="http://journal.ws.spectrum" xmlns:xsd="http://model.ws.spectrum/xsd">
+   <soap:Header/>
+   <soap:Body>
+      <jour:create>
+         <jour:request>
+            <xsd:operationEntity>
+               <xsd:client>
+                  <xsd:clientTypeEnum>0</xsd:clientTypeEnum>
+                  <xsd:clientExtId>5555-90-siebel</xsd:clientExtId>
+                  <xsd:clientIdSys>SBL_FR</xsd:clientIdSys>
+                  <!--чтоб запрос в docsVision уходил-->
+                  <xsd:icIssueAutority>[client:icIssueAutority]</xsd:icIssueAutority>
+                  <xsd:icIssueDate>2005-09-06</xsd:icIssueDate>
+                  <xsd:icNum>[client.icNum]</xsd:icNum>
+                  <xsd:icSeries>[client.icSeries]</xsd:icSeries>
+                  <xsd:identityCardTypeId>21</xsd:identityCardTypeId>
+                  <xsd:personFirstName>АНДРЕЙ</xsd:personFirstName>
+                  <xsd:personPatronymic>ЮРЬЕВИЧ</xsd:personPatronymic>
+                  <xsd:personSurname>ЗУМОВСКИЙ</xsd:personSurname>
+                  <xsd:personCitizenCountryCode>643</xsd:personCitizenCountryCode>
+               </xsd:client>
+               <!--<xsd:personStatelessFlag></xsd:personStatelessFlag>-->
+               <xsd:deptCode>1126</xsd:deptCode>
+               <!--<xsd:extFee>
+                  <xsd:currency>RUB</xsd:currency>
+                  <xsd:summa>77</xsd:summa>
+               </xsd:extFee>-->
+               <xsd:documents>
+                  <xsd:analyticAttributes>
+                     <xsd:code>CBO_CODE</xsd:code>
+                     <xsd:value>711210-00</xsd:value>
+                  </xsd:analyticAttributes>
+                  <xsd:cashSymbols>
+                     <xsd:cashSymbolCode>16</xsd:cashSymbolCode>
+                     <xsd:summa>
+                        <xsd:currency>RUB</xsd:currency>
+                        <xsd:summa>1000</xsd:summa>
+                     </xsd:summa>
+                  </xsd:cashSymbols>
+                  <xsd:creditSumma>
+                     <xsd:currency>RUB</xsd:currency>
+                     <xsd:summa>1000</xsd:summa>
+                  </xsd:creditSumma>
+                  <xsd:creditAccountEntity>
+                     <xsd:accountIdSys>99995</xsd:accountIdSys>
+                     <xsd:accountNum>40817810700020071068</xsd:accountNum>
+                     <xsd:deptCode>1126</xsd:deptCode>
+                  </xsd:creditAccountEntity>
+                  <xsd:debitSumma>
+                     <xsd:currency>RUB</xsd:currency>
+                     <xsd:summa>1000</xsd:summa>
+                  </xsd:debitSumma>
+                  <xsd:description>Взнос наличных денежных средств на банковский счет по 
+                  доверенности от [powerOfAttorney.date] номер  [powerOfAttorney.number]. Владелец счета: ЗУМОВСКИЙ АРНОЛЬД ЖАНКЛОДОВИЧ</xsd:description>
+                  <xsd:docNumber>000007</xsd:docNumber>
+               </xsd:documents>
+               <xsd:login>O1126</xsd:login>
+               <xsd:idSys>99995</xsd:idSys>
+               <xsd:operJournalExtId>SP.CONP.00000013</xsd:operJournalExtId>
+               <xsd:operationCode>1060</xsd:operationCode>
+               <!--<xsd:operationRegDate>2022-02-22T10:00:00</xsd:operationRegDate>-->
+               <xsd:principal>
+                  <xsd:powerOfAttorney>[powerOfAttorney]</xsd:powerOfAttorney>
+                  <xsd:principal>[principal]</xsd:principal>
+                  <!-- нигде не используется -->
+                 <!-- <xsd:principalIdentityCard>Паспорт РФ 1234 567890</xsd:principalIdentityCard>
+-->
+               </xsd:principal>
+               <xsd:proxyClient>
+                  <xsd:clientTypeEnum>0</xsd:clientTypeEnum>
+                  <xsd:icIssueAutority>Райвоенкомат</xsd:icIssueAutority>
+                  <xsd:icIssueDate>2015-02-20</xsd:icIssueDate>
+                  <xsd:icNum>[ProxyClient:icNum]</xsd:icNum>
+                  <xsd:icSeries>[ProxyClient:icSeries]</xsd:icSeries>
+                  <xsd:identityCardTypeId>21</xsd:identityCardTypeId>
+                  <xsd:personFirstName>[proxyClient:personFirstName]</xsd:personFirstName>
+                  <xsd:personPatronymic>[proxyClient:personPatronymic]</xsd:personPatronymic>
+                  <xsd:personSurname>[proxyClient:personSurname]</xsd:personSurname>
+                  <xsd:personStatelessFlag>0</xsd:personStatelessFlag>
+                  <xsd:personCitizenCountryCode>643</xsd:personCitizenCountryCode>
+               </xsd:proxyClient>
+            </xsd:operationEntity>
+            <xsd:requestInfo>
+               <xsd:messageId>00000013</xsd:messageId>
+            </xsd:requestInfo>
+         </jour:request>
+      </jour:create>
+   </soap:Body>
+</soap:Envelope>
