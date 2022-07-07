@@ -1,5 +1,5 @@
 --liquibase formatted sql
---changeset ivanovda:20220706-23769 stripComments:false
+--changeset ivanovda:20220707-23769 stripComments:false
 
 update system_function
 set

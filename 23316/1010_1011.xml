@@ -45,13 +45,13 @@
 		<ThirdPartyIntLastName/>
 		<ThirdPartyIntFirstName/>
 		<SiebelAccountType>Счет</SiebelAccountType>
-		<SiebelAccountNumber>40817840733006616444</SiebelAccountNumber>
+		<SiebelAccountNumber>40817810733006616444</SiebelAccountNumber>
 		<SiebelAccountTypeName>Мастер счет</SiebelAccountTypeName>
 		<SiebelCardAccountNumber/>
 		<SiebelAccountOrganisation>00000</SiebelAccountOrganisation>
 		<SiebelDivisionCode>0100</SiebelDivisionCode>
 		<SiebelAccountBalance>360579.49</SiebelAccountBalance>
-		<SiebelAccountCurrency>USD</SiebelAccountCurrency>
+		<SiebelAccountCurrency>RUB</SiebelAccountCurrency>
 		<SiebelAccountSystemId>99995</SiebelAccountSystemId>
 		<SiebelCardExpirationDate/>
 		<ComissionCurrency/>
