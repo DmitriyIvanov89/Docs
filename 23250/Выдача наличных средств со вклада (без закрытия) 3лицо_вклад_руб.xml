@@ -46,7 +46,7 @@
                <SiebelAccountType>Счет</SiebelAccountType>
                <SiebelAccountNumber>40817810733006616455</SiebelAccountNumber>
                <SiebelCardAccountNumber></SiebelCardAccountNumber>
-               <SiebelAccountTypeName>Депозитный счет</SiebelAccountTypeName>
+               <SiebelAccountTypeName>Мастер счет</SiebelAccountTypeName>
                <SiebelAccountOrganisation>00000</SiebelAccountOrganisation>
                <SiebelDivisionCode>0306</SiebelDivisionCode>
                <SiebelAccountBalance>7491450.61</SiebelAccountBalance>
