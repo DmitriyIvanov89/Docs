@@ -1,0 +1,351 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+   targetNamespace="http://model.ws.spectrum/xsd" 
+   xmlns:ax29="http://model.ws.spectrum/xsd"
+   attributeFormDefault="qualified" 
+   elementFormDefault="qualified">
+         <xs:complexType name="ErrorStackEntity">
+            <xs:sequence>
+               <xs:element name="canonFlag" minOccurs="0" type="xs:boolean" nillable="true"/>
+               <xs:element name="errorCode" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="errorIdSys" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="errorLevel" minOccurs="0" type="ax29:ErrorStackEntity" nillable="true"/>
+               <xs:element name="errorMessage" minOccurs="0" type="xs:string" nillable="true"/>
+            </xs:sequence>
+         </xs:complexType>
+         <xs:complexType name="RequestInfo">
+            <xs:sequence>
+               <xs:element name="messageId" minOccurs="0" type="xs:string" nillable="true"/>
+            </xs:sequence>
+         </xs:complexType>
+         <xs:complexType name="OperationActionResultEntity">
+            <xs:sequence>
+               <xs:element name="errorCode" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="errorDetails" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="errorMessage" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="errorStack" minOccurs="0" type="ax29:ErrorStackEntity" nillable="true"/>
+               <xs:element name="operJournalId" minOccurs="0" type="xs:string" nillable="true"/>
+            </xs:sequence>
+         </xs:complexType>
+         <xs:complexType name="ResponseInfo">
+            <xs:sequence>
+               <xs:element name="correlationId" minOccurs="0" type="xs:string" nillable="true"/>
+            </xs:sequence>
+         </xs:complexType>
+<!--          <xs:complexType name="DelayedSignProcessOutcomeRequest">
+            <xs:sequence>
+               <xs:element name="errorCode" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="errorDetails" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="errorMessage" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="errorSvcCode" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="operJournalId" minOccurs="0" type="xs:long" nillable="true"/>
+               <xs:element name="signedDocs" maxOccurs="unbounded" minOccurs="0" type="ax29:OperJournalPrintSignEntity" nillable="true"/>
+            </xs:sequence>
+         </xs:complexType> -->
+         <xs:complexType name="OperJournalPrintSignEntity">
+            <xs:sequence>
+               <xs:element name="electronicSign" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="familirizationType" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="hashSum" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="operJournalPrintId" minOccurs="0" type="xs:long" nillable="true"/>
+               <xs:element name="parentHashSum" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="url" minOccurs="0" type="xs:string" nillable="true"/>
+            </xs:sequence>
+         </xs:complexType>
+         <xs:complexType name="CreateOperationRequest">
+            <xs:sequence>
+               <xs:element name="operationEntity" minOccurs="0" type="ax29:OperationEntity" nillable="true"/>
+               <xs:element name="requestInfo" minOccurs="0" type="ax29:RequestInfo" nillable="true"/>
+            </xs:sequence>
+         </xs:complexType>
+         <xs:complexType name="OperationEntity">
+            <xs:sequence>
+               <xs:element name="client" minOccurs="0" type="ax29:ClientEntity" nillable="true"/>
+               <xs:element name="contentItems" maxOccurs="unbounded" minOccurs="0" type="ax29:ContentItemEntity" nillable="true"/>
+               <xs:element name="controlEmpUserLogin" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="deptCode" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="documents" maxOccurs="unbounded" minOccurs="0" type="ax29:DocumentEntity" nillable="true"/>
+               <xs:element name="extFee" minOccurs="0" type="ax29:SummaEntity" nillable="true"/>
+               <xs:element name="idSys" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="login" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="operJournalExtId" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="operJournalNote" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="operJournalStatusEnum" minOccurs="0" type="xs:int" nillable="true"/>
+               <xs:element name="operationChannelEntity" minOccurs="0" type="ax29:OperationChannelEntity" nillable="true"/>
+               <xs:element name="operationCode" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="operationExtSubtype" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="operationExtType" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="operationRegDate" minOccurs="0" type="xs:dateTime" nillable="true"/>
+               <xs:element name="principal" minOccurs="0" type="ax29:PrincipalEntity" nillable="true"/>
+               <xs:element name="proxyClient" minOccurs="0" type="ax29:ClientEntity" nillable="true"/>
+               <xs:element name="publicServiceEntity" minOccurs="0" type="ax29:PublicServiceEntity" nillable="true"/>
+               <xs:element name="testOnlyOperJournalId" minOccurs="0" type="xs:string" nillable="true"/>
+            </xs:sequence>
+         </xs:complexType>
+         <xs:complexType name="ClientEntity">
+            <xs:sequence>
+               <xs:element name="clientExtId" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="clientIdSys" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="clientIdentityCard" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="clientName" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="clientTypeEnum" minOccurs="0" type="xs:int" nillable="true"/>
+               <xs:element name="icCountryCode" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="icIssueAutority" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="icIssueDate" minOccurs="0" type="xs:date" nillable="true"/>
+               <xs:element name="icNum" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="icSeries" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="identityCardTypeId" minOccurs="0" type="xs:int" nillable="true"/>
+               <xs:element name="inn" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="kpp" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="legalEntity" minOccurs="0" type="ax29:LegalEntity" nillable="true"/>
+               <xs:element name="personCitizenCountryCode" minOccurs="0" type="xs:int" nillable="true"/>
+               <xs:element name="personFirstName" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="personPatronymic" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="personStatelessFlag" minOccurs="0" type="xs:boolean" nillable="true"/>
+               <xs:element name="personSurname" minOccurs="0" type="xs:string" nillable="true"/>
+            </xs:sequence>
+         </xs:complexType>
+         <xs:complexType name="LegalEntity">
+            <xs:sequence>
+               <xs:element name="countryCode" minOccurs="0" type="xs:int" nillable="true"/>
+               <xs:element name="leInn" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="leOkpo" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="lePostalAddress" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="leRegAddress" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="legalStatusCode" minOccurs="0" type="xs:string" nillable="true"/>
+            </xs:sequence>
+         </xs:complexType>
+         <xs:complexType name="ContentItemEntity">
+            <xs:sequence>
+               <xs:element name="contentTypeCode" minOccurs="0" type="xs:int" nillable="true"/>
+               <xs:element name="data" minOccurs="0" type="xs:base64Binary" nillable="true"/>
+               <xs:element name="extId" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="fileName" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="name" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="printable" minOccurs="0" type="xs:boolean" nillable="true"/>
+            </xs:sequence>
+         </xs:complexType>
+         <xs:complexType name="DocumentEntity">
+            <xs:sequence>
+               <xs:element name="analyticAttributes" maxOccurs="unbounded" minOccurs="0" type="ax29:AnalyticAttributeEntity" nillable="true"/>
+               <xs:element name="ben" minOccurs="0" type="ax29:DocSideEntity" nillable="true"/>
+               <xs:element name="benPosEntity" minOccurs="0" type="ax29:PosEntity" nillable="true"/>
+               <xs:element name="cashSymbols" maxOccurs="unbounded" minOccurs="0" type="ax29:CashSymbolPos" nillable="true"/>
+               <xs:element name="creditAccountEntity" minOccurs="0" type="ax29:AccountEntity" nillable="true"/>
+               <xs:element name="creditDepositEntity" minOccurs="0" type="ax29:AgrEntity" nillable="true"/>
+               <xs:element name="creditLoanEntity" minOccurs="0" type="ax29:AgrEntity" nillable="true"/>
+               <xs:element name="creditSumma" minOccurs="0" type="ax29:SummaEntity" nillable="true"/>
+               <xs:element name="debitAccountEntity" minOccurs="0" type="ax29:AccountEntity" nillable="true"/>
+               <xs:element name="debitDepositEntity" minOccurs="0" type="ax29:AgrEntity" nillable="true"/>
+               <xs:element name="debitSumma" minOccurs="0" type="ax29:SummaEntity" nillable="true"/>
+               <xs:element name="description" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="docDate" minOccurs="0" type="xs:date" nillable="true"/>
+               <xs:element name="docNumber" minOccurs="0" type="xs:int" nillable="true"/>
+               <xs:element name="fcyInCashNChkSortCode" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="fee" minOccurs="0" type="xs:boolean" nillable="true"/>
+               <xs:element name="internationalPaymentEntity" minOccurs="0" type="ax29:InternationalPaymentEntity" nillable="true"/>
+               <xs:element name="markDocCode" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="payer" minOccurs="0" type="ax29:DocSideEntity" nillable="true"/>
+               <xs:element name="payerPosEntity" minOccurs="0" type="ax29:PosEntity" nillable="true"/>
+               <xs:element name="paymentSystem" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="properties" maxOccurs="unbounded" minOccurs="0" type="ax29:PropertyEntity" nillable="true"/>
+               <xs:element name="remainFlows" maxOccurs="unbounded" minOccurs="0" type="ax29:RemainFlowEntity" nillable="true"/>
+               <xs:element name="showRate" minOccurs="0" type="xs:decimal" nillable="true"/>
+               <xs:element name="taxPaymentEntity" minOccurs="0" type="ax29:TaxPaymentEntity" nillable="true"/>
+            </xs:sequence>
+         </xs:complexType>
+         <xs:complexType name="AnalyticAttributeEntity">
+            <xs:sequence>
+               <xs:element name="code" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="value" minOccurs="0" type="xs:string" nillable="true"/>
+            </xs:sequence>
+         </xs:complexType>
+         <xs:complexType name="DocSideEntity">
+            <xs:sequence>
+               <xs:element name="accountNum" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="address" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="bic" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="firstName" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="fullName" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="identityCard" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="inn" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="kpp" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="patronymic" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="surname" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="swift" minOccurs="0" type="xs:string" nillable="true"/>
+            </xs:sequence>
+         </xs:complexType>
+         <xs:complexType name="PosEntity">
+            <xs:sequence>
+               <xs:element name="authCode" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="cardNum" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="centralDeptCode" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="cvv" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="expDate" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="holderEng" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="idSys" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="terminalCode" minOccurs="0" type="xs:string" nillable="true"/>
+            </xs:sequence>
+         </xs:complexType>
+         <xs:complexType name="CashSymbolPos">
+            <xs:sequence>
+               <xs:element name="cashSymbolCode" minOccurs="0" type="xs:int" nillable="true"/>
+               <xs:element name="side" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="summa" minOccurs="0" type="ax29:SummaEntity" nillable="true"/>
+            </xs:sequence>
+         </xs:complexType>
+         <xs:complexType name="SummaEntity">
+            <xs:sequence>
+               <xs:element name="currency" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="summa" minOccurs="0" type="xs:decimal" nillable="true"/>
+            </xs:sequence>
+         </xs:complexType>
+         <xs:complexType name="AccountEntity">
+            <xs:sequence>
+               <xs:element name="accountIdSys" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="accountNum" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="deptCode" minOccurs="0" type="xs:string" nillable="true"/>
+            </xs:sequence>
+         </xs:complexType>
+         <xs:complexType name="AgrEntity">
+            <xs:sequence>
+               <xs:element name="agrIdSys" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="agrNum" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="deptCode" minOccurs="0" type="xs:string" nillable="true"/>
+            </xs:sequence>
+         </xs:complexType>
+         <xs:complexType name="InternationalPaymentEntity">
+            <xs:sequence>
+               <xs:element name="accountWithInstitutionAddress" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="accountWithInstitutionCity" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="accountWithInstitutionClearingCode" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="accountWithInstitutionCorrAccNum" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="accountWithInstitutionCountry" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="accountWithInstitutionName" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="ben" minOccurs="0" type="ax29:ClientEntity" nillable="true"/>
+               <xs:element name="benAccountNum" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="benAddress" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="benCity" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="benCountry" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="benSwift" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="chargeEnum" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="extraChargeEnum" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="extraDetails" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="intermediaryInstitutionAddress" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="intermediaryInstitutionCity" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="intermediaryInstitutionClearingCode" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="intermediaryInstitutionCountry" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="intermediaryInstitutionName" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="intermediaryInstitutionSwift" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="payerAddress" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="payerCity" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="payerCountry" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="payerName" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="purpose" minOccurs="0" type="xs:string" nillable="true"/>
+            </xs:sequence>
+         </xs:complexType>
+         <xs:complexType name="PropertyEntity">
+            <xs:sequence>
+               <xs:element name="code" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="value" minOccurs="0" type="xs:string" nillable="true"/>
+            </xs:sequence>
+         </xs:complexType>
+         <xs:complexType name="RemainFlowEntity">
+            <xs:sequence>
+               <xs:element name="from" minOccurs="0" type="ax29:RemainFlowSideEntity" nillable="true"/>
+               <xs:element name="price" minOccurs="0" type="xs:decimal" nillable="true"/>
+               <xs:element name="quantity" minOccurs="0" type="xs:integer" nillable="true"/>
+               <xs:element name="series" maxOccurs="unbounded" minOccurs="0" type="ax29:RemainFlowSeriaEntity" nillable="true"/>
+               <xs:element name="summa" minOccurs="0" type="xs:decimal" nillable="true"/>
+               <xs:element name="to" minOccurs="0" type="ax29:RemainFlowSideEntity" nillable="true"/>
+               <xs:element name="valuableSort" minOccurs="0" type="ax29:ValuableSortEntity" nillable="true"/>
+            </xs:sequence>
+         </xs:complexType>
+         <xs:complexType name="RemainFlowSideEntity">
+            <xs:sequence>
+               <xs:element name="deptCode" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="identityCard" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="locationEnum" minOccurs="0" type="xs:int"/>
+               <xs:element name="login" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="name" minOccurs="0" type="xs:string" nillable="true"/>
+            </xs:sequence>
+         </xs:complexType>
+         <xs:complexType name="RemainFlowSeriaEntity">
+            <xs:sequence>
+               <xs:element name="note" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="number" minOccurs="0" type="xs:long" nillable="true"/>
+               <xs:element name="seria" minOccurs="0" type="xs:string" nillable="true"/>
+            </xs:sequence>
+         </xs:complexType>
+         <xs:complexType name="ValuableSortEntity">
+            <xs:sequence>
+               <xs:element name="currency" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="extId" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="idSysCode" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="valuableSortId" minOccurs="0" type="xs:int"/>
+            </xs:sequence>
+         </xs:complexType>
+         <xs:complexType name="TaxPaymentEntity">
+            <xs:sequence>
+               <xs:element name="cbc" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="code22" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="fiscalDocDate" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="fiscalDocNum" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="fiscalPeriod" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="groundTypeCode" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="okato" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="payerStatusCode" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="paymentOrder" minOccurs="0" type="xs:int" nillable="true"/>
+               <xs:element name="typeCode" minOccurs="0" type="xs:string" nillable="true"/>
+            </xs:sequence>
+         </xs:complexType>
+         <xs:complexType name="OperationChannelEntity">
+            <xs:sequence>
+               <xs:element name="terminalId" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="trnExecChanCode" minOccurs="0" type="xs:string" nillable="true"/>
+            </xs:sequence>
+         </xs:complexType>
+         <xs:complexType name="PrincipalEntity">
+            <xs:sequence>
+               <xs:element name="powerOfAttorney" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="principal" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="principalIdentityCard" minOccurs="0" type="xs:string" nillable="true"/>
+            </xs:sequence>
+         </xs:complexType>
+         <xs:complexType name="PublicServiceEntity">
+            <xs:sequence>
+               <xs:element name="agregatorFee" minOccurs="0" type="xs:decimal" nillable="true"/>
+               <xs:element name="paymentInstrumentCode" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="properties" maxOccurs="unbounded" minOccurs="0" type="ax29:PropertyEntity" nillable="true"/>
+               <xs:element name="publicServiceProvCode" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="publicServiceRepmtCode" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="terminalId" minOccurs="0" type="xs:string" nillable="true"/>
+            </xs:sequence>
+         </xs:complexType>
+         <xs:complexType name="CreateOperationResponse">
+            <xs:sequence>
+               <xs:element name="operationActionResultEntity" minOccurs="0" type="ax29:OperationActionResultEntity" nillable="true"/>
+               <xs:element name="responseInfo" minOccurs="0" type="ax29:ResponseInfo" nillable="true"/>
+            </xs:sequence>
+         </xs:complexType>
+         <xs:complexType name="CancelAnswerRequest">
+            <xs:sequence>
+               <xs:element name="operationActionResultEntity" minOccurs="0" type="ax29:OperationActionResultEntity" nillable="true"/>
+               <xs:element name="responseInfo" minOccurs="0" type="ax29:ResponseInfo" nillable="true"/>
+            </xs:sequence>
+         </xs:complexType>
+         <xs:complexType name="CancelOperationRequest">
+            <xs:sequence>
+               <xs:element name="idSys" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="login" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="operJournalExtId" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="operJournalId" minOccurs="0" type="xs:string" nillable="true"/>
+               <xs:element name="requestInfo" minOccurs="0" type="ax29:RequestInfo" nillable="true"/>
+            </xs:sequence>
+         </xs:complexType>
+         <xs:complexType name="CancelOperationResponse">
+            <xs:sequence>
+               <xs:element name="operationActionResultEntity" minOccurs="0" type="ax29:OperationActionResultEntity" nillable="true"/>
+               <xs:element name="responseInfo" minOccurs="0" type="ax29:ResponseInfo" nillable="true"/>
+            </xs:sequence>
+         </xs:complexType>
+      </xs:schema>

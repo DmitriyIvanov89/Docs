@@ -1,0 +1,38 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://journal.ws.spectrum" 
+   xmlns:ax29="http://model.ws.spectrum/xsd"
+   attributeFormDefault="qualified" 
+   elementFormDefault="qualified">
+         <xs:import namespace="http://model.ws.spectrum/xsd" schemaLocation="model.xsd"/>
+         <xs:element name="create">
+            <xs:complexType>
+               <xs:sequence>
+                  <xs:element name="request" minOccurs="0" type="ax29:CreateOperationRequest" 
+                     nillable="true"/>
+               </xs:sequence>
+            </xs:complexType>
+         </xs:element>
+         <xs:element name="createResponse">
+            <xs:complexType>
+               <xs:sequence>
+                  <xs:element name="return" minOccurs="0" type="ax29:CreateOperationResponse" 
+                     nillable="true"/>
+               </xs:sequence>
+            </xs:complexType>
+         </xs:element>
+         <xs:element name="cancel">
+            <xs:complexType>
+               <xs:sequence>
+                  <xs:element name="request" minOccurs="0" type="ax29:CancelOperationRequest" 
+                     nillable="true"/>
+               </xs:sequence>
+            </xs:complexType>
+         </xs:element>
+         <xs:element name="cancelResponse">
+            <xs:complexType>
+               <xs:sequence>
+                  <xs:element name="return" minOccurs="0" type="ax29:CancelOperationResponse" 
+                     nillable="true"/>
+               </xs:sequence>
+            </xs:complexType>
+         </xs:element>
+      </xs:schema>
