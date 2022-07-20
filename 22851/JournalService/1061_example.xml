@@ -20,10 +20,10 @@
                </xsd:client>
                <xsd:deptCode>1126</xsd:deptCode>
                <xsd:operJournalStatusEnum>3</xsd:operJournalStatusEnum>
-               <!--<xsd:extFee>
+               <xsd:extFee>
                   <xsd:currency>RUB</xsd:currency>
                   <xsd:summa>112</xsd:summa>
-               </xsd:extFee>-->
+               </xsd:extFee>
                <xsd:documents>
                   <xsd:analyticAttributes>
                      <xsd:code>CBO_CODE</xsd:code>
@@ -50,27 +50,22 @@
                      <xsd:summa>1000</xsd:summa>
                   </xsd:debitSumma>
                   <xsd:description>Выдача наличных денежных средств с банковского счета по
-                  доверенности от [powerOfAttorney.date] номер  [powerOfAttorney.number]. Владелец счета: [personSurname][personFirstName][personPatronymic]</xsd:description>
-                  <xsd:docNumber>77</xsd:docNumber>
+                  доверенности от ДАТА номер  НОМЕР. Владелец счета: ФИО</xsd:description>
+                  <xsd:docNumber>88</xsd:docNumber>
                </xsd:documents>
                <xsd:login>O1126</xsd:login>
                <xsd:idSys>99995</xsd:idSys>
-               <xsd:operJournalExtId>SP.CONP.00000021</xsd:operJournalExtId>
+               <xsd:operJournalExtId>SP.CONP.00000002</xsd:operJournalExtId>
                <xsd:operationCode>1061</xsd:operationCode>
-               <!--<xsd:operationRegDate>2022-02-22T10:00:00</xsd:operationRegDate>-->
-               <!--<xsd:principal>
+               <xsd:operationRegDate>2022-06-18T10:00:00</xsd:operationRegDate>
+               <xsd:principal>
                   <xsd:powerOfAttorney>[powerOfAttorney]</xsd:powerOfAttorney>
                   <xsd:principal>[principal]</xsd:principal>
-                  <xsd:principalIdentityCard>Паспорт РФ 1234 567890</xsd:principalIdentityCard>
-               </xsd:principal>-->
-               <!--Передача данных документа-основания-->
+                  <xsd:principalIdentityCard>[principalIdentityCard]</xsd:principalIdentityCard>
+               </xsd:principal>
                <xsd:contentItems>
-                  <xsd:contentTypeCode></xsd:contentTypeCode>
-                  <xsd:data/>
-                  <xsd:extId>6sf615-sf-sf-sf-sfs</xsd:extId>
-                  <xsd:fileName>filename</xsd:fileName>
+                  <xsd:extId>09bbdc0b-c9bf-4205-a81f-c8ddffb1cf38</xsd:extId>
                   <xsd:name>Документ-основание</xsd:name>
-                  <xsd:printable/>
                </xsd:contentItems>
                <xsd:proxyClient>
                   <xsd:clientTypeEnum>0</xsd:clientTypeEnum>
@@ -87,7 +82,7 @@
                </xsd:proxyClient>
             </xsd:operationEntity>
             <xsd:requestInfo>
-               <xsd:messageId>00000021</xsd:messageId>
+               <xsd:messageId>00000002</xsd:messageId>
             </xsd:requestInfo>
          </jour:request>
       </jour:create>
