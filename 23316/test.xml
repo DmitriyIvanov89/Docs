@@ -47,16 +47,16 @@
 		<SiebelAccountNumber>40817840000050000002</SiebelAccountNumber>
 		<SiebelAccountTypeName>Депозитный счет</SiebelAccountTypeName>
 		<SiebelCardAccountNumber/>
-		<SiebelAccountOrganisation>00006</SiebelAccountOrganisation>
+		<SiebelAccountOrganisation>00055</SiebelAccountOrganisation>
 		<SiebelDivisionCode>1103</SiebelDivisionCode>
 		<SiebelAccountBalance>2526240.88</SiebelAccountBalance>
-		<SiebelAccountCurrency>USD</SiebelAccountCurrency>
+		<SiebelAccountCurrency>RUB</SiebelAccountCurrency>
 		<SiebelAccountSystemId>00006</SiebelAccountSystemId>
                 <ComissionCurrency/>
 		<SiebelCardExpirationDate/>
 		<SiebelCardMultiCurrencyFlag/>
         <OperationSum>1000</OperationSum>
-        <OperationCurrency>USD</OperationCurrency>
+        <OperationCurrency>RUB</OperationCurrency>
         <ComissionSum/>
 		<INN/>
 		<KPP/>
