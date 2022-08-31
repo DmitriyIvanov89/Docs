@@ -1,0 +1,82 @@
+{
+  "sourceSystemName" : "Profile",
+  "messageDatePrf" : "2022-08-31T12:10:57",
+  "msgCodeExbm" : "1",
+  "accSystemIdPrf" : "99995",
+  "executeSystemIdPrf" : "99995",
+  "instanceIdPrf" : "TS",
+  "actionHeader" : {
+    "reason" : null,
+    "idempotencyKey" : "SP.CONP.00007-check.000000000000",
+    "userName" : null,
+    "office" : "1126",
+    "channel" : "OFFICE",
+    "ipAddress" : null,
+    "macAddress" : null,
+    "dboId" : null,
+    "signatureType" : null,
+    "signature" : null,
+    "hashsum" : null
+  },
+  "transferRef" : "SP.CONP.00007",
+  "action" : {
+    "budgetCode" : null,
+    "checkAllowGovernmentPayments" : null,
+    "payer" : {
+      "taxNumber" : null,
+      "kpp" : null,
+      "correspondentBank" : null,
+      "transitAccountNumber" : null,
+      "transitMemberId" : null,
+      "account" : {
+        "id" : null,
+        "pan" : null,
+        "contractNumber" : null,
+        "accountNumber" : "40817810700020071068",
+        "bic" : "040813713",
+        "iban" : null
+      },
+      "name" : null,
+      "address" : null,
+      "treasuryReference" : null,
+      "paymentSystemCode" : null
+    },
+    "beneficiary" : {
+      "taxNumber" : null,
+      "kpp" : null,
+      "correspondentBank" : null,
+      "transitAccountNumber" : null,
+      "transitMemberId" : null,
+      "account" : {
+        "id" : null,
+        "pan" : null,
+        "contractNumber" : null,
+        "accountNumber" : "88888",
+        "bic" : "040349758",
+        "iban" : null
+      },
+      "name" : null,
+      "address" : null,
+      "treasuryReference" : null,
+      "paymentSystemCode" : null
+    },
+    "transactionAmount" : {
+      "amount" : "1500",
+      "currency" : "RUB"
+    },
+    "transactionType" : "711110-00",
+    "amountType" : null,
+    "comment" : "Выдача наличных денежных средств на основании договора банковского счета.\n                  Владелец счета: ФИО",
+    "transactionAttributes" : [ "CIFID" ],
+    "effectiveDate" : "2022-08-15",
+    "rateType" : null,
+    "exchangeRate" : null,
+    "cashTransactionCode" : "51",
+    "paymentSlipNumber" : "1",
+    "personnelNumber" : "1989",
+    "payerFee" : null,
+    "beneficiaryFee" : null,
+    "referenceAmount" : "1500",
+    "referenceCurrency" : "RUB"
+  }
+}
