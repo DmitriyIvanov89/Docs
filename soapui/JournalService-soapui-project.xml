@@ -8400,7 +8400,7 @@ xmlns:xsd="http://model.ws.spectrum/xsd">
          </jour:request>\r
       </jour:create>\r
    </soap:Body>\r
-</soap:Envelope>]]></con:request><con:assertion type="SOAP Response" id="6b55260f-8110-480b-8837-b587ebe267cb"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="1060_uip" id="16eb0714-74cc-42ec-b553-8062f1bd1a49"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>JournalServiceSoap12Binding</con:interface><con:operation>create</con:operation><con:request name="1060_uip" id="0eed625e-07b9-45da-af98-24eac19457c8"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://asprd.it-spectrum.ru:9280/vtb24/services/JournalService.JournalServiceHttpSoap12Endpoint/</con:endpoint><con:request><![CDATA[<create xmlns="http://model.ws.spectrum/xsd">\r
+</soap:Envelope>]]></con:request><con:assertion type="SOAP Response" id="6b55260f-8110-480b-8837-b587ebe267cb"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="1060_uip" id="16eb0714-74cc-42ec-b553-8062f1bd1a49"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>JournalServiceSoap12Binding</con:interface><con:operation>create</con:operation><con:request name="1060_uip" id="0eed625e-07b9-45da-af98-24eac19457c8"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://dev.it-spectrum.ru:9280/vtb24/services/JournalService.JournalServiceHttpSoap12Endpoint/</con:endpoint><con:request><![CDATA[<create xmlns="http://model.ws.spectrum/xsd">\r
    <request>\r
       <operationEntity>\r
          <client>\r
@@ -8455,12 +8455,12 @@ xmlns:xsd="http://model.ws.spectrum/xsd">
          </documents>\r
          <login>O1126</login>\r
          <idSys>99995</idSys>\r
-         <operJournalExtId>SP.CONP.0000001</operJournalExtId>\r
-         <operationCode>1062</operationCode>\r
+         <operJournalExtId>SP.CONP.0000002</operJournalExtId>\r
+         <operationCode>wafafafaf</operationCode>\r
          <!--<operationRegDate>2022-02-22T10:00:00</operationRegDate>-->\r
       </operationEntity>\r
       <requestInfo>\r
-         <messageId>0000001</messageId>\r
+         <messageId/>\r
       </requestInfo>\r
    </request>\r
 </create>]]></con:request><con:assertion type="SOAP Response" id="c4030ea1-c0d1-4def-9348-d88fb33cac3e"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="1061_3th_party" id="34e9e08c-55c4-4960-a91d-e3a3390265c1"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>JournalServiceSoap12Binding</con:interface><con:operation>create</con:operation><con:request name="1061_3th_party" id="73c17398-76c5-4c54-be9f-43bb3db32714"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://dev.it-spectrum.ru:9280/vtb24/services/JournalService.JournalServiceHttpSoap12Endpoint/</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:jour="http://journal.ws.spectrum" xmlns:xsd="http://model.ws.spectrum/xsd">\r
@@ -8597,12 +8597,12 @@ xmlns:xsd="http://model.ws.spectrum/xsd">
                   <xsd:description>Взнос наличных денежных средств на банковский счет по 
                   доверенности от ДАТА номер  НОМЕР. 
                   Владелец счета: ФИО</xsd:description>
-                  <xsd:docNumber>03</xsd:docNumber>
+                  <xsd:docNumber>02</xsd:docNumber>
                </xsd:documents>
                <xsd:login>O1126</xsd:login>
                <xsd:idSys>99995</xsd:idSys>
-               <xsd:operJournalExtId>SP.CONP.00003</xsd:operJournalExtId>
-               <xsd:operationCode>1060</xsd:operationCode>
+               <xsd:operJournalExtId>SP.CONP.00033</xsd:operJournalExtId>
+               <xsd:operationCode>afag</xsd:operationCode>
                <!--<xsd:operationRegDate>2022-06-18T10:00:00</xsd:operationRegDate>-->
                <xsd:principal>
                   <xsd:powerOfAttorney>[powerOfAttorney]</xsd:powerOfAttorney>
@@ -8611,7 +8611,7 @@ xmlns:xsd="http://model.ws.spectrum/xsd">
                </xsd:principal>
                <xsd:contentItems>
                   <xsd:extId>09bbdc0b-c9bf-4205-a81f-c8ddffb1cf38</xsd:extId>
-                  <xsd:name>Документ-основание</xsd:name>
+                  <xsd:name>Документ-основание_test</xsd:name>
                </xsd:contentItems>
                <xsd:proxyClient>
                   <xsd:clientTypeEnum>0</xsd:clientTypeEnum>
