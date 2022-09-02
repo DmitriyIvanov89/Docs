@@ -23,4 +23,3 @@ set
 SUB_DELTA_EXPR_ID = '-11'
 where OPER_LIM_ID = '-1'
 and OPERATION_GROUP_CODE = '-26';
-
