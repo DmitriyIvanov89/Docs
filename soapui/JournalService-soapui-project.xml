@@ -8691,7 +8691,7 @@ xmlns:xsd="http://model.ws.spectrum/xsd">
                </xsd:documents>
                <xsd:login>O1126</xsd:login>
                <xsd:idSys>99995</xsd:idSys>
-               <xsd:operJournalExtId>SP.CONP.00201</xsd:operJournalExtId>
+               <xsd:operJournalExtId>SP.CONP.00301</xsd:operJournalExtId>
                <xsd:operationCode>1061</xsd:operationCode>
                <!--<xsd:operationRegDate>2022-06-18T10:00:00</xsd:operationRegDate>-->
                <xsd:principal>
