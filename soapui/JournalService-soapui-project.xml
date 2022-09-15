@@ -7954,75 +7954,7 @@ xmlns:xsd="http://model.ws.spectrum/xsd">
          </jour:request>\r
       </jour:create>\r
    </soap:Body>\r
-</soap:Envelope>]]></con:request><con:assertion type="SOAP Response" id="c4940678-0e6f-4e0f-8b02-3911a947ca52"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="1062" id="638ca919-c79b-4dbb-86d0-f34d0f6f9263"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>JournalServiceSoap12Binding</con:interface><con:operation>create</con:operation><con:request name="1062" id="1cbb5b6f-3087-4a91-a83e-dad0fc4317b1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://dev.it-spectrum.ru:9280/vtb24/services/JournalService.JournalServiceHttpSoap12Endpoint/</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:jour="http://journal.ws.spectrum" xmlns:xsd="http://model.ws.spectrum/xsd">\r
-   <soap:Header/>\r
-   <soap:Body>\r
-      <jour:create>\r
-         <jour:request>\r
-            <xsd:operationEntity>\r
-               <xsd:client>\r
-                  <xsd:clientTypeEnum>0</xsd:clientTypeEnum>\r
-                  <xsd:clientExtId>5555-90-siebel</xsd:clientExtId>\r
-                  <xsd:clientIdSys>SBL_FR</xsd:clientIdSys>\r
-                  <!--чтоб запрос в docsVision уходил-->\r
-                  <xsd:icIssueAutority>ПВО ОВД Таганского района города Москвы кп 772-118</xsd:icIssueAutority>\r
-                  <xsd:icIssueDate>2005-09-06</xsd:icIssueDate>\r
-                  <xsd:icNum>787878</xsd:icNum>\r
-                  <xsd:icSeries>6969</xsd:icSeries>\r
-                  <xsd:identityCardTypeId>21</xsd:identityCardTypeId>\r
-                  <xsd:personFirstName>АНДРЕЙ</xsd:personFirstName>\r
-                  <xsd:personPatronymic>ЮРЬЕВИЧ</xsd:personPatronymic>\r
-                  <xsd:personSurname>ЗУМОВСКИЙ</xsd:personSurname>\r
-                  <xsd:personCitizenCountryCode>643</xsd:personCitizenCountryCode>\r
-                  <!--<xsd:personStatelessFlag></xsd:personStatelessFlag>-->\r
-               </xsd:client>\r
-               <xsd:deptCode>1126</xsd:deptCode>\r
-               <xsd:extFee>\r
-                  <!--<xsd:currency>RUB</xsd:currency>
-                  <xsd:summa>77</xsd:summa>-->\r
-               </xsd:extFee>\r
-               <xsd:documents>\r
-                  <xsd:analyticAttributes>\r
-                     <xsd:code>CBO_CODE</xsd:code>\r
-                     <xsd:value>711210-00</xsd:value>\r
-                  </xsd:analyticAttributes>\r
-                  <xsd:cashSymbols>\r
-                     <xsd:cashSymbolCode>16</xsd:cashSymbolCode>\r
-                     <xsd:summa>\r
-                        <xsd:currency>USD</xsd:currency>\r
-                        <xsd:summa>100</xsd:summa>\r
-                     </xsd:summa>\r
-                  </xsd:cashSymbols>\r
-                  <xsd:creditSumma>\r
-                     <xsd:currency>RUB</xsd:currency>\r
-                     <xsd:summa>999.69</xsd:summa>\r
-                  </xsd:creditSumma>\r
-                  <xsd:creditAccountEntity>\r
-                     <xsd:accountIdSys>99995</xsd:accountIdSys>\r
-                     <xsd:accountNum>40817810101004055492</xsd:accountNum>\r
-                     <xsd:deptCode>1126</xsd:deptCode>\r
-                  </xsd:creditAccountEntity>\r
-                  <xsd:debitSumma>\r
-                     <xsd:currency>USD</xsd:currency>\r
-                     <xsd:summa>14.18</xsd:summa>\r
-                  </xsd:debitSumma>\r
-                  <xsd:description>Внесение наличных на банковский счет
-                   На основании: договор No 40817810101004055492</xsd:description>\r
-                  <xsd:docNumber>1488</xsd:docNumber>\r
-               </xsd:documents>\r
-               <xsd:login>O1126</xsd:login>\r
-               <xsd:idSys>99995</xsd:idSys>\r
-               <xsd:operJournalExtId>SP.CONP.0000001</xsd:operJournalExtId>\r
-               <xsd:operationCode>1062</xsd:operationCode>\r
-               <!--<xsd:operationRegDate>2022-02-22T10:00:00</xsd:operationRegDate>-->\r
-            </xsd:operationEntity>\r
-            <xsd:requestInfo>\r
-               <xsd:messageId>0000001</xsd:messageId>\r
-            </xsd:requestInfo>\r
-         </jour:request>\r
-      </jour:create>\r
-   </soap:Body>\r
-</soap:Envelope>]]></con:request><con:assertion type="SOAP Response" id="bf5174a2-f92b-44fd-9bed-d758b72cae9f"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="2000-CFT2" id="09294726-b7a0-4633-94bd-c03a4631a436"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>JournalServiceSoap12Binding</con:interface><con:operation>create</con:operation><con:request name="2000-CFT2" id="ef3ac6ad-eb01-4151-9648-bd95d220ebc1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://dev.it-spectrum.ru:9280/vtb24/services/JournalService.JournalServiceHttpSoap12Endpoint/</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:jour="http://journal.ws.spectrum" xmlns:xsd="http://model.ws.spectrum/xsd">\r
+</soap:Envelope>]]></con:request><con:assertion type="SOAP Response" id="c4940678-0e6f-4e0f-8b02-3911a947ca52"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="2000-CFT2" id="09294726-b7a0-4633-94bd-c03a4631a436"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>JournalServiceSoap12Binding</con:interface><con:operation>create</con:operation><con:request name="2000-CFT2" id="ef3ac6ad-eb01-4151-9648-bd95d220ebc1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://dev.it-spectrum.ru:9280/vtb24/services/JournalService.JournalServiceHttpSoap12Endpoint/</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:jour="http://journal.ws.spectrum" xmlns:xsd="http://model.ws.spectrum/xsd">\r
    <soap:Header/>\r
    <soap:Body>\r
       <jour:create>\r
@@ -8543,7 +8475,7 @@ xmlns:xsd="http://model.ws.spectrum/xsd">
          </jour:request>\r
       </jour:create>\r
    </soap:Body>\r
-</soap:Envelope>]]></con:request><con:assertion type="SOAP Response" id="bff8be64-97e6-4d52-97b5-0d4cdb1c476d"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="1060_with_principal" id="71e2920d-ec96-4f1b-966d-6716104befb3"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>JournalServiceSoap12Binding</con:interface><con:operation>create</con:operation><con:request name="1060_with_principal" id="3d92ed9a-856d-4e46-af46-a0da1f44ae9e"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://tst.it-spectrum.ru:9280/vtb24/services/JournalService.JournalServiceHttpSoap12Endpoint/</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:jour="http://journal.ws.spectrum" xmlns:xsd="http://model.ws.spectrum/xsd">
+</soap:Envelope>]]></con:request><con:assertion type="SOAP Response" id="bff8be64-97e6-4d52-97b5-0d4cdb1c476d"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="1060_with_principal" id="71e2920d-ec96-4f1b-966d-6716104befb3"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>JournalServiceSoap12Binding</con:interface><con:operation>create</con:operation><con:request name="1060_with_principal" id="3d92ed9a-856d-4e46-af46-a0da1f44ae9e"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://dev.it-spectrum.ru:9280/vtb24/services/JournalService.JournalServiceHttpSoap12Endpoint/</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:jour="http://journal.ws.spectrum" xmlns:xsd="http://model.ws.spectrum/xsd">
    <soap:Header/>
    <soap:Body>
       <jour:create>
@@ -8597,11 +8529,11 @@ xmlns:xsd="http://model.ws.spectrum/xsd">
                   <xsd:description>Взнос наличных денежных средств на банковский счет по 
                   доверенности от ДАТА номер  НОМЕР. 
                   Владелец счета: ФИО</xsd:description>
-                  <xsd:docNumber>03</xsd:docNumber>
+                  <xsd:docNumber>01</xsd:docNumber>
                </xsd:documents>
                <xsd:login>O1126</xsd:login>
                <xsd:idSys>99995</xsd:idSys>
-               <xsd:operJournalExtId>SP.CONP.00003</xsd:operJournalExtId>
+               <xsd:operJournalExtId>SP.CONP.00201</xsd:operJournalExtId>
                <xsd:operationCode>1060</xsd:operationCode>
                <!--<xsd:operationRegDate>2022-06-18T10:00:00</xsd:operationRegDate>-->
                <xsd:principal>
@@ -8723,7 +8655,339 @@ xmlns:xsd="http://model.ws.spectrum/xsd">
          </jour:request>\r
       </jour:create>\r
    </soap:Body>\r
-</soap:Envelope>]]></con:request><con:assertion type="SOAP Response" id="a30cdb97-663b-472c-a113-b5d09b8760b7"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:loadTest id="f5443af2-c43c-4f76-8b00-d09a6ab9f75a" name="LoadTest 1"><con:settings><con:setting id="HttpSettings@close-connections">false</con:setting></con:settings><con:threadCount>7</con:threadCount><con:startDelay>0</con:startDelay><con:sampleInterval>250</con:sampleInterval><con:calculateTPSOnTimePassed>true</con:calculateTPSOnTimePassed><con:resetStatisticsOnThreadCountChange>true</con:resetStatisticsOnThreadCountChange><con:historyLimit>-1</con:historyLimit><con:testLimit>360</con:testLimit><con:limitType>TIME</con:limitType><con:loadStrategy><con:type>Simple</con:type></con:loadStrategy><con:assertion type="Step Status" name="Step Status"/><con:maxAssertionErrors>100</con:maxAssertionErrors><con:cancelExcessiveThreads>true</con:cancelExcessiveThreads><con:strategyInterval>500</con:strategyInterval></con:loadTest><con:loadTest id="fa76aa87-6dec-4068-804e-b8868aaa1083" name="LoadTest 2"><con:settings><con:setting id="HttpSettings@close-connections">false</con:setting></con:settings><con:threadCount>5</con:threadCount><con:startDelay>0</con:startDelay><con:sampleInterval>250</con:sampleInterval><con:calculateTPSOnTimePassed>true</con:calculateTPSOnTimePassed><con:resetStatisticsOnThreadCountChange>true</con:resetStatisticsOnThreadCountChange><con:historyLimit>-1</con:historyLimit><con:testLimit>60</con:testLimit><con:limitType>TIME</con:limitType><con:loadStrategy><con:type>Simple</con:type></con:loadStrategy><con:assertion type="Step Status" name="Step Status"/><con:maxAssertionErrors>100</con:maxAssertionErrors><con:cancelExcessiveThreads>true</con:cancelExcessiveThreads><con:strategyInterval>500</con:strategyInterval></con:loadTest><con:properties/><con:reportParameters/><con:breakPoints><con:testStepId>502d3c00-9dff-401b-9ebc-aa9a3b8ab184</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="setOperExtStatus TestCase" searchProperties="true" id="c6e75df4-15d9-4656-b418-c4eaeaaf8051"><con:settings/><con:testStep type="request" name="setOperExtStatus" id="7975bc97-232b-42b7-87fd-500fa0d1a445"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>JournalServiceSoap12Binding</con:interface><con:operation>setOperExtStatus</con:operation><con:request name="setOperExtStatus" id="6510d098-f3a4-40f0-924c-18acac64ed40"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://astst.it-spectrum.ru:9280/vtb24/services/JournalService.JournalServiceHttpSoap12Endpoint/</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:jour="http://journal.ws.spectrum" xmlns:xsd="http://model.ws.spectrum/xsd">
+</soap:Envelope>]]></con:request><con:assertion type="SOAP Response" id="a30cdb97-663b-472c-a113-b5d09b8760b7"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="1062" id="e16bb496-8ddb-44b7-8606-817b903b83a6"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>JournalServiceSoap12Binding</con:interface><con:operation>create</con:operation><con:request name="1062" id="f3cc938c-235d-47a9-b62e-c9bd43d154c2"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://dev.it-spectrum.ru:9280/vtb24/services/JournalService.JournalServiceHttpSoap12Endpoint/</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:jour="http://journal.ws.spectrum" xmlns:xsd="http://model.ws.spectrum/xsd">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <jour:create>\r
+         <jour:request>\r
+            <xsd:operationEntity>\r
+               <xsd:client>\r
+                  <xsd:clientTypeEnum>0</xsd:clientTypeEnum>\r
+                  <xsd:clientExtId>5555-90-siebel</xsd:clientExtId>\r
+                  <xsd:clientIdSys>SBL_FR</xsd:clientIdSys>\r
+                  <xsd:icIssueAutority>[icIssueAutority]</xsd:icIssueAutority>\r
+                  <xsd:icIssueDate>2005-09-06</xsd:icIssueDate>\r
+                  <xsd:icNum>[client.icNum]</xsd:icNum>\r
+                  <xsd:icSeries>[client.icSeries]</xsd:icSeries>\r
+                  <xsd:identityCardTypeId>21</xsd:identityCardTypeId>\r
+                  <xsd:personFirstName>[personFirstName]</xsd:personFirstName>\r
+                  <xsd:personPatronymic>[personPatronymic]</xsd:personPatronymic>\r
+                  <xsd:personSurname>[personSurname]</xsd:personSurname>\r
+                  <xsd:personCitizenCountryCode>643</xsd:personCitizenCountryCode>\r
+               </xsd:client>\r
+               <xsd:deptCode>1126</xsd:deptCode>\r
+              <!-- <xsd:extFee>\r
+                  <xsd:currency>RUB</xsd:currency>\r
+                  <xsd:summa>88</xsd:summa>\r
+               </xsd:extFee>\r-->
+               <xsd:documents>\r
+                  <xsd:analyticAttributes>\r
+                     <xsd:code>CBO_CODE</xsd:code>\r
+                     <xsd:value>711210-00</xsd:value>\r
+                  </xsd:analyticAttributes>\r
+                  <xsd:cashSymbols>\r
+                     <xsd:cashSymbolCode>16</xsd:cashSymbolCode>\r
+                     <xsd:summa>\r
+                        <xsd:currency>RUB</xsd:currency>\r
+                        <xsd:summa>1488</xsd:summa>\r
+                     </xsd:summa>\r
+                  </xsd:cashSymbols>\r
+                  <xsd:creditSumma>\r
+                     <xsd:currency>RUB</xsd:currency>\r
+                     <xsd:summa>1488</xsd:summa>\r
+                  </xsd:creditSumma>\r
+                  <xsd:creditAccountEntity>\r
+                     <xsd:accountIdSys>99995</xsd:accountIdSys>\r
+                     <xsd:accountNum>40817840700020071062</xsd:accountNum>\r
+                     <xsd:deptCode>1126</xsd:deptCode>\r
+                  </xsd:creditAccountEntity>\r
+                  <xsd:debitSumma>\r
+                     <xsd:currency>RUB</xsd:currency>\r
+                     <xsd:summa>1488</xsd:summa>\r
+                  </xsd:debitSumma>\r
+                  <xsd:description>Внесение наличных на банковский счет 
+                  На основании: договор No [accountNum]</xsd:description>\r
+                  <xsd:docNumber>007</xsd:docNumber>\r
+               </xsd:documents>\r
+               <xsd:login>O1126</xsd:login>\r
+               <xsd:idSys>99995</xsd:idSys>\r
+               <xsd:operJournalExtId>SP.CONP.10620008</xsd:operJournalExtId>\r
+               <xsd:operationCode>1062</xsd:operationCode>\r
+               <!--<xsd:operationRegDate>2022-02-22T10:00:00</xsd:operationRegDate>-->\r
+              <!-- <xsd:contentItems>
+                  <xsd:extId>09bbdc0b-c9bf-4205-a81f-c8ddffb1cf38</xsd:extId>
+                  <xsd:name>Документ-основание</xsd:name>
+               </xsd:contentItems>
+               <xsd:proxyClient>
+                  <xsd:clientTypeEnum>0</xsd:clientTypeEnum>
+                  <xsd:icIssueAutority>[icIssueAutority]</xsd:icIssueAutority>
+                  <xsd:icIssueDate>2022-01-01</xsd:icIssueDate>
+                  <xsd:icNum>[ProxyClient:icNum]</xsd:icNum>
+                  <xsd:icSeries>[ProxyClient:icSeries]</xsd:icSeries>
+                  <xsd:identityCardTypeId>21</xsd:identityCardTypeId>
+                  <xsd:personFirstName>[proxyClient:personFirstName]</xsd:personFirstName>
+                  <xsd:personPatronymic>[proxyClient:personPatronymic]</xsd:personPatronymic>
+                  <xsd:personSurname>[proxyClient:personSurname]</xsd:personSurname>
+                  <xsd:personStatelessFlag>0</xsd:personStatelessFlag>
+                  <xsd:personCitizenCountryCode>643</xsd:personCitizenCountryCode>
+               </xsd:proxyClient>-->
+            </xsd:operationEntity>\r
+            <xsd:requestInfo>\r
+               <xsd:messageId/>\r
+            </xsd:requestInfo>\r
+         </jour:request>\r
+      </jour:create>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:assertion type="SOAP Response" id="ef374e51-913c-4c01-9be6-921a8092ca1c"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="1063" id="0ee2ec8f-a137-48c0-a4fe-42efad1a1c49"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>JournalServiceSoap12Binding</con:interface><con:operation>create</con:operation><con:request name="1063" id="27d5f46a-7f88-4ed3-b21d-89bc44a1133e"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://dev.it-spectrum.ru:9280/vtb24/services/JournalService.JournalServiceHttpSoap12Endpoint/</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:jour="http://journal.ws.spectrum" xmlns:xsd="http://model.ws.spectrum/xsd">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <jour:create>\r
+         <jour:request>\r
+            <xsd:operationEntity>\r
+               <xsd:client>\r
+                  <xsd:clientTypeEnum>0</xsd:clientTypeEnum>\r
+                  <xsd:clientExtId>5555-90-siebel</xsd:clientExtId>\r
+                  <xsd:clientIdSys>SBL_FR</xsd:clientIdSys>\r
+                  <xsd:icIssueAutority>[icIssueAutority]</xsd:icIssueAutority>\r
+                  <xsd:icIssueDate>2005-09-06</xsd:icIssueDate>\r
+                  <xsd:icNum>[client.icNum]</xsd:icNum>\r
+                  <xsd:icSeries>[client.icSeries]</xsd:icSeries>\r
+                  <xsd:identityCardTypeId>21</xsd:identityCardTypeId>\r
+                  <xsd:personFirstName>[personFirstName]</xsd:personFirstName>\r
+                  <xsd:personPatronymic>[personPatronymic]</xsd:personPatronymic>\r
+                  <xsd:personSurname>[personSurname]</xsd:personSurname>\r
+                  <xsd:personCitizenCountryCode>643</xsd:personCitizenCountryCode>\r
+               </xsd:client>\r
+               <xsd:deptCode>1126</xsd:deptCode>\r
+               <!--<xsd:extFee>
+                  <xsd:currency>RUB</xsd:currency>
+                  <xsd:summa>88</xsd:summa>
+               </xsd:extFee>-->\r
+               <xsd:documents>\r
+                  <xsd:analyticAttributes>\r
+                     <xsd:code>CBO_CODE</xsd:code>\r
+                     <xsd:value>711210-00</xsd:value>\r
+                  </xsd:analyticAttributes>\r
+                  <xsd:creditSumma>\r
+                     <xsd:currency>USD</xsd:currency>\r
+                     <xsd:summa>1500</xsd:summa>\r
+                  </xsd:creditSumma>\r
+                  <xsd:creditAccountEntity>\r
+                     <xsd:accountIdSys>99995</xsd:accountIdSys>\r
+                     <xsd:accountNum>40817840700020071063</xsd:accountNum>\r
+                     <xsd:deptCode>1126</xsd:deptCode>\r
+                  </xsd:creditAccountEntity>\r
+                  <xsd:debitSumma>\r
+                     <xsd:currency>USD</xsd:currency>\r
+                     <xsd:summa>1500</xsd:summa>\r
+                  </xsd:debitSumma>\r
+                  <xsd:description>Внесение наличных на банковский счет 
+                  На основании: договор No [accountNum]</xsd:description>\r
+                  <xsd:docNumber>005</xsd:docNumber>\r
+               </xsd:documents>\r
+               <xsd:login>O1126</xsd:login>\r
+               <xsd:idSys>99995</xsd:idSys>\r
+               <xsd:operJournalExtId>SP.CONP.10630005</xsd:operJournalExtId>\r
+               <xsd:operationCode>1063</xsd:operationCode>\r
+               <!--<xsd:operationRegDate>2022-02-22T10:00:00</xsd:operationRegDate>-->\r
+               <!--<xsd:contentItems>
+                  <xsd:extId>09bbdc0b-c9bf-4205-a81f-c8ddffb1cf38</xsd:extId>
+                  <xsd:name>Документ-основание</xsd:name>
+             </xsd:contentItems>
+               <xsd:proxyClient>
+                  <xsd:clientTypeEnum>0</xsd:clientTypeEnum>
+                  <xsd:icIssueAutority>[icIssueAutority]</xsd:icIssueAutority>
+                  <xsd:icIssueDate>2022-01-01</xsd:icIssueDate>
+                  <xsd:icNum>[ProxyClient:icNum]</xsd:icNum>
+                  <xsd:icSeries>[ProxyClient:icSeries]</xsd:icSeries>
+                  <xsd:identityCardTypeId>21</xsd:identityCardTypeId>
+                  <xsd:personFirstName>[proxyClient:personFirstName]</xsd:personFirstName>
+                  <xsd:personPatronymic>[proxyClient:personPatronymic]</xsd:personPatronymic>
+                  <xsd:personSurname>[proxyClient:personSurname]</xsd:personSurname>
+                  <xsd:personStatelessFlag>0</xsd:personStatelessFlag>
+                  <xsd:personCitizenCountryCode>643</xsd:personCitizenCountryCode>
+               </xsd:proxyClient>-->
+            </xsd:operationEntity>\r
+            <xsd:requestInfo>\r
+               <xsd:messageId/>\r
+            </xsd:requestInfo>\r
+         </jour:request>\r
+      </jour:create>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:assertion type="SOAP Response" id="f5e5eb5e-d1e8-45ae-8168-ae09909da135"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="1064" id="3fa650f3-6aa9-4dc2-a6e2-4c9ff3909f1f"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>JournalServiceSoap12Binding</con:interface><con:operation>create</con:operation><con:request name="1064" id="a8cfc365-23e4-404d-80ea-9a2171a94491"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://dev.it-spectrum.ru:9280/vtb24/services/JournalService.JournalServiceHttpSoap12Endpoint/</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:jour="http://journal.ws.spectrum" xmlns:xsd="http://model.ws.spectrum/xsd">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <jour:create>\r
+         <jour:request>\r
+            <xsd:operationEntity>\r
+               <xsd:client>\r
+                  <xsd:clientTypeEnum>0</xsd:clientTypeEnum>\r
+                  <xsd:clientExtId>5555-90-siebel</xsd:clientExtId>\r
+                  <xsd:clientIdSys>SBL_FR</xsd:clientIdSys>\r
+                  <xsd:icIssueAutority>[icIssueAutority]</xsd:icIssueAutority>\r
+                  <xsd:icIssueDate>2005-09-06</xsd:icIssueDate>\r
+                  <xsd:icNum>[client.icNum]</xsd:icNum>\r
+                  <xsd:icSeries>[client.icSeries]</xsd:icSeries>\r
+                  <xsd:identityCardTypeId>21</xsd:identityCardTypeId>\r
+                  <xsd:personFirstName>[personFirstName]</xsd:personFirstName>\r
+                  <xsd:personPatronymic>[personPatronymic]</xsd:personPatronymic>\r
+                  <xsd:personSurname>[personSurname]</xsd:personSurname>\r
+                  <xsd:personCitizenCountryCode>643</xsd:personCitizenCountryCode>\r
+               </xsd:client>\r
+               <!--<xsd:personStatelessFlag></xsd:personStatelessFlag>-->\r
+               <xsd:deptCode>1126</xsd:deptCode>\r
+               <xsd:operJournalStatusEnum>3</xsd:operJournalStatusEnum>\r
+               <!--<xsd:extFee>
+                  <xsd:currency>RUB</xsd:currency>
+                  <xsd:summa>112</xsd:summa>
+               </xsd:extFee>-->\r
+               <xsd:documents>\r
+                  <xsd:analyticAttributes>\r
+                     <xsd:code>CBO_CODE</xsd:code>\r
+                     <xsd:value>711110-00</xsd:value>\r
+                  </xsd:analyticAttributes>\r
+                  <xsd:cashSymbols>\r
+                     <xsd:cashSymbolCode>51</xsd:cashSymbolCode>\r
+                     <xsd:summa>\r
+                        <xsd:currency>RUB</xsd:currency>\r
+                        <xsd:summa>1500</xsd:summa>\r
+                     </xsd:summa>\r
+                  </xsd:cashSymbols>\r
+                  <xsd:creditSumma>\r
+                     <xsd:currency>RUB</xsd:currency>\r
+                     <xsd:summa>1500</xsd:summa>\r
+                  </xsd:creditSumma>\r
+                  <xsd:debitAccountEntity>\r
+                     <xsd:accountIdSys>99995</xsd:accountIdSys>\r
+                     <xsd:accountNum>40817810700020071064</xsd:accountNum>\r
+                     <xsd:deptCode>1056</xsd:deptCode>\r
+                  </xsd:debitAccountEntity>\r
+                  <xsd:debitSumma>\r
+                     <xsd:currency>RUB</xsd:currency>\r
+                     <xsd:summa>1500</xsd:summa>\r
+                  </xsd:debitSumma>\r
+                  <xsd:description>Снятие наличных с банковского счета
+На основании: договор No [accountNum]</xsd:description>\r
+                  <xsd:docNumber>10641</xsd:docNumber>\r
+               </xsd:documents>\r
+               <xsd:login>O1126</xsd:login>\r
+               <xsd:idSys>99995</xsd:idSys>\r
+               <xsd:operJournalExtId>SP.CONP.1064004</xsd:operJournalExtId>\r
+               <xsd:operationCode>1064</xsd:operationCode>\r
+               <!--<xsd:operationRegDate>2022-06-18T10:00:00</xsd:operationRegDate>-->\r
+               <!--<xsd:principal>
+                  <xsd:powerOfAttorney>[powerOfAttorney]</xsd:powerOfAttorney>
+                  <xsd:principal>[principal]</xsd:principal>
+                  <xsd:principalIdentityCard>[principalIdentityCard]</xsd:principalIdentityCard>
+               </xsd:principal>-->\r
+               <!--<xsd:contentItems>\r
+                  <xsd:extId>09bbdc0b-c9bf-4205-a81f-c8ddffb1cf38</xsd:extId>\r
+                  <xsd:name>Документ-основание</xsd:name>\r
+               </xsd:contentItems>\r
+               <xsd:proxyClient>\r
+                  <xsd:clientTypeEnum>0</xsd:clientTypeEnum>\r
+                  <xsd:icIssueAutority>[icIssueAutority]</xsd:icIssueAutority>\r
+                  <xsd:icIssueDate>2022-01-01</xsd:icIssueDate>\r
+                  <xsd:icNum>[ProxyClient:icNum]</xsd:icNum>\r
+                  <xsd:icSeries>[ProxyClient:icSeries]</xsd:icSeries>\r
+                  <xsd:identityCardTypeId>21</xsd:identityCardTypeId>\r
+                  <xsd:personFirstName>[proxyClient:personFirstName]</xsd:personFirstName>\r
+                  <xsd:personPatronymic>[proxyClient:personPatronymic]</xsd:personPatronymic>\r
+                  <xsd:personSurname>[proxyClient:personSurname]</xsd:personSurname>\r
+                  <xsd:personStatelessFlag>0</xsd:personStatelessFlag>\r
+                  <xsd:personCitizenCountryCode>643</xsd:personCitizenCountryCode>\r
+               </xsd:proxyClient>\r-->
+            </xsd:operationEntity>\r
+            <xsd:requestInfo>\r
+               <xsd:messageId/>\r
+            </xsd:requestInfo>\r
+         </jour:request>\r
+      </jour:create>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:assertion type="SOAP Response" id="38000b72-106b-491a-9485-0ae8bb8d1cc7"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="1065" id="b26383a6-316b-48b7-a179-e25ff5744503"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>JournalServiceSoap12Binding</con:interface><con:operation>create</con:operation><con:request name="1065" id="47c00152-d22d-4e75-bc18-1ab6ea24dbcd"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://dev.it-spectrum.ru:9280/vtb24/services/JournalService.JournalServiceHttpSoap12Endpoint/</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:jour="http://journal.ws.spectrum" xmlns:xsd="http://model.ws.spectrum/xsd">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <jour:create>\r
+         <jour:request>\r
+            <xsd:operationEntity>\r
+               <xsd:client>\r
+                  <xsd:clientTypeEnum>0</xsd:clientTypeEnum>\r
+                  <xsd:clientExtId>5555-90-siebel</xsd:clientExtId>\r
+                  <xsd:clientIdSys>SBL_FR</xsd:clientIdSys>\r
+                  <xsd:icIssueAutority>[icIssueAutority]</xsd:icIssueAutority>\r
+                  <xsd:icIssueDate>2005-09-06</xsd:icIssueDate>\r
+                  <xsd:icNum>[client.icNum]</xsd:icNum>\r
+                  <xsd:icSeries>[client.icSeries]</xsd:icSeries>\r
+                  <xsd:identityCardTypeId>21</xsd:identityCardTypeId>\r
+                  <xsd:personFirstName>[personFirstName]</xsd:personFirstName>\r
+                  <xsd:personPatronymic>[personPatronymic]</xsd:personPatronymic>\r
+                  <xsd:personSurname>[personSurname]</xsd:personSurname>\r
+                  <xsd:personCitizenCountryCode>643</xsd:personCitizenCountryCode>\r
+               </xsd:client>\r
+               <!--<xsd:personStatelessFlag></xsd:personStatelessFlag>-->\r
+               <xsd:deptCode>1126</xsd:deptCode>\r
+               <xsd:operJournalStatusEnum>3</xsd:operJournalStatusEnum>\r
+               <!--<xsd:extFee>
+                  <xsd:currency>RUB</xsd:currency>
+                  <xsd:summa>112</xsd:summa>
+               </xsd:extFee>-->\r
+               <xsd:documents>\r
+                  <xsd:analyticAttributes>\r
+                     <xsd:code>CBO_CODE</xsd:code>\r
+                     <xsd:value>711110-00</xsd:value>\r
+                  </xsd:analyticAttributes>\r
+                  <xsd:creditSumma>\r
+                     <xsd:currency>USD</xsd:currency>\r
+                     <xsd:summa>1488</xsd:summa>\r
+                  </xsd:creditSumma>\r
+                  <xsd:debitAccountEntity>\r
+                     <xsd:accountIdSys>99995</xsd:accountIdSys>\r
+                     <xsd:accountNum>40817840700020071065</xsd:accountNum>\r
+                     <xsd:deptCode>1056</xsd:deptCode>\r
+                  </xsd:debitAccountEntity>\r
+                  <xsd:debitSumma>\r
+                     <xsd:currency>USD</xsd:currency>\r
+                     <xsd:summa>1488</xsd:summa>\r
+                  </xsd:debitSumma>\r
+                  <xsd:description>Снятие наличных с банковского счета
+На основании: договор No [accountNum]</xsd:description>\r
+                  <xsd:docNumber>10651</xsd:docNumber>\r
+               </xsd:documents>\r
+               <xsd:login>O1126</xsd:login>\r
+               <xsd:idSys>99995</xsd:idSys>\r
+               <xsd:operJournalExtId>SP.CONP.1065003</xsd:operJournalExtId>\r
+               <xsd:operationCode>1065</xsd:operationCode>\r
+               <!--<xsd:operationRegDate>2022-06-18T10:00:00</xsd:operationRegDate>-->\r
+               <!--<xsd:principal>
+                  <xsd:powerOfAttorney>[powerOfAttorney]</xsd:powerOfAttorney>
+                  <xsd:principal>[principal]</xsd:principal>
+                  <xsd:principalIdentityCard>[principalIdentityCard]</xsd:principalIdentityCard>
+               </xsd:principal>-->\r
+               <xsd:contentItems>
+                  <xsd:extId>09bbdc0b-c9bf-4205-a81f-c8ddffb1cf38</xsd:extId>
+                  <xsd:name>Документ-основание</xsd:name>
+               </xsd:contentItems>
+               <xsd:proxyClient>
+                  <xsd:clientTypeEnum>0</xsd:clientTypeEnum>
+                  <xsd:icIssueAutority>[icIssueAutority]</xsd:icIssueAutority>
+                  <xsd:icIssueDate>2022-01-01</xsd:icIssueDate>
+                  <xsd:icNum>[ProxyClient:icNum]</xsd:icNum>
+                  <xsd:icSeries>[ProxyClient:icSeries]</xsd:icSeries>
+                  <xsd:identityCardTypeId>21</xsd:identityCardTypeId>
+                  <xsd:personFirstName>[proxyClient:personFirstName]</xsd:personFirstName>
+                  <xsd:personPatronymic>[proxyClient:personPatronymic]</xsd:personPatronymic>
+                  <xsd:personSurname>[proxyClient:personSurname]</xsd:personSurname>
+                  <xsd:personStatelessFlag>0</xsd:personStatelessFlag>
+                  <xsd:personCitizenCountryCode>643</xsd:personCitizenCountryCode>
+               </xsd:proxyClient>
+            </xsd:operationEntity>\r
+            <xsd:requestInfo>\r
+               <xsd:messageId/>\r
+            </xsd:requestInfo>\r
+         </jour:request>\r
+      </jour:create>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:assertion type="SOAP Response" id="b4d33902-0407-49a0-b372-662012c42349"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:loadTest id="f5443af2-c43c-4f76-8b00-d09a6ab9f75a" name="LoadTest 1"><con:settings><con:setting id="HttpSettings@close-connections">false</con:setting></con:settings><con:threadCount>7</con:threadCount><con:startDelay>0</con:startDelay><con:sampleInterval>250</con:sampleInterval><con:calculateTPSOnTimePassed>true</con:calculateTPSOnTimePassed><con:resetStatisticsOnThreadCountChange>true</con:resetStatisticsOnThreadCountChange><con:historyLimit>-1</con:historyLimit><con:testLimit>360</con:testLimit><con:limitType>TIME</con:limitType><con:loadStrategy><con:type>Simple</con:type></con:loadStrategy><con:assertion type="Step Status" name="Step Status"/><con:maxAssertionErrors>100</con:maxAssertionErrors><con:cancelExcessiveThreads>true</con:cancelExcessiveThreads><con:strategyInterval>500</con:strategyInterval></con:loadTest><con:loadTest id="fa76aa87-6dec-4068-804e-b8868aaa1083" name="LoadTest 2"><con:settings><con:setting id="HttpSettings@close-connections">false</con:setting></con:settings><con:threadCount>5</con:threadCount><con:startDelay>0</con:startDelay><con:sampleInterval>250</con:sampleInterval><con:calculateTPSOnTimePassed>true</con:calculateTPSOnTimePassed><con:resetStatisticsOnThreadCountChange>true</con:resetStatisticsOnThreadCountChange><con:historyLimit>-1</con:historyLimit><con:testLimit>60</con:testLimit><con:limitType>TIME</con:limitType><con:loadStrategy><con:type>Simple</con:type></con:loadStrategy><con:assertion type="Step Status" name="Step Status"/><con:maxAssertionErrors>100</con:maxAssertionErrors><con:cancelExcessiveThreads>true</con:cancelExcessiveThreads><con:strategyInterval>500</con:strategyInterval></con:loadTest><con:properties/><con:reportParameters/><con:breakPoints><con:testStepId>502d3c00-9dff-401b-9ebc-aa9a3b8ab184</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="setOperExtStatus TestCase" searchProperties="true" id="c6e75df4-15d9-4656-b418-c4eaeaaf8051"><con:settings/><con:testStep type="request" name="setOperExtStatus" id="7975bc97-232b-42b7-87fd-500fa0d1a445"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>JournalServiceSoap12Binding</con:interface><con:operation>setOperExtStatus</con:operation><con:request name="setOperExtStatus" id="6510d098-f3a4-40f0-924c-18acac64ed40"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://astst.it-spectrum.ru:9280/vtb24/services/JournalService.JournalServiceHttpSoap12Endpoint/</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:jour="http://journal.ws.spectrum" xmlns:xsd="http://model.ws.spectrum/xsd">
    <soap:Header/>
    <soap:Body>
       <jour:setOperExtStatus>
