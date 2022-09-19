@@ -8728,11 +8728,11 @@ xmlns:xsd="http://model.ws.spectrum/xsd">
                   </xsd:debitSumma>
                   <xsd:description>Внесение наличных на банковский счет 
                   На основании: договор No [accountNum]</xsd:description>
-                  <xsd:docNumber>009</xsd:docNumber>
+                  <xsd:docNumber>002</xsd:docNumber>
                </xsd:documents>
                <xsd:login>O1126</xsd:login>
                <xsd:idSys>99995</xsd:idSys>
-               <xsd:operJournalExtId>SP.CONP.10620009</xsd:operJournalExtId>
+               <xsd:operJournalExtId>SP.CONP.10620002</xsd:operJournalExtId>
                <xsd:operationCode>1062</xsd:operationCode>
                <!--<xsd:operationRegDate>2022-02-22T10:00:00</xsd:operationRegDate>-->
                <!--<xsd:contentItems>
@@ -8804,11 +8804,11 @@ xmlns:xsd="http://model.ws.spectrum/xsd">
                   </xsd:debitSumma>\r
                   <xsd:description>Внесение наличных на банковский счет 
                   На основании: договор No [accountNum]</xsd:description>\r
-                  <xsd:docNumber>005</xsd:docNumber>\r
+                  <xsd:docNumber>001</xsd:docNumber>\r
                </xsd:documents>\r
                <xsd:login>O1126</xsd:login>\r
                <xsd:idSys>99995</xsd:idSys>\r
-               <xsd:operJournalExtId>SP.CONP.10630005</xsd:operJournalExtId>\r
+               <xsd:operJournalExtId>SP.CONP.10630000</xsd:operJournalExtId>\r
                <xsd:operationCode>1063</xsd:operationCode>\r
                <!--<xsd:operationRegDate>2022-02-22T10:00:00</xsd:operationRegDate>-->\r
                <!--<xsd:contentItems>
@@ -8972,11 +8972,11 @@ xmlns:xsd="http://model.ws.spectrum/xsd">
                   </xsd:debitSumma>\r
                   <xsd:description>Снятие наличных с банковского счета
 На основании: договор No [accountNum]</xsd:description>\r
-                  <xsd:docNumber>10651</xsd:docNumber>\r
+                  <xsd:docNumber>10650</xsd:docNumber>\r
                </xsd:documents>\r
                <xsd:login>O1126</xsd:login>\r
                <xsd:idSys>99995</xsd:idSys>\r
-               <xsd:operJournalExtId>SP.CONP.1065003</xsd:operJournalExtId>\r
+               <xsd:operJournalExtId>SP.CONP.1065000</xsd:operJournalExtId>\r
                <xsd:operationCode>1065</xsd:operationCode>\r
                <!--<xsd:operationRegDate>2022-06-18T10:00:00</xsd:operationRegDate>-->\r
                <!--<xsd:principal>
@@ -9000,8 +9000,8 @@ xmlns:xsd="http://model.ws.spectrum/xsd">
                   <xsd:personSurname>[proxyClient:personSurname]</xsd:personSurname>
                   <xsd:personStatelessFlag>0</xsd:personStatelessFlag>
                   <xsd:personCitizenCountryCode>643</xsd:personCitizenCountryCode>
-               </xsd:proxyClient>
-            </xsd:operationEntity>-->
+               </xsd:proxyClient>-->
+            </xsd:operationEntity>
             <xsd:requestInfo>
                <xsd:messageId/>
             </xsd:requestInfo>
